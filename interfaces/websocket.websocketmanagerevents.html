@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Module | discordoo</title>
+	<title>WebSocketManagerEvents | discordoo</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,10 +56,10 @@
 		<div class="container">
 			<ul class="tsd-breadcrumb">
 				<li>
-					<a href="../modules/core.html">core</a>
+					<a href="../modules/websocket.html">websocket</a>
 				</li>
 				<li>
-					<a href="core.module.html">Module</a>
+					<a href="websocket.websocketmanagerevents.html">WebSocketManagerEvents</a>
 				</li>
 			</ul>
 		</div>
@@ -79,7 +79,7 @@
 					<li class=" tsd-kind-module">
 						<a href="../modules/collection.html">collection</a>
 					</li>
-					<li class="current tsd-kind-module">
+					<li class=" tsd-kind-module">
 						<a href="../modules/core.html">core</a>
 					</li>
 					<li class=" tsd-kind-module">
@@ -88,7 +88,7 @@
 					<li class=" tsd-kind-module">
 						<a href="../modules/util.html">util</a>
 					</li>
-					<li class=" tsd-kind-module">
+					<li class="current tsd-kind-module">
 						<a href="../modules/websocket.html">websocket</a>
 					</li>
 					<li class=" tsd-kind-module">
@@ -98,24 +98,13 @@
 			</nav>
 		</div>
 		<div class="col-7 offset-3 col-content">
-			<h1>Interface Module</h1>
-			<section class="tsd-panel tsd-comment"><div class="tsd-comment tsd-typography tsd-comment-shorttext">
-					<div class="lead">
-						<p>Represents a module</p>
-					</div>
-			</div></section>
+			<h1>Interface WebSocketManagerEvents</h1>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">Module</span>
+						<span class="target">WebSocketManagerEvents</span>
 					</li>
-				</ul>
-			</section>
-			<section class="tsd-panel">
-				<h3>Implemented by</h3>
-				<ul class="tsd-hierarchy">
-					<li><a href="../classes/wrapper.modulehostmodule.html" class="tsd-signature-type">ModuleHostModule</a></li>
 				</ul>
 			</section>
 			<section class="tsd-panel-group tsd-index-group">
@@ -124,10 +113,10 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="core.module.html#destroyed" class="tsd-kind-icon">destroyed</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="core.module.html#id" class="tsd-kind-icon">id</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="core.module.html#init" class="tsd-kind-icon">init</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="core.module.html#initialized" class="tsd-kind-icon">initialized</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="websocket.websocketmanagerevents.html#connected" class="tsd-kind-icon">connected</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="websocket.websocketmanagerevents.html#disconnected" class="tsd-kind-icon">disconnected</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="websocket.websocketmanagerevents.html#message" class="tsd-kind-icon">message</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="websocket.websocketmanagerevents.html#shardspawn" class="tsd-kind-icon">shard<wbr>Spawn</a></li>
 							</ul>
 						</section>
 					</div>
@@ -136,90 +125,30 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="destroyed" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> destroyed</h3>
-					<div class="tsd-signature tsd-kind-icon">destroyed<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<a name="connected" class="tsd-anchor"></a>
+					<h3>connected</h3>
+					<div class="tsd-signature tsd-kind-icon">connected<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in src/core/modules/Module.ts:13</li>
+							<li>Defined in src/websocket/WebSocketManagerEvents.ts:5</li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography tsd-comment-shorttext">
-						<div class="lead">
-							<p>Function, which will be emitted once module is destroyed</p>
-						</div>
-					</div>
 					<div class="tsd-type-declaration">
 						<h4>Type declaration</h4>
 						<ul class="tsd-parameters">
 							<li class="tsd-parameter-siganture">
 								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-interface">
-									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
-								</ul>
-								<ul class="tsd-descriptions">
-									<li class="tsd-description">
-										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span>
-											<span class="tsd-signature-symbol"> | </span>
-											<span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span>
-										</h4>
-									</li>
-								</ul>
-							</li>
-						</ul>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="id" class="tsd-anchor"></a>
-					<h3>id</h3>
-					<div class="tsd-signature tsd-kind-icon">id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">symbol</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in src/core/modules/Module.ts:15</li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography tsd-comment-shorttext">
-						<div class="lead">
-							<p>Unique id for this module</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="init" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> init</h3>
-					<div class="tsd-signature tsd-kind-icon">init<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in src/core/modules/Module.ts:11</li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography tsd-comment-shorttext">
-						<div class="lead">
-							<p>Function, which will be emitted once module was initialized on client&#39;s startup</p>
-						</div>
-						</div><div class="tsd-comment tsd-typography tsd-comment-tags">
-						<dl class="tsd-comment-tags"><dt>param</dt>
-							<dd><p>client, the module will be bound to</p>
-						</dd></dl>
-					</div>
-					<div class="tsd-type-declaration">
-						<h4>Type declaration</h4>
-						<ul class="tsd-parameters">
-							<li class="tsd-parameter-siganture">
-								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-interface">
-									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>client<span class="tsd-signature-symbol">: </span><a href="../classes/core.client.html" class="tsd-signature-type">Client</a><span class="tsd-signature-symbol">&lt;</span><a href="core.defaultclientstack.html" class="tsd-signature-type">DefaultClientStack</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 								</ul>
 								<ul class="tsd-descriptions">
 									<li class="tsd-description">
 										<h4 class="tsd-parameters-title">Parameters</h4>
 										<ul class="tsd-parameters">
 											<li>
-												<h5>client: <a href="../classes/core.client.html" class="tsd-signature-type">Client</a><span class="tsd-signature-symbol">&lt;</span><a href="core.defaultclientstack.html" class="tsd-signature-type">DefaultClientStack</a><span class="tsd-signature-symbol">&gt;</span></h5>
+												<h5>id: <span class="tsd-signature-type">number</span></h5>
 											</li>
 										</ul>
-										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span>
-											<span class="tsd-signature-symbol"> | </span>
-											<span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span>
-										</h4>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 									</li>
 								</ul>
 							</li>
@@ -227,18 +156,99 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="initialized" class="tsd-anchor"></a>
-					<h3>initialized</h3>
-					<div class="tsd-signature tsd-kind-icon">initialized<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<a name="disconnected" class="tsd-anchor"></a>
+					<h3>disconnected</h3>
+					<div class="tsd-signature tsd-kind-icon">disconnected<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in src/core/modules/Module.ts:6</li>
+							<li>Defined in src/websocket/WebSocketManagerEvents.ts:6</li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography tsd-comment-shorttext">
-						<div class="lead">
-							<p>Whether the module was initialized</p>
-						</div>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-interface">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>id: <span class="tsd-signature-type">number</span></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="message" class="tsd-anchor"></a>
+					<h3>message</h3>
+					<div class="tsd-signature tsd-kind-icon">message<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in src/websocket/WebSocketManagerEvents.ts:4</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-interface">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>msg<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">GatewayHello</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">GatewayHeartbeatRequest</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">GatewayHeartbeatAck</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">GatewayInvalidSession</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">GatewayReconnect</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">GatewayDispatchPayload</span>, id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>msg: <span class="tsd-signature-type">GatewayHello</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">GatewayHeartbeatRequest</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">GatewayHeartbeatAck</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">GatewayInvalidSession</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">GatewayReconnect</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">GatewayDispatchPayload</span></h5>
+											</li>
+											<li>
+												<h5>id: <span class="tsd-signature-type">number</span></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="shardspawn" class="tsd-anchor"></a>
+					<h3>shard<wbr>Spawn</h3>
+					<div class="tsd-signature tsd-kind-icon">shard<wbr>Spawn<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in src/websocket/WebSocketManagerEvents.ts:7</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-interface">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>id: <span class="tsd-signature-type">number</span></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
 					</div>
 				</section>
 			</section>
@@ -248,67 +258,37 @@
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
 					<li class=" tsd-kind-class tsd-parent-kind-module root">
-						<a href="../classes/core.base.html" class="tsd-kind-icon">Base</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module tsd-has-type-parameter root">
-						<a href="../classes/core.client.html" class="tsd-kind-icon">Client</a>
+						<a href="../classes/websocket.websocketmanager.html" class="tsd-kind-icon">Web<wbr>Socket<wbr>Manager</a>
 					</li>
 					<li class=" tsd-kind-class tsd-parent-kind-module root">
-						<a href="../classes/core.constants.html" class="tsd-kind-icon">Constants</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module root">
-						<a href="../classes/core.modulemanager.html" class="tsd-kind-icon">Module<wbr>Manager</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-has-type-parameter root">
-						<a href="core.cachenamespace.html" class="tsd-kind-icon">Cache<wbr>Namespace</a>
+						<a href="../classes/websocket.websocketshard.html" class="tsd-kind-icon">Web<wbr>Socket<wbr>Shard</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-module root">
-						<a href="core.clienteventshandlers.html" class="tsd-kind-icon">Client<wbr>Events<wbr>Handlers</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module root">
-						<a href="core.defaultclientstack.html" class="tsd-kind-icon">Default<wbr>Client<wbr>Stack</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module root">
-						<a href="core.gatewayproviderapi.html" class="tsd-kind-icon">Gateway<wbr>ProviderAPI</a>
+						<a href="websocket.gatewayoptions.html" class="tsd-kind-icon">Gateway<wbr>Options</a>
 					</li>
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface tsd-parent-kind-module root">
-						<a href="core.module.html" class="tsd-kind-icon">Module</a>
+						<a href="websocket.websocketmanagerevents.html" class="tsd-kind-icon">Web<wbr>Socket<wbr>Manager<wbr>Events</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="core.module.html#destroyed" class="tsd-kind-icon">destroyed</a>
+								<a href="websocket.websocketmanagerevents.html#connected" class="tsd-kind-icon">connected</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="core.module.html#id" class="tsd-kind-icon">id</a>
+								<a href="websocket.websocketmanagerevents.html#disconnected" class="tsd-kind-icon">disconnected</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="core.module.html#init" class="tsd-kind-icon">init</a>
+								<a href="websocket.websocketmanagerevents.html#message" class="tsd-kind-icon">message</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="core.module.html#initialized" class="tsd-kind-icon">initialized</a>
+								<a href="websocket.websocketmanagerevents.html#shardspawn" class="tsd-kind-icon">shard<wbr>Spawn</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
-					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-has-type-parameter root">
-						<a href="core.restresponse.html" class="tsd-kind-icon">RESTResponse</a>
-					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-module root">
-						<a href="core.requestbuilder.html" class="tsd-kind-icon">Request<wbr>Builder</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module root">
-						<a href="core.requestoptions.html" class="tsd-kind-icon">Request<wbr>Options</a>
-					</li>
-					<li class=" tsd-kind-type-alias tsd-parent-kind-module tsd-has-type-parameter root">
-						<a href="../modules/core.html#cacheprovider" class="tsd-kind-icon">Cache<wbr>Provider</a>
-					</li>
-					<li class=" tsd-kind-type-alias tsd-parent-kind-module tsd-has-type-parameter root">
-						<a href="../modules/core.html#gatewayprovider" class="tsd-kind-icon">Gateway<wbr>Provider</a>
-					</li>
-					<li class=" tsd-kind-type-alias tsd-parent-kind-module tsd-has-type-parameter root">
-						<a href="../modules/core.html#restprovider" class="tsd-kind-icon">RESTProvider</a>
+						<a href="websocket.websocketshardevents.html" class="tsd-kind-icon">Web<wbr>Socket<wbr>Shard<wbr>Events</a>
 					</li>
 				</ul>
 			</nav>

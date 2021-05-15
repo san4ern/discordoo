@@ -103,7 +103,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="tsd-signature-type">TypedEmitter</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">WebSocketShardEvents</span><span class="tsd-signature-symbol">&gt;</span>
+						<span class="tsd-signature-type">TypedEmitter</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/websocket.websocketshardevents.html" class="tsd-signature-type">WebSocketShardEvents</a><span class="tsd-signature-symbol">&gt;</span>
 						<ul class="tsd-hierarchy">
 							<li>
 								<span class="target">WebSocketShard</span>
@@ -340,7 +340,7 @@
 					<a name="addlistener" class="tsd-anchor"></a>
 					<h3>add<wbr>Listener</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited tsd-is-external">
-						<li class="tsd-signature tsd-kind-icon">add<wbr>Listener&lt;U&gt;<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">U</span>, listener<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">default[U]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="websocket.websocketshard.html" class="tsd-signature-type">WebSocketShard</a></li>
+						<li class="tsd-signature tsd-kind-icon">add<wbr>Listener&lt;U&gt;<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">U</span>, listener<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">WebSocketShardEvents[U]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="websocket.websocketshard.html" class="tsd-signature-type">WebSocketShard</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
@@ -362,7 +362,7 @@
 									<h5>event: <span class="tsd-signature-type">U</span></h5>
 								</li>
 								<li>
-									<h5>listener: <span class="tsd-signature-type">default[U]</span></h5>
+									<h5>listener: <span class="tsd-signature-type">WebSocketShardEvents[U]</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="websocket.websocketshard.html" class="tsd-signature-type">WebSocketShard</a></h4>
@@ -441,7 +441,7 @@
 					<a name="emit" class="tsd-anchor"></a>
 					<h3>emit</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited tsd-is-external">
-						<li class="tsd-signature tsd-kind-icon">emit&lt;U&gt;<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">U</span>, <span class="tsd-signature-symbol">...</span>args<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Parameters</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">default[U]</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+						<li class="tsd-signature tsd-kind-icon">emit&lt;U&gt;<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">U</span>, <span class="tsd-signature-symbol">...</span>args<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Parameters</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">WebSocketShardEvents[U]</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
@@ -463,7 +463,7 @@
 									<h5>event: <span class="tsd-signature-type">U</span></h5>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>args: <span class="tsd-signature-type">Parameters</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">default[U]</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>args: <span class="tsd-signature-type">Parameters</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">WebSocketShardEvents[U]</span><span class="tsd-signature-symbol">&gt;</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
@@ -597,7 +597,7 @@
 					<a name="listeners" class="tsd-anchor"></a>
 					<h3>listeners</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited tsd-is-external">
-						<li class="tsd-signature tsd-kind-icon">listeners&lt;U&gt;<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">U</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">default[U]</span><span class="tsd-signature-symbol">[]</span></li>
+						<li class="tsd-signature tsd-kind-icon">listeners&lt;U&gt;<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">U</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">WebSocketShardEvents[U]</span><span class="tsd-signature-symbol">[]</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
@@ -619,7 +619,7 @@
 									<h5>type: <span class="tsd-signature-type">U</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">default[U]</span><span class="tsd-signature-symbol">[]</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">WebSocketShardEvents[U]</span><span class="tsd-signature-symbol">[]</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -627,7 +627,7 @@
 					<a name="off" class="tsd-anchor"></a>
 					<h3>off</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited tsd-is-external">
-						<li class="tsd-signature tsd-kind-icon">off&lt;U&gt;<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">U</span>, listener<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">default[U]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="websocket.websocketshard.html" class="tsd-signature-type">WebSocketShard</a></li>
+						<li class="tsd-signature tsd-kind-icon">off&lt;U&gt;<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">U</span>, listener<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">WebSocketShardEvents[U]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="websocket.websocketshard.html" class="tsd-signature-type">WebSocketShard</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
@@ -649,7 +649,7 @@
 									<h5>event: <span class="tsd-signature-type">U</span></h5>
 								</li>
 								<li>
-									<h5>listener: <span class="tsd-signature-type">default[U]</span></h5>
+									<h5>listener: <span class="tsd-signature-type">WebSocketShardEvents[U]</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="websocket.websocketshard.html" class="tsd-signature-type">WebSocketShard</a></h4>
@@ -660,7 +660,7 @@
 					<a name="on" class="tsd-anchor"></a>
 					<h3>on</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited tsd-is-external">
-						<li class="tsd-signature tsd-kind-icon">on&lt;U&gt;<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">U</span>, listener<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">default[U]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="websocket.websocketshard.html" class="tsd-signature-type">WebSocketShard</a></li>
+						<li class="tsd-signature tsd-kind-icon">on&lt;U&gt;<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">U</span>, listener<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">WebSocketShardEvents[U]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="websocket.websocketshard.html" class="tsd-signature-type">WebSocketShard</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
@@ -682,7 +682,7 @@
 									<h5>event: <span class="tsd-signature-type">U</span></h5>
 								</li>
 								<li>
-									<h5>listener: <span class="tsd-signature-type">default[U]</span></h5>
+									<h5>listener: <span class="tsd-signature-type">WebSocketShardEvents[U]</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="websocket.websocketshard.html" class="tsd-signature-type">WebSocketShard</a></h4>
@@ -739,7 +739,7 @@
 					<a name="once" class="tsd-anchor"></a>
 					<h3>once</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited tsd-is-external">
-						<li class="tsd-signature tsd-kind-icon">once&lt;U&gt;<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">U</span>, listener<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">default[U]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="websocket.websocketshard.html" class="tsd-signature-type">WebSocketShard</a></li>
+						<li class="tsd-signature tsd-kind-icon">once&lt;U&gt;<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">U</span>, listener<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">WebSocketShardEvents[U]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="websocket.websocketshard.html" class="tsd-signature-type">WebSocketShard</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
@@ -761,7 +761,7 @@
 									<h5>event: <span class="tsd-signature-type">U</span></h5>
 								</li>
 								<li>
-									<h5>listener: <span class="tsd-signature-type">default[U]</span></h5>
+									<h5>listener: <span class="tsd-signature-type">WebSocketShardEvents[U]</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="websocket.websocketshard.html" class="tsd-signature-type">WebSocketShard</a></h4>
@@ -772,7 +772,7 @@
 					<a name="prependlistener" class="tsd-anchor"></a>
 					<h3>prepend<wbr>Listener</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited tsd-is-external">
-						<li class="tsd-signature tsd-kind-icon">prepend<wbr>Listener&lt;U&gt;<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">U</span>, listener<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">default[U]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="websocket.websocketshard.html" class="tsd-signature-type">WebSocketShard</a></li>
+						<li class="tsd-signature tsd-kind-icon">prepend<wbr>Listener&lt;U&gt;<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">U</span>, listener<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">WebSocketShardEvents[U]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="websocket.websocketshard.html" class="tsd-signature-type">WebSocketShard</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
@@ -794,7 +794,7 @@
 									<h5>event: <span class="tsd-signature-type">U</span></h5>
 								</li>
 								<li>
-									<h5>listener: <span class="tsd-signature-type">default[U]</span></h5>
+									<h5>listener: <span class="tsd-signature-type">WebSocketShardEvents[U]</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="websocket.websocketshard.html" class="tsd-signature-type">WebSocketShard</a></h4>
@@ -805,7 +805,7 @@
 					<a name="prependoncelistener" class="tsd-anchor"></a>
 					<h3>prepend<wbr>Once<wbr>Listener</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited tsd-is-external">
-						<li class="tsd-signature tsd-kind-icon">prepend<wbr>Once<wbr>Listener&lt;U&gt;<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">U</span>, listener<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">default[U]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="websocket.websocketshard.html" class="tsd-signature-type">WebSocketShard</a></li>
+						<li class="tsd-signature tsd-kind-icon">prepend<wbr>Once<wbr>Listener&lt;U&gt;<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">U</span>, listener<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">WebSocketShardEvents[U]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="websocket.websocketshard.html" class="tsd-signature-type">WebSocketShard</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
@@ -827,7 +827,7 @@
 									<h5>event: <span class="tsd-signature-type">U</span></h5>
 								</li>
 								<li>
-									<h5>listener: <span class="tsd-signature-type">default[U]</span></h5>
+									<h5>listener: <span class="tsd-signature-type">WebSocketShardEvents[U]</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="websocket.websocketshard.html" class="tsd-signature-type">WebSocketShard</a></h4>
@@ -838,7 +838,7 @@
 					<a name="rawlisteners" class="tsd-anchor"></a>
 					<h3>raw<wbr>Listeners</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited tsd-is-external">
-						<li class="tsd-signature tsd-kind-icon">raw<wbr>Listeners&lt;U&gt;<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">U</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">default[U]</span><span class="tsd-signature-symbol">[]</span></li>
+						<li class="tsd-signature tsd-kind-icon">raw<wbr>Listeners&lt;U&gt;<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">U</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">WebSocketShardEvents[U]</span><span class="tsd-signature-symbol">[]</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
@@ -860,7 +860,7 @@
 									<h5>type: <span class="tsd-signature-type">U</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">default[U]</span><span class="tsd-signature-symbol">[]</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">WebSocketShardEvents[U]</span><span class="tsd-signature-symbol">[]</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -892,7 +892,7 @@
 					<a name="removelistener" class="tsd-anchor"></a>
 					<h3>remove<wbr>Listener</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited tsd-is-external">
-						<li class="tsd-signature tsd-kind-icon">remove<wbr>Listener&lt;U&gt;<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">U</span>, listener<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">default[U]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="websocket.websocketshard.html" class="tsd-signature-type">WebSocketShard</a></li>
+						<li class="tsd-signature tsd-kind-icon">remove<wbr>Listener&lt;U&gt;<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">U</span>, listener<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">WebSocketShardEvents[U]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="websocket.websocketshard.html" class="tsd-signature-type">WebSocketShard</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
@@ -914,7 +914,7 @@
 									<h5>event: <span class="tsd-signature-type">U</span></h5>
 								</li>
 								<li>
-									<h5>listener: <span class="tsd-signature-type">default[U]</span></h5>
+									<h5>listener: <span class="tsd-signature-type">WebSocketShardEvents[U]</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="websocket.websocketshard.html" class="tsd-signature-type">WebSocketShard</a></h4>
@@ -1026,7 +1026,7 @@
 					</ul>
 				</section>
 			</section>
-			<!--{&quot;options&quot;:&quot;/home/runner/work/discordoo/discordoo&quot;,&quot;tsconfig&quot;:&quot;/home/runner/work/discordoo/discordoo&quot;,&quot;entryPoints&quot;:[&quot;./src/cache/index.ts&quot;,&quot;./src/collection/index.ts&quot;,&quot;./src/core/index.ts&quot;,&quot;./src/main/index.ts&quot;,&quot;./src/rest/index.ts&quot;,&quot;./src/util/index.ts&quot;,&quot;./src/websocket/index.ts&quot;,&quot;./src/wrapper/index.ts&quot;],&quot;exclude&quot;:[],&quot;externalPattern&quot;:[&quot;**/node_modules/**&quot;],&quot;excludeExternals&quot;:false,&quot;excludeNotDocumented&quot;:false,&quot;excludeInternal&quot;:false,&quot;excludePrivate&quot;:false,&quot;excludeProtected&quot;:false,&quot;disableSources&quot;:false,&quot;includes&quot;:&quot;&quot;,&quot;media&quot;:&quot;&quot;,&quot;watch&quot;:false,&quot;preserveWatchOutput&quot;:false,&quot;emit&quot;:false,&quot;out&quot;:&quot;&quot;,&quot;json&quot;:&quot;&quot;,&quot;theme&quot;:&quot;./node_modules/typedoc-neo-theme/bin/default&quot;,&quot;highlightTheme&quot;:&quot;light-plus&quot;,&quot;name&quot;:&quot;&quot;,&quot;includeVersion&quot;:false,&quot;excludeTags&quot;:[],&quot;readme&quot;:&quot;&quot;,&quot;defaultCategory&quot;:&quot;Other&quot;,&quot;categoryOrder&quot;:[],&quot;categorizeByGroup&quot;:true,&quot;gitRevision&quot;:&quot;&quot;,&quot;gitRemote&quot;:&quot;origin&quot;,&quot;gaID&quot;:&quot;&quot;,&quot;gaSite&quot;:&quot;auto&quot;,&quot;hideGenerator&quot;:false,&quot;toc&quot;:[],&quot;disableOutputCheck&quot;:false,&quot;help&quot;:false,&quot;version&quot;:false,&quot;showConfig&quot;:false,&quot;plugin&quot;:[],&quot;logger&quot;:&quot;console&quot;,&quot;logLevel&quot;:1,&quot;listInvalidSymbolLinks&quot;:false}-->
+			<!--{&quot;options&quot;:&quot;/home/runner/work/discordoo/discordoo&quot;,&quot;tsconfig&quot;:&quot;/home/runner/work/discordoo/discordoo&quot;,&quot;entryPoints&quot;:[&quot;./src/cache/index.ts&quot;,&quot;./src/collection/index.ts&quot;,&quot;./src/core/index.ts&quot;,&quot;./src/rest/index.ts&quot;,&quot;./src/util/index.ts&quot;,&quot;./src/websocket/index.ts&quot;,&quot;./src/wrapper/index.ts&quot;],&quot;exclude&quot;:[],&quot;externalPattern&quot;:[&quot;**/node_modules/**&quot;],&quot;excludeExternals&quot;:false,&quot;excludeNotDocumented&quot;:false,&quot;excludeInternal&quot;:false,&quot;excludePrivate&quot;:false,&quot;excludeProtected&quot;:false,&quot;disableSources&quot;:false,&quot;includes&quot;:&quot;&quot;,&quot;media&quot;:&quot;&quot;,&quot;watch&quot;:false,&quot;preserveWatchOutput&quot;:false,&quot;emit&quot;:false,&quot;out&quot;:&quot;&quot;,&quot;json&quot;:&quot;&quot;,&quot;theme&quot;:&quot;./node_modules/typedoc-neo-theme/bin/default&quot;,&quot;highlightTheme&quot;:&quot;light-plus&quot;,&quot;name&quot;:&quot;&quot;,&quot;includeVersion&quot;:false,&quot;excludeTags&quot;:[],&quot;readme&quot;:&quot;&quot;,&quot;defaultCategory&quot;:&quot;Other&quot;,&quot;categoryOrder&quot;:[],&quot;categorizeByGroup&quot;:true,&quot;gitRevision&quot;:&quot;&quot;,&quot;gitRemote&quot;:&quot;origin&quot;,&quot;gaID&quot;:&quot;&quot;,&quot;gaSite&quot;:&quot;auto&quot;,&quot;hideGenerator&quot;:false,&quot;toc&quot;:[],&quot;disableOutputCheck&quot;:false,&quot;help&quot;:false,&quot;version&quot;:false,&quot;showConfig&quot;:false,&quot;plugin&quot;:[],&quot;logger&quot;:&quot;console&quot;,&quot;logLevel&quot;:1,&quot;listInvalidSymbolLinks&quot;:false}-->
 		</div>
 		<div class="col-2 col-menu secondary-menu">
 			<nav class="tsd-navigation secondary menu-sticky">
@@ -1165,6 +1165,12 @@
 				<ul class="after-current">
 					<li class=" tsd-kind-interface tsd-parent-kind-module root">
 						<a href="../interfaces/websocket.gatewayoptions.html" class="tsd-kind-icon">Gateway<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module root">
+						<a href="../interfaces/websocket.websocketmanagerevents.html" class="tsd-kind-icon">Web<wbr>Socket<wbr>Manager<wbr>Events</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module root">
+						<a href="../interfaces/websocket.websocketshardevents.html" class="tsd-kind-icon">Web<wbr>Socket<wbr>Shard<wbr>Events</a>
 					</li>
 				</ul>
 			</nav>
