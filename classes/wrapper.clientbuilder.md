@@ -47,7 +47,7 @@
 
 **Returns:** [*ClientBuilder*](wrapper.clientbuilder.md)<Stack\>
 
-Defined in: [src/wrapper/ClientBuilder.ts:7](https://github.com/Discordoo/discordoo/blob/8db69d8/src/wrapper/ClientBuilder.ts#L7)
+Defined in: [src/wrapper/ClientBuilder.ts:7](https://github.com/Discordoo/discordoo/blob/75592d0/src/wrapper/ClientBuilder.ts#L7)
 
 ## Properties
 
@@ -55,7 +55,7 @@ Defined in: [src/wrapper/ClientBuilder.ts:7](https://github.com/Discordoo/discor
 
 • **client**: [*Client*](core.client.md)<Stack\>
 
-Defined in: [src/wrapper/ClientBuilder.ts:7](https://github.com/Discordoo/discordoo/blob/8db69d8/src/wrapper/ClientBuilder.ts#L7)
+Defined in: [src/wrapper/ClientBuilder.ts:7](https://github.com/Discordoo/discordoo/blob/75592d0/src/wrapper/ClientBuilder.ts#L7)
 
 ## Methods
 
@@ -65,7 +65,7 @@ Defined in: [src/wrapper/ClientBuilder.ts:7](https://github.com/Discordoo/discor
 
 **Returns:** [*Client*](core.client.md)<Stack\>
 
-Defined in: [src/wrapper/ClientBuilder.ts:26](https://github.com/Discordoo/discordoo/blob/8db69d8/src/wrapper/ClientBuilder.ts#L26)
+Defined in: [src/wrapper/ClientBuilder.ts:26](https://github.com/Discordoo/discordoo/blob/75592d0/src/wrapper/ClientBuilder.ts#L26)
 
 ___
 
@@ -81,7 +81,7 @@ ___
 
 **Returns:** [*ClientBuilder*](wrapper.clientbuilder.md)<Stack\>
 
-Defined in: [src/wrapper/ClientBuilder.ts:21](https://github.com/Discordoo/discordoo/blob/8db69d8/src/wrapper/ClientBuilder.ts#L21)
+Defined in: [src/wrapper/ClientBuilder.ts:21](https://github.com/Discordoo/discordoo/blob/75592d0/src/wrapper/ClientBuilder.ts#L21)
 
 ___
 
@@ -97,4 +97,4 @@ ___
 
 **Returns:** [*ClientBuilder*](wrapper.clientbuilder.md)<Stack\>
 
-Defined in: [src/wrapper/ClientBuilder.ts:16](https://github.com/Discordoo/discordoo/blob/8db69d8/src/wrapper/ClientBuilder.ts#L16)
+Defined in: [src/wrapper/ClientBuilder.ts:16](https://github.com/Discordoo/discordoo/blob/75592d0/src/wrapper/ClientBuilder.ts#L16)

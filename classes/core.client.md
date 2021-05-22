@@ -79,7 +79,7 @@ Entry point for all of Discordoo. Manages modules and events
 
 Overrides: TypedEmitter&lt;ListenerSignature&lt;ClientStack[&#x27;events&#x27;]\&gt;\&gt;.constructor
 
-Defined in: [src/core/Client.ts:14](https://github.com/Discordoo/discordoo/blob/8db69d8/src/core/Client.ts#L14)
+Defined in: [src/core/Client.ts:14](https://github.com/Discordoo/discordoo/blob/75592d0/src/core/Client.ts#L14)
 
 ## Properties
 
@@ -89,7 +89,7 @@ Defined in: [src/core/Client.ts:14](https://github.com/Discordoo/discordoo/blob/
 
 CacheProvider used by this module
 
-Defined in: [src/core/Client.ts:28](https://github.com/Discordoo/discordoo/blob/8db69d8/src/core/Client.ts#L28)
+Defined in: [src/core/Client.ts:28](https://github.com/Discordoo/discordoo/blob/75592d0/src/core/Client.ts#L28)
 
 ___
 
@@ -99,7 +99,7 @@ ___
 
 GatewayProvider used by this module
 
-Defined in: [src/core/Client.ts:31](https://github.com/Discordoo/discordoo/blob/8db69d8/src/core/Client.ts#L31)
+Defined in: [src/core/Client.ts:31](https://github.com/Discordoo/discordoo/blob/75592d0/src/core/Client.ts#L31)
 
 ___
 
@@ -109,7 +109,7 @@ ___
 
 Module manager of this client
 
-Defined in: [src/core/Client.ts:22](https://github.com/Discordoo/discordoo/blob/8db69d8/src/core/Client.ts#L22)
+Defined in: [src/core/Client.ts:22](https://github.com/Discordoo/discordoo/blob/75592d0/src/core/Client.ts#L22)
 
 ___
 
@@ -119,7 +119,7 @@ ___
 
 RESTProvider used by this module
 
-Defined in: [src/core/Client.ts:25](https://github.com/Discordoo/discordoo/blob/8db69d8/src/core/Client.ts#L25)
+Defined in: [src/core/Client.ts:25](https://github.com/Discordoo/discordoo/blob/75592d0/src/core/Client.ts#L25)
 
 ___
 
@@ -129,7 +129,7 @@ ___
 
 Token used by this client
 
-Defined in: [src/core/Client.ts:14](https://github.com/Discordoo/discordoo/blob/8db69d8/src/core/Client.ts#L14)
+Defined in: [src/core/Client.ts:14](https://github.com/Discordoo/discordoo/blob/75592d0/src/core/Client.ts#L14)
 
 ___
 
@@ -279,7 +279,7 @@ Get a module. Alias for module(id).
 
 **Returns:** ``null`` \| [*Module*](../interfaces/core.module.md)
 
-Defined in: [src/core/Client.ts:37](https://github.com/Discordoo/discordoo/blob/8db69d8/src/core/Client.ts#L37)
+Defined in: [src/core/Client.ts:37](https://github.com/Discordoo/discordoo/blob/75592d0/src/core/Client.ts#L37)
 
 ___
 
@@ -297,7 +297,7 @@ Get a module
 
 **Returns:** ``null`` \| [*Module*](../interfaces/core.module.md)
 
-Defined in: [src/core/Client.ts:45](https://github.com/Discordoo/discordoo/blob/8db69d8/src/core/Client.ts#L45)
+Defined in: [src/core/Client.ts:45](https://github.com/Discordoo/discordoo/blob/75592d0/src/core/Client.ts#L45)
 
 ___
 
@@ -525,7 +525,7 @@ Create a new module load group
 
 **Returns:** *void*
 
-Defined in: [src/core/Client.ts:53](https://github.com/Discordoo/discordoo/blob/8db69d8/src/core/Client.ts#L53)
+Defined in: [src/core/Client.ts:53](https://github.com/Discordoo/discordoo/blob/75592d0/src/core/Client.ts#L53)
 
 ___
 
@@ -544,7 +544,7 @@ Bounds it's context to [Client](core.client.md)
 
 **Returns:** *void*
 
-Defined in: [src/core/Client.ts:71](https://github.com/Discordoo/discordoo/blob/8db69d8/src/core/Client.ts#L71)
+Defined in: [src/core/Client.ts:71](https://github.com/Discordoo/discordoo/blob/75592d0/src/core/Client.ts#L71)
 
 ___
 
@@ -563,7 +563,7 @@ Bounds it's context to [Client](core.client.md)
 
 **Returns:** *void*
 
-Defined in: [src/core/Client.ts:80](https://github.com/Discordoo/discordoo/blob/8db69d8/src/core/Client.ts#L80)
+Defined in: [src/core/Client.ts:80](https://github.com/Discordoo/discordoo/blob/75592d0/src/core/Client.ts#L80)
 
 ___
 
@@ -582,4 +582,4 @@ Bounds it's context to [Client](core.client.md)
 
 **Returns:** *void*
 
-Defined in: [src/core/Client.ts:62](https://github.com/Discordoo/discordoo/blob/8db69d8/src/core/Client.ts#L62)
+Defined in: [src/core/Client.ts:62](https://github.com/Discordoo/discordoo/blob/75592d0/src/core/Client.ts#L62)

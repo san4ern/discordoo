@@ -62,7 +62,7 @@
 
 Overrides: TypedEmitter&lt;WebSocketManagerEvents\&gt;.constructor
 
-Defined in: [src/websocket/WebSocketManager.ts:27](https://github.com/Discordoo/discordoo/blob/8db69d8/src/websocket/WebSocketManager.ts#L27)
+Defined in: [src/websocket/WebSocketManager.ts:27](https://github.com/Discordoo/discordoo/blob/75592d0/src/websocket/WebSocketManager.ts#L27)
 
 ## Properties
 
@@ -70,7 +70,7 @@ Defined in: [src/websocket/WebSocketManager.ts:27](https://github.com/Discordoo/
 
 • `Private` `Optional` **gateway**: APIGatewayBotInfo
 
-Defined in: [src/websocket/WebSocketManager.ts:22](https://github.com/Discordoo/discordoo/blob/8db69d8/src/websocket/WebSocketManager.ts#L22)
+Defined in: [src/websocket/WebSocketManager.ts:22](https://github.com/Discordoo/discordoo/blob/75592d0/src/websocket/WebSocketManager.ts#L22)
 
 ___
 
@@ -78,7 +78,7 @@ ___
 
 • `Readonly` **options**: [*GatewayOptions*](../interfaces/websocket.gatewayoptions.md)
 
-Defined in: [src/websocket/WebSocketManager.ts:21](https://github.com/Discordoo/discordoo/blob/8db69d8/src/websocket/WebSocketManager.ts#L21)
+Defined in: [src/websocket/WebSocketManager.ts:21](https://github.com/Discordoo/discordoo/blob/75592d0/src/websocket/WebSocketManager.ts#L21)
 
 ___
 
@@ -86,7 +86,7 @@ ___
 
 • `Private` **shardQueue**: *Set*<[*WebSocketShard*](websocket.websocketshard.md)\>
 
-Defined in: [src/websocket/WebSocketManager.ts:24](https://github.com/Discordoo/discordoo/blob/8db69d8/src/websocket/WebSocketManager.ts#L24)
+Defined in: [src/websocket/WebSocketManager.ts:24](https://github.com/Discordoo/discordoo/blob/75592d0/src/websocket/WebSocketManager.ts#L24)
 
 ___
 
@@ -94,7 +94,7 @@ ___
 
 • **shards**: [*Collection*](collection.collection-1.md)<number, [*WebSocketShard*](websocket.websocketshard.md)\>
 
-Defined in: [src/websocket/WebSocketManager.ts:27](https://github.com/Discordoo/discordoo/blob/8db69d8/src/websocket/WebSocketManager.ts#L27)
+Defined in: [src/websocket/WebSocketManager.ts:27](https://github.com/Discordoo/discordoo/blob/75592d0/src/websocket/WebSocketManager.ts#L27)
 
 ___
 
@@ -102,7 +102,7 @@ ___
 
 • **totalShards**: *number*= 1
 
-Defined in: [src/websocket/WebSocketManager.ts:26](https://github.com/Discordoo/discordoo/blob/8db69d8/src/websocket/WebSocketManager.ts#L26)
+Defined in: [src/websocket/WebSocketManager.ts:26](https://github.com/Discordoo/discordoo/blob/75592d0/src/websocket/WebSocketManager.ts#L26)
 
 ___
 
@@ -147,7 +147,7 @@ ___
 
 **Returns:** *Promise*<any\>
 
-Defined in: [src/websocket/WebSocketManager.ts:48](https://github.com/Discordoo/discordoo/blob/8db69d8/src/websocket/WebSocketManager.ts#L48)
+Defined in: [src/websocket/WebSocketManager.ts:48](https://github.com/Discordoo/discordoo/blob/75592d0/src/websocket/WebSocketManager.ts#L48)
 
 ___
 
@@ -157,7 +157,7 @@ ___
 
 **Returns:** *any*
 
-Defined in: [src/websocket/WebSocketManager.ts:105](https://github.com/Discordoo/discordoo/blob/8db69d8/src/websocket/WebSocketManager.ts#L105)
+Defined in: [src/websocket/WebSocketManager.ts:105](https://github.com/Discordoo/discordoo/blob/75592d0/src/websocket/WebSocketManager.ts#L105)
 
 ___
 

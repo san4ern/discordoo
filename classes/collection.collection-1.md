@@ -158,7 +158,7 @@ Create a new collection based on this one
 
 **Returns:** [*Collection*](collection.collection-1.md)<K, V\>
 
-Defined in: [src/collection/index.ts:47](https://github.com/Discordoo/discordoo/blob/8db69d8/src/collection/index.ts#L47)
+Defined in: [src/collection/index.ts:47](https://github.com/Discordoo/discordoo/blob/75592d0/src/collection/index.ts#L47)
 
 ___
 
@@ -208,7 +208,7 @@ Check if two collections are equal
 
 **Returns:** *boolean*
 
-Defined in: [src/collection/index.ts:55](https://github.com/Discordoo/discordoo/blob/8db69d8/src/collection/index.ts#L55)
+Defined in: [src/collection/index.ts:55](https://github.com/Discordoo/discordoo/blob/75592d0/src/collection/index.ts#L55)
 
 ___
 
@@ -226,7 +226,7 @@ Filter out the elements which don't meet requirements
 
 **Returns:** [*Collection*](collection.collection-1.md)<K, V\>
 
-Defined in: [src/collection/index.ts:30](https://github.com/Discordoo/discordoo/blob/8db69d8/src/collection/index.ts#L30)
+Defined in: [src/collection/index.ts:30](https://github.com/Discordoo/discordoo/blob/75592d0/src/collection/index.ts#L30)
 
 ___
 
@@ -246,7 +246,7 @@ Execute a function on each of elements of map
 
 Overrides: Map.forEach
 
-Defined in: [src/collection/index.ts:40](https://github.com/Discordoo/discordoo/blob/8db69d8/src/collection/index.ts#L40)
+Defined in: [src/collection/index.ts:40](https://github.com/Discordoo/discordoo/blob/75592d0/src/collection/index.ts#L40)
 
 ___
 
@@ -314,7 +314,7 @@ Get a random element from collection
 
 **Returns:** V \| V[]
 
-Defined in: [src/collection/index.ts:9](https://github.com/Discordoo/discordoo/blob/8db69d8/src/collection/index.ts#L9)
+Defined in: [src/collection/index.ts:9](https://github.com/Discordoo/discordoo/blob/75592d0/src/collection/index.ts#L9)
 
 ___
 

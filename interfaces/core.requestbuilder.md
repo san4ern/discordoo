@@ -44,7 +44,7 @@ Create DELETE request
 
 **Returns:** *Promise*<[*RESTResponse*](core.restresponse.md)<T\>\>
 
-Defined in: [src/core/providers/rest/RequestBuilder.ts:35](https://github.com/Discordoo/discordoo/blob/8db69d8/src/core/providers/rest/RequestBuilder.ts#L35)
+Defined in: [src/core/providers/rest/RequestBuilder.ts:35](https://github.com/Discordoo/discordoo/blob/75592d0/src/core/providers/rest/RequestBuilder.ts#L35)
 
 ___
 
@@ -68,7 +68,7 @@ Create GET request
 
 **Returns:** *Promise*<[*RESTResponse*](core.restresponse.md)<T\>\>
 
-Defined in: [src/core/providers/rest/RequestBuilder.ts:23](https://github.com/Discordoo/discordoo/blob/8db69d8/src/core/providers/rest/RequestBuilder.ts#L23)
+Defined in: [src/core/providers/rest/RequestBuilder.ts:23](https://github.com/Discordoo/discordoo/blob/75592d0/src/core/providers/rest/RequestBuilder.ts#L23)
 
 ___
 
@@ -92,7 +92,7 @@ Create PATCH request
 
 **Returns:** *Promise*<[*RESTResponse*](core.restresponse.md)<T\>\>
 
-Defined in: [src/core/providers/rest/RequestBuilder.ts:47](https://github.com/Discordoo/discordoo/blob/8db69d8/src/core/providers/rest/RequestBuilder.ts#L47)
+Defined in: [src/core/providers/rest/RequestBuilder.ts:47](https://github.com/Discordoo/discordoo/blob/75592d0/src/core/providers/rest/RequestBuilder.ts#L47)
 
 ___
 
@@ -116,7 +116,7 @@ Create POST request
 
 **Returns:** *Promise*<[*RESTResponse*](core.restresponse.md)<T\>\>
 
-Defined in: [src/core/providers/rest/RequestBuilder.ts:29](https://github.com/Discordoo/discordoo/blob/8db69d8/src/core/providers/rest/RequestBuilder.ts#L29)
+Defined in: [src/core/providers/rest/RequestBuilder.ts:29](https://github.com/Discordoo/discordoo/blob/75592d0/src/core/providers/rest/RequestBuilder.ts#L29)
 
 ___
 
@@ -140,7 +140,7 @@ Create PUT request
 
 **Returns:** *Promise*<[*RESTResponse*](core.restresponse.md)<T\>\>
 
-Defined in: [src/core/providers/rest/RequestBuilder.ts:41](https://github.com/Discordoo/discordoo/blob/8db69d8/src/core/providers/rest/RequestBuilder.ts#L41)
+Defined in: [src/core/providers/rest/RequestBuilder.ts:41](https://github.com/Discordoo/discordoo/blob/75592d0/src/core/providers/rest/RequestBuilder.ts#L41)
 
 ___
 
@@ -159,7 +159,7 @@ Add query data
 
 **Returns:** [*RequestBuilder*](core.requestbuilder.md)
 
-Defined in: [src/core/providers/rest/RequestBuilder.ts:17](https://github.com/Discordoo/discordoo/blob/8db69d8/src/core/providers/rest/RequestBuilder.ts#L17)
+Defined in: [src/core/providers/rest/RequestBuilder.ts:17](https://github.com/Discordoo/discordoo/blob/75592d0/src/core/providers/rest/RequestBuilder.ts#L17)
 
 ___
 
@@ -177,4 +177,4 @@ Add part(s) to the URI
 
 **Returns:** [*RequestBuilder*](core.requestbuilder.md)
 
-Defined in: [src/core/providers/rest/RequestBuilder.ts:10](https://github.com/Discordoo/discordoo/blob/8db69d8/src/core/providers/rest/RequestBuilder.ts#L10)
+Defined in: [src/core/providers/rest/RequestBuilder.ts:10](https://github.com/Discordoo/discordoo/blob/75592d0/src/core/providers/rest/RequestBuilder.ts#L10)

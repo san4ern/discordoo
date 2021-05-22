@@ -61,7 +61,7 @@ Represents a cache namespace
 
 Collection used by this cache namespace
 
-Defined in: [src/cache/CollectionCacheNamespace.ts:7](https://github.com/Discordoo/discordoo/blob/8db69d8/src/cache/CollectionCacheNamespace.ts#L7)
+Defined in: [src/cache/CollectionCacheNamespace.ts:7](https://github.com/Discordoo/discordoo/blob/75592d0/src/cache/CollectionCacheNamespace.ts#L7)
 
 ## Methods
 
@@ -81,7 +81,7 @@ Delete a key from collection
 
 Implementation of: [CacheNamespace](../interfaces/core.cachenamespace.md)
 
-Defined in: [src/cache/CollectionCacheNamespace.ts:13](https://github.com/Discordoo/discordoo/blob/8db69d8/src/cache/CollectionCacheNamespace.ts#L13)
+Defined in: [src/cache/CollectionCacheNamespace.ts:13](https://github.com/Discordoo/discordoo/blob/75592d0/src/cache/CollectionCacheNamespace.ts#L13)
 
 ___
 
@@ -99,7 +99,7 @@ The same as {@link Collection#filter}
 
 **Returns:** *Promise*<[*Collection*](collection.collection-1.md)<K, V\>\>
 
-Defined in: [src/cache/CollectionCacheNamespace.ts:49](https://github.com/Discordoo/discordoo/blob/8db69d8/src/cache/CollectionCacheNamespace.ts#L49)
+Defined in: [src/cache/CollectionCacheNamespace.ts:49](https://github.com/Discordoo/discordoo/blob/75592d0/src/cache/CollectionCacheNamespace.ts#L49)
 
 ___
 
@@ -117,7 +117,7 @@ The same as {@link Collection#forEach}
 
 **Returns:** *Promise*<void\>
 
-Defined in: [src/cache/CollectionCacheNamespace.ts:59](https://github.com/Discordoo/discordoo/blob/8db69d8/src/cache/CollectionCacheNamespace.ts#L59)
+Defined in: [src/cache/CollectionCacheNamespace.ts:59](https://github.com/Discordoo/discordoo/blob/75592d0/src/cache/CollectionCacheNamespace.ts#L59)
 
 ___
 
@@ -137,7 +137,7 @@ Get a key from collection
 
 Implementation of: [CacheNamespace](../interfaces/core.cachenamespace.md)
 
-Defined in: [src/cache/CollectionCacheNamespace.ts:21](https://github.com/Discordoo/discordoo/blob/8db69d8/src/cache/CollectionCacheNamespace.ts#L21)
+Defined in: [src/cache/CollectionCacheNamespace.ts:21](https://github.com/Discordoo/discordoo/blob/75592d0/src/cache/CollectionCacheNamespace.ts#L21)
 
 ___
 
@@ -157,7 +157,7 @@ Check if collection has a key
 
 Implementation of: [CacheNamespace](../interfaces/core.cachenamespace.md)
 
-Defined in: [src/cache/CollectionCacheNamespace.ts:29](https://github.com/Discordoo/discordoo/blob/8db69d8/src/cache/CollectionCacheNamespace.ts#L29)
+Defined in: [src/cache/CollectionCacheNamespace.ts:29](https://github.com/Discordoo/discordoo/blob/75592d0/src/cache/CollectionCacheNamespace.ts#L29)
 
 ___
 
@@ -175,7 +175,7 @@ The same as {@link Collection#random}
 
 **Returns:** *Promise*<V \| V[]\>
 
-Defined in: [src/cache/CollectionCacheNamespace.ts:54](https://github.com/Discordoo/discordoo/blob/8db69d8/src/cache/CollectionCacheNamespace.ts#L54)
+Defined in: [src/cache/CollectionCacheNamespace.ts:54](https://github.com/Discordoo/discordoo/blob/75592d0/src/cache/CollectionCacheNamespace.ts#L54)
 
 ___
 
@@ -196,7 +196,7 @@ Change key's value
 
 Implementation of: [CacheNamespace](../interfaces/core.cachenamespace.md)
 
-Defined in: [src/cache/CollectionCacheNamespace.ts:38](https://github.com/Discordoo/discordoo/blob/8db69d8/src/cache/CollectionCacheNamespace.ts#L38)
+Defined in: [src/cache/CollectionCacheNamespace.ts:38](https://github.com/Discordoo/discordoo/blob/75592d0/src/cache/CollectionCacheNamespace.ts#L38)
 
 ___
 
@@ -210,4 +210,4 @@ Get total elements in the collection
 
 Implementation of: [CacheNamespace](../interfaces/core.cachenamespace.md)
 
-Defined in: [src/cache/CollectionCacheNamespace.ts:44](https://github.com/Discordoo/discordoo/blob/8db69d8/src/cache/CollectionCacheNamespace.ts#L44)
+Defined in: [src/cache/CollectionCacheNamespace.ts:44](https://github.com/Discordoo/discordoo/blob/75592d0/src/cache/CollectionCacheNamespace.ts#L44)

@@ -28,4 +28,4 @@
 
 **Returns:** *unknown*
 
-Defined in: [src/websocket/WebSocketShardEvents.ts:4](https://github.com/Discordoo/discordoo/blob/8db69d8/src/websocket/WebSocketShardEvents.ts#L4)
+Defined in: [src/websocket/WebSocketShardEvents.ts:4](https://github.com/Discordoo/discordoo/blob/75592d0/src/websocket/WebSocketShardEvents.ts#L4)

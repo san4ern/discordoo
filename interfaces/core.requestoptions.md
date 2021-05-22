@@ -21,7 +21,7 @@ Request options
 
 Body
 
-Defined in: [src/core/providers/rest/RequestOptions.ts:6](https://github.com/Discordoo/discordoo/blob/8db69d8/src/core/providers/rest/RequestOptions.ts#L6)
+Defined in: [src/core/providers/rest/RequestOptions.ts:6](https://github.com/Discordoo/discordoo/blob/75592d0/src/core/providers/rest/RequestOptions.ts#L6)
 
 ___
 
@@ -31,4 +31,4 @@ ___
 
 Headers
 
-Defined in: [src/core/providers/rest/RequestOptions.ts:4](https://github.com/Discordoo/discordoo/blob/8db69d8/src/core/providers/rest/RequestOptions.ts#L4)
+Defined in: [src/core/providers/rest/RequestOptions.ts:4](https://github.com/Discordoo/discordoo/blob/75592d0/src/core/providers/rest/RequestOptions.ts#L4)

@@ -40,7 +40,7 @@ Manages module loadment and their "injection"
 
 **Returns:** [*ModuleManager*](core.modulemanager.md)
 
-Defined in: [src/core/modules/ModuleManager.ts:19](https://github.com/Discordoo/discordoo/blob/8db69d8/src/core/modules/ModuleManager.ts#L19)
+Defined in: [src/core/modules/ModuleManager.ts:19](https://github.com/Discordoo/discordoo/blob/75592d0/src/core/modules/ModuleManager.ts#L19)
 
 ## Properties
 
@@ -50,7 +50,7 @@ Defined in: [src/core/modules/ModuleManager.ts:19](https://github.com/Discordoo/
 
 Array of load groups
 
-Defined in: [src/core/modules/ModuleManager.ts:16](https://github.com/Discordoo/discordoo/blob/8db69d8/src/core/modules/ModuleManager.ts#L16)
+Defined in: [src/core/modules/ModuleManager.ts:16](https://github.com/Discordoo/discordoo/blob/75592d0/src/core/modules/ModuleManager.ts#L16)
 
 ___
 
@@ -60,7 +60,7 @@ ___
 
 Client which uses this manager
 
-Defined in: [src/core/modules/ModuleManager.ts:19](https://github.com/Discordoo/discordoo/blob/8db69d8/src/core/modules/ModuleManager.ts#L19)
+Defined in: [src/core/modules/ModuleManager.ts:19](https://github.com/Discordoo/discordoo/blob/75592d0/src/core/modules/ModuleManager.ts#L19)
 
 ___
 
@@ -70,7 +70,7 @@ ___
 
 Modules loaded by this manager
 
-Defined in: [src/core/modules/ModuleManager.ts:13](https://github.com/Discordoo/discordoo/blob/8db69d8/src/core/modules/ModuleManager.ts#L13)
+Defined in: [src/core/modules/ModuleManager.ts:13](https://github.com/Discordoo/discordoo/blob/75592d0/src/core/modules/ModuleManager.ts#L13)
 
 ## Methods
 
@@ -91,7 +91,7 @@ Groups can be either loaded in parallel or sequentially
 
 **Returns:** *void*
 
-Defined in: [src/core/modules/ModuleManager.ts:36](https://github.com/Discordoo/discordoo/blob/8db69d8/src/core/modules/ModuleManager.ts#L36)
+Defined in: [src/core/modules/ModuleManager.ts:36](https://github.com/Discordoo/discordoo/blob/75592d0/src/core/modules/ModuleManager.ts#L36)
 
 ___
 
@@ -109,7 +109,7 @@ Retrieve a module
 
 **Returns:** *undefined* \| [*Module*](../interfaces/core.module.md)
 
-Defined in: [src/core/modules/ModuleManager.ts:80](https://github.com/Discordoo/discordoo/blob/8db69d8/src/core/modules/ModuleManager.ts#L80)
+Defined in: [src/core/modules/ModuleManager.ts:80](https://github.com/Discordoo/discordoo/blob/75592d0/src/core/modules/ModuleManager.ts#L80)
 
 ___
 
@@ -127,7 +127,7 @@ Initialize all modules
 
 **Returns:** *Promise*<void\>
 
-Defined in: [src/core/modules/ModuleManager.ts:52](https://github.com/Discordoo/discordoo/blob/8db69d8/src/core/modules/ModuleManager.ts#L52)
+Defined in: [src/core/modules/ModuleManager.ts:52](https://github.com/Discordoo/discordoo/blob/75592d0/src/core/modules/ModuleManager.ts#L52)
 
 ___
 
@@ -145,4 +145,4 @@ An alias to ModuleManager#createLoadGroup
 
 **Returns:** *void*
 
-Defined in: [src/core/modules/ModuleManager.ts:44](https://github.com/Discordoo/discordoo/blob/8db69d8/src/core/modules/ModuleManager.ts#L44)
+Defined in: [src/core/modules/ModuleManager.ts:44](https://github.com/Discordoo/discordoo/blob/75592d0/src/core/modules/ModuleManager.ts#L44)

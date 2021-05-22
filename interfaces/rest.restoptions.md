@@ -22,7 +22,7 @@ Options for rest
 
 Times, REST will try to perform the request with 5xx error code
 
-Defined in: [src/rest/RESTOptions.ts:11](https://github.com/Discordoo/discordoo/blob/8db69d8/src/rest/RESTOptions.ts#L11)
+Defined in: [src/rest/RESTOptions.ts:11](https://github.com/Discordoo/discordoo/blob/75592d0/src/rest/RESTOptions.ts#L11)
 
 ___
 
@@ -33,7 +33,7 @@ ___
 UserAgent to use
 Shouldn't be used, since Discord requires it to contain library name and it's version
 
-Defined in: [src/rest/RESTOptions.ts:9](https://github.com/Discordoo/discordoo/blob/8db69d8/src/rest/RESTOptions.ts#L9)
+Defined in: [src/rest/RESTOptions.ts:9](https://github.com/Discordoo/discordoo/blob/75592d0/src/rest/RESTOptions.ts#L9)
 
 ___
 
@@ -43,4 +43,4 @@ ___
 
 API version to use
 
-Defined in: [src/rest/RESTOptions.ts:4](https://github.com/Discordoo/discordoo/blob/8db69d8/src/rest/RESTOptions.ts#L4)
+Defined in: [src/rest/RESTOptions.ts:4](https://github.com/Discordoo/discordoo/blob/75592d0/src/rest/RESTOptions.ts#L4)

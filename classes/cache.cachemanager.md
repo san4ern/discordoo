@@ -38,7 +38,7 @@ Used for cache namespaces fetching
 
 Namespaces controlled by this manager
 
-Defined in: [src/cache/CacheManager.ts:11](https://github.com/Discordoo/discordoo/blob/8db69d8/src/cache/CacheManager.ts#L11)
+Defined in: [src/cache/CacheManager.ts:11](https://github.com/Discordoo/discordoo/blob/75592d0/src/cache/CacheManager.ts#L11)
 
 ## Methods
 
@@ -63,4 +63,4 @@ Get a cache namespace
 
 **Returns:** [*CollectionCacheNamespace*](cache.collectioncachenamespace.md)<K, V\>
 
-Defined in: [src/cache/CacheManager.ts:17](https://github.com/Discordoo/discordoo/blob/8db69d8/src/cache/CacheManager.ts#L17)
+Defined in: [src/cache/CacheManager.ts:17](https://github.com/Discordoo/discordoo/blob/75592d0/src/cache/CacheManager.ts#L17)

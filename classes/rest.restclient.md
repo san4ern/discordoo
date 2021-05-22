@@ -36,7 +36,7 @@ Helps to send requests to Discord
 
 **Returns:** [*RESTClient*](rest.restclient.md)
 
-Defined in: [src/rest/RESTClient.ts:6](https://github.com/Discordoo/discordoo/blob/8db69d8/src/rest/RESTClient.ts#L6)
+Defined in: [src/rest/RESTClient.ts:6](https://github.com/Discordoo/discordoo/blob/75592d0/src/rest/RESTClient.ts#L6)
 
 ## Properties
 
@@ -66,4 +66,4 @@ Create a request
 
 **Returns:** [*RESTRequestBuilder*](rest.restrequestbuilder.md)
 
-Defined in: [src/rest/RESTClient.ts:14](https://github.com/Discordoo/discordoo/blob/8db69d8/src/rest/RESTClient.ts#L14)
+Defined in: [src/rest/RESTClient.ts:14](https://github.com/Discordoo/discordoo/blob/75592d0/src/rest/RESTClient.ts#L14)

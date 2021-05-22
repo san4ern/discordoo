@@ -57,7 +57,7 @@ Create requests to Discord
 
 **Returns:** [*RESTRequestBuilder*](rest.restrequestbuilder.md)
 
-Defined in: [src/rest/RESTRequestBuilder.ts:21](https://github.com/Discordoo/discordoo/blob/8db69d8/src/rest/RESTRequestBuilder.ts#L21)
+Defined in: [src/rest/RESTRequestBuilder.ts:21](https://github.com/Discordoo/discordoo/blob/75592d0/src/rest/RESTRequestBuilder.ts#L21)
 
 ## Properties
 
@@ -67,7 +67,7 @@ Defined in: [src/rest/RESTRequestBuilder.ts:21](https://github.com/Discordoo/dis
 
 Tokens used by this request
 
-Defined in: [src/rest/RESTRequestBuilder.ts:21](https://github.com/Discordoo/discordoo/blob/8db69d8/src/rest/RESTRequestBuilder.ts#L21)
+Defined in: [src/rest/RESTRequestBuilder.ts:21](https://github.com/Discordoo/discordoo/blob/75592d0/src/rest/RESTRequestBuilder.ts#L21)
 
 ___
 
@@ -77,7 +77,7 @@ ___
 
 Query to be built
 
-Defined in: [src/rest/RESTRequestBuilder.ts:14](https://github.com/Discordoo/discordoo/blob/8db69d8/src/rest/RESTRequestBuilder.ts#L14)
+Defined in: [src/rest/RESTRequestBuilder.ts:14](https://github.com/Discordoo/discordoo/blob/75592d0/src/rest/RESTRequestBuilder.ts#L14)
 
 ___
 
@@ -87,7 +87,7 @@ ___
 
 Retries done
 
-Defined in: [src/rest/RESTRequestBuilder.ts:16](https://github.com/Discordoo/discordoo/blob/8db69d8/src/rest/RESTRequestBuilder.ts#L16)
+Defined in: [src/rest/RESTRequestBuilder.ts:16](https://github.com/Discordoo/discordoo/blob/75592d0/src/rest/RESTRequestBuilder.ts#L16)
 
 ___
 
@@ -97,7 +97,7 @@ ___
 
 URI parts
 
-Defined in: [src/rest/RESTRequestBuilder.ts:12](https://github.com/Discordoo/discordoo/blob/8db69d8/src/rest/RESTRequestBuilder.ts#L12)
+Defined in: [src/rest/RESTRequestBuilder.ts:12](https://github.com/Discordoo/discordoo/blob/75592d0/src/rest/RESTRequestBuilder.ts#L12)
 
 ___
 
@@ -107,7 +107,7 @@ ___
 
 Token of this request
 
-Defined in: [src/rest/RESTRequestBuilder.ts:19](https://github.com/Discordoo/discordoo/blob/8db69d8/src/rest/RESTRequestBuilder.ts#L19)
+Defined in: [src/rest/RESTRequestBuilder.ts:19](https://github.com/Discordoo/discordoo/blob/75592d0/src/rest/RESTRequestBuilder.ts#L19)
 
 ## Accessors
 
@@ -119,7 +119,7 @@ URI request will be sent to
 
 **Returns:** *string*
 
-Defined in: [src/rest/RESTRequestBuilder.ts:64](https://github.com/Discordoo/discordoo/blob/8db69d8/src/rest/RESTRequestBuilder.ts#L64)
+Defined in: [src/rest/RESTRequestBuilder.ts:64](https://github.com/Discordoo/discordoo/blob/75592d0/src/rest/RESTRequestBuilder.ts#L64)
 
 ## Methods
 
@@ -145,7 +145,7 @@ Create DELETE request
 
 Implementation of: [RequestBuilder](../interfaces/core.requestbuilder.md)
 
-Defined in: [src/rest/RESTRequestBuilder.ts:154](https://github.com/Discordoo/discordoo/blob/8db69d8/src/rest/RESTRequestBuilder.ts#L154)
+Defined in: [src/rest/RESTRequestBuilder.ts:154](https://github.com/Discordoo/discordoo/blob/75592d0/src/rest/RESTRequestBuilder.ts#L154)
 
 ___
 
@@ -171,7 +171,7 @@ Create GET request
 
 Implementation of: [RequestBuilder](../interfaces/core.requestbuilder.md)
 
-Defined in: [src/rest/RESTRequestBuilder.ts:122](https://github.com/Discordoo/discordoo/blob/8db69d8/src/rest/RESTRequestBuilder.ts#L122)
+Defined in: [src/rest/RESTRequestBuilder.ts:122](https://github.com/Discordoo/discordoo/blob/75592d0/src/rest/RESTRequestBuilder.ts#L122)
 
 ___
 
@@ -195,7 +195,7 @@ Get headers
 | `Content-Type` | *string* |
 | `User-Agent` | *string* |
 
-Defined in: [src/rest/RESTRequestBuilder.ts:35](https://github.com/Discordoo/discordoo/blob/8db69d8/src/rest/RESTRequestBuilder.ts#L35)
+Defined in: [src/rest/RESTRequestBuilder.ts:35](https://github.com/Discordoo/discordoo/blob/75592d0/src/rest/RESTRequestBuilder.ts#L35)
 
 ___
 
@@ -221,7 +221,7 @@ Create PATCH request
 
 Implementation of: [RequestBuilder](../interfaces/core.requestbuilder.md)
 
-Defined in: [src/rest/RESTRequestBuilder.ts:138](https://github.com/Discordoo/discordoo/blob/8db69d8/src/rest/RESTRequestBuilder.ts#L138)
+Defined in: [src/rest/RESTRequestBuilder.ts:138](https://github.com/Discordoo/discordoo/blob/75592d0/src/rest/RESTRequestBuilder.ts#L138)
 
 ___
 
@@ -247,7 +247,7 @@ Create POST request
 
 Implementation of: [RequestBuilder](../interfaces/core.requestbuilder.md)
 
-Defined in: [src/rest/RESTRequestBuilder.ts:130](https://github.com/Discordoo/discordoo/blob/8db69d8/src/rest/RESTRequestBuilder.ts#L130)
+Defined in: [src/rest/RESTRequestBuilder.ts:130](https://github.com/Discordoo/discordoo/blob/75592d0/src/rest/RESTRequestBuilder.ts#L130)
 
 ___
 
@@ -273,7 +273,7 @@ Create PUT request
 
 Implementation of: [RequestBuilder](../interfaces/core.requestbuilder.md)
 
-Defined in: [src/rest/RESTRequestBuilder.ts:146](https://github.com/Discordoo/discordoo/blob/8db69d8/src/rest/RESTRequestBuilder.ts#L146)
+Defined in: [src/rest/RESTRequestBuilder.ts:146](https://github.com/Discordoo/discordoo/blob/75592d0/src/rest/RESTRequestBuilder.ts#L146)
 
 ___
 
@@ -294,7 +294,7 @@ Add query data
 
 Implementation of: [RequestBuilder](../interfaces/core.requestbuilder.md)
 
-Defined in: [src/rest/RESTRequestBuilder.ts:49](https://github.com/Discordoo/discordoo/blob/8db69d8/src/rest/RESTRequestBuilder.ts#L49)
+Defined in: [src/rest/RESTRequestBuilder.ts:49](https://github.com/Discordoo/discordoo/blob/75592d0/src/rest/RESTRequestBuilder.ts#L49)
 
 ___
 
@@ -319,7 +319,7 @@ Create a request
 
 **Returns:** *Promise*<[*RESTResponse*](../interfaces/core.restresponse.md)<T\>\>
 
-Defined in: [src/rest/RESTRequestBuilder.ts:77](https://github.com/Discordoo/discordoo/blob/8db69d8/src/rest/RESTRequestBuilder.ts#L77)
+Defined in: [src/rest/RESTRequestBuilder.ts:77](https://github.com/Discordoo/discordoo/blob/75592d0/src/rest/RESTRequestBuilder.ts#L77)
 
 ___
 
@@ -339,4 +339,4 @@ Add part(s) to the URI
 
 Implementation of: [RequestBuilder](../interfaces/core.requestbuilder.md)
 
-Defined in: [src/rest/RESTRequestBuilder.ts:58](https://github.com/Discordoo/discordoo/blob/8db69d8/src/rest/RESTRequestBuilder.ts#L58)
+Defined in: [src/rest/RESTRequestBuilder.ts:58](https://github.com/Discordoo/discordoo/blob/75592d0/src/rest/RESTRequestBuilder.ts#L58)

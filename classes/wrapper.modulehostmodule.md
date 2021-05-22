@@ -40,7 +40,7 @@ Module which is capable of loading other modules
 
 **Returns:** [*ModuleHostModule*](wrapper.modulehostmodule.md)
 
-Defined in: [src/wrapper/ModuleHostModule.ts:9](https://github.com/Discordoo/discordoo/blob/8db69d8/src/wrapper/ModuleHostModule.ts#L9)
+Defined in: [src/wrapper/ModuleHostModule.ts:9](https://github.com/Discordoo/discordoo/blob/75592d0/src/wrapper/ModuleHostModule.ts#L9)
 
 ## Properties
 
@@ -52,7 +52,7 @@ Unique id for this module
 
 Implementation of: [Module](../interfaces/core.module.md).[id](../interfaces/core.module.md#id)
 
-Defined in: [src/wrapper/ModuleHostModule.ts:5](https://github.com/Discordoo/discordoo/blob/8db69d8/src/wrapper/ModuleHostModule.ts#L5)
+Defined in: [src/wrapper/ModuleHostModule.ts:5](https://github.com/Discordoo/discordoo/blob/75592d0/src/wrapper/ModuleHostModule.ts#L5)
 
 ___
 
@@ -64,7 +64,7 @@ Whether the module was initialized
 
 Implementation of: [Module](../interfaces/core.module.md).[initialized](../interfaces/core.module.md#initialized)
 
-Defined in: [src/wrapper/ModuleHostModule.ts:6](https://github.com/Discordoo/discordoo/blob/8db69d8/src/wrapper/ModuleHostModule.ts#L6)
+Defined in: [src/wrapper/ModuleHostModule.ts:6](https://github.com/Discordoo/discordoo/blob/75592d0/src/wrapper/ModuleHostModule.ts#L6)
 
 ___
 
@@ -74,7 +74,7 @@ ___
 
 Modules which will be loaded by this module
 
-Defined in: [src/wrapper/ModuleHostModule.ts:9](https://github.com/Discordoo/discordoo/blob/8db69d8/src/wrapper/ModuleHostModule.ts#L9)
+Defined in: [src/wrapper/ModuleHostModule.ts:9](https://github.com/Discordoo/discordoo/blob/75592d0/src/wrapper/ModuleHostModule.ts#L9)
 
 ## Methods
 
@@ -94,4 +94,4 @@ Function, which will be emitted once module was initialized on client's startup
 
 Implementation of: Module.init
 
-Defined in: [src/wrapper/ModuleHostModule.ts:18](https://github.com/Discordoo/discordoo/blob/8db69d8/src/wrapper/ModuleHostModule.ts#L18)
+Defined in: [src/wrapper/ModuleHostModule.ts:18](https://github.com/Discordoo/discordoo/blob/75592d0/src/wrapper/ModuleHostModule.ts#L18)

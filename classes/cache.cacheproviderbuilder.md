@@ -36,7 +36,7 @@ An adapter of [CacheManager](cache.cachemanager.md) for [Client](core.client.md)
 
 Cache manager, adapted by this adapter
 
-Defined in: [src/cache/CacheProviderBuilder.ts:7](https://github.com/Discordoo/discordoo/blob/8db69d8/src/cache/CacheProviderBuilder.ts#L7)
+Defined in: [src/cache/CacheProviderBuilder.ts:7](https://github.com/Discordoo/discordoo/blob/75592d0/src/cache/CacheProviderBuilder.ts#L7)
 
 ## Methods
 
@@ -48,4 +48,4 @@ Get a cache provider
 
 **Returns:** (`client`: [*Client*](core.client.md)<[*DefaultClientStack*](../interfaces/core.defaultclientstack.md)\>) => [*CacheProvider*](../modules/core.md#cacheprovider)<[*CacheNamespace*](../interfaces/core.cachenamespace.md)<unknown, unknown\>\>
 
-Defined in: [src/cache/CacheProviderBuilder.ts:10](https://github.com/Discordoo/discordoo/blob/8db69d8/src/cache/CacheProviderBuilder.ts#L10)
+Defined in: [src/cache/CacheProviderBuilder.ts:10](https://github.com/Discordoo/discordoo/blob/75592d0/src/cache/CacheProviderBuilder.ts#L10)

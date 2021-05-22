@@ -54,7 +54,7 @@ Represents a CacheProvider. Bound to Client context
 
 **Returns:** T
 
-Defined in: [src/core/providers/cache/CacheProvider.ts:4](https://github.com/Discordoo/discordoo/blob/8db69d8/src/core/providers/cache/CacheProvider.ts#L4)
+Defined in: [src/core/providers/cache/CacheProvider.ts:4](https://github.com/Discordoo/discordoo/blob/75592d0/src/core/providers/cache/CacheProvider.ts#L4)
 
 ___
 
@@ -74,7 +74,7 @@ ___
 
 **Returns:** T
 
-Defined in: [src/core/providers/gateway/GatewayProvider.ts:12](https://github.com/Discordoo/discordoo/blob/8db69d8/src/core/providers/gateway/GatewayProvider.ts#L12)
+Defined in: [src/core/providers/gateway/GatewayProvider.ts:12](https://github.com/Discordoo/discordoo/blob/75592d0/src/core/providers/gateway/GatewayProvider.ts#L12)
 
 ___
 
@@ -96,4 +96,4 @@ Represents a RESTProvider. Bound to Client context
 
 **Returns:** T
 
-Defined in: [src/core/providers/rest/RESTProvider.ts:4](https://github.com/Discordoo/discordoo/blob/8db69d8/src/core/providers/rest/RESTProvider.ts#L4)
+Defined in: [src/core/providers/rest/RESTProvider.ts:4](https://github.com/Discordoo/discordoo/blob/75592d0/src/core/providers/rest/RESTProvider.ts#L4)

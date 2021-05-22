@@ -54,7 +54,7 @@
 
 **Returns:** *Promise*<void\>
 
-Defined in: [src/core/providers/gateway/GatewayProvider.ts:7](https://github.com/Discordoo/discordoo/blob/8db69d8/src/core/providers/gateway/GatewayProvider.ts#L7)
+Defined in: [src/core/providers/gateway/GatewayProvider.ts:7](https://github.com/Discordoo/discordoo/blob/75592d0/src/core/providers/gateway/GatewayProvider.ts#L7)
 
 ___
 
@@ -74,7 +74,7 @@ ___
 
 **Returns:** *Promise*<void\>
 
-Defined in: [src/core/providers/gateway/GatewayProvider.ts:9](https://github.com/Discordoo/discordoo/blob/8db69d8/src/core/providers/gateway/GatewayProvider.ts#L9)
+Defined in: [src/core/providers/gateway/GatewayProvider.ts:9](https://github.com/Discordoo/discordoo/blob/75592d0/src/core/providers/gateway/GatewayProvider.ts#L9)
 
 ___
 
@@ -82,7 +82,7 @@ ___
 
 • **status**: GatewayStatus
 
-Defined in: [src/core/providers/gateway/GatewayProvider.ts:8](https://github.com/Discordoo/discordoo/blob/8db69d8/src/core/providers/gateway/GatewayProvider.ts#L8)
+Defined in: [src/core/providers/gateway/GatewayProvider.ts:8](https://github.com/Discordoo/discordoo/blob/75592d0/src/core/providers/gateway/GatewayProvider.ts#L8)
 
 ## Methods
 

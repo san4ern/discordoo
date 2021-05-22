@@ -33,7 +33,7 @@ Function, which will be emitted once module is destroyed
 
 **Returns:** *void* \| *Promise*<void\>
 
-Defined in: [src/core/modules/Module.ts:13](https://github.com/Discordoo/discordoo/blob/8db69d8/src/core/modules/Module.ts#L13)
+Defined in: [src/core/modules/Module.ts:13](https://github.com/Discordoo/discordoo/blob/75592d0/src/core/modules/Module.ts#L13)
 
 ___
 
@@ -43,7 +43,7 @@ ___
 
 Unique id for this module
 
-Defined in: [src/core/modules/Module.ts:15](https://github.com/Discordoo/discordoo/blob/8db69d8/src/core/modules/Module.ts#L15)
+Defined in: [src/core/modules/Module.ts:15](https://github.com/Discordoo/discordoo/blob/75592d0/src/core/modules/Module.ts#L15)
 
 ___
 
@@ -67,7 +67,7 @@ Function, which will be emitted once module was initialized on client's startup
 
 **Returns:** *void* \| *Promise*<void\>
 
-Defined in: [src/core/modules/Module.ts:11](https://github.com/Discordoo/discordoo/blob/8db69d8/src/core/modules/Module.ts#L11)
+Defined in: [src/core/modules/Module.ts:11](https://github.com/Discordoo/discordoo/blob/75592d0/src/core/modules/Module.ts#L11)
 
 ___
 
@@ -77,4 +77,4 @@ ___
 
 Whether the module was initialized
 
-Defined in: [src/core/modules/Module.ts:6](https://github.com/Discordoo/discordoo/blob/8db69d8/src/core/modules/Module.ts#L6)
+Defined in: [src/core/modules/Module.ts:6](https://github.com/Discordoo/discordoo/blob/75592d0/src/core/modules/Module.ts#L6)

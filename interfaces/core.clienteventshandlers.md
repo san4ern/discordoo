@@ -26,4 +26,4 @@ Emitted once the client is ready
 
 **Returns:** *unknown*
 
-Defined in: [src/core/ClientEventsHandlers.ts:5](https://github.com/Discordoo/discordoo/blob/8db69d8/src/core/ClientEventsHandlers.ts#L5)
+Defined in: [src/core/ClientEventsHandlers.ts:5](https://github.com/Discordoo/discordoo/blob/75592d0/src/core/ClientEventsHandlers.ts#L5)

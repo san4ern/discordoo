@@ -19,7 +19,7 @@
 
 • **cache**: [*CacheNamespace*](core.cachenamespace.md)<unknown, unknown\>
 
-Defined in: [src/core/DefaultClientStack.ts:7](https://github.com/Discordoo/discordoo/blob/8db69d8/src/core/DefaultClientStack.ts#L7)
+Defined in: [src/core/DefaultClientStack.ts:7](https://github.com/Discordoo/discordoo/blob/75592d0/src/core/DefaultClientStack.ts#L7)
 
 ___
 
@@ -27,7 +27,7 @@ ___
 
 • **events**: [*ClientEventsHandlers*](core.clienteventshandlers.md)
 
-Defined in: [src/core/DefaultClientStack.ts:9](https://github.com/Discordoo/discordoo/blob/8db69d8/src/core/DefaultClientStack.ts#L9)
+Defined in: [src/core/DefaultClientStack.ts:9](https://github.com/Discordoo/discordoo/blob/75592d0/src/core/DefaultClientStack.ts#L9)
 
 ___
 
@@ -35,7 +35,7 @@ ___
 
 • **gateway**: [*GatewayProviderAPI*](core.gatewayproviderapi.md)
 
-Defined in: [src/core/DefaultClientStack.ts:10](https://github.com/Discordoo/discordoo/blob/8db69d8/src/core/DefaultClientStack.ts#L10)
+Defined in: [src/core/DefaultClientStack.ts:10](https://github.com/Discordoo/discordoo/blob/75592d0/src/core/DefaultClientStack.ts#L10)
 
 ___
 
@@ -43,4 +43,4 @@ ___
 
 • **rest**: [*RequestBuilder*](core.requestbuilder.md)
 
-Defined in: [src/core/DefaultClientStack.ts:8](https://github.com/Discordoo/discordoo/blob/8db69d8/src/core/DefaultClientStack.ts#L8)
+Defined in: [src/core/DefaultClientStack.ts:8](https://github.com/Discordoo/discordoo/blob/75592d0/src/core/DefaultClientStack.ts#L8)

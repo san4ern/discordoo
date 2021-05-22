@@ -34,7 +34,7 @@ Builds a RestProvider for [Client](core.client.md)
 
 **Returns:** [*RESTProviderBuilder*](rest.restproviderbuilder.md)
 
-Defined in: [src/rest/RESTProviderBuilder.ts:9](https://github.com/Discordoo/discordoo/blob/8db69d8/src/rest/RESTProviderBuilder.ts#L9)
+Defined in: [src/rest/RESTProviderBuilder.ts:9](https://github.com/Discordoo/discordoo/blob/75592d0/src/rest/RESTProviderBuilder.ts#L9)
 
 ## Properties
 
@@ -44,7 +44,7 @@ Defined in: [src/rest/RESTProviderBuilder.ts:9](https://github.com/Discordoo/dis
 
 [RESTClient](rest.restclient.md) used by this builder
 
-Defined in: [src/rest/RESTProviderBuilder.ts:9](https://github.com/Discordoo/discordoo/blob/8db69d8/src/rest/RESTProviderBuilder.ts#L9)
+Defined in: [src/rest/RESTProviderBuilder.ts:9](https://github.com/Discordoo/discordoo/blob/75592d0/src/rest/RESTProviderBuilder.ts#L9)
 
 ## Methods
 
@@ -56,4 +56,4 @@ Get rest provider
 
 **Returns:** (`client`: [*Client*](core.client.md)<[*DefaultClientStack*](../interfaces/core.defaultclientstack.md)\>) => [*RESTProvider*](../modules/core.md#restprovider)<[*RequestBuilder*](../interfaces/core.requestbuilder.md)\>
 
-Defined in: [src/rest/RESTProviderBuilder.ts:21](https://github.com/Discordoo/discordoo/blob/8db69d8/src/rest/RESTProviderBuilder.ts#L21)
+Defined in: [src/rest/RESTProviderBuilder.ts:21](https://github.com/Discordoo/discordoo/blob/75592d0/src/rest/RESTProviderBuilder.ts#L21)

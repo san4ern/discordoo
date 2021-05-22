@@ -78,7 +78,7 @@
 
 Overrides: TypedEmitter&lt;WebSocketShardEvents\&gt;.constructor
 
-Defined in: [src/websocket/WebSocketShard.ts:20](https://github.com/Discordoo/discordoo/blob/8db69d8/src/websocket/WebSocketShard.ts#L20)
+Defined in: [src/websocket/WebSocketShard.ts:20](https://github.com/Discordoo/discordoo/blob/75592d0/src/websocket/WebSocketShard.ts#L20)
 
 ## Properties
 
@@ -86,7 +86,7 @@ Defined in: [src/websocket/WebSocketShard.ts:20](https://github.com/Discordoo/di
 
 • `Private` `Optional` **connection**: *WebSocket*
 
-Defined in: [src/websocket/WebSocketShard.ts:15](https://github.com/Discordoo/discordoo/blob/8db69d8/src/websocket/WebSocketShard.ts#L15)
+Defined in: [src/websocket/WebSocketShard.ts:15](https://github.com/Discordoo/discordoo/blob/75592d0/src/websocket/WebSocketShard.ts#L15)
 
 ___
 
@@ -94,7 +94,7 @@ ___
 
 • `Private` `Optional` **heartbeatInterval**: *any*
 
-Defined in: [src/websocket/WebSocketShard.ts:19](https://github.com/Discordoo/discordoo/blob/8db69d8/src/websocket/WebSocketShard.ts#L19)
+Defined in: [src/websocket/WebSocketShard.ts:19](https://github.com/Discordoo/discordoo/blob/75592d0/src/websocket/WebSocketShard.ts#L19)
 
 ___
 
@@ -102,7 +102,7 @@ ___
 
 • **id**: *number*
 
-Defined in: [src/websocket/WebSocketShard.ts:10](https://github.com/Discordoo/discordoo/blob/8db69d8/src/websocket/WebSocketShard.ts#L10)
+Defined in: [src/websocket/WebSocketShard.ts:10](https://github.com/Discordoo/discordoo/blob/75592d0/src/websocket/WebSocketShard.ts#L10)
 
 ___
 
@@ -110,7 +110,7 @@ ___
 
 • `Private` **lastHeartbeatAcked**: *boolean*= true
 
-Defined in: [src/websocket/WebSocketShard.ts:20](https://github.com/Discordoo/discordoo/blob/8db69d8/src/websocket/WebSocketShard.ts#L20)
+Defined in: [src/websocket/WebSocketShard.ts:20](https://github.com/Discordoo/discordoo/blob/75592d0/src/websocket/WebSocketShard.ts#L20)
 
 ___
 
@@ -118,7 +118,7 @@ ___
 
 • **lastPingTimestamp**: *number*= 0
 
-Defined in: [src/websocket/WebSocketShard.ts:12](https://github.com/Discordoo/discordoo/blob/8db69d8/src/websocket/WebSocketShard.ts#L12)
+Defined in: [src/websocket/WebSocketShard.ts:12](https://github.com/Discordoo/discordoo/blob/75592d0/src/websocket/WebSocketShard.ts#L12)
 
 ___
 
@@ -126,7 +126,7 @@ ___
 
 • **manager**: [*WebSocketManager*](websocket.websocketmanager.md)
 
-Defined in: [src/websocket/WebSocketShard.ts:9](https://github.com/Discordoo/discordoo/blob/8db69d8/src/websocket/WebSocketShard.ts#L9)
+Defined in: [src/websocket/WebSocketShard.ts:9](https://github.com/Discordoo/discordoo/blob/75592d0/src/websocket/WebSocketShard.ts#L9)
 
 ___
 
@@ -134,7 +134,7 @@ ___
 
 • `Private` **pendingGuilds**: *string*[]
 
-Defined in: [src/websocket/WebSocketShard.ts:18](https://github.com/Discordoo/discordoo/blob/8db69d8/src/websocket/WebSocketShard.ts#L18)
+Defined in: [src/websocket/WebSocketShard.ts:18](https://github.com/Discordoo/discordoo/blob/75592d0/src/websocket/WebSocketShard.ts#L18)
 
 ___
 
@@ -142,7 +142,7 @@ ___
 
 • **ping**: *number*= -1
 
-Defined in: [src/websocket/WebSocketShard.ts:13](https://github.com/Discordoo/discordoo/blob/8db69d8/src/websocket/WebSocketShard.ts#L13)
+Defined in: [src/websocket/WebSocketShard.ts:13](https://github.com/Discordoo/discordoo/blob/75592d0/src/websocket/WebSocketShard.ts#L13)
 
 ___
 
@@ -150,7 +150,7 @@ ___
 
 • `Private` **sequence**: *number*= -1
 
-Defined in: [src/websocket/WebSocketShard.ts:17](https://github.com/Discordoo/discordoo/blob/8db69d8/src/websocket/WebSocketShard.ts#L17)
+Defined in: [src/websocket/WebSocketShard.ts:17](https://github.com/Discordoo/discordoo/blob/75592d0/src/websocket/WebSocketShard.ts#L17)
 
 ___
 
@@ -158,7 +158,7 @@ ___
 
 • `Private` `Optional` **sessionID**: *string*
 
-Defined in: [src/websocket/WebSocketShard.ts:16](https://github.com/Discordoo/discordoo/blob/8db69d8/src/websocket/WebSocketShard.ts#L16)
+Defined in: [src/websocket/WebSocketShard.ts:16](https://github.com/Discordoo/discordoo/blob/75592d0/src/websocket/WebSocketShard.ts#L16)
 
 ___
 
@@ -178,7 +178,7 @@ Defined in: node_modules/tiny-typed-emitter/lib/index.d.ts:10
 
 **Returns:** *void*
 
-Defined in: [src/websocket/WebSocketShard.ts:151](https://github.com/Discordoo/discordoo/blob/8db69d8/src/websocket/WebSocketShard.ts#L151)
+Defined in: [src/websocket/WebSocketShard.ts:151](https://github.com/Discordoo/discordoo/blob/75592d0/src/websocket/WebSocketShard.ts#L151)
 
 ___
 
@@ -213,7 +213,7 @@ ___
 
 **Returns:** *Promise*<undefined \| ``false``\>
 
-Defined in: [src/websocket/WebSocketShard.ts:29](https://github.com/Discordoo/discordoo/blob/8db69d8/src/websocket/WebSocketShard.ts#L29)
+Defined in: [src/websocket/WebSocketShard.ts:29](https://github.com/Discordoo/discordoo/blob/75592d0/src/websocket/WebSocketShard.ts#L29)
 
 ___
 
@@ -223,7 +223,7 @@ ___
 
 **Returns:** *void*
 
-Defined in: [src/websocket/WebSocketShard.ts:44](https://github.com/Discordoo/discordoo/blob/8db69d8/src/websocket/WebSocketShard.ts#L44)
+Defined in: [src/websocket/WebSocketShard.ts:44](https://github.com/Discordoo/discordoo/blob/75592d0/src/websocket/WebSocketShard.ts#L44)
 
 ___
 
@@ -242,7 +242,7 @@ ___
 
 **Returns:** *void*
 
-Defined in: [src/websocket/WebSocketShard.ts:166](https://github.com/Discordoo/discordoo/blob/8db69d8/src/websocket/WebSocketShard.ts#L166)
+Defined in: [src/websocket/WebSocketShard.ts:166](https://github.com/Discordoo/discordoo/blob/75592d0/src/websocket/WebSocketShard.ts#L166)
 
 ___
 
@@ -313,7 +313,7 @@ ___
 
 **Returns:** *void*
 
-Defined in: [src/websocket/WebSocketShard.ts:95](https://github.com/Discordoo/discordoo/blob/8db69d8/src/websocket/WebSocketShard.ts#L95)
+Defined in: [src/websocket/WebSocketShard.ts:95](https://github.com/Discordoo/discordoo/blob/75592d0/src/websocket/WebSocketShard.ts#L95)
 
 ___
 
@@ -323,7 +323,7 @@ ___
 
 **Returns:** *void*
 
-Defined in: [src/websocket/WebSocketShard.ts:139](https://github.com/Discordoo/discordoo/blob/8db69d8/src/websocket/WebSocketShard.ts#L139)
+Defined in: [src/websocket/WebSocketShard.ts:139](https://github.com/Discordoo/discordoo/blob/75592d0/src/websocket/WebSocketShard.ts#L139)
 
 ___
 
@@ -333,7 +333,7 @@ ___
 
 **Returns:** *any*
 
-Defined in: [src/websocket/WebSocketShard.ts:40](https://github.com/Discordoo/discordoo/blob/8db69d8/src/websocket/WebSocketShard.ts#L40)
+Defined in: [src/websocket/WebSocketShard.ts:40](https://github.com/Discordoo/discordoo/blob/75592d0/src/websocket/WebSocketShard.ts#L40)
 
 ___
 
@@ -441,7 +441,7 @@ ___
 
 **Returns:** *void*
 
-Defined in: [src/websocket/WebSocketShard.ts:73](https://github.com/Discordoo/discordoo/blob/8db69d8/src/websocket/WebSocketShard.ts#L73)
+Defined in: [src/websocket/WebSocketShard.ts:73](https://github.com/Discordoo/discordoo/blob/75592d0/src/websocket/WebSocketShard.ts#L73)
 
 ___
 
@@ -457,7 +457,7 @@ ___
 
 **Returns:** *void*
 
-Defined in: [src/websocket/WebSocketShard.ts:77](https://github.com/Discordoo/discordoo/blob/8db69d8/src/websocket/WebSocketShard.ts#L77)
+Defined in: [src/websocket/WebSocketShard.ts:77](https://github.com/Discordoo/discordoo/blob/75592d0/src/websocket/WebSocketShard.ts#L77)
 
 ___
 
@@ -609,7 +609,7 @@ ___
 
 **Returns:** *void*
 
-Defined in: [src/websocket/WebSocketShard.ts:191](https://github.com/Discordoo/discordoo/blob/8db69d8/src/websocket/WebSocketShard.ts#L191)
+Defined in: [src/websocket/WebSocketShard.ts:191](https://github.com/Discordoo/discordoo/blob/75592d0/src/websocket/WebSocketShard.ts#L191)
 
 ___
 
@@ -619,7 +619,7 @@ ___
 
 **Returns:** *any*
 
-Defined in: [src/websocket/WebSocketShard.ts:61](https://github.com/Discordoo/discordoo/blob/8db69d8/src/websocket/WebSocketShard.ts#L61)
+Defined in: [src/websocket/WebSocketShard.ts:61](https://github.com/Discordoo/discordoo/blob/75592d0/src/websocket/WebSocketShard.ts#L61)
 
 ___
 
@@ -635,7 +635,7 @@ ___
 
 **Returns:** *void*
 
-Defined in: [src/websocket/WebSocketShard.ts:131](https://github.com/Discordoo/discordoo/blob/8db69d8/src/websocket/WebSocketShard.ts#L131)
+Defined in: [src/websocket/WebSocketShard.ts:131](https://github.com/Discordoo/discordoo/blob/75592d0/src/websocket/WebSocketShard.ts#L131)
 
 ___
 
@@ -669,4 +669,4 @@ ___
 
 **Returns:** *void*
 
-Defined in: [src/websocket/WebSocketShard.ts:157](https://github.com/Discordoo/discordoo/blob/8db69d8/src/websocket/WebSocketShard.ts#L157)
+Defined in: [src/websocket/WebSocketShard.ts:157](https://github.com/Discordoo/discordoo/blob/75592d0/src/websocket/WebSocketShard.ts#L157)

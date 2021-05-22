@@ -31,7 +31,7 @@
 
 **Returns:** *void*
 
-Defined in: [src/websocket/WebSocketManagerEvents.ts:5](https://github.com/Discordoo/discordoo/blob/8db69d8/src/websocket/WebSocketManagerEvents.ts#L5)
+Defined in: [src/websocket/WebSocketManagerEvents.ts:5](https://github.com/Discordoo/discordoo/blob/75592d0/src/websocket/WebSocketManagerEvents.ts#L5)
 
 ___
 
@@ -51,7 +51,7 @@ ___
 
 **Returns:** *void*
 
-Defined in: [src/websocket/WebSocketManagerEvents.ts:6](https://github.com/Discordoo/discordoo/blob/8db69d8/src/websocket/WebSocketManagerEvents.ts#L6)
+Defined in: [src/websocket/WebSocketManagerEvents.ts:6](https://github.com/Discordoo/discordoo/blob/75592d0/src/websocket/WebSocketManagerEvents.ts#L6)
 
 ___
 
@@ -72,7 +72,7 @@ ___
 
 **Returns:** *void*
 
-Defined in: [src/websocket/WebSocketManagerEvents.ts:4](https://github.com/Discordoo/discordoo/blob/8db69d8/src/websocket/WebSocketManagerEvents.ts#L4)
+Defined in: [src/websocket/WebSocketManagerEvents.ts:4](https://github.com/Discordoo/discordoo/blob/75592d0/src/websocket/WebSocketManagerEvents.ts#L4)
 
 ___
 
@@ -92,4 +92,4 @@ ___
 
 **Returns:** *void*
 
-Defined in: [src/websocket/WebSocketManagerEvents.ts:7](https://github.com/Discordoo/discordoo/blob/8db69d8/src/websocket/WebSocketManagerEvents.ts#L7)
+Defined in: [src/websocket/WebSocketManagerEvents.ts:7](https://github.com/Discordoo/discordoo/blob/75592d0/src/websocket/WebSocketManagerEvents.ts#L7)

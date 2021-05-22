@@ -45,7 +45,7 @@ Delete a key from cache
 
 **Returns:** *Promise*<boolean\>
 
-Defined in: [src/core/providers/cache/CacheNamespace.ts:23](https://github.com/Discordoo/discordoo/blob/8db69d8/src/core/providers/cache/CacheNamespace.ts#L23)
+Defined in: [src/core/providers/cache/CacheNamespace.ts:23](https://github.com/Discordoo/discordoo/blob/75592d0/src/core/providers/cache/CacheNamespace.ts#L23)
 
 ___
 
@@ -63,7 +63,7 @@ Get value from key
 
 **Returns:** *Promise*<``null`` \| V\>
 
-Defined in: [src/core/providers/cache/CacheNamespace.ts:10](https://github.com/Discordoo/discordoo/blob/8db69d8/src/core/providers/cache/CacheNamespace.ts#L10)
+Defined in: [src/core/providers/cache/CacheNamespace.ts:10](https://github.com/Discordoo/discordoo/blob/75592d0/src/core/providers/cache/CacheNamespace.ts#L10)
 
 ___
 
@@ -81,7 +81,7 @@ Check if key exists in cache
 
 **Returns:** *Promise*<boolean\>
 
-Defined in: [src/core/providers/cache/CacheNamespace.ts:29](https://github.com/Discordoo/discordoo/blob/8db69d8/src/core/providers/cache/CacheNamespace.ts#L29)
+Defined in: [src/core/providers/cache/CacheNamespace.ts:29](https://github.com/Discordoo/discordoo/blob/75592d0/src/core/providers/cache/CacheNamespace.ts#L29)
 
 ___
 
@@ -100,7 +100,7 @@ Set a key to given value
 
 **Returns:** *Promise*<boolean\>
 
-Defined in: [src/core/providers/cache/CacheNamespace.ts:17](https://github.com/Discordoo/discordoo/blob/8db69d8/src/core/providers/cache/CacheNamespace.ts#L17)
+Defined in: [src/core/providers/cache/CacheNamespace.ts:17](https://github.com/Discordoo/discordoo/blob/75592d0/src/core/providers/cache/CacheNamespace.ts#L17)
 
 ___
 
@@ -112,4 +112,4 @@ Get size of cache
 
 **Returns:** *Promise*<number\>
 
-Defined in: [src/core/providers/cache/CacheNamespace.ts:32](https://github.com/Discordoo/discordoo/blob/8db69d8/src/core/providers/cache/CacheNamespace.ts#L32)
+Defined in: [src/core/providers/cache/CacheNamespace.ts:32](https://github.com/Discordoo/discordoo/blob/75592d0/src/core/providers/cache/CacheNamespace.ts#L32)

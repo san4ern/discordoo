@@ -39,7 +39,7 @@ Base structure for everything which has snowflake
 
 **Returns:** [*Base*](core.base.md)
 
-Defined in: [src/core/structures/Base.ts:6](https://github.com/Discordoo/discordoo/blob/8db69d8/src/core/structures/Base.ts#L6)
+Defined in: [src/core/structures/Base.ts:6](https://github.com/Discordoo/discordoo/blob/75592d0/src/core/structures/Base.ts#L6)
 
 ## Properties
 
@@ -49,7 +49,7 @@ Defined in: [src/core/structures/Base.ts:6](https://github.com/Discordoo/discord
 
 Unique id
 
-Defined in: [src/core/structures/Base.ts:6](https://github.com/Discordoo/discordoo/blob/8db69d8/src/core/structures/Base.ts#L6)
+Defined in: [src/core/structures/Base.ts:6](https://github.com/Discordoo/discordoo/blob/75592d0/src/core/structures/Base.ts#L6)
 
 ## Accessors
 
@@ -61,7 +61,7 @@ Get creation date
 
 **Returns:** Date
 
-Defined in: [src/core/structures/Base.ts:24](https://github.com/Discordoo/discordoo/blob/8db69d8/src/core/structures/Base.ts#L24)
+Defined in: [src/core/structures/Base.ts:24](https://github.com/Discordoo/discordoo/blob/75592d0/src/core/structures/Base.ts#L24)
 
 ___
 
@@ -73,7 +73,7 @@ Unix timestamp
 
 **Returns:** *number*
 
-Defined in: [src/core/structures/Base.ts:29](https://github.com/Discordoo/discordoo/blob/8db69d8/src/core/structures/Base.ts#L29)
+Defined in: [src/core/structures/Base.ts:29](https://github.com/Discordoo/discordoo/blob/75592d0/src/core/structures/Base.ts#L29)
 
 ## Methods
 
@@ -91,4 +91,4 @@ Check, if two entities are equal
 
 **Returns:** *boolean*
 
-Defined in: [src/core/structures/Base.ts:19](https://github.com/Discordoo/discordoo/blob/8db69d8/src/core/structures/Base.ts#L19)
+Defined in: [src/core/structures/Base.ts:19](https://github.com/Discordoo/discordoo/blob/75592d0/src/core/structures/Base.ts#L19)

@@ -33,7 +33,7 @@
 
 ▪ `Static` **API\_ENDPOINT**: *string*= 'https://discord.com/api'
 
-Defined in: [src/core/Constants.ts:67](https://github.com/Discordoo/discordoo/blob/8db69d8/src/core/Constants.ts#L67)
+Defined in: [src/core/Constants.ts:67](https://github.com/Discordoo/discordoo/blob/75592d0/src/core/Constants.ts#L67)
 
 ___
 
@@ -41,7 +41,7 @@ ___
 
 ▪ `Static` **DEFAULT\_REST\_OPTIONS**: [*RESTOptions*](../interfaces/rest.restoptions.md)
 
-Defined in: [src/core/Constants.ts:68](https://github.com/Discordoo/discordoo/blob/8db69d8/src/core/Constants.ts#L68)
+Defined in: [src/core/Constants.ts:68](https://github.com/Discordoo/discordoo/blob/75592d0/src/core/Constants.ts#L68)
 
 ___
 
@@ -49,7 +49,7 @@ ___
 
 ▪ `Static` **OPCodes**: *typeof* OPCodes
 
-Defined in: [src/core/Constants.ts:74](https://github.com/Discordoo/discordoo/blob/8db69d8/src/core/Constants.ts#L74)
+Defined in: [src/core/Constants.ts:74](https://github.com/Discordoo/discordoo/blob/75592d0/src/core/Constants.ts#L74)
 
 ___
 
@@ -57,7 +57,7 @@ ___
 
 ▪ `Static` **WebSocketEncoding**: ``"json"`` \| ``"etf"``
 
-Defined in: [src/core/Constants.ts:77](https://github.com/Discordoo/discordoo/blob/8db69d8/src/core/Constants.ts#L77)
+Defined in: [src/core/Constants.ts:77](https://github.com/Discordoo/discordoo/blob/75592d0/src/core/Constants.ts#L77)
 
 ___
 
@@ -65,7 +65,7 @@ ___
 
 ▪ `Static` **WebSocketEvents**: *typeof* WebSocketEvents
 
-Defined in: [src/core/Constants.ts:75](https://github.com/Discordoo/discordoo/blob/8db69d8/src/core/Constants.ts#L75)
+Defined in: [src/core/Constants.ts:75](https://github.com/Discordoo/discordoo/blob/75592d0/src/core/Constants.ts#L75)
 
 ___
 
@@ -73,4 +73,4 @@ ___
 
 ▪ `Static` **WebSocketStates**: *typeof* WebSocketStates
 
-Defined in: [src/core/Constants.ts:76](https://github.com/Discordoo/discordoo/blob/8db69d8/src/core/Constants.ts#L76)
+Defined in: [src/core/Constants.ts:76](https://github.com/Discordoo/discordoo/blob/75592d0/src/core/Constants.ts#L76)

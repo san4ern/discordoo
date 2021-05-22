@@ -95,7 +95,7 @@ ___
 
 Maximum amount of shards that can be spawned by the [WebSocketManager](../classes/websocket.websocketmanager.md)
 
-Defined in: [src/websocket/GatewayOptions.ts:13](https://github.com/Discordoo/discordoo/blob/8db69d8/src/websocket/GatewayOptions.ts#L13)
+Defined in: [src/websocket/GatewayOptions.ts:13](https://github.com/Discordoo/discordoo/blob/75592d0/src/websocket/GatewayOptions.ts#L13)
 
 ___
 
@@ -149,7 +149,7 @@ If number is provided - WS will create X shards
 If auto is provided, shards amount will be fetched from Discord
 If array of numbers is provided, the library will interpret it as IDs of shards to be spawned
 
-Defined in: [src/websocket/GatewayOptions.ts:9](https://github.com/Discordoo/discordoo/blob/8db69d8/src/websocket/GatewayOptions.ts#L9)
+Defined in: [src/websocket/GatewayOptions.ts:9](https://github.com/Discordoo/discordoo/blob/75592d0/src/websocket/GatewayOptions.ts#L9)
 
 ___
 
@@ -159,7 +159,7 @@ ___
 
 Waiting time between shards launches, in ms
 
-Defined in: [src/websocket/GatewayOptions.ts:24](https://github.com/Discordoo/discordoo/blob/8db69d8/src/websocket/GatewayOptions.ts#L24)
+Defined in: [src/websocket/GatewayOptions.ts:24](https://github.com/Discordoo/discordoo/blob/75592d0/src/websocket/GatewayOptions.ts#L24)
 
 ___
 
@@ -181,7 +181,7 @@ ___
 
 Gateway URL
 
-Defined in: [src/websocket/GatewayOptions.ts:21](https://github.com/Discordoo/discordoo/blob/8db69d8/src/websocket/GatewayOptions.ts#L21)
+Defined in: [src/websocket/GatewayOptions.ts:21](https://github.com/Discordoo/discordoo/blob/75592d0/src/websocket/GatewayOptions.ts#L21)
 
 ___
 
@@ -191,4 +191,4 @@ ___
 
 Version of gateway to use
 
-Defined in: [src/websocket/GatewayOptions.ts:18](https://github.com/Discordoo/discordoo/blob/8db69d8/src/websocket/GatewayOptions.ts#L18)
+Defined in: [src/websocket/GatewayOptions.ts:18](https://github.com/Discordoo/discordoo/blob/75592d0/src/websocket/GatewayOptions.ts#L18)

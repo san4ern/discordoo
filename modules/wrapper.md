@@ -34,4 +34,4 @@
 
 **Returns:** [*ClientBuilder*](../classes/wrapper.clientbuilder.md)<Stack\>
 
-Defined in: [src/wrapper/createBot.ts:5](https://github.com/Discordoo/discordoo/blob/8db69d8/src/wrapper/createBot.ts#L5)
+Defined in: [src/wrapper/createBot.ts:5](https://github.com/Discordoo/discordoo/blob/75592d0/src/wrapper/createBot.ts#L5)
