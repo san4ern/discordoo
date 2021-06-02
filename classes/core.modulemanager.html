@@ -194,22 +194,22 @@ Manages module loadment and their &quot;injection&quot;</p>
 <tr><td align="left"><code>client</code></td><td align="left"><a href="core.client.html"><em>Client</em></a>&lt;<a href="../interfaces/core.defaultclientstack.html"><em>DefaultClientStack</em></a>&gt;</td><td align="left">client, into which modules will be loaded</td></tr>
 </tbody></table>
 <p><strong>Returns:</strong> <a href="core.modulemanager.html"><em>ModuleManager</em></a></p>
-<p>Defined in: <a href="https://github.com/Discordoo/discordoo/blob/a38b398/src/core/modules/ModuleManager.ts#L19">src/core/modules/ModuleManager.ts:19</a></p>
+<p>Defined in: <a href="https://github.com/Discordoo/discordoo/blob/a3d26b4/src/core/modules/ModuleManager.ts#L19">src/core/modules/ModuleManager.ts:19</a></p>
 <h2 id="properties-1"><a class="header" href="#properties-1">Properties</a></h2>
 <h3 id="_moduleloadgroups"><a class="header" href="#_moduleloadgroups">_moduleLoadGroups</a></h3>
 <p>• <code>Private</code> <strong>_moduleLoadGroups</strong>: <a href="../interfaces/core.module.html"><em>Module</em></a>[][]= []</p>
 <p>Array of load groups</p>
-<p>Defined in: <a href="https://github.com/Discordoo/discordoo/blob/a38b398/src/core/modules/ModuleManager.ts#L16">src/core/modules/ModuleManager.ts:16</a></p>
+<p>Defined in: <a href="https://github.com/Discordoo/discordoo/blob/a3d26b4/src/core/modules/ModuleManager.ts#L16">src/core/modules/ModuleManager.ts:16</a></p>
 <hr />
 <h3 id="client"><a class="header" href="#client">client</a></h3>
 <p>• <strong>client</strong>: <a href="core.client.html"><em>Client</em></a>&lt;<a href="../interfaces/core.defaultclientstack.html"><em>DefaultClientStack</em></a>&gt;</p>
 <p>Client which uses this manager</p>
-<p>Defined in: <a href="https://github.com/Discordoo/discordoo/blob/a38b398/src/core/modules/ModuleManager.ts#L19">src/core/modules/ModuleManager.ts:19</a></p>
+<p>Defined in: <a href="https://github.com/Discordoo/discordoo/blob/a3d26b4/src/core/modules/ModuleManager.ts#L19">src/core/modules/ModuleManager.ts:19</a></p>
 <hr />
 <h3 id="modules"><a class="header" href="#modules">modules</a></h3>
 <p>• <strong>modules</strong>: <a href="collection.collection-1.html"><em>Collection</em></a>&lt;string | symbol, <a href="../interfaces/core.module.html"><em>Module</em></a>&gt;</p>
 <p>Modules loaded by this manager</p>
-<p>Defined in: <a href="https://github.com/Discordoo/discordoo/blob/a38b398/src/core/modules/ModuleManager.ts#L13">src/core/modules/ModuleManager.ts:13</a></p>
+<p>Defined in: <a href="https://github.com/Discordoo/discordoo/blob/a3d26b4/src/core/modules/ModuleManager.ts#L13">src/core/modules/ModuleManager.ts:13</a></p>
 <h2 id="methods-1"><a class="header" href="#methods-1">Methods</a></h2>
 <h3 id="createloadgroup"><a class="header" href="#createloadgroup">createLoadGroup</a></h3>
 <p>▸ <strong>createLoadGroup</strong>(...<code>modules</code>: <a href="../interfaces/core.module.html"><em>Module</em></a>[]): <em>void</em></p>
@@ -221,7 +221,7 @@ Groups can be either loaded in parallel or sequentially</p>
 <tr><td align="left"><code>...modules</code></td><td align="left"><a href="../interfaces/core.module.html"><em>Module</em></a>[]</td><td align="left">modules to add to a new load group</td></tr>
 </tbody></table>
 <p><strong>Returns:</strong> <em>void</em></p>
-<p>Defined in: <a href="https://github.com/Discordoo/discordoo/blob/a38b398/src/core/modules/ModuleManager.ts#L36">src/core/modules/ModuleManager.ts:36</a></p>
+<p>Defined in: <a href="https://github.com/Discordoo/discordoo/blob/a3d26b4/src/core/modules/ModuleManager.ts#L36">src/core/modules/ModuleManager.ts:36</a></p>
 <hr />
 <h3 id="getmodule"><a class="header" href="#getmodule">getModule</a></h3>
 <p>▸ <strong>getModule</strong>(<code>id</code>: <em>string</em> | <em>symbol</em>): <em>undefined</em> | <a href="../interfaces/core.module.html"><em>Module</em></a></p>
@@ -231,7 +231,7 @@ Groups can be either loaded in parallel or sequentially</p>
 <tr><td align="left"><code>id</code></td><td align="left"><em>string</em> | <em>symbol</em></td><td align="left">module's id</td></tr>
 </tbody></table>
 <p><strong>Returns:</strong> <em>undefined</em> | <a href="../interfaces/core.module.html"><em>Module</em></a></p>
-<p>Defined in: <a href="https://github.com/Discordoo/discordoo/blob/a38b398/src/core/modules/ModuleManager.ts#L80">src/core/modules/ModuleManager.ts:80</a></p>
+<p>Defined in: <a href="https://github.com/Discordoo/discordoo/blob/a3d26b4/src/core/modules/ModuleManager.ts#L80">src/core/modules/ModuleManager.ts:80</a></p>
 <hr />
 <h3 id="init"><a class="header" href="#init">init</a></h3>
 <p>▸ <strong>init</strong>(<code>async?</code>: <em>boolean</em>): <em>Promise</em>&lt;void&gt;</p>
@@ -241,7 +241,7 @@ Groups can be either loaded in parallel or sequentially</p>
 <tr><td align="left"><code>async</code></td><td align="left"><em>boolean</em></td><td align="left">false</td><td align="left">determines if load groups shall be loaded in parallel</td></tr>
 </tbody></table>
 <p><strong>Returns:</strong> <em>Promise</em>&lt;void&gt;</p>
-<p>Defined in: <a href="https://github.com/Discordoo/discordoo/blob/a38b398/src/core/modules/ModuleManager.ts#L52">src/core/modules/ModuleManager.ts:52</a></p>
+<p>Defined in: <a href="https://github.com/Discordoo/discordoo/blob/a3d26b4/src/core/modules/ModuleManager.ts#L52">src/core/modules/ModuleManager.ts:52</a></p>
 <hr />
 <h3 id="use"><a class="header" href="#use">use</a></h3>
 <p>▸ <strong>use</strong>(...<code>modules</code>: <a href="../interfaces/core.module.html"><em>Module</em></a>[]): <em>void</em></p>
@@ -251,7 +251,7 @@ Groups can be either loaded in parallel or sequentially</p>
 <tr><td align="left"><code>...modules</code></td><td align="left"><a href="../interfaces/core.module.html"><em>Module</em></a>[]</td><td align="left">modules to add to a new load group</td></tr>
 </tbody></table>
 <p><strong>Returns:</strong> <em>void</em></p>
-<p>Defined in: <a href="https://github.com/Discordoo/discordoo/blob/a38b398/src/core/modules/ModuleManager.ts#L44">src/core/modules/ModuleManager.ts:44</a></p>
+<p>Defined in: <a href="https://github.com/Discordoo/discordoo/blob/a3d26b4/src/core/modules/ModuleManager.ts#L44">src/core/modules/ModuleManager.ts:44</a></p>
 
                     </main>
 
