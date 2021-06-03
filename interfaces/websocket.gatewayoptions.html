@@ -177,16 +177,21 @@
 <h3 id="properties"><a class="header" href="#properties">Properties</a></h3>
 <ul>
 <li><a href="websocket.gatewayoptions.html#compress">compress</a></li>
+<li><a href="websocket.gatewayoptions.html#encoding">encoding</a></li>
+<li><a href="websocket.gatewayoptions.html#eventpeakssmoothingmultiplier">eventPeaksSmoothingMultiplier</a></li>
 <li><a href="websocket.gatewayoptions.html#intents">intents</a></li>
 <li><a href="websocket.gatewayoptions.html#large_threshold">large_threshold</a></li>
+<li><a href="websocket.gatewayoptions.html#maxeventspersecond">maxEventsPerSecond</a></li>
 <li><a href="websocket.gatewayoptions.html#maxshards">maxShards</a></li>
 <li><a href="websocket.gatewayoptions.html#presence">presence</a></li>
 <li><a href="websocket.gatewayoptions.html#properties">properties</a></li>
 <li><a href="websocket.gatewayoptions.html#shard">shard</a></li>
 <li><a href="websocket.gatewayoptions.html#shards">shards</a></li>
+<li><a href="websocket.gatewayoptions.html#smootheventspeaks">smoothEventsPeaks</a></li>
 <li><a href="websocket.gatewayoptions.html#spawndelay">spawnDelay</a></li>
 <li><a href="websocket.gatewayoptions.html#token">token</a></li>
 <li><a href="websocket.gatewayoptions.html#url">url</a></li>
+<li><a href="websocket.gatewayoptions.html#usereconnectonly">useReconnectOnly</a></li>
 <li><a href="websocket.gatewayoptions.html#version">version</a></li>
 </ul>
 <h2 id="properties-1"><a class="header" href="#properties-1">Properties</a></h2>
@@ -196,6 +201,21 @@
 <p><strong><code>default</code></strong> false</p>
 <p>Inherited from: GatewayIdentifyData.compress</p>
 <p>Defined in: node_modules/discord-api-types/gateway/v8.d.ts:1015</p>
+<hr />
+<h3 id="encoding"><a class="header" href="#encoding">encoding</a></h3>
+<p>• <code>Optional</code> <strong>encoding</strong>: <code>&quot;json&quot;</code> | <code>&quot;etf&quot;</code></p>
+<p>Encoding to use in WebSocket connection. Detected automatically (etf when found erlpack, else json),
+but can be overwritten using this option.</p>
+<p>Defined in: <a href="https://github.com/Discordoo/discordoo/blob/123d3a9/src/websocket/interfaces/GatewayOptions.ts#L27">src/websocket/interfaces/GatewayOptions.ts:27</a></p>
+<hr />
+<h3 id="eventpeakssmoothingmultiplier"><a class="header" href="#eventpeakssmoothingmultiplier">eventPeaksSmoothingMultiplier</a></h3>
+<p>• <code>Optional</code> <strong>eventPeaksSmoothingMultiplier</strong>: <em>number</em></p>
+<p>Use custom multiplier for smoothing events peaks.
+When multiplier is 2 (default), library will double the number of events allowed per second every smooth:
+from 100 to 200, from 200 to 400, 800, 1600 etc.
+When multiplier is 1.5 for example, library will increase the number of events allowed per second by 1.5:
+from 100 to 150, from 150 to 225, from 225 to 337.5 (338), 507, 760.5 (761) etc.</p>
+<p>Defined in: <a href="https://github.com/Discordoo/discordoo/blob/123d3a9/src/websocket/interfaces/GatewayOptions.ts#L46">src/websocket/interfaces/GatewayOptions.ts:46</a></p>
 <hr />
 <h3 id="intents"><a class="header" href="#intents">intents</a></h3>
 <p>• <strong>intents</strong>: <em>number</em></p>
@@ -212,10 +232,16 @@ offline members in the guild member list</p>
 <p>Inherited from: GatewayIdentifyData.large_threshold</p>
 <p>Defined in: node_modules/discord-api-types/gateway/v8.d.ts:1022</p>
 <hr />
+<h3 id="maxeventspersecond"><a class="header" href="#maxeventspersecond">maxEventsPerSecond</a></h3>
+<p>• <code>Optional</code> <strong>maxEventsPerSecond</strong>: <em>number</em></p>
+<p>Number of events which library can emit in 1 second.
+If limit is reached, library will add events to queue and will emit them later.</p>
+<p>Defined in: <a href="https://github.com/Discordoo/discordoo/blob/123d3a9/src/websocket/interfaces/GatewayOptions.ts#L50">src/websocket/interfaces/GatewayOptions.ts:50</a></p>
+<hr />
 <h3 id="maxshards"><a class="header" href="#maxshards">maxShards</a></h3>
 <p>• <code>Optional</code> <strong>maxShards</strong>: <em>number</em></p>
 <p>Maximum amount of shards that can be spawned by the <a href="../classes/websocket.websocketmanager.html">WebSocketManager</a></p>
-<p>Defined in: <a href="https://github.com/Discordoo/discordoo/blob/24156b0/src/websocket/GatewayOptions.ts#L13">src/websocket/GatewayOptions.ts:13</a></p>
+<p>Defined in: <a href="https://github.com/Discordoo/discordoo/blob/123d3a9/src/websocket/interfaces/GatewayOptions.ts#L13">src/websocket/interfaces/GatewayOptions.ts:13</a></p>
 <hr />
 <h3 id="presence"><a class="header" href="#presence">presence</a></h3>
 <p>• <code>Optional</code> <strong>presence</strong>: GatewayPresenceUpdateData</p>
@@ -240,15 +266,23 @@ offline members in the guild member list</p>
 <hr />
 <h3 id="shards"><a class="header" href="#shards">shards</a></h3>
 <p>• <code>Optional</code> <strong>shards</strong>: <em>number</em> | <em>number</em>[] | <code>&quot;auto&quot;</code></p>
-<p>If number is provided - WS will create X shards
+<p>If number is provided - WS will create X shards from 0 to X-1 (3 = 0, 1, 2)
 If auto is provided, shards amount will be fetched from Discord
-If array of numbers is provided, the library will interpret it as IDs of shards to be spawned</p>
-<p>Defined in: <a href="https://github.com/Discordoo/discordoo/blob/24156b0/src/websocket/GatewayOptions.ts#L9">src/websocket/GatewayOptions.ts:9</a></p>
+If array of numbers is provided, the library will interpret it as IDs of shards to create</p>
+<p>Defined in: <a href="https://github.com/Discordoo/discordoo/blob/123d3a9/src/websocket/interfaces/GatewayOptions.ts#L9">src/websocket/interfaces/GatewayOptions.ts:9</a></p>
+<hr />
+<h3 id="smootheventspeaks"><a class="header" href="#smootheventspeaks">smoothEventsPeaks</a></h3>
+<p>• <code>Optional</code> <strong>smoothEventsPeaks</strong>: <em>boolean</em></p>
+<p>Smooth events peaks. When we usually receive 100 events per second,
+and suddenly we got 10000 events per second, library will emit these events gradual:
+from 100 events/s, to 200, then to 400, 800, 1600 etc.
+This may be helpful to smooth out the load on the server and on the rate limits.</p>
+<p>Defined in: <a href="https://github.com/Discordoo/discordoo/blob/123d3a9/src/websocket/interfaces/GatewayOptions.ts#L39">src/websocket/interfaces/GatewayOptions.ts:39</a></p>
 <hr />
 <h3 id="spawndelay"><a class="header" href="#spawndelay">spawnDelay</a></h3>
 <p>• <code>Optional</code> <strong>spawnDelay</strong>: <em>number</em></p>
 <p>Waiting time between shards launches, in ms</p>
-<p>Defined in: <a href="https://github.com/Discordoo/discordoo/blob/24156b0/src/websocket/GatewayOptions.ts#L24">src/websocket/GatewayOptions.ts:24</a></p>
+<p>Defined in: <a href="https://github.com/Discordoo/discordoo/blob/123d3a9/src/websocket/interfaces/GatewayOptions.ts#L22">src/websocket/interfaces/GatewayOptions.ts:22</a></p>
 <hr />
 <h3 id="token"><a class="header" href="#token">token</a></h3>
 <p>• <strong>token</strong>: <em>string</em></p>
@@ -259,12 +293,20 @@ If array of numbers is provided, the library will interpret it as IDs of shards 
 <h3 id="url"><a class="header" href="#url">url</a></h3>
 <p>• <code>Optional</code> <strong>url</strong>: <em>string</em></p>
 <p>Gateway URL</p>
-<p>Defined in: <a href="https://github.com/Discordoo/discordoo/blob/24156b0/src/websocket/GatewayOptions.ts#L21">src/websocket/GatewayOptions.ts:21</a></p>
+<p>Defined in: <a href="https://github.com/Discordoo/discordoo/blob/123d3a9/src/websocket/interfaces/GatewayOptions.ts#L19">src/websocket/interfaces/GatewayOptions.ts:19</a></p>
+<hr />
+<h3 id="usereconnectonly"><a class="header" href="#usereconnectonly">useReconnectOnly</a></h3>
+<p>• <code>Optional</code> <strong>useReconnectOnly</strong>: <em>boolean</em></p>
+<p>Use reconnect instead of resume,
+because when client resumed Discord will send a ton of missed events in one second and
+this may lead to violations of the rate limits.</p>
+<p><strong><code>see</code></strong> https://discord.com/developers/docs/topics/gateway#resuming</p>
+<p>Defined in: <a href="https://github.com/Discordoo/discordoo/blob/123d3a9/src/websocket/interfaces/GatewayOptions.ts#L33">src/websocket/interfaces/GatewayOptions.ts:33</a></p>
 <hr />
 <h3 id="version"><a class="header" href="#version">version</a></h3>
-<p>• <code>Optional</code> <strong>version</strong>: <code>9</code></p>
+<p>• <code>Optional</code> <strong>version</strong>: <em>number</em></p>
 <p>Version of gateway to use</p>
-<p>Defined in: <a href="https://github.com/Discordoo/discordoo/blob/24156b0/src/websocket/GatewayOptions.ts#L18">src/websocket/GatewayOptions.ts:18</a></p>
+<p>Defined in: <a href="https://github.com/Discordoo/discordoo/blob/123d3a9/src/websocket/interfaces/GatewayOptions.ts#L16">src/websocket/interfaces/GatewayOptions.ts:16</a></p>
 
                     </main>
 
