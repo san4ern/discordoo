@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>RequestBuilder | Discordoo</title>
+	<title>gateway | Discordoo</title>
 	<meta name="description" content="Documentation for Discordoo">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<style type="text/css">:root {
@@ -2708,371 +2708,44 @@ img {
 <nav class="tsd-navigation secondary">
 	<ul>
 		<li class=" tsd-kind-class tsd-parent-kind-module">
-			<a href="../classes/core.base.html" class="tsd-kind-icon">Base</a>
-		</li>
-		<li class=" tsd-kind-class tsd-parent-kind-module tsd-has-type-parameter">
-			<a href="../classes/core.client.html" class="tsd-kind-icon">Client</a>
+			<a href="../classes/gateway.websocketmanager.html" class="tsd-kind-icon">Web<wbr>Socket<wbr>Manager</a>
 		</li>
 		<li class=" tsd-kind-class tsd-parent-kind-module">
-			<a href="../classes/core.constants.html" class="tsd-kind-icon">Constants</a>
-		</li>
-		<li class=" tsd-kind-class tsd-parent-kind-module">
-			<a href="../classes/core.modulemanager.html" class="tsd-kind-icon">Module<wbr>Manager</a>
-		</li>
-		<li class=" tsd-kind-interface tsd-parent-kind-module tsd-has-type-parameter">
-			<a href="core.cachenamespace.html" class="tsd-kind-icon">Cache<wbr>Namespace</a>
+			<a href="../classes/gateway.websocketshard.html" class="tsd-kind-icon">Web<wbr>Socket<wbr>Shard</a>
 		</li>
 		<li class=" tsd-kind-interface tsd-parent-kind-module">
-			<a href="core.clienteventshandlers.html" class="tsd-kind-icon">Client<wbr>Events<wbr>Handlers</a>
+			<a href="../interfaces/gateway.gatewayoptions.html" class="tsd-kind-icon">Gateway<wbr>Options</a>
 		</li>
 		<li class=" tsd-kind-interface tsd-parent-kind-module">
-			<a href="core.defaultclientstack.html" class="tsd-kind-icon">Default<wbr>Client<wbr>Stack</a>
+			<a href="../interfaces/gateway.websocketmanagerevents.html" class="tsd-kind-icon">Web<wbr>Socket<wbr>Manager<wbr>Events</a>
 		</li>
 		<li class=" tsd-kind-interface tsd-parent-kind-module">
-			<a href="core.gatewayproviderapi.html" class="tsd-kind-icon">Gateway<wbr>ProviderAPI</a>
-		</li>
-		<li class=" tsd-kind-interface tsd-parent-kind-module">
-			<a href="core.module.html" class="tsd-kind-icon">Module</a>
-		</li>
-		<li class=" tsd-kind-interface tsd-parent-kind-module tsd-has-type-parameter">
-			<a href="core.restresponse.html" class="tsd-kind-icon">RESTResponse</a>
-		</li>
-		<li class="current tsd-kind-interface tsd-parent-kind-module">
-			<a href="core.requestbuilder.html" class="tsd-kind-icon">Request<wbr>Builder</a>
-			<ul>
-				<li class=" tsd-kind-method tsd-parent-kind-interface tsd-has-type-parameter">
-					<a href="core.requestbuilder.html#delete" class="tsd-kind-icon">delete</a>
-				</li>
-				<li class=" tsd-kind-method tsd-parent-kind-interface tsd-has-type-parameter">
-					<a href="core.requestbuilder.html#get" class="tsd-kind-icon">get</a>
-				</li>
-				<li class=" tsd-kind-method tsd-parent-kind-interface tsd-has-type-parameter">
-					<a href="core.requestbuilder.html#patch" class="tsd-kind-icon">patch</a>
-				</li>
-				<li class=" tsd-kind-method tsd-parent-kind-interface tsd-has-type-parameter">
-					<a href="core.requestbuilder.html#post" class="tsd-kind-icon">post</a>
-				</li>
-				<li class=" tsd-kind-method tsd-parent-kind-interface tsd-has-type-parameter">
-					<a href="core.requestbuilder.html#put" class="tsd-kind-icon">put</a>
-				</li>
-				<li class=" tsd-kind-method tsd-parent-kind-interface">
-					<a href="core.requestbuilder.html#query" class="tsd-kind-icon">query</a>
-				</li>
-				<li class=" tsd-kind-method tsd-parent-kind-interface">
-					<a href="core.requestbuilder.html#url" class="tsd-kind-icon">url</a>
-				</li>
-			</ul>
-		</li>
-		<li class=" tsd-kind-interface tsd-parent-kind-module">
-			<a href="core.requestoptions.html" class="tsd-kind-icon">Request<wbr>Options</a>
-		</li>
-		<li class=" tsd-kind-type-alias tsd-parent-kind-module tsd-has-type-parameter">
-			<a href="../modules/core.html#cacheprovider" class="tsd-kind-icon">Cache<wbr>Provider</a>
-		</li>
-		<li class=" tsd-kind-type-alias tsd-parent-kind-module tsd-has-type-parameter">
-			<a href="../modules/core.html#gatewayprovider" class="tsd-kind-icon">Gateway<wbr>Provider</a>
-		</li>
-		<li class=" tsd-kind-type-alias tsd-parent-kind-module tsd-has-type-parameter">
-			<a href="../modules/core.html#restprovider" class="tsd-kind-icon">RESTProvider</a>
+			<a href="../interfaces/gateway.websocketshardevents.html" class="tsd-kind-icon">Web<wbr>Socket<wbr>Shard<wbr>Events</a>
 		</li>
 	</ul>
 </nav>
 <div class="container container-main">
 	<div class="content-wrap">
-		<section class="tsd-panel tsd-comment">
-			<div class="tsd-comment tsd-typography">
-				<div class="lead">
-					<p>Represents a request builder</p>
-				</div>
-			</div>
-		</section>
-		<section class="tsd-panel tsd-hierarchy">
-			<h3>Hierarchy</h3>
-			<ul class="tsd-hierarchy">
-				<li>
-					<span class="target">RequestBuilder</span>
-				</li>
-			</ul>
-		</section>
-		<section class="tsd-panel">
-			<h3>Implemented by</h3>
-			<ul class="tsd-hierarchy">
-				<li><a href="../classes/rest.restrequestbuilder.html" class="tsd-signature-type" data-tsd-kind="Class">RESTRequestBuilder</a></li>
-			</ul>
-		</section>
 		<section class="tsd-panel-group tsd-index-group">
 			<h2>Index</h2>
 			<section class="tsd-panel tsd-index-panel">
 				<div class="tsd-index-content">
 					<section class="tsd-index-section ">
-						<h3>Methods</h3>
+						<h3>Classes</h3>
 						<ul class="tsd-index-list">
-							<li class="tsd-kind-method tsd-parent-kind-interface tsd-has-type-parameter"><a href="core.requestbuilder.html#delete" class="tsd-kind-icon">delete</a></li>
-							<li class="tsd-kind-method tsd-parent-kind-interface tsd-has-type-parameter"><a href="core.requestbuilder.html#get" class="tsd-kind-icon">get</a></li>
-							<li class="tsd-kind-method tsd-parent-kind-interface tsd-has-type-parameter"><a href="core.requestbuilder.html#patch" class="tsd-kind-icon">patch</a></li>
-							<li class="tsd-kind-method tsd-parent-kind-interface tsd-has-type-parameter"><a href="core.requestbuilder.html#post" class="tsd-kind-icon">post</a></li>
-							<li class="tsd-kind-method tsd-parent-kind-interface tsd-has-type-parameter"><a href="core.requestbuilder.html#put" class="tsd-kind-icon">put</a></li>
-							<li class="tsd-kind-method tsd-parent-kind-interface"><a href="core.requestbuilder.html#query" class="tsd-kind-icon">query</a></li>
-							<li class="tsd-kind-method tsd-parent-kind-interface"><a href="core.requestbuilder.html#url" class="tsd-kind-icon">url</a></li>
+							<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/gateway.websocketmanager.html" class="tsd-kind-icon">Web<wbr>Socket<wbr>Manager</a></li>
+							<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/gateway.websocketshard.html" class="tsd-kind-icon">Web<wbr>Socket<wbr>Shard</a></li>
+						</ul>
+					</section>
+					<section class="tsd-index-section ">
+						<h3>Interfaces</h3>
+						<ul class="tsd-index-list">
+							<li class="tsd-kind-interface tsd-parent-kind-module"><a href="../interfaces/gateway.gatewayoptions.html" class="tsd-kind-icon">Gateway<wbr>Options</a></li>
+							<li class="tsd-kind-interface tsd-parent-kind-module"><a href="../interfaces/gateway.websocketmanagerevents.html" class="tsd-kind-icon">Web<wbr>Socket<wbr>Manager<wbr>Events</a></li>
+							<li class="tsd-kind-interface tsd-parent-kind-module"><a href="../interfaces/gateway.websocketshardevents.html" class="tsd-kind-icon">Web<wbr>Socket<wbr>Shard<wbr>Events</a></li>
 						</ul>
 					</section>
 				</div>
-			</section>
-		</section>
-		<section class="tsd-panel-group tsd-member-group ">
-			<h2>Methods</h2>
-			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface tsd-has-type-parameter">
-				<a name="delete" class="tsd-anchor"></a>
-				<h3>delete</h3>
-				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface tsd-has-type-parameter">
-					<li class="tsd-signature tsd-kind-icon">delete&lt;T&gt;<span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">?: </span><a href="core.requestoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">RequestOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="core.restresponse.html" class="tsd-signature-type" data-tsd-kind="Interface">RESTResponse</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></li>
-				</ul>
-				<ul class="tsd-descriptions">
-					<li class="tsd-description">
-						<aside class="tsd-sources">
-							<ul>
-								<li>Defined in <a href="https://github.com/Discordoo/discordoo/blob/d5248ca/src/core/providers/rest/RequestBuilder.ts#L35">src/core/providers/rest/RequestBuilder.ts:35</a></li>
-							</ul>
-						</aside>
-						<div class="tsd-comment tsd-typography">
-							<div class="lead">
-								<p>Create DELETE request</p>
-							</div>
-						</div>
-						<h4 class="tsd-type-parameters-title">Type parameters</h4>
-						<ul class="tsd-type-parameters">
-							<li>
-								<h4>T</h4>
-							</li>
-						</ul>
-						<h4 class="tsd-parameters-title">Parameters</h4>
-						<ul class="tsd-parameters">
-							<li>
-								<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <a href="core.requestoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">RequestOptions</a></h5>
-								<div class="tsd-comment tsd-typography">
-									<p>options</p>
-								</div>
-							</li>
-						</ul>
-						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="core.restresponse.html" class="tsd-signature-type" data-tsd-kind="Interface">RESTResponse</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h4>
-					</li>
-				</ul>
-			</section>
-			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface tsd-has-type-parameter">
-				<a name="get" class="tsd-anchor"></a>
-				<h3>get</h3>
-				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface tsd-has-type-parameter">
-					<li class="tsd-signature tsd-kind-icon">get&lt;T&gt;<span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">?: </span><a href="core.requestoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">RequestOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="core.restresponse.html" class="tsd-signature-type" data-tsd-kind="Interface">RESTResponse</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></li>
-				</ul>
-				<ul class="tsd-descriptions">
-					<li class="tsd-description">
-						<aside class="tsd-sources">
-							<ul>
-								<li>Defined in <a href="https://github.com/Discordoo/discordoo/blob/d5248ca/src/core/providers/rest/RequestBuilder.ts#L23">src/core/providers/rest/RequestBuilder.ts:23</a></li>
-							</ul>
-						</aside>
-						<div class="tsd-comment tsd-typography">
-							<div class="lead">
-								<p>Create GET request</p>
-							</div>
-						</div>
-						<h4 class="tsd-type-parameters-title">Type parameters</h4>
-						<ul class="tsd-type-parameters">
-							<li>
-								<h4>T</h4>
-							</li>
-						</ul>
-						<h4 class="tsd-parameters-title">Parameters</h4>
-						<ul class="tsd-parameters">
-							<li>
-								<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <a href="core.requestoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">RequestOptions</a></h5>
-								<div class="tsd-comment tsd-typography">
-									<p>options</p>
-								</div>
-							</li>
-						</ul>
-						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="core.restresponse.html" class="tsd-signature-type" data-tsd-kind="Interface">RESTResponse</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h4>
-					</li>
-				</ul>
-			</section>
-			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface tsd-has-type-parameter">
-				<a name="patch" class="tsd-anchor"></a>
-				<h3>patch</h3>
-				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface tsd-has-type-parameter">
-					<li class="tsd-signature tsd-kind-icon">patch&lt;T&gt;<span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">?: </span><a href="core.requestoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">RequestOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="core.restresponse.html" class="tsd-signature-type" data-tsd-kind="Interface">RESTResponse</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></li>
-				</ul>
-				<ul class="tsd-descriptions">
-					<li class="tsd-description">
-						<aside class="tsd-sources">
-							<ul>
-								<li>Defined in <a href="https://github.com/Discordoo/discordoo/blob/d5248ca/src/core/providers/rest/RequestBuilder.ts#L47">src/core/providers/rest/RequestBuilder.ts:47</a></li>
-							</ul>
-						</aside>
-						<div class="tsd-comment tsd-typography">
-							<div class="lead">
-								<p>Create PATCH request</p>
-							</div>
-						</div>
-						<h4 class="tsd-type-parameters-title">Type parameters</h4>
-						<ul class="tsd-type-parameters">
-							<li>
-								<h4>T</h4>
-							</li>
-						</ul>
-						<h4 class="tsd-parameters-title">Parameters</h4>
-						<ul class="tsd-parameters">
-							<li>
-								<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <a href="core.requestoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">RequestOptions</a></h5>
-								<div class="tsd-comment tsd-typography">
-									<p>options</p>
-								</div>
-							</li>
-						</ul>
-						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="core.restresponse.html" class="tsd-signature-type" data-tsd-kind="Interface">RESTResponse</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h4>
-					</li>
-				</ul>
-			</section>
-			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface tsd-has-type-parameter">
-				<a name="post" class="tsd-anchor"></a>
-				<h3>post</h3>
-				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface tsd-has-type-parameter">
-					<li class="tsd-signature tsd-kind-icon">post&lt;T&gt;<span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">?: </span><a href="core.requestoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">RequestOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="core.restresponse.html" class="tsd-signature-type" data-tsd-kind="Interface">RESTResponse</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></li>
-				</ul>
-				<ul class="tsd-descriptions">
-					<li class="tsd-description">
-						<aside class="tsd-sources">
-							<ul>
-								<li>Defined in <a href="https://github.com/Discordoo/discordoo/blob/d5248ca/src/core/providers/rest/RequestBuilder.ts#L29">src/core/providers/rest/RequestBuilder.ts:29</a></li>
-							</ul>
-						</aside>
-						<div class="tsd-comment tsd-typography">
-							<div class="lead">
-								<p>Create POST request</p>
-							</div>
-						</div>
-						<h4 class="tsd-type-parameters-title">Type parameters</h4>
-						<ul class="tsd-type-parameters">
-							<li>
-								<h4>T</h4>
-							</li>
-						</ul>
-						<h4 class="tsd-parameters-title">Parameters</h4>
-						<ul class="tsd-parameters">
-							<li>
-								<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <a href="core.requestoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">RequestOptions</a></h5>
-								<div class="tsd-comment tsd-typography">
-									<p>options</p>
-								</div>
-							</li>
-						</ul>
-						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="core.restresponse.html" class="tsd-signature-type" data-tsd-kind="Interface">RESTResponse</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h4>
-					</li>
-				</ul>
-			</section>
-			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface tsd-has-type-parameter">
-				<a name="put" class="tsd-anchor"></a>
-				<h3>put</h3>
-				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface tsd-has-type-parameter">
-					<li class="tsd-signature tsd-kind-icon">put&lt;T&gt;<span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">?: </span><a href="core.requestoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">RequestOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="core.restresponse.html" class="tsd-signature-type" data-tsd-kind="Interface">RESTResponse</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></li>
-				</ul>
-				<ul class="tsd-descriptions">
-					<li class="tsd-description">
-						<aside class="tsd-sources">
-							<ul>
-								<li>Defined in <a href="https://github.com/Discordoo/discordoo/blob/d5248ca/src/core/providers/rest/RequestBuilder.ts#L41">src/core/providers/rest/RequestBuilder.ts:41</a></li>
-							</ul>
-						</aside>
-						<div class="tsd-comment tsd-typography">
-							<div class="lead">
-								<p>Create PUT request</p>
-							</div>
-						</div>
-						<h4 class="tsd-type-parameters-title">Type parameters</h4>
-						<ul class="tsd-type-parameters">
-							<li>
-								<h4>T</h4>
-							</li>
-						</ul>
-						<h4 class="tsd-parameters-title">Parameters</h4>
-						<ul class="tsd-parameters">
-							<li>
-								<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <a href="core.requestoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">RequestOptions</a></h5>
-								<div class="tsd-comment tsd-typography">
-									<p>options</p>
-								</div>
-							</li>
-						</ul>
-						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="core.restresponse.html" class="tsd-signature-type" data-tsd-kind="Interface">RESTResponse</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h4>
-					</li>
-				</ul>
-			</section>
-			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
-				<a name="query" class="tsd-anchor"></a>
-				<h3>query</h3>
-				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-					<li class="tsd-signature tsd-kind-icon">query<span class="tsd-signature-symbol">(</span>k<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, v<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="core.requestbuilder.html" class="tsd-signature-type" data-tsd-kind="Interface">RequestBuilder</a></li>
-				</ul>
-				<ul class="tsd-descriptions">
-					<li class="tsd-description">
-						<aside class="tsd-sources">
-							<ul>
-								<li>Defined in <a href="https://github.com/Discordoo/discordoo/blob/d5248ca/src/core/providers/rest/RequestBuilder.ts#L17">src/core/providers/rest/RequestBuilder.ts:17</a></li>
-							</ul>
-						</aside>
-						<div class="tsd-comment tsd-typography">
-							<div class="lead">
-								<p>Add query data</p>
-							</div>
-						</div>
-						<h4 class="tsd-parameters-title">Parameters</h4>
-						<ul class="tsd-parameters">
-							<li>
-								<h5>k: <span class="tsd-signature-type">string</span></h5>
-								<div class="tsd-comment tsd-typography">
-									<p>key</p>
-								</div>
-							</li>
-							<li>
-								<h5>v: <span class="tsd-signature-type">string</span></h5>
-								<div class="tsd-comment tsd-typography">
-									<p>value</p>
-								</div>
-							</li>
-						</ul>
-						<h4 class="tsd-returns-title">Returns <a href="core.requestbuilder.html" class="tsd-signature-type" data-tsd-kind="Interface">RequestBuilder</a></h4>
-					</li>
-				</ul>
-			</section>
-			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
-				<a name="url" class="tsd-anchor"></a>
-				<h3>url</h3>
-				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-					<li class="tsd-signature tsd-kind-icon">url<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>paths<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="core.requestbuilder.html" class="tsd-signature-type" data-tsd-kind="Interface">RequestBuilder</a></li>
-				</ul>
-				<ul class="tsd-descriptions">
-					<li class="tsd-description">
-						<aside class="tsd-sources">
-							<ul>
-								<li>Defined in <a href="https://github.com/Discordoo/discordoo/blob/d5248ca/src/core/providers/rest/RequestBuilder.ts#L10">src/core/providers/rest/RequestBuilder.ts:10</a></li>
-							</ul>
-						</aside>
-						<div class="tsd-comment tsd-typography">
-							<div class="lead">
-								<p>Add part(s) to the URI</p>
-							</div>
-						</div>
-						<h4 class="tsd-parameters-title">Parameters</h4>
-						<ul class="tsd-parameters">
-							<li>
-								<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>paths: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h5>
-								<div class="tsd-comment tsd-typography">
-									<p>paths</p>
-								</div>
-							</li>
-						</ul>
-						<h4 class="tsd-returns-title">Returns <a href="core.requestbuilder.html" class="tsd-signature-type" data-tsd-kind="Interface">RequestBuilder</a></h4>
-					</li>
-				</ul>
 			</section>
 		</section>
 		<footer class="with-border-bottom">
@@ -3080,13 +2753,12 @@ img {
 				<h2>Legend</h2>
 				<div class="tsd-legend-group">
 					<ul class="tsd-legend">
-						<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
-						<li class="tsd-kind-interface tsd-has-type-parameter"><span class="tsd-kind-icon">Interface with type parameter</span></li>
-						<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
-					</ul>
-					<ul class="tsd-legend">
 						<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
 						<li class="tsd-kind-type-alias tsd-has-type-parameter"><span class="tsd-kind-icon">Type alias with type parameter</span></li>
+					</ul>
+					<ul class="tsd-legend">
+						<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+						<li class="tsd-kind-interface tsd-has-type-parameter"><span class="tsd-kind-icon">Interface with type parameter</span></li>
 					</ul>
 					<ul class="tsd-legend">
 						<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
