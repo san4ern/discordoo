@@ -2708,13 +2708,19 @@ img {
 <nav class="tsd-navigation secondary">
 	<ul>
 		<li class=" tsd-kind-class tsd-parent-kind-module">
-			<a href="../classes/gateway.websocketmanager.html" class="tsd-kind-icon">Web<wbr>Socket<wbr>Manager</a>
+			<a href="../classes/gateway.websocketclient.html" class="tsd-kind-icon">Web<wbr>Socket<wbr>Client</a>
 		</li>
 		<li class=" tsd-kind-class tsd-parent-kind-module">
-			<a href="../classes/gateway.websocketshard.html" class="tsd-kind-icon">Web<wbr>Socket<wbr>Shard</a>
+			<a href="../classes/gateway.websocketmanager.html" class="tsd-kind-icon">Web<wbr>Socket<wbr>Manager</a>
 		</li>
 		<li class=" tsd-kind-interface tsd-parent-kind-module">
 			<a href="gateway.gatewayoptions.html" class="tsd-kind-icon">Gateway<wbr>Options</a>
+		</li>
+		<li class=" tsd-kind-interface tsd-parent-kind-module">
+			<a href="gateway.websocketclientdestroyoptions.html" class="tsd-kind-icon">Web<wbr>Socket<wbr>Client<wbr>Destroy<wbr>Options</a>
+		</li>
+		<li class=" tsd-kind-interface tsd-parent-kind-module">
+			<a href="gateway.websocketclientevents.html" class="tsd-kind-icon">Web<wbr>Socket<wbr>Client<wbr>Events</a>
 		</li>
 		<li class="current tsd-kind-interface tsd-parent-kind-module">
 			<a href="gateway.websocketmanagerevents.html" class="tsd-kind-icon">Web<wbr>Socket<wbr>Manager<wbr>Events</a>
@@ -2732,9 +2738,6 @@ img {
 					<a href="gateway.websocketmanagerevents.html#shardspawn" class="tsd-kind-icon">shard<wbr>Spawn</a>
 				</li>
 			</ul>
-		</li>
-		<li class=" tsd-kind-interface tsd-parent-kind-module">
-			<a href="gateway.websocketshardevents.html" class="tsd-kind-icon">Web<wbr>Socket<wbr>Shard<wbr>Events</a>
 		</li>
 	</ul>
 </nav>
@@ -2772,7 +2775,7 @@ img {
 				<div class="tsd-signature tsd-kind-icon">connected<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/Discordoo/discordoo/blob/5255b74/src/gateway/interfaces/WebSocketManagerEvents.ts#L5">src/gateway/interfaces/WebSocketManagerEvents.ts:5</a></li>
+						<li>Defined in <a href="https://github.com/Discordoo/discordoo/blob/0eebcf4/src/gateway/interfaces/WebSocketManagerEvents.ts#L5">src/gateway/interfaces/WebSocketManagerEvents.ts:5</a></li>
 					</ul>
 				</aside>
 				<div class="tsd-type-declaration">
@@ -2803,7 +2806,7 @@ img {
 				<div class="tsd-signature tsd-kind-icon">disconnected<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/Discordoo/discordoo/blob/5255b74/src/gateway/interfaces/WebSocketManagerEvents.ts#L6">src/gateway/interfaces/WebSocketManagerEvents.ts:6</a></li>
+						<li>Defined in <a href="https://github.com/Discordoo/discordoo/blob/0eebcf4/src/gateway/interfaces/WebSocketManagerEvents.ts#L6">src/gateway/interfaces/WebSocketManagerEvents.ts:6</a></li>
 					</ul>
 				</aside>
 				<div class="tsd-type-declaration">
@@ -2834,7 +2837,7 @@ img {
 				<div class="tsd-signature tsd-kind-icon">message<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>msg<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">GatewayReceivePayload</span>, id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/Discordoo/discordoo/blob/5255b74/src/gateway/interfaces/WebSocketManagerEvents.ts#L4">src/gateway/interfaces/WebSocketManagerEvents.ts:4</a></li>
+						<li>Defined in <a href="https://github.com/Discordoo/discordoo/blob/0eebcf4/src/gateway/interfaces/WebSocketManagerEvents.ts#L4">src/gateway/interfaces/WebSocketManagerEvents.ts:4</a></li>
 					</ul>
 				</aside>
 				<div class="tsd-type-declaration">
@@ -2868,7 +2871,7 @@ img {
 				<div class="tsd-signature tsd-kind-icon">shard<wbr>Spawn<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/Discordoo/discordoo/blob/5255b74/src/gateway/interfaces/WebSocketManagerEvents.ts#L7">src/gateway/interfaces/WebSocketManagerEvents.ts:7</a></li>
+						<li>Defined in <a href="https://github.com/Discordoo/discordoo/blob/0eebcf4/src/gateway/interfaces/WebSocketManagerEvents.ts#L7">src/gateway/interfaces/WebSocketManagerEvents.ts:7</a></li>
 					</ul>
 				</aside>
 				<div class="tsd-type-declaration">

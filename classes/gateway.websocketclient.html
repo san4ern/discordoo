@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>WebSocketShardEvents | Discordoo</title>
+	<title>WebSocketClient | Discordoo</title>
 	<meta name="description" content="Documentation for Discordoo">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<style type="text/css">:root {
@@ -2707,37 +2707,163 @@ img {
 </header>
 <nav class="tsd-navigation secondary">
 	<ul>
-		<li class=" tsd-kind-class tsd-parent-kind-module">
-			<a href="../classes/gateway.websocketmanager.html" class="tsd-kind-icon">Web<wbr>Socket<wbr>Manager</a>
-		</li>
-		<li class=" tsd-kind-class tsd-parent-kind-module">
-			<a href="../classes/gateway.websocketshard.html" class="tsd-kind-icon">Web<wbr>Socket<wbr>Shard</a>
-		</li>
-		<li class=" tsd-kind-interface tsd-parent-kind-module">
-			<a href="gateway.gatewayoptions.html" class="tsd-kind-icon">Gateway<wbr>Options</a>
-		</li>
-		<li class=" tsd-kind-interface tsd-parent-kind-module">
-			<a href="gateway.websocketmanagerevents.html" class="tsd-kind-icon">Web<wbr>Socket<wbr>Manager<wbr>Events</a>
-		</li>
-		<li class="current tsd-kind-interface tsd-parent-kind-module">
-			<a href="gateway.websocketshardevents.html" class="tsd-kind-icon">Web<wbr>Socket<wbr>Shard<wbr>Events</a>
+		<li class="current tsd-kind-class tsd-parent-kind-module">
+			<a href="gateway.websocketclient.html" class="tsd-kind-icon">Web<wbr>Socket<wbr>Client</a>
 			<ul>
-				<li class=" tsd-kind-property tsd-parent-kind-interface">
-					<a href="gateway.websocketshardevents.html#closed" class="tsd-kind-icon">closed</a>
+				<li class=" tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
+					<a href="gateway.websocketclient.html#constructor" class="tsd-kind-icon">constructor</a>
 				</li>
-				<li class=" tsd-kind-property tsd-parent-kind-interface">
-					<a href="gateway.websocketshardevents.html#connected" class="tsd-kind-icon">connected</a>
+				<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a href="gateway.websocketclient.html#_handshaketimeout" class="tsd-kind-icon">_handshake<wbr>Timeout</a>
 				</li>
-				<li class=" tsd-kind-property tsd-parent-kind-interface">
-					<a href="gateway.websocketshardevents.html#dispatch" class="tsd-kind-icon">dispatch</a>
+				<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a href="gateway.websocketclient.html#_heartbeatinterval" class="tsd-kind-icon">_heartbeat<wbr>Interval</a>
 				</li>
-				<li class=" tsd-kind-property tsd-parent-kind-interface">
-					<a href="gateway.websocketshardevents.html#invalidated" class="tsd-kind-icon">invalidated</a>
+				<li class=" tsd-kind-property tsd-parent-kind-class">
+					<a href="gateway.websocketclient.html#closesequence" class="tsd-kind-icon">close<wbr>Sequence</a>
 				</li>
-				<li class=" tsd-kind-property tsd-parent-kind-interface">
-					<a href="gateway.websocketshardevents.html#ready" class="tsd-kind-icon">ready</a>
+				<li class=" tsd-kind-property tsd-parent-kind-class">
+					<a href="gateway.websocketclient.html#expectedguilds" class="tsd-kind-icon">expected<wbr>Guilds</a>
+				</li>
+				<li class=" tsd-kind-property tsd-parent-kind-class">
+					<a href="gateway.websocketclient.html#id" class="tsd-kind-icon">id</a>
+				</li>
+				<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a href="gateway.websocketclient.html#inflate" class="tsd-kind-icon">inflate</a>
+				</li>
+				<li class=" tsd-kind-property tsd-parent-kind-class">
+					<a href="gateway.websocketclient.html#lastpingtimestamp" class="tsd-kind-icon">last<wbr>Ping<wbr>Timestamp</a>
+				</li>
+				<li class=" tsd-kind-property tsd-parent-kind-class">
+					<a href="gateway.websocketclient.html#manager" class="tsd-kind-icon">manager</a>
+				</li>
+				<li class=" tsd-kind-property tsd-parent-kind-class">
+					<a href="gateway.websocketclient.html#missedheartbeats" class="tsd-kind-icon">missed<wbr>Heartbeats</a>
+				</li>
+				<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a href="gateway.websocketclient.html#options" class="tsd-kind-icon">options</a>
+				</li>
+				<li class=" tsd-kind-property tsd-parent-kind-class">
+					<a href="gateway.websocketclient.html#ping" class="tsd-kind-icon">ping</a>
+				</li>
+				<li class=" tsd-kind-property tsd-parent-kind-class">
+					<a href="gateway.websocketclient.html#sequence" class="tsd-kind-icon">sequence</a>
+				</li>
+				<li class=" tsd-kind-property tsd-parent-kind-class">
+					<a href="gateway.websocketclient.html#sessionid" class="tsd-kind-icon">sessionID</a>
+				</li>
+				<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a href="gateway.websocketclient.html#socket" class="tsd-kind-icon">socket</a>
+				</li>
+				<li class=" tsd-kind-property tsd-parent-kind-class">
+					<a href="gateway.websocketclient.html#status" class="tsd-kind-icon">status</a>
+				</li>
+				<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static tsd-is-external">
+					<a href="gateway.websocketclient.html#defaultmaxlisteners" class="tsd-kind-icon">default<wbr>Max<wbr>Listeners</a>
+				</li>
+				<li class=" tsd-kind-get-signature tsd-parent-kind-class">
+					<a href="gateway.websocketclient.html#ready" class="tsd-kind-icon">ready</a>
+				</li>
+				<li class=" tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited tsd-is-external">
+					<a href="gateway.websocketclient.html#addlistener" class="tsd-kind-icon">add<wbr>Listener</a>
+				</li>
+				<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a href="gateway.websocketclient.html#cleanup" class="tsd-kind-icon">cleanup</a>
+				</li>
+				<li class=" tsd-kind-method tsd-parent-kind-class">
+					<a href="gateway.websocketclient.html#connect" class="tsd-kind-icon">connect</a>
+				</li>
+				<li class=" tsd-kind-method tsd-parent-kind-class">
+					<a href="gateway.websocketclient.html#destroy" class="tsd-kind-icon">destroy</a>
+				</li>
+				<li class=" tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited tsd-is-external">
+					<a href="gateway.websocketclient.html#emit" class="tsd-kind-icon">emit</a>
+				</li>
+				<li class=" tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited tsd-is-external">
+					<a href="gateway.websocketclient.html#eventnames" class="tsd-kind-icon">event<wbr>Names</a>
+				</li>
+				<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external">
+					<a href="gateway.websocketclient.html#getmaxlisteners" class="tsd-kind-icon">get<wbr>Max<wbr>Listeners</a>
+				</li>
+				<li class=" tsd-kind-method tsd-parent-kind-class">
+					<a href="gateway.websocketclient.html#handshaketimeout" class="tsd-kind-icon">handshake<wbr>Timeout</a>
+				</li>
+				<li class=" tsd-kind-method tsd-parent-kind-class">
+					<a href="gateway.websocketclient.html#heartbeat" class="tsd-kind-icon">heartbeat</a>
+				</li>
+				<li class=" tsd-kind-method tsd-parent-kind-class">
+					<a href="gateway.websocketclient.html#heartbeatinterval" class="tsd-kind-icon">heartbeat<wbr>Interval</a>
+				</li>
+				<li class=" tsd-kind-method tsd-parent-kind-class">
+					<a href="gateway.websocketclient.html#identify" class="tsd-kind-icon">identify</a>
+				</li>
+				<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external">
+					<a href="gateway.websocketclient.html#listenercount" class="tsd-kind-icon">listener<wbr>Count</a>
+				</li>
+				<li class=" tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited tsd-is-external">
+					<a href="gateway.websocketclient.html#listeners" class="tsd-kind-icon">listeners</a>
+				</li>
+				<li class=" tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited tsd-is-external">
+					<a href="gateway.websocketclient.html#off" class="tsd-kind-icon">off</a>
+				</li>
+				<li class=" tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited tsd-is-external">
+					<a href="gateway.websocketclient.html#on" class="tsd-kind-icon">on</a>
+				</li>
+				<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a href="gateway.websocketclient.html#onclose" class="tsd-kind-icon">on<wbr>Close</a>
+				</li>
+				<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a href="gateway.websocketclient.html#onerror" class="tsd-kind-icon">on<wbr>Error</a>
+				</li>
+				<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a href="gateway.websocketclient.html#onmessage" class="tsd-kind-icon">on<wbr>Message</a>
+				</li>
+				<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a href="gateway.websocketclient.html#onopen" class="tsd-kind-icon">on<wbr>Open</a>
+				</li>
+				<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a href="gateway.websocketclient.html#onpacket" class="tsd-kind-icon">on<wbr>Packet</a>
+				</li>
+				<li class=" tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited tsd-is-external">
+					<a href="gateway.websocketclient.html#once" class="tsd-kind-icon">once</a>
+				</li>
+				<li class=" tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited tsd-is-external">
+					<a href="gateway.websocketclient.html#prependlistener" class="tsd-kind-icon">prepend<wbr>Listener</a>
+				</li>
+				<li class=" tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited tsd-is-external">
+					<a href="gateway.websocketclient.html#prependoncelistener" class="tsd-kind-icon">prepend<wbr>Once<wbr>Listener</a>
+				</li>
+				<li class=" tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited tsd-is-external">
+					<a href="gateway.websocketclient.html#rawlisteners" class="tsd-kind-icon">raw<wbr>Listeners</a>
+				</li>
+				<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external">
+					<a href="gateway.websocketclient.html#removealllisteners" class="tsd-kind-icon">remove<wbr>All<wbr>Listeners</a>
+				</li>
+				<li class=" tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited tsd-is-external">
+					<a href="gateway.websocketclient.html#removelistener" class="tsd-kind-icon">remove<wbr>Listener</a>
+				</li>
+				<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external">
+					<a href="gateway.websocketclient.html#setmaxlisteners" class="tsd-kind-icon">set<wbr>Max<wbr>Listeners</a>
+				</li>
+				<li class=" tsd-kind-method tsd-parent-kind-class">
+					<a href="gateway.websocketclient.html#socketsend" class="tsd-kind-icon">socket<wbr>Send</a>
 				</li>
 			</ul>
+		</li>
+		<li class=" tsd-kind-class tsd-parent-kind-module">
+			<a href="gateway.websocketmanager.html" class="tsd-kind-icon">Web<wbr>Socket<wbr>Manager</a>
+		</li>
+		<li class=" tsd-kind-interface tsd-parent-kind-module">
+			<a href="../interfaces/gateway.gatewayoptions.html" class="tsd-kind-icon">Gateway<wbr>Options</a>
+		</li>
+		<li class=" tsd-kind-interface tsd-parent-kind-module">
+			<a href="../interfaces/gateway.websocketclientdestroyoptions.html" class="tsd-kind-icon">Web<wbr>Socket<wbr>Client<wbr>Destroy<wbr>Options</a>
+		</li>
+		<li class=" tsd-kind-interface tsd-parent-kind-module">
+			<a href="../interfaces/gateway.websocketclientevents.html" class="tsd-kind-icon">Web<wbr>Socket<wbr>Client<wbr>Events</a>
+		</li>
+		<li class=" tsd-kind-interface tsd-parent-kind-module">
+			<a href="../interfaces/gateway.websocketmanagerevents.html" class="tsd-kind-icon">Web<wbr>Socket<wbr>Manager<wbr>Events</a>
 		</li>
 	</ul>
 </nav>
@@ -2747,7 +2873,12 @@ img {
 			<h3>Hierarchy</h3>
 			<ul class="tsd-hierarchy">
 				<li>
-					<span class="target">WebSocketShardEvents</span>
+					<span class="tsd-signature-type">TypedEmitter</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/gateway.websocketclientevents.html" class="tsd-signature-type" data-tsd-kind="Interface">WebSocketClientEvents</a><span class="tsd-signature-symbol">&gt;</span>
+					<ul class="tsd-hierarchy">
+						<li>
+							<span class="target">WebSocketClient</span>
+						</li>
+					</ul>
 				</li>
 			</ul>
 		</section>
@@ -2756,156 +2887,1033 @@ img {
 			<section class="tsd-panel tsd-index-panel">
 				<div class="tsd-index-content">
 					<section class="tsd-index-section ">
+						<h3>Constructors</h3>
+						<ul class="tsd-index-list">
+							<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite"><a href="gateway.websocketclient.html#constructor" class="tsd-kind-icon">constructor</a></li>
+						</ul>
+					</section>
+					<section class="tsd-index-section ">
 						<h3>Properties</h3>
 						<ul class="tsd-index-list">
-							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="gateway.websocketshardevents.html#closed" class="tsd-kind-icon">closed</a></li>
-							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="gateway.websocketshardevents.html#connected" class="tsd-kind-icon">connected</a></li>
-							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="gateway.websocketshardevents.html#dispatch" class="tsd-kind-icon">dispatch</a></li>
-							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="gateway.websocketshardevents.html#invalidated" class="tsd-kind-icon">invalidated</a></li>
-							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="gateway.websocketshardevents.html#ready" class="tsd-kind-icon">ready</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="gateway.websocketclient.html#_handshaketimeout" class="tsd-kind-icon">_handshake<wbr>Timeout</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="gateway.websocketclient.html#_heartbeatinterval" class="tsd-kind-icon">_heartbeat<wbr>Interval</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-class"><a href="gateway.websocketclient.html#closesequence" class="tsd-kind-icon">close<wbr>Sequence</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-class"><a href="gateway.websocketclient.html#expectedguilds" class="tsd-kind-icon">expected<wbr>Guilds</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-class"><a href="gateway.websocketclient.html#id" class="tsd-kind-icon">id</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="gateway.websocketclient.html#inflate" class="tsd-kind-icon">inflate</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-class"><a href="gateway.websocketclient.html#lastpingtimestamp" class="tsd-kind-icon">last<wbr>Ping<wbr>Timestamp</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-class"><a href="gateway.websocketclient.html#manager" class="tsd-kind-icon">manager</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-class"><a href="gateway.websocketclient.html#missedheartbeats" class="tsd-kind-icon">missed<wbr>Heartbeats</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="gateway.websocketclient.html#options" class="tsd-kind-icon">options</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-class"><a href="gateway.websocketclient.html#ping" class="tsd-kind-icon">ping</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-class"><a href="gateway.websocketclient.html#sequence" class="tsd-kind-icon">sequence</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-class"><a href="gateway.websocketclient.html#sessionid" class="tsd-kind-icon">sessionID</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="gateway.websocketclient.html#socket" class="tsd-kind-icon">socket</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-class"><a href="gateway.websocketclient.html#status" class="tsd-kind-icon">status</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static tsd-is-external"><a href="gateway.websocketclient.html#defaultmaxlisteners" class="tsd-kind-icon">default<wbr>Max<wbr>Listeners</a></li>
+						</ul>
+					</section>
+					<section class="tsd-index-section ">
+						<h3>Accessors</h3>
+						<ul class="tsd-index-list">
+							<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="gateway.websocketclient.html#ready" class="tsd-kind-icon">ready</a></li>
+						</ul>
+					</section>
+					<section class="tsd-index-section ">
+						<h3>Methods</h3>
+						<ul class="tsd-index-list">
+							<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited tsd-is-external"><a href="gateway.websocketclient.html#addlistener" class="tsd-kind-icon">add<wbr>Listener</a></li>
+							<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="gateway.websocketclient.html#cleanup" class="tsd-kind-icon">cleanup</a></li>
+							<li class="tsd-kind-method tsd-parent-kind-class"><a href="gateway.websocketclient.html#connect" class="tsd-kind-icon">connect</a></li>
+							<li class="tsd-kind-method tsd-parent-kind-class"><a href="gateway.websocketclient.html#destroy" class="tsd-kind-icon">destroy</a></li>
+							<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited tsd-is-external"><a href="gateway.websocketclient.html#emit" class="tsd-kind-icon">emit</a></li>
+							<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited tsd-is-external"><a href="gateway.websocketclient.html#eventnames" class="tsd-kind-icon">event<wbr>Names</a></li>
+							<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external"><a href="gateway.websocketclient.html#getmaxlisteners" class="tsd-kind-icon">get<wbr>Max<wbr>Listeners</a></li>
+							<li class="tsd-kind-method tsd-parent-kind-class"><a href="gateway.websocketclient.html#handshaketimeout" class="tsd-kind-icon">handshake<wbr>Timeout</a></li>
+							<li class="tsd-kind-method tsd-parent-kind-class"><a href="gateway.websocketclient.html#heartbeat" class="tsd-kind-icon">heartbeat</a></li>
+							<li class="tsd-kind-method tsd-parent-kind-class"><a href="gateway.websocketclient.html#heartbeatinterval" class="tsd-kind-icon">heartbeat<wbr>Interval</a></li>
+							<li class="tsd-kind-method tsd-parent-kind-class"><a href="gateway.websocketclient.html#identify" class="tsd-kind-icon">identify</a></li>
+							<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external"><a href="gateway.websocketclient.html#listenercount" class="tsd-kind-icon">listener<wbr>Count</a></li>
+							<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited tsd-is-external"><a href="gateway.websocketclient.html#listeners" class="tsd-kind-icon">listeners</a></li>
+							<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited tsd-is-external"><a href="gateway.websocketclient.html#off" class="tsd-kind-icon">off</a></li>
+							<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited tsd-is-external"><a href="gateway.websocketclient.html#on" class="tsd-kind-icon">on</a></li>
+							<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="gateway.websocketclient.html#onclose" class="tsd-kind-icon">on<wbr>Close</a></li>
+							<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="gateway.websocketclient.html#onerror" class="tsd-kind-icon">on<wbr>Error</a></li>
+							<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="gateway.websocketclient.html#onmessage" class="tsd-kind-icon">on<wbr>Message</a></li>
+							<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="gateway.websocketclient.html#onopen" class="tsd-kind-icon">on<wbr>Open</a></li>
+							<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="gateway.websocketclient.html#onpacket" class="tsd-kind-icon">on<wbr>Packet</a></li>
+							<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited tsd-is-external"><a href="gateway.websocketclient.html#once" class="tsd-kind-icon">once</a></li>
+							<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited tsd-is-external"><a href="gateway.websocketclient.html#prependlistener" class="tsd-kind-icon">prepend<wbr>Listener</a></li>
+							<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited tsd-is-external"><a href="gateway.websocketclient.html#prependoncelistener" class="tsd-kind-icon">prepend<wbr>Once<wbr>Listener</a></li>
+							<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited tsd-is-external"><a href="gateway.websocketclient.html#rawlisteners" class="tsd-kind-icon">raw<wbr>Listeners</a></li>
+							<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external"><a href="gateway.websocketclient.html#removealllisteners" class="tsd-kind-icon">remove<wbr>All<wbr>Listeners</a></li>
+							<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited tsd-is-external"><a href="gateway.websocketclient.html#removelistener" class="tsd-kind-icon">remove<wbr>Listener</a></li>
+							<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external"><a href="gateway.websocketclient.html#setmaxlisteners" class="tsd-kind-icon">set<wbr>Max<wbr>Listeners</a></li>
+							<li class="tsd-kind-method tsd-parent-kind-class"><a href="gateway.websocketclient.html#socketsend" class="tsd-kind-icon">socket<wbr>Send</a></li>
 						</ul>
 					</section>
 				</div>
 			</section>
 		</section>
 		<section class="tsd-panel-group tsd-member-group ">
+			<h2>Constructors</h2>
+			<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
+				<a name="constructor" class="tsd-anchor"></a>
+				<h3>constructor</h3>
+				<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
+					<li class="tsd-signature tsd-kind-icon">new <wbr>Web<wbr>Socket<wbr>Client<span class="tsd-signature-symbol">(</span>manager<span class="tsd-signature-symbol">: </span><a href="gateway.websocketmanager.html" class="tsd-signature-type" data-tsd-kind="Class">WebSocketManager</a>, id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="gateway.websocketclient.html" class="tsd-signature-type" data-tsd-kind="Class">WebSocketClient</a></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<p>Overrides TypedEmitter&lt;WebSocketClientEventsI&gt;.constructor</p>
+							<ul>
+								<li>Defined in <a href="https://github.com/Discordoo/discordoo/blob/0eebcf4/src/gateway/WebSocketClient.ts#L47">src/gateway/WebSocketClient.ts:47</a></li>
+							</ul>
+						</aside>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>manager: <a href="gateway.websocketmanager.html" class="tsd-signature-type" data-tsd-kind="Class">WebSocketManager</a></h5>
+							</li>
+							<li>
+								<h5>id: <span class="tsd-signature-type">number</span></h5>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <a href="gateway.websocketclient.html" class="tsd-signature-type" data-tsd-kind="Class">WebSocketClient</a></h4>
+					</li>
+				</ul>
+			</section>
+		</section>
+		<section class="tsd-panel-group tsd-member-group ">
 			<h2>Properties</h2>
-			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-				<a name="closed" class="tsd-anchor"></a>
-				<h3>closed</h3>
-				<div class="tsd-signature tsd-kind-icon">closed<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">unknown</span></div>
+			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+				<a name="_handshaketimeout" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagPrivate">Private</span> <span class="tsd-flag ts-flagOptional">Optional</span> _handshake<wbr>Timeout</h3>
+				<div class="tsd-signature tsd-kind-icon">_handshake<wbr>Timeout<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Timeout</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/Discordoo/discordoo/blob/5255b74/src/gateway/interfaces/WebSocketShardEvents.ts#L14">src/gateway/interfaces/WebSocketShardEvents.ts:14</a></li>
+						<li>Defined in <a href="https://github.com/Discordoo/discordoo/blob/0eebcf4/src/gateway/WebSocketClient.ts#L35">src/gateway/WebSocketClient.ts:35</a></li>
 					</ul>
 				</aside>
-				<div class="tsd-type-declaration">
-					<h4>Type declaration</h4>
-					<ul class="tsd-parameters">
-						<li class="tsd-parameter-signature">
-							<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-interface">
-								<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">unknown</span></li>
-							</ul>
-							<ul class="tsd-descriptions">
-								<li class="tsd-description">
-									<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">unknown</span></h4>
-								</li>
-							</ul>
-						</li>
-					</ul>
-				</div>
 			</section>
-			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-				<a name="connected" class="tsd-anchor"></a>
-				<h3>connected</h3>
-				<div class="tsd-signature tsd-kind-icon">connected<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">unknown</span></div>
+			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+				<a name="_heartbeatinterval" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagPrivate">Private</span> <span class="tsd-flag ts-flagOptional">Optional</span> _heartbeat<wbr>Interval</h3>
+				<div class="tsd-signature tsd-kind-icon">_heartbeat<wbr>Interval<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Timeout</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/Discordoo/discordoo/blob/5255b74/src/gateway/interfaces/WebSocketShardEvents.ts#L12">src/gateway/interfaces/WebSocketShardEvents.ts:12</a></li>
+						<li>Defined in <a href="https://github.com/Discordoo/discordoo/blob/0eebcf4/src/gateway/WebSocketClient.ts#L34">src/gateway/WebSocketClient.ts:34</a></li>
 					</ul>
 				</aside>
-				<div class="tsd-type-declaration">
-					<h4>Type declaration</h4>
-					<ul class="tsd-parameters">
-						<li class="tsd-parameter-signature">
-							<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-interface">
-								<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">unknown</span></li>
-							</ul>
-							<ul class="tsd-descriptions">
-								<li class="tsd-description">
-									<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">unknown</span></h4>
-								</li>
-							</ul>
-						</li>
-					</ul>
-				</div>
 			</section>
-			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-				<a name="dispatch" class="tsd-anchor"></a>
-				<h3>dispatch</h3>
-				<div class="tsd-signature tsd-kind-icon">dispatch<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>msg<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">GatewayDispatchEvents</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">unknown</span></div>
+			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+				<a name="closesequence" class="tsd-anchor"></a>
+				<h3>close<wbr>Sequence</h3>
+				<div class="tsd-signature tsd-kind-icon">close<wbr>Sequence<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = -1</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/Discordoo/discordoo/blob/5255b74/src/gateway/interfaces/WebSocketShardEvents.ts#L10">src/gateway/interfaces/WebSocketShardEvents.ts:10</a></li>
+						<li>Defined in <a href="https://github.com/Discordoo/discordoo/blob/0eebcf4/src/gateway/WebSocketClient.ts#L43">src/gateway/WebSocketClient.ts:43</a></li>
 					</ul>
 				</aside>
-				<div class="tsd-type-declaration">
-					<h4>Type declaration</h4>
-					<ul class="tsd-parameters">
-						<li class="tsd-parameter-signature">
-							<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-interface">
-								<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>msg<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">GatewayDispatchEvents</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">unknown</span></li>
-							</ul>
-							<ul class="tsd-descriptions">
-								<li class="tsd-description">
-									<h4 class="tsd-parameters-title">Parameters</h4>
-									<ul class="tsd-parameters">
-										<li>
-											<h5>msg: <span class="tsd-signature-type">GatewayDispatchEvents</span></h5>
-										</li>
-									</ul>
-									<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">unknown</span></h4>
-								</li>
-							</ul>
-						</li>
-					</ul>
-				</div>
 			</section>
-			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-				<a name="invalidated" class="tsd-anchor"></a>
-				<h3>invalidated</h3>
-				<div class="tsd-signature tsd-kind-icon">invalidated<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">unknown</span></div>
+			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+				<a name="expectedguilds" class="tsd-anchor"></a>
+				<h3>expected<wbr>Guilds</h3>
+				<div class="tsd-signature tsd-kind-icon">expected<wbr>Guilds<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Set</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = ...</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/Discordoo/discordoo/blob/5255b74/src/gateway/interfaces/WebSocketShardEvents.ts#L11">src/gateway/interfaces/WebSocketShardEvents.ts:11</a></li>
+						<li>Defined in <a href="https://github.com/Discordoo/discordoo/blob/0eebcf4/src/gateway/WebSocketClient.ts#L44">src/gateway/WebSocketClient.ts:44</a></li>
 					</ul>
 				</aside>
-				<div class="tsd-type-declaration">
-					<h4>Type declaration</h4>
-					<ul class="tsd-parameters">
-						<li class="tsd-parameter-signature">
-							<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-interface">
-								<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">unknown</span></li>
-							</ul>
-							<ul class="tsd-descriptions">
-								<li class="tsd-description">
-									<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">unknown</span></h4>
-								</li>
-							</ul>
-						</li>
-					</ul>
-				</div>
 			</section>
-			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+				<a name="id" class="tsd-anchor"></a>
+				<h3>id</h3>
+				<div class="tsd-signature tsd-kind-icon">id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+				<aside class="tsd-sources">
+					<ul>
+						<li>Defined in <a href="https://github.com/Discordoo/discordoo/blob/0eebcf4/src/gateway/WebSocketClient.ts#L39">src/gateway/WebSocketClient.ts:39</a></li>
+					</ul>
+				</aside>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+				<a name="inflate" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagPrivate">Private</span> <span class="tsd-flag ts-flagOptional">Optional</span> inflate</h3>
+				<div class="tsd-signature tsd-kind-icon">inflate<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Inflate</span></div>
+				<aside class="tsd-sources">
+					<ul>
+						<li>Defined in <a href="https://github.com/Discordoo/discordoo/blob/0eebcf4/src/gateway/WebSocketClient.ts#L33">src/gateway/WebSocketClient.ts:33</a></li>
+					</ul>
+				</aside>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+				<a name="lastpingtimestamp" class="tsd-anchor"></a>
+				<h3>last<wbr>Ping<wbr>Timestamp</h3>
+				<div class="tsd-signature tsd-kind-icon">last<wbr>Ping<wbr>Timestamp<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = ...</span></div>
+				<aside class="tsd-sources">
+					<ul>
+						<li>Defined in <a href="https://github.com/Discordoo/discordoo/blob/0eebcf4/src/gateway/WebSocketClient.ts#L47">src/gateway/WebSocketClient.ts:47</a></li>
+					</ul>
+				</aside>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+				<a name="manager" class="tsd-anchor"></a>
+				<h3>manager</h3>
+				<div class="tsd-signature tsd-kind-icon">manager<span class="tsd-signature-symbol">:</span> <a href="gateway.websocketmanager.html" class="tsd-signature-type" data-tsd-kind="Class">WebSocketManager</a></div>
+				<aside class="tsd-sources">
+					<ul>
+						<li>Defined in <a href="https://github.com/Discordoo/discordoo/blob/0eebcf4/src/gateway/WebSocketClient.ts#L37">src/gateway/WebSocketClient.ts:37</a></li>
+					</ul>
+				</aside>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+				<a name="missedheartbeats" class="tsd-anchor"></a>
+				<h3>missed<wbr>Heartbeats</h3>
+				<div class="tsd-signature tsd-kind-icon">missed<wbr>Heartbeats<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 0</span></div>
+				<aside class="tsd-sources">
+					<ul>
+						<li>Defined in <a href="https://github.com/Discordoo/discordoo/blob/0eebcf4/src/gateway/WebSocketClient.ts#L45">src/gateway/WebSocketClient.ts:45</a></li>
+					</ul>
+				</aside>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+				<a name="options" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagPrivate">Private</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> options</h3>
+				<div class="tsd-signature tsd-kind-icon">options<span class="tsd-signature-symbol">:</span> <a href="../interfaces/gateway.gatewayoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">GatewayOptions</a></div>
+				<aside class="tsd-sources">
+					<ul>
+						<li>Defined in <a href="https://github.com/Discordoo/discordoo/blob/0eebcf4/src/gateway/WebSocketClient.ts#L32">src/gateway/WebSocketClient.ts:32</a></li>
+					</ul>
+				</aside>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+				<a name="ping" class="tsd-anchor"></a>
+				<h3>ping</h3>
+				<div class="tsd-signature tsd-kind-icon">ping<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = -1</span></div>
+				<aside class="tsd-sources">
+					<ul>
+						<li>Defined in <a href="https://github.com/Discordoo/discordoo/blob/0eebcf4/src/gateway/WebSocketClient.ts#L46">src/gateway/WebSocketClient.ts:46</a></li>
+					</ul>
+				</aside>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+				<a name="sequence" class="tsd-anchor"></a>
+				<h3>sequence</h3>
+				<div class="tsd-signature tsd-kind-icon">sequence<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = -1</span></div>
+				<aside class="tsd-sources">
+					<ul>
+						<li>Defined in <a href="https://github.com/Discordoo/discordoo/blob/0eebcf4/src/gateway/WebSocketClient.ts#L42">src/gateway/WebSocketClient.ts:42</a></li>
+					</ul>
+				</aside>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+				<a name="sessionid" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagOptional">Optional</span> sessionID</h3>
+				<div class="tsd-signature tsd-kind-icon">sessionID<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+				<aside class="tsd-sources">
+					<ul>
+						<li>Defined in <a href="https://github.com/Discordoo/discordoo/blob/0eebcf4/src/gateway/WebSocketClient.ts#L41">src/gateway/WebSocketClient.ts:41</a></li>
+					</ul>
+				</aside>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+				<a name="socket" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagPrivate">Private</span> <span class="tsd-flag ts-flagOptional">Optional</span> socket</h3>
+				<div class="tsd-signature tsd-kind-icon">socket<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">WebSocket</span></div>
+				<aside class="tsd-sources">
+					<ul>
+						<li>Defined in <a href="https://github.com/Discordoo/discordoo/blob/0eebcf4/src/gateway/WebSocketClient.ts#L31">src/gateway/WebSocketClient.ts:31</a></li>
+					</ul>
+				</aside>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+				<a name="status" class="tsd-anchor"></a>
+				<h3>status</h3>
+				<div class="tsd-signature tsd-kind-icon">status<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">WebSocketClientStates</span></div>
+				<aside class="tsd-sources">
+					<ul>
+						<li>Defined in <a href="https://github.com/Discordoo/discordoo/blob/0eebcf4/src/gateway/WebSocketClient.ts#L38">src/gateway/WebSocketClient.ts:38</a></li>
+					</ul>
+				</aside>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static tsd-is-external">
+				<a name="defaultmaxlisteners" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagStatic">Static</span> default<wbr>Max<wbr>Listeners</h3>
+				<div class="tsd-signature tsd-kind-icon">default<wbr>Max<wbr>Listeners<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+				<aside class="tsd-sources">
+					<p>Inherited from TypedEmitter.defaultMaxListeners</p>
+					<ul>
+						<li>Defined in node_modules/tiny-typed-emitter/lib/index.d.ts:10</li>
+					</ul>
+				</aside>
+			</section>
+		</section>
+		<section class="tsd-panel-group tsd-member-group ">
+			<h2>Accessors</h2>
+			<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class">
 				<a name="ready" class="tsd-anchor"></a>
 				<h3>ready</h3>
-				<div class="tsd-signature tsd-kind-icon">ready<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">unknown</span></div>
-				<aside class="tsd-sources">
-					<ul>
-						<li>Defined in <a href="https://github.com/Discordoo/discordoo/blob/5255b74/src/gateway/interfaces/WebSocketShardEvents.ts#L13">src/gateway/interfaces/WebSocketShardEvents.ts:13</a></li>
-					</ul>
-				</aside>
-				<div class="tsd-type-declaration">
-					<h4>Type declaration</h4>
-					<ul class="tsd-parameters">
-						<li class="tsd-parameter-signature">
-							<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-interface">
-								<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">unknown</span></li>
+				<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class">
+					<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> ready<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/Discordoo/discordoo/blob/0eebcf4/src/gateway/WebSocketClient.ts#L277">src/gateway/WebSocketClient.ts:277</a></li>
 							</ul>
-							<ul class="tsd-descriptions">
-								<li class="tsd-description">
-									<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">unknown</span></h4>
-								</li>
+						</aside>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+					</li>
+				</ul>
+			</section>
+		</section>
+		<section class="tsd-panel-group tsd-member-group ">
+			<h2>Methods</h2>
+			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited tsd-is-external">
+				<a name="addlistener" class="tsd-anchor"></a>
+				<h3>add<wbr>Listener</h3>
+				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited tsd-is-external">
+					<li class="tsd-signature tsd-kind-icon">add<wbr>Listener&lt;U&gt;<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">U</span>, listener<span class="tsd-signature-symbol">: </span><a href="../interfaces/gateway.websocketclientevents.html" class="tsd-signature-type" data-tsd-kind="Interface">WebSocketClientEvents</a><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">U</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="gateway.websocketclient.html" class="tsd-signature-type" data-tsd-kind="Class">WebSocketClient</a></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<p>Inherited from TypedEmitter.addListener</p>
+							<ul>
+								<li>Defined in node_modules/tiny-typed-emitter/lib/index.d.ts:11</li>
 							</ul>
-						</li>
-					</ul>
-				</div>
+						</aside>
+						<h4 class="tsd-type-parameters-title">Type parameters</h4>
+						<ul class="tsd-type-parameters">
+							<li>
+								<h4>U<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">keyof </span><a href="../interfaces/gateway.websocketclientevents.html" class="tsd-signature-type" data-tsd-kind="Interface">WebSocketClientEvents</a></h4>
+							</li>
+						</ul>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>event: <span class="tsd-signature-type">U</span></h5>
+							</li>
+							<li>
+								<h5>listener: <a href="../interfaces/gateway.websocketclientevents.html" class="tsd-signature-type" data-tsd-kind="Interface">WebSocketClientEvents</a><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">U</span><span class="tsd-signature-symbol">]</span></h5>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <a href="gateway.websocketclient.html" class="tsd-signature-type" data-tsd-kind="Class">WebSocketClient</a></h4>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+				<a name="cleanup" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagPrivate">Private</span> cleanup</h3>
+				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<li class="tsd-signature tsd-kind-icon">cleanup<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/Discordoo/discordoo/blob/0eebcf4/src/gateway/WebSocketClient.ts#L281">src/gateway/WebSocketClient.ts:281</a></li>
+							</ul>
+						</aside>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+				<a name="connect" class="tsd-anchor"></a>
+				<h3>connect</h3>
+				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+					<li class="tsd-signature tsd-kind-icon">connect<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/Discordoo/discordoo/blob/0eebcf4/src/gateway/WebSocketClient.ts#L59">src/gateway/WebSocketClient.ts:59</a></li>
+							</ul>
+						</aside>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+				<a name="destroy" class="tsd-anchor"></a>
+				<h3>destroy</h3>
+				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+					<li class="tsd-signature tsd-kind-icon">destroy<span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">?: </span><a href="../interfaces/gateway.websocketclientdestroyoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">WebSocketClientDestroyOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/Discordoo/discordoo/blob/0eebcf4/src/gateway/WebSocketClient.ts#L233">src/gateway/WebSocketClient.ts:233</a></li>
+							</ul>
+						</aside>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>options: <a href="../interfaces/gateway.websocketclientdestroyoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">WebSocketClientDestroyOptions</a><span class="tsd-signature-symbol"> = {}</span></h5>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited tsd-is-external">
+				<a name="emit" class="tsd-anchor"></a>
+				<h3>emit</h3>
+				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited tsd-is-external">
+					<li class="tsd-signature tsd-kind-icon">emit&lt;U&gt;<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">U</span>, <span class="tsd-signature-symbol">...</span>args<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Parameters</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/gateway.websocketclientevents.html" class="tsd-signature-type" data-tsd-kind="Interface">WebSocketClientEvents</a><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">U</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<p>Inherited from TypedEmitter.emit</p>
+							<ul>
+								<li>Defined in node_modules/tiny-typed-emitter/lib/index.d.ts:19</li>
+							</ul>
+						</aside>
+						<h4 class="tsd-type-parameters-title">Type parameters</h4>
+						<ul class="tsd-type-parameters">
+							<li>
+								<h4>U<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">keyof </span><a href="../interfaces/gateway.websocketclientevents.html" class="tsd-signature-type" data-tsd-kind="Interface">WebSocketClientEvents</a></h4>
+							</li>
+						</ul>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>event: <span class="tsd-signature-type">U</span></h5>
+							</li>
+							<li>
+								<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>args: <span class="tsd-signature-type">Parameters</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/gateway.websocketclientevents.html" class="tsd-signature-type" data-tsd-kind="Interface">WebSocketClientEvents</a><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">U</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">&gt;</span></h5>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited tsd-is-external">
+				<a name="eventnames" class="tsd-anchor"></a>
+				<h3>event<wbr>Names</h3>
+				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited tsd-is-external">
+					<li class="tsd-signature tsd-kind-icon">event<wbr>Names&lt;U&gt;<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">U</span><span class="tsd-signature-symbol">[]</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<p>Inherited from TypedEmitter.eventNames</p>
+							<ul>
+								<li>Defined in node_modules/tiny-typed-emitter/lib/index.d.ts:20</li>
+							</ul>
+						</aside>
+						<h4 class="tsd-type-parameters-title">Type parameters</h4>
+						<ul class="tsd-type-parameters">
+							<li>
+								<h4>U<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">keyof </span><a href="../interfaces/gateway.websocketclientevents.html" class="tsd-signature-type" data-tsd-kind="Interface">WebSocketClientEvents</a></h4>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">U</span><span class="tsd-signature-symbol">[]</span></h4>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external">
+				<a name="getmaxlisteners" class="tsd-anchor"></a>
+				<h3>get<wbr>Max<wbr>Listeners</h3>
+				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external">
+					<li class="tsd-signature tsd-kind-icon">get<wbr>Max<wbr>Listeners<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<p>Inherited from TypedEmitter.getMaxListeners</p>
+							<ul>
+								<li>Defined in node_modules/tiny-typed-emitter/lib/index.d.ts:24</li>
+							</ul>
+						</aside>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+				<a name="handshaketimeout" class="tsd-anchor"></a>
+				<h3>handshake<wbr>Timeout</h3>
+				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+					<li class="tsd-signature tsd-kind-icon">handshake<wbr>Timeout<span class="tsd-signature-symbol">(</span>create<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/Discordoo/discordoo/blob/0eebcf4/src/gateway/WebSocketClient.ts#L153">src/gateway/WebSocketClient.ts:153</a></li>
+							</ul>
+						</aside>
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>this method operates with handshake timeout:
+									when handshake did not occur at the specified time,
+								reconnects client</p>
+							</div>
+						</div>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>create: <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = true</span></h5>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+				<a name="heartbeat" class="tsd-anchor"></a>
+				<h3>heartbeat</h3>
+				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+					<li class="tsd-signature tsd-kind-icon">heartbeat<span class="tsd-signature-symbol">(</span>shouldIgnoreAck<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/Discordoo/discordoo/blob/0eebcf4/src/gateway/WebSocketClient.ts#L175">src/gateway/WebSocketClient.ts:175</a></li>
+							</ul>
+						</aside>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>shouldIgnoreAck: <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = ...</span></h5>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+				<a name="heartbeatinterval" class="tsd-anchor"></a>
+				<h3>heartbeat<wbr>Interval</h3>
+				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+					<li class="tsd-signature tsd-kind-icon">heartbeat<wbr>Interval<span class="tsd-signature-symbol">(</span>ms<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/Discordoo/discordoo/blob/0eebcf4/src/gateway/WebSocketClient.ts#L164">src/gateway/WebSocketClient.ts:164</a></li>
+							</ul>
+						</aside>
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>this method operates with heartbeat interval: it can delete interval, or create new one</p>
+							</div>
+						</div>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>ms: <span class="tsd-signature-type">number</span></h5>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+				<a name="identify" class="tsd-anchor"></a>
+				<h3>identify</h3>
+				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+					<li class="tsd-signature tsd-kind-icon">identify<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/Discordoo/discordoo/blob/0eebcf4/src/gateway/WebSocketClient.ts#L142">src/gateway/WebSocketClient.ts:142</a></li>
+							</ul>
+						</aside>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external">
+				<a name="listenercount" class="tsd-anchor"></a>
+				<h3>listener<wbr>Count</h3>
+				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external">
+					<li class="tsd-signature tsd-kind-icon">listener<wbr>Count<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">keyof </span><a href="../interfaces/gateway.websocketclientevents.html" class="tsd-signature-type" data-tsd-kind="Interface">WebSocketClientEvents</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<p>Inherited from TypedEmitter.listenerCount</p>
+							<ul>
+								<li>Defined in node_modules/tiny-typed-emitter/lib/index.d.ts:21</li>
+							</ul>
+						</aside>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>type: <span class="tsd-signature-symbol">keyof </span><a href="../interfaces/gateway.websocketclientevents.html" class="tsd-signature-type" data-tsd-kind="Interface">WebSocketClientEvents</a></h5>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited tsd-is-external">
+				<a name="listeners" class="tsd-anchor"></a>
+				<h3>listeners</h3>
+				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited tsd-is-external">
+					<li class="tsd-signature tsd-kind-icon">listeners&lt;U&gt;<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">U</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/gateway.websocketclientevents.html" class="tsd-signature-type" data-tsd-kind="Interface">WebSocketClientEvents</a><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">U</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">[]</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<p>Inherited from TypedEmitter.listeners</p>
+							<ul>
+								<li>Defined in node_modules/tiny-typed-emitter/lib/index.d.ts:22</li>
+							</ul>
+						</aside>
+						<h4 class="tsd-type-parameters-title">Type parameters</h4>
+						<ul class="tsd-type-parameters">
+							<li>
+								<h4>U<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">keyof </span><a href="../interfaces/gateway.websocketclientevents.html" class="tsd-signature-type" data-tsd-kind="Interface">WebSocketClientEvents</a></h4>
+							</li>
+						</ul>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>type: <span class="tsd-signature-type">U</span></h5>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <a href="../interfaces/gateway.websocketclientevents.html" class="tsd-signature-type" data-tsd-kind="Interface">WebSocketClientEvents</a><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">U</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">[]</span></h4>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited tsd-is-external">
+				<a name="off" class="tsd-anchor"></a>
+				<h3>off</h3>
+				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited tsd-is-external">
+					<li class="tsd-signature tsd-kind-icon">off&lt;U&gt;<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">U</span>, listener<span class="tsd-signature-symbol">: </span><a href="../interfaces/gateway.websocketclientevents.html" class="tsd-signature-type" data-tsd-kind="Interface">WebSocketClientEvents</a><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">U</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="gateway.websocketclient.html" class="tsd-signature-type" data-tsd-kind="Class">WebSocketClient</a></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<p>Inherited from TypedEmitter.off</p>
+							<ul>
+								<li>Defined in node_modules/tiny-typed-emitter/lib/index.d.ts:18</li>
+							</ul>
+						</aside>
+						<h4 class="tsd-type-parameters-title">Type parameters</h4>
+						<ul class="tsd-type-parameters">
+							<li>
+								<h4>U<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">keyof </span><a href="../interfaces/gateway.websocketclientevents.html" class="tsd-signature-type" data-tsd-kind="Interface">WebSocketClientEvents</a></h4>
+							</li>
+						</ul>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>event: <span class="tsd-signature-type">U</span></h5>
+							</li>
+							<li>
+								<h5>listener: <a href="../interfaces/gateway.websocketclientevents.html" class="tsd-signature-type" data-tsd-kind="Interface">WebSocketClientEvents</a><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">U</span><span class="tsd-signature-symbol">]</span></h5>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <a href="gateway.websocketclient.html" class="tsd-signature-type" data-tsd-kind="Class">WebSocketClient</a></h4>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited tsd-is-external">
+				<a name="on" class="tsd-anchor"></a>
+				<h3>on</h3>
+				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited tsd-is-external">
+					<li class="tsd-signature tsd-kind-icon">on&lt;U&gt;<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">U</span>, listener<span class="tsd-signature-symbol">: </span><a href="../interfaces/gateway.websocketclientevents.html" class="tsd-signature-type" data-tsd-kind="Interface">WebSocketClientEvents</a><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">U</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="gateway.websocketclient.html" class="tsd-signature-type" data-tsd-kind="Class">WebSocketClient</a></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<p>Inherited from TypedEmitter.on</p>
+							<ul>
+								<li>Defined in node_modules/tiny-typed-emitter/lib/index.d.ts:17</li>
+							</ul>
+						</aside>
+						<h4 class="tsd-type-parameters-title">Type parameters</h4>
+						<ul class="tsd-type-parameters">
+							<li>
+								<h4>U<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">keyof </span><a href="../interfaces/gateway.websocketclientevents.html" class="tsd-signature-type" data-tsd-kind="Interface">WebSocketClientEvents</a></h4>
+							</li>
+						</ul>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>event: <span class="tsd-signature-type">U</span></h5>
+							</li>
+							<li>
+								<h5>listener: <a href="../interfaces/gateway.websocketclientevents.html" class="tsd-signature-type" data-tsd-kind="Interface">WebSocketClientEvents</a><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">U</span><span class="tsd-signature-symbol">]</span></h5>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <a href="gateway.websocketclient.html" class="tsd-signature-type" data-tsd-kind="Class">WebSocketClient</a></h4>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+				<a name="onclose" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagPrivate">Private</span> on<wbr>Close</h3>
+				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<li class="tsd-signature tsd-kind-icon">on<wbr>Close<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">CloseEvent</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/Discordoo/discordoo/blob/0eebcf4/src/gateway/WebSocketClient.ts#L218">src/gateway/WebSocketClient.ts:218</a></li>
+							</ul>
+						</aside>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>event: <span class="tsd-signature-type">CloseEvent</span></h5>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+				<a name="onerror" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagPrivate">Private</span> on<wbr>Error</h3>
+				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<li class="tsd-signature tsd-kind-icon">on<wbr>Error<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ErrorEvent</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/Discordoo/discordoo/blob/0eebcf4/src/gateway/WebSocketClient.ts#L228">src/gateway/WebSocketClient.ts:228</a></li>
+							</ul>
+						</aside>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>event: <span class="tsd-signature-type">ErrorEvent</span></h5>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+				<a name="onmessage" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagPrivate">Private</span> on<wbr>Message</h3>
+				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<li class="tsd-signature tsd-kind-icon">on<wbr>Message<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">MessageEvent</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/Discordoo/discordoo/blob/0eebcf4/src/gateway/WebSocketClient.ts#L208">src/gateway/WebSocketClient.ts:208</a></li>
+							</ul>
+						</aside>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>event: <span class="tsd-signature-type">MessageEvent</span></h5>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+				<a name="onopen" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagPrivate">Private</span> on<wbr>Open</h3>
+				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<li class="tsd-signature tsd-kind-icon">on<wbr>Open<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">OpenEvent</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/Discordoo/discordoo/blob/0eebcf4/src/gateway/WebSocketClient.ts#L223">src/gateway/WebSocketClient.ts:223</a></li>
+							</ul>
+						</aside>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>event: <span class="tsd-signature-type">OpenEvent</span></h5>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+				<a name="onpacket" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagPrivate">Private</span> on<wbr>Packet</h3>
+				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<li class="tsd-signature tsd-kind-icon">on<wbr>Packet<span class="tsd-signature-symbol">(</span>payload<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">default</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/Discordoo/discordoo/blob/0eebcf4/src/gateway/WebSocketClient.ts#L214">src/gateway/WebSocketClient.ts:214</a></li>
+							</ul>
+						</aside>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>payload: <span class="tsd-signature-type">default</span></h5>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited tsd-is-external">
+				<a name="once" class="tsd-anchor"></a>
+				<h3>once</h3>
+				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited tsd-is-external">
+					<li class="tsd-signature tsd-kind-icon">once&lt;U&gt;<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">U</span>, listener<span class="tsd-signature-symbol">: </span><a href="../interfaces/gateway.websocketclientevents.html" class="tsd-signature-type" data-tsd-kind="Interface">WebSocketClientEvents</a><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">U</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="gateway.websocketclient.html" class="tsd-signature-type" data-tsd-kind="Class">WebSocketClient</a></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<p>Inherited from TypedEmitter.once</p>
+							<ul>
+								<li>Defined in node_modules/tiny-typed-emitter/lib/index.d.ts:16</li>
+							</ul>
+						</aside>
+						<h4 class="tsd-type-parameters-title">Type parameters</h4>
+						<ul class="tsd-type-parameters">
+							<li>
+								<h4>U<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">keyof </span><a href="../interfaces/gateway.websocketclientevents.html" class="tsd-signature-type" data-tsd-kind="Interface">WebSocketClientEvents</a></h4>
+							</li>
+						</ul>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>event: <span class="tsd-signature-type">U</span></h5>
+							</li>
+							<li>
+								<h5>listener: <a href="../interfaces/gateway.websocketclientevents.html" class="tsd-signature-type" data-tsd-kind="Interface">WebSocketClientEvents</a><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">U</span><span class="tsd-signature-symbol">]</span></h5>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <a href="gateway.websocketclient.html" class="tsd-signature-type" data-tsd-kind="Class">WebSocketClient</a></h4>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited tsd-is-external">
+				<a name="prependlistener" class="tsd-anchor"></a>
+				<h3>prepend<wbr>Listener</h3>
+				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited tsd-is-external">
+					<li class="tsd-signature tsd-kind-icon">prepend<wbr>Listener&lt;U&gt;<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">U</span>, listener<span class="tsd-signature-symbol">: </span><a href="../interfaces/gateway.websocketclientevents.html" class="tsd-signature-type" data-tsd-kind="Interface">WebSocketClientEvents</a><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">U</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="gateway.websocketclient.html" class="tsd-signature-type" data-tsd-kind="Class">WebSocketClient</a></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<p>Inherited from TypedEmitter.prependListener</p>
+							<ul>
+								<li>Defined in node_modules/tiny-typed-emitter/lib/index.d.ts:12</li>
+							</ul>
+						</aside>
+						<h4 class="tsd-type-parameters-title">Type parameters</h4>
+						<ul class="tsd-type-parameters">
+							<li>
+								<h4>U<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">keyof </span><a href="../interfaces/gateway.websocketclientevents.html" class="tsd-signature-type" data-tsd-kind="Interface">WebSocketClientEvents</a></h4>
+							</li>
+						</ul>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>event: <span class="tsd-signature-type">U</span></h5>
+							</li>
+							<li>
+								<h5>listener: <a href="../interfaces/gateway.websocketclientevents.html" class="tsd-signature-type" data-tsd-kind="Interface">WebSocketClientEvents</a><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">U</span><span class="tsd-signature-symbol">]</span></h5>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <a href="gateway.websocketclient.html" class="tsd-signature-type" data-tsd-kind="Class">WebSocketClient</a></h4>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited tsd-is-external">
+				<a name="prependoncelistener" class="tsd-anchor"></a>
+				<h3>prepend<wbr>Once<wbr>Listener</h3>
+				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited tsd-is-external">
+					<li class="tsd-signature tsd-kind-icon">prepend<wbr>Once<wbr>Listener&lt;U&gt;<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">U</span>, listener<span class="tsd-signature-symbol">: </span><a href="../interfaces/gateway.websocketclientevents.html" class="tsd-signature-type" data-tsd-kind="Interface">WebSocketClientEvents</a><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">U</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="gateway.websocketclient.html" class="tsd-signature-type" data-tsd-kind="Class">WebSocketClient</a></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<p>Inherited from TypedEmitter.prependOnceListener</p>
+							<ul>
+								<li>Defined in node_modules/tiny-typed-emitter/lib/index.d.ts:13</li>
+							</ul>
+						</aside>
+						<h4 class="tsd-type-parameters-title">Type parameters</h4>
+						<ul class="tsd-type-parameters">
+							<li>
+								<h4>U<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">keyof </span><a href="../interfaces/gateway.websocketclientevents.html" class="tsd-signature-type" data-tsd-kind="Interface">WebSocketClientEvents</a></h4>
+							</li>
+						</ul>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>event: <span class="tsd-signature-type">U</span></h5>
+							</li>
+							<li>
+								<h5>listener: <a href="../interfaces/gateway.websocketclientevents.html" class="tsd-signature-type" data-tsd-kind="Interface">WebSocketClientEvents</a><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">U</span><span class="tsd-signature-symbol">]</span></h5>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <a href="gateway.websocketclient.html" class="tsd-signature-type" data-tsd-kind="Class">WebSocketClient</a></h4>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited tsd-is-external">
+				<a name="rawlisteners" class="tsd-anchor"></a>
+				<h3>raw<wbr>Listeners</h3>
+				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited tsd-is-external">
+					<li class="tsd-signature tsd-kind-icon">raw<wbr>Listeners&lt;U&gt;<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">U</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/gateway.websocketclientevents.html" class="tsd-signature-type" data-tsd-kind="Interface">WebSocketClientEvents</a><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">U</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">[]</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<p>Inherited from TypedEmitter.rawListeners</p>
+							<ul>
+								<li>Defined in node_modules/tiny-typed-emitter/lib/index.d.ts:23</li>
+							</ul>
+						</aside>
+						<h4 class="tsd-type-parameters-title">Type parameters</h4>
+						<ul class="tsd-type-parameters">
+							<li>
+								<h4>U<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">keyof </span><a href="../interfaces/gateway.websocketclientevents.html" class="tsd-signature-type" data-tsd-kind="Interface">WebSocketClientEvents</a></h4>
+							</li>
+						</ul>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>type: <span class="tsd-signature-type">U</span></h5>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <a href="../interfaces/gateway.websocketclientevents.html" class="tsd-signature-type" data-tsd-kind="Interface">WebSocketClientEvents</a><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">U</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">[]</span></h4>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external">
+				<a name="removealllisteners" class="tsd-anchor"></a>
+				<h3>remove<wbr>All<wbr>Listeners</h3>
+				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external">
+					<li class="tsd-signature tsd-kind-icon">remove<wbr>All<wbr>Listeners<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-symbol">keyof </span><a href="../interfaces/gateway.websocketclientevents.html" class="tsd-signature-type" data-tsd-kind="Interface">WebSocketClientEvents</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="gateway.websocketclient.html" class="tsd-signature-type" data-tsd-kind="Class">WebSocketClient</a></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<p>Inherited from TypedEmitter.removeAllListeners</p>
+							<ul>
+								<li>Defined in node_modules/tiny-typed-emitter/lib/index.d.ts:15</li>
+							</ul>
+						</aside>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5><span class="tsd-flag ts-flagOptional">Optional</span> event: <span class="tsd-signature-symbol">keyof </span><a href="../interfaces/gateway.websocketclientevents.html" class="tsd-signature-type" data-tsd-kind="Interface">WebSocketClientEvents</a></h5>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <a href="gateway.websocketclient.html" class="tsd-signature-type" data-tsd-kind="Class">WebSocketClient</a></h4>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited tsd-is-external">
+				<a name="removelistener" class="tsd-anchor"></a>
+				<h3>remove<wbr>Listener</h3>
+				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited tsd-is-external">
+					<li class="tsd-signature tsd-kind-icon">remove<wbr>Listener&lt;U&gt;<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">U</span>, listener<span class="tsd-signature-symbol">: </span><a href="../interfaces/gateway.websocketclientevents.html" class="tsd-signature-type" data-tsd-kind="Interface">WebSocketClientEvents</a><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">U</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="gateway.websocketclient.html" class="tsd-signature-type" data-tsd-kind="Class">WebSocketClient</a></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<p>Inherited from TypedEmitter.removeListener</p>
+							<ul>
+								<li>Defined in node_modules/tiny-typed-emitter/lib/index.d.ts:14</li>
+							</ul>
+						</aside>
+						<h4 class="tsd-type-parameters-title">Type parameters</h4>
+						<ul class="tsd-type-parameters">
+							<li>
+								<h4>U<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">keyof </span><a href="../interfaces/gateway.websocketclientevents.html" class="tsd-signature-type" data-tsd-kind="Interface">WebSocketClientEvents</a></h4>
+							</li>
+						</ul>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>event: <span class="tsd-signature-type">U</span></h5>
+							</li>
+							<li>
+								<h5>listener: <a href="../interfaces/gateway.websocketclientevents.html" class="tsd-signature-type" data-tsd-kind="Interface">WebSocketClientEvents</a><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">U</span><span class="tsd-signature-symbol">]</span></h5>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <a href="gateway.websocketclient.html" class="tsd-signature-type" data-tsd-kind="Class">WebSocketClient</a></h4>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external">
+				<a name="setmaxlisteners" class="tsd-anchor"></a>
+				<h3>set<wbr>Max<wbr>Listeners</h3>
+				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external">
+					<li class="tsd-signature tsd-kind-icon">set<wbr>Max<wbr>Listeners<span class="tsd-signature-symbol">(</span>n<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="gateway.websocketclient.html" class="tsd-signature-type" data-tsd-kind="Class">WebSocketClient</a></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<p>Inherited from TypedEmitter.setMaxListeners</p>
+							<ul>
+								<li>Defined in node_modules/tiny-typed-emitter/lib/index.d.ts:25</li>
+							</ul>
+						</aside>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>n: <span class="tsd-signature-type">number</span></h5>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <a href="gateway.websocketclient.html" class="tsd-signature-type" data-tsd-kind="Class">WebSocketClient</a></h4>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+				<a name="socketsend" class="tsd-anchor"></a>
+				<h3>socket<wbr>Send</h3>
+				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+					<li class="tsd-signature tsd-kind-icon">socket<wbr>Send<span class="tsd-signature-symbol">(</span>data<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">WebSocketSendPayload</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/Discordoo/discordoo/blob/0eebcf4/src/gateway/WebSocketClient.ts#L198">src/gateway/WebSocketClient.ts:198</a></li>
+							</ul>
+						</aside>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>data: <span class="tsd-signature-type">WebSocketSendPayload</span></h5>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+					</li>
+				</ul>
 			</section>
 		</section>
 		<footer class="with-border-bottom">
 			<div class="container">
 				<h2>Legend</h2>
 				<div class="tsd-legend-group">
+					<ul class="tsd-legend">
+						<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
+						<li class="tsd-kind-class tsd-has-type-parameter"><span class="tsd-kind-icon">Class with type parameter</span></li>
+						<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
+						<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
+						<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+					</ul>
 					<ul class="tsd-legend">
 						<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
 						<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
@@ -2914,11 +3922,10 @@ img {
 					<ul class="tsd-legend">
 						<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
 						<li class="tsd-kind-interface tsd-has-type-parameter"><span class="tsd-kind-icon">Interface with type parameter</span></li>
-						<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
 					</ul>
 					<ul class="tsd-legend">
-						<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
-						<li class="tsd-kind-class tsd-has-type-parameter"><span class="tsd-kind-icon">Class with type parameter</span></li>
+						<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private property</span></li>
+						<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private method</span></li>
 					</ul>
 				</div>
 			</div>
