@@ -2797,7 +2797,7 @@ img {
 				<div class="tsd-signature tsd-kind-icon">caches<span class="tsd-signature-symbol">:</span> <a href="collection.collection-1.html" class="tsd-signature-type" data-tsd-kind="Class">Collection</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><a href="cache.collectioncachenamespace.html" class="tsd-signature-type" data-tsd-kind="Class">CollectionCacheNamespace</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = ...</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/Discordoo/discordoo/blob/5f5387a/src/cache/CacheManager.ts#L11">src/cache/CacheManager.ts:11</a></li>
+						<li>Defined in <a href="https://github.com/Discordoo/discordoo/blob/8847f75/src/cache/CacheManager.ts#L11">src/cache/CacheManager.ts:11</a></li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -2813,13 +2813,13 @@ img {
 				<a name="getcache" class="tsd-anchor"></a>
 				<h3>get<wbr>Cache</h3>
 				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter">
-					<li class="tsd-signature tsd-kind-icon">get<wbr>Cache&lt;K, V&gt;<span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="cache.collectioncachenamespace.html" class="tsd-signature-type" data-tsd-kind="Class">CollectionCacheNamespace</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">K</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">V</span><span class="tsd-signature-symbol">&gt;</span></li>
+					<li class="tsd-signature tsd-kind-icon">get<wbr>Cache&lt;K, V&gt;<span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, local<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="cache.collectioncachenamespace.html" class="tsd-signature-type" data-tsd-kind="Class">CollectionCacheNamespace</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">K</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">V</span><span class="tsd-signature-symbol">&gt;</span></li>
 				</ul>
 				<ul class="tsd-descriptions">
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/Discordoo/discordoo/blob/5f5387a/src/cache/CacheManager.ts#L17">src/cache/CacheManager.ts:17</a></li>
+								<li>Defined in <a href="https://github.com/Discordoo/discordoo/blob/8847f75/src/cache/CacheManager.ts#L18">src/cache/CacheManager.ts:18</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -2842,6 +2842,12 @@ img {
 								<h5>id: <span class="tsd-signature-type">string</span></h5>
 								<div class="tsd-comment tsd-typography">
 									<p>id of cache namespace</p>
+								</div>
+							</li>
+							<li>
+								<h5>local: <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = true</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<p>whether to use IPC when a key is not found</p>
 								</div>
 							</li>
 						</ul>
