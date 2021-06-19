@@ -2731,6 +2731,9 @@ img {
 			<a href="utils.websocketutils.html" class="tsd-kind-icon">Web<wbr>Socket<wbr>Utils</a>
 		</li>
 		<li class=" tsd-kind-type-alias tsd-parent-kind-module tsd-has-type-parameter">
+			<a href="../modules/utils.html#nonoptional" class="tsd-kind-icon">Non<wbr>Optional</a>
+		</li>
+		<li class=" tsd-kind-type-alias tsd-parent-kind-module tsd-has-type-parameter">
 			<a href="../modules/utils.html#optional" class="tsd-kind-icon">Optional</a>
 		</li>
 		<li class=" tsd-kind-function tsd-parent-kind-module">
@@ -2752,8 +2755,8 @@ img {
 		<section class="tsd-panel tsd-comment">
 			<div class="tsd-comment tsd-typography">
 				<div class="lead">
-					<p>DiscordooSnowflake is a
-					thanks devsnek and drahcirius, original code creators</p>
+					<p>DiscordooSnowflake is a custom twitter snowflake used to identify ipc connections.
+					thanks devsnek and drahcirius, this code based at their work.</p>
 				</div>
 				<dl class="tsd-comment-tags">
 					<dt>see</dt>
@@ -2823,7 +2826,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/Discordoo/discordoo/blob/015524f/src/utils/DiscordooSnowflake.ts#L79">src/utils/DiscordooSnowflake.ts:79</a></li>
+								<li>Defined in <a href="https://github.com/Discordoo/discordoo/blob/dcaca7b/src/utils/DiscordooSnowflake.ts#L89">src/utils/DiscordooSnowflake.ts:89</a></li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -2846,7 +2849,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/Discordoo/discordoo/blob/015524f/src/utils/DiscordooSnowflake.ts#L58">src/utils/DiscordooSnowflake.ts:58</a></li>
+								<li>Defined in <a href="https://github.com/Discordoo/discordoo/blob/dcaca7b/src/utils/DiscordooSnowflake.ts#L62">src/utils/DiscordooSnowflake.ts:62</a></li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -2869,7 +2872,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/Discordoo/discordoo/blob/015524f/src/utils/DiscordooSnowflake.ts#L41">src/utils/DiscordooSnowflake.ts:41</a></li>
+								<li>Defined in <a href="https://github.com/Discordoo/discordoo/blob/dcaca7b/src/utils/DiscordooSnowflake.ts#L41">src/utils/DiscordooSnowflake.ts:41</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -2882,11 +2885,11 @@ img {
 								000000001101100101010011101010000000011011 00000000000000000000000000001011 00000000000000000000000001100011 0000000000000000000101
 							number of ms since Discordoo epoch                  worker id                       shard id                    increment</p>
 							<p>getting a timestamp:
-							BigInt(snowflake) &gt;&gt; 86n + BigInt(EPOCH) === 1624043753498n</p>
+							(BigInt(snowflake) &gt;&gt; 86n) + BigInt(EPOCH) === 1624043753498n</p>
 							<p>getting a worker id:
-							BigInt(snowflake) &amp; 0x7FFFFFFFn &gt;&gt; 54n === 11n</p>
+							(BigInt(snowflake) &amp; 0x7FFFFFFFn) &gt;&gt; 54n === 11n</p>
 							<p>getting a shard id:
-							BigInt(snowflake) &amp; 0x7FFFFFFFn &gt;&gt; 22n === 99n</p>
+							(BigInt(snowflake) &amp; 0x7FFFFFFFn) &gt;&gt; 22n === 99n</p>
 							<p>getting a increment:
 							BigInt(snowflake) &amp; 0x3FFFFFn === 5n</p>
 							<pre><code><span style="color: #001080">Why</span><span style="color: #000000">?</span>
