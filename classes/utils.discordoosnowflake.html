@@ -2716,6 +2716,9 @@ img {
 				<li class=" tsd-kind-constructor tsd-parent-kind-class">
 					<a href="utils.discordoosnowflake.html#constructor" class="tsd-kind-icon">constructor</a>
 				</li>
+				<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
+					<a href="utils.discordoosnowflake.html#sharding_manager_id" class="tsd-kind-icon">SHARDING_<wbr>MANAGER_<wbr>ID</a>
+				</li>
 				<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
 					<a href="utils.discordoosnowflake.html#binarytoid" class="tsd-kind-icon">binary<wbr>ToID</a>
 				</li>
@@ -2755,7 +2758,7 @@ img {
 		<section class="tsd-panel tsd-comment">
 			<div class="tsd-comment tsd-typography">
 				<div class="lead">
-					<p>DiscordooSnowflake is a custom twitter snowflake used to identify ipc connections.</p>
+					<p>DiscordooSnowflake is a custom twitter snowflake used to identify ipc connections and messages.</p>
 				</div>
 			</div>
 		</section>
@@ -2775,6 +2778,12 @@ img {
 						<h3>Constructors</h3>
 						<ul class="tsd-index-list">
 							<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="utils.discordoosnowflake.html#constructor" class="tsd-kind-icon">constructor</a></li>
+						</ul>
+					</section>
+					<section class="tsd-index-section ">
+						<h3>Properties</h3>
+						<ul class="tsd-index-list">
+							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="utils.discordoosnowflake.html#sharding_manager_id" class="tsd-kind-icon">SHARDING_<wbr>MANAGER_<wbr>ID</a></li>
 						</ul>
 					</section>
 					<section class="tsd-index-section ">
@@ -2806,6 +2815,19 @@ img {
 			</section>
 		</section>
 		<section class="tsd-panel-group tsd-member-group ">
+			<h2>Properties</h2>
+			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
+				<a name="sharding_manager_id" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> SHARDING_<wbr>MANAGER_<wbr>ID</h3>
+				<div class="tsd-signature tsd-kind-icon">SHARDING_<wbr>MANAGER_<wbr>ID<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">1111111111</span><span class="tsd-signature-symbol"> = 1_111_111_111</span></div>
+				<aside class="tsd-sources">
+					<ul>
+						<li>Defined in <a href="https://github.com/Discordoo/discordoo/blob/8e8597a/src/utils/DiscordooSnowflake.ts#L12">src/utils/DiscordooSnowflake.ts:12</a></li>
+					</ul>
+				</aside>
+			</section>
+		</section>
+		<section class="tsd-panel-group tsd-member-group ">
 			<h2>Methods</h2>
 			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
 				<a name="binarytoid" class="tsd-anchor"></a>
@@ -2817,7 +2839,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/Discordoo/discordoo/blob/2bcceb3/src/utils/DiscordooSnowflake.ts#L81">src/utils/DiscordooSnowflake.ts:81</a></li>
+								<li>Defined in <a href="https://github.com/Discordoo/discordoo/blob/8e8597a/src/utils/DiscordooSnowflake.ts#L83">src/utils/DiscordooSnowflake.ts:83</a></li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -2843,7 +2865,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/Discordoo/discordoo/blob/2bcceb3/src/utils/DiscordooSnowflake.ts#L55">src/utils/DiscordooSnowflake.ts:55</a></li>
+								<li>Defined in <a href="https://github.com/Discordoo/discordoo/blob/8e8597a/src/utils/DiscordooSnowflake.ts#L57">src/utils/DiscordooSnowflake.ts:57</a></li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -2866,7 +2888,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/Discordoo/discordoo/blob/2bcceb3/src/utils/DiscordooSnowflake.ts#L38">src/utils/DiscordooSnowflake.ts:38</a></li>
+								<li>Defined in <a href="https://github.com/Discordoo/discordoo/blob/8e8597a/src/utils/DiscordooSnowflake.ts#L40">src/utils/DiscordooSnowflake.ts:40</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -2881,13 +2903,13 @@ img {
 							<p>getting a timestamp:
 							(BigInt(snowflake) &gt;&gt; 86n) + BigInt(EPOCH) === 1624043753498n</p>
 							<p>getting a worker id:
-							(BigInt(snowflake) &amp; 0x7FFFFFFFn) &gt;&gt; 54n === 11n</p>
+							(BigInt(snowflake) &amp; 0x3FFFFFFFC0000000000000n) &gt;&gt; 54n === 11n</p>
 							<p>getting a shard id:
-							(BigInt(snowflake) &amp; 0x7FFFFFFFn) &gt;&gt; 22n === 99n</p>
+							(BigInt(snowflake) &amp; 0x3FFFFFFFC00000n) &gt;&gt; 22n === 99n</p>
 							<p>getting a increment:
 							BigInt(snowflake) &amp; 0x3FFFFFn === 5n</p>
 							<pre><code><span style="color: #001080">Why</span><span style="color: #000000">?</span>
-<span style="color: #001080">Discordoo</span><span style="color: #000000"> </span><span style="color: #001080">uses</span><span style="color: #000000"> </span><span style="color: #001080">DiscordooSnowflake</span><span style="color: #000000"> </span><span style="color: #001080">to</span><span style="color: #000000"> </span><span style="color: #001080">identify</span><span style="color: #000000"> </span><span style="color: #001080">ipc</span><span style="color: #000000"> </span><span style="color: #001080">connections</span><span style="color: #000000">.</span>
+<span style="color: #001080">Discordoo</span><span style="color: #000000"> </span><span style="color: #001080">uses</span><span style="color: #000000"> </span><span style="color: #001080">DiscordooSnowflake</span><span style="color: #000000"> </span><span style="color: #001080">to</span><span style="color: #000000"> </span><span style="color: #001080">identify</span><span style="color: #000000"> </span><span style="color: #001080">ipc</span><span style="color: #000000"> </span><span style="color: #001080">connections</span><span style="color: #000000"> </span><span style="color: #001080">and</span><span style="color: #000000"> </span><span style="color: #001080">messages</span><span style="color: #000000">.</span>
 <span style="color: #001080">So</span><span style="color: #000000">, </span><span style="color: #001080">if</span><span style="color: #000000"> </span><span style="color: #001080">your</span><span style="color: #000000"> </span><span style="color: #001080">bot</span><span style="color: #000000"> </span><span style="color: #001080">has</span><span style="color: #000000"> </span><span style="color: #001080">more</span><span style="color: #000000"> </span><span style="color: #001080">than</span><span style="color: #000000"> </span><span style="color: #098658">2</span><span style="color: #000000">,</span><span style="color: #098658">147</span><span style="color: #000000">,</span><span style="color: #098658">483</span><span style="color: #000000">,</span><span style="color: #098658">647</span><span style="color: #000000"> </span><span style="color: #001080">shards</span><span style="color: #000000">, </span><span style="color: #001080">you</span><span style="color: #000000"> </span><span style="color: #001080">will</span><span style="color: #000000"> </span><span style="color: #001080">unfortunately</span><span style="color: #000000"> </span><span style="color: #001080">not</span><span style="color: #000000"> </span><span style="color: #001080">be</span><span style="color: #000000"> </span><span style="color: #001080">able</span><span style="color: #000000"> </span><span style="color: #001080">to</span><span style="color: #000000"> </span><span style="color: #001080">use</span><span style="color: #000000"> </span><span style="color: #001080">Discordoo</span><span style="color: #000000">.</span>
 </code></pre>
 						</div>
@@ -2927,6 +2949,7 @@ img {
 						<li class="tsd-kind-interface tsd-has-type-parameter"><span class="tsd-kind-icon">Interface with type parameter</span></li>
 					</ul>
 					<ul class="tsd-legend">
+						<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static property</span></li>
 						<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>
 					</ul>
 				</div>

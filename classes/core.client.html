@@ -2717,16 +2717,13 @@ img {
 					<a href="core.client.html#constructor" class="tsd-kind-icon">constructor</a>
 				</li>
 				<li class=" tsd-kind-property tsd-parent-kind-class">
-					<a href="core.client.html#cache" class="tsd-kind-icon">cache</a>
-				</li>
-				<li class=" tsd-kind-property tsd-parent-kind-class">
-					<a href="core.client.html#gateway" class="tsd-kind-icon">gateway</a>
+					<a href="core.client.html#internals" class="tsd-kind-icon">internals</a>
 				</li>
 				<li class=" tsd-kind-property tsd-parent-kind-class">
 					<a href="core.client.html#modules" class="tsd-kind-icon">modules</a>
 				</li>
 				<li class=" tsd-kind-property tsd-parent-kind-class">
-					<a href="core.client.html#rest" class="tsd-kind-icon">rest</a>
+					<a href="core.client.html#options" class="tsd-kind-icon">options</a>
 				</li>
 				<li class=" tsd-kind-property tsd-parent-kind-class">
 					<a href="core.client.html#token" class="tsd-kind-icon">token</a>
@@ -2784,6 +2781,9 @@ img {
 				</li>
 				<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external">
 					<a href="core.client.html#setmaxlisteners" class="tsd-kind-icon">set<wbr>Max<wbr>Listeners</a>
+				</li>
+				<li class=" tsd-kind-method tsd-parent-kind-class">
+					<a href="core.client.html#start" class="tsd-kind-icon">start</a>
 				</li>
 				<li class=" tsd-kind-method tsd-parent-kind-class">
 					<a href="core.client.html#use" class="tsd-kind-icon">use</a>
@@ -2883,10 +2883,9 @@ img {
 					<section class="tsd-index-section ">
 						<h3>Properties</h3>
 						<ul class="tsd-index-list">
-							<li class="tsd-kind-property tsd-parent-kind-class"><a href="core.client.html#cache" class="tsd-kind-icon">cache</a></li>
-							<li class="tsd-kind-property tsd-parent-kind-class"><a href="core.client.html#gateway" class="tsd-kind-icon">gateway</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-class"><a href="core.client.html#internals" class="tsd-kind-icon">internals</a></li>
 							<li class="tsd-kind-property tsd-parent-kind-class"><a href="core.client.html#modules" class="tsd-kind-icon">modules</a></li>
-							<li class="tsd-kind-property tsd-parent-kind-class"><a href="core.client.html#rest" class="tsd-kind-icon">rest</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-class"><a href="core.client.html#options" class="tsd-kind-icon">options</a></li>
 							<li class="tsd-kind-property tsd-parent-kind-class"><a href="core.client.html#token" class="tsd-kind-icon">token</a></li>
 							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static tsd-is-external"><a href="core.client.html#defaultmaxlisteners" class="tsd-kind-icon">default<wbr>Max<wbr>Listeners</a></li>
 						</ul>
@@ -2911,6 +2910,7 @@ img {
 							<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external"><a href="core.client.html#removealllisteners" class="tsd-kind-icon">remove<wbr>All<wbr>Listeners</a></li>
 							<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited tsd-is-external"><a href="core.client.html#removelistener" class="tsd-kind-icon">remove<wbr>Listener</a></li>
 							<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external"><a href="core.client.html#setmaxlisteners" class="tsd-kind-icon">set<wbr>Max<wbr>Listeners</a></li>
+							<li class="tsd-kind-method tsd-parent-kind-class"><a href="core.client.html#start" class="tsd-kind-icon">start</a></li>
 							<li class="tsd-kind-method tsd-parent-kind-class"><a href="core.client.html#use" class="tsd-kind-icon">use</a></li>
 							<li class="tsd-kind-method tsd-parent-kind-class"><a href="core.client.html#usecacheprovider" class="tsd-kind-icon">use<wbr>Cache<wbr>Provider</a></li>
 							<li class="tsd-kind-method tsd-parent-kind-class"><a href="core.client.html#usegatewayprovider" class="tsd-kind-icon">use<wbr>Gateway<wbr>Provider</a></li>
@@ -2926,14 +2926,14 @@ img {
 				<a name="constructor" class="tsd-anchor"></a>
 				<h3>constructor</h3>
 				<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-has-type-parameter tsd-is-overwrite">
-					<li class="tsd-signature tsd-kind-icon">new <wbr>Client&lt;ClientStack&gt;<span class="tsd-signature-symbol">(</span>token<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="core.client.html" class="tsd-signature-type" data-tsd-kind="Class">Client</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">ClientStack</span><span class="tsd-signature-symbol">&gt;</span></li>
+					<li class="tsd-signature tsd-kind-icon">new <wbr>Client&lt;ClientStack&gt;<span class="tsd-signature-symbol">(</span>token<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, options<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">default</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="core.client.html" class="tsd-signature-type" data-tsd-kind="Class">Client</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">ClientStack</span><span class="tsd-signature-symbol">&gt;</span></li>
 				</ul>
 				<ul class="tsd-descriptions">
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<p>Overrides TypedEmitter&lt;ListenerSignature&lt;ClientStack[&#x27;events&#x27;]&gt;&gt;.constructor</p>
 							<ul>
-								<li>Defined in <a href="https://github.com/Discordoo/discordoo/blob/2bcceb3/src/core/Client.ts#L13">src/core/Client.ts:13</a></li>
+								<li>Defined in <a href="https://github.com/Discordoo/discordoo/blob/8e8597a/src/core/Client.ts#L31">src/core/Client.ts:31</a></li>
 							</ul>
 						</aside>
 						<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -2947,6 +2947,9 @@ img {
 							<li>
 								<h5>token: <span class="tsd-signature-type">string</span></h5>
 							</li>
+							<li>
+								<h5>options: <span class="tsd-signature-type">default</span><span class="tsd-signature-symbol"> = {}</span></h5>
+							</li>
 						</ul>
 						<h4 class="tsd-returns-title">Returns <a href="core.client.html" class="tsd-signature-type" data-tsd-kind="Class">Client</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">ClientStack</span><span class="tsd-signature-symbol">&gt;</span></h4>
 					</li>
@@ -2956,32 +2959,17 @@ img {
 		<section class="tsd-panel-group tsd-member-group ">
 			<h2>Properties</h2>
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
-				<a name="cache" class="tsd-anchor"></a>
-				<h3>cache</h3>
-				<div class="tsd-signature tsd-kind-icon">cache<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><a href="../modules/core.html#cacheprovider" class="tsd-signature-type" data-tsd-kind="Type alias">CacheProvider</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">ClientStack</span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">&quot;cache&quot;</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = null</span></div>
+				<a name="internals" class="tsd-anchor"></a>
+				<h3>internals</h3>
+				<div class="tsd-signature tsd-kind-icon">internals<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">default</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">ClientStack</span><span class="tsd-signature-symbol">&gt;</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/Discordoo/discordoo/blob/2bcceb3/src/core/Client.ts#L27">src/core/Client.ts:27</a></li>
+						<li>Defined in <a href="https://github.com/Discordoo/discordoo/blob/8e8597a/src/core/Client.ts#L28">src/core/Client.ts:28</a></li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>CacheProvider used by this module</p>
-					</div>
-				</div>
-			</section>
-			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
-				<a name="gateway" class="tsd-anchor"></a>
-				<h3>gateway</h3>
-				<div class="tsd-signature tsd-kind-icon">gateway<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><a href="../modules/core.html#gatewayprovider" class="tsd-signature-type" data-tsd-kind="Type alias">GatewayProvider</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">ClientStack</span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">&quot;gateway&quot;</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = null</span></div>
-				<aside class="tsd-sources">
-					<ul>
-						<li>Defined in <a href="https://github.com/Discordoo/discordoo/blob/2bcceb3/src/core/Client.ts#L30">src/core/Client.ts:30</a></li>
-					</ul>
-				</aside>
-				<div class="tsd-comment tsd-typography">
-					<div class="lead">
-						<p>GatewayProvider used by this module</p>
+						<p>Internal things used by this client</p>
 					</div>
 				</div>
 			</section>
@@ -2991,7 +2979,7 @@ img {
 				<div class="tsd-signature tsd-kind-icon">modules<span class="tsd-signature-symbol">:</span> <a href="core.modulemanager.html" class="tsd-signature-type" data-tsd-kind="Class">ModuleManager</a><span class="tsd-signature-symbol"> = ...</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/Discordoo/discordoo/blob/2bcceb3/src/core/Client.ts#L21">src/core/Client.ts:21</a></li>
+						<li>Defined in <a href="https://github.com/Discordoo/discordoo/blob/8e8597a/src/core/Client.ts#L25">src/core/Client.ts:25</a></li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -3001,17 +2989,17 @@ img {
 				</div>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
-				<a name="rest" class="tsd-anchor"></a>
-				<h3>rest</h3>
-				<div class="tsd-signature tsd-kind-icon">rest<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><a href="../modules/core.html#restprovider" class="tsd-signature-type" data-tsd-kind="Type alias">RESTProvider</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">ClientStack</span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">&quot;rest&quot;</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = null</span></div>
+				<a name="options" class="tsd-anchor"></a>
+				<h3>options</h3>
+				<div class="tsd-signature tsd-kind-icon">options<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">default</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/Discordoo/discordoo/blob/2bcceb3/src/core/Client.ts#L24">src/core/Client.ts:24</a></li>
+						<li>Defined in <a href="https://github.com/Discordoo/discordoo/blob/8e8597a/src/core/Client.ts#L31">src/core/Client.ts:31</a></li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>RESTProvider used by this module</p>
+						<p>Options passed to this client</p>
 					</div>
 				</div>
 			</section>
@@ -3021,7 +3009,7 @@ img {
 				<div class="tsd-signature tsd-kind-icon">token<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/Discordoo/discordoo/blob/2bcceb3/src/core/Client.ts#L13">src/core/Client.ts:13</a></li>
+						<li>Defined in <a href="https://github.com/Discordoo/discordoo/blob/8e8597a/src/core/Client.ts#L22">src/core/Client.ts:22</a></li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -3216,7 +3204,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/Discordoo/discordoo/blob/2bcceb3/src/core/Client.ts#L36">src/core/Client.ts:36</a></li>
+								<li>Defined in <a href="https://github.com/Discordoo/discordoo/blob/8e8597a/src/core/Client.ts#L94">src/core/Client.ts:94</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -3247,7 +3235,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/Discordoo/discordoo/blob/2bcceb3/src/core/Client.ts#L44">src/core/Client.ts:44</a></li>
+								<li>Defined in <a href="https://github.com/Discordoo/discordoo/blob/8e8597a/src/core/Client.ts#L102">src/core/Client.ts:102</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -3545,6 +3533,23 @@ img {
 				</ul>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+				<a name="start" class="tsd-anchor"></a>
+				<h3>start</h3>
+				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+					<li class="tsd-signature tsd-kind-icon">start<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/Discordoo/discordoo/blob/8e8597a/src/core/Client.ts#L141">src/core/Client.ts:141</a></li>
+							</ul>
+						</aside>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 				<a name="use" class="tsd-anchor"></a>
 				<h3>use</h3>
 				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
@@ -3554,7 +3559,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/Discordoo/discordoo/blob/2bcceb3/src/core/Client.ts#L52">src/core/Client.ts:52</a></li>
+								<li>Defined in <a href="https://github.com/Discordoo/discordoo/blob/8e8597a/src/core/Client.ts#L110">src/core/Client.ts:110</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -3585,7 +3590,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/Discordoo/discordoo/blob/2bcceb3/src/core/Client.ts#L70">src/core/Client.ts:70</a></li>
+								<li>Defined in <a href="https://github.com/Discordoo/discordoo/blob/8e8597a/src/core/Client.ts#L128">src/core/Client.ts:128</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -3635,7 +3640,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/Discordoo/discordoo/blob/2bcceb3/src/core/Client.ts#L79">src/core/Client.ts:79</a></li>
+								<li>Defined in <a href="https://github.com/Discordoo/discordoo/blob/8e8597a/src/core/Client.ts#L137">src/core/Client.ts:137</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -3685,7 +3690,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/Discordoo/discordoo/blob/2bcceb3/src/core/Client.ts#L61">src/core/Client.ts:61</a></li>
+								<li>Defined in <a href="https://github.com/Discordoo/discordoo/blob/8e8597a/src/core/Client.ts#L119">src/core/Client.ts:119</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
