@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>ShardingMachineOptions | Discordoo</title>
+	<title>IpcClient | Discordoo</title>
 	<meta name="description" content="Documentation for Discordoo">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<style type="text/css">:root {
@@ -2707,64 +2707,145 @@ img {
 </header>
 <nav class="tsd-navigation secondary">
 	<ul>
-		<li class=" tsd-kind-class tsd-parent-kind-module">
-			<a href="../classes/sharding.ipcclient.html" class="tsd-kind-icon">Ipc<wbr>Client</a>
-		</li>
-		<li class=" tsd-kind-class tsd-parent-kind-module">
-			<a href="../classes/sharding.ipcserver.html" class="tsd-kind-icon">Ipc<wbr>Server</a>
-		</li>
-		<li class=" tsd-kind-class tsd-parent-kind-module">
-			<a href="../classes/sharding.shardingclient.html" class="tsd-kind-icon">Sharding<wbr>Client</a>
-		</li>
-		<li class=" tsd-kind-class tsd-parent-kind-module">
-			<a href="../classes/sharding.shardingmanager.html" class="tsd-kind-icon">Sharding<wbr>Manager</a>
-		</li>
-		<li class=" tsd-kind-interface tsd-parent-kind-module">
-			<a href="sharding.clustersshardingoptions.html" class="tsd-kind-icon">Clusters<wbr>Sharding<wbr>Options</a>
-		</li>
-		<li class=" tsd-kind-interface tsd-parent-kind-module">
-			<a href="sharding.ipcpacket.html" class="tsd-kind-icon">Ipc<wbr>Packet</a>
-		</li>
-		<li class=" tsd-kind-interface tsd-parent-kind-module">
-			<a href="sharding.ipctlsoptions.html" class="tsd-kind-icon">Ipc<wbr>Tls<wbr>Options</a>
-		</li>
-		<li class=" tsd-kind-interface tsd-parent-kind-module">
-			<a href="sharding.machinesshardingoptions.html" class="tsd-kind-icon">Machines<wbr>Sharding<wbr>Options</a>
-		</li>
-		<li class=" tsd-kind-interface tsd-parent-kind-module">
-			<a href="sharding.processesshardingoptions.html" class="tsd-kind-icon">Processes<wbr>Sharding<wbr>Options</a>
-		</li>
-		<li class="current tsd-kind-interface tsd-parent-kind-module">
-			<a href="sharding.shardingmachineoptions.html" class="tsd-kind-icon">Sharding<wbr>Machine<wbr>Options</a>
+		<li class="current tsd-kind-class tsd-parent-kind-module">
+			<a href="sharding.ipcclient.html" class="tsd-kind-icon">Ipc<wbr>Client</a>
 			<ul>
-				<li class=" tsd-kind-property tsd-parent-kind-interface">
-					<a href="sharding.shardingmachineoptions.html#childmanageroptions" class="tsd-kind-icon">child<wbr>Manager<wbr>Options</a>
+				<li class=" tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
+					<a href="sharding.ipcclient.html#constructor" class="tsd-kind-icon">constructor</a>
 				</li>
-				<li class=" tsd-kind-property tsd-parent-kind-interface">
-					<a href="sharding.shardingmachineoptions.html#host" class="tsd-kind-icon">host</a>
+				<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a href="sharding.ipcclient.html#bucket" class="tsd-kind-icon">bucket</a>
 				</li>
-				<li class=" tsd-kind-property tsd-parent-kind-interface">
-					<a href="sharding.shardingmachineoptions.html#port" class="tsd-kind-icon">port</a>
+				<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a href="sharding.ipcclient.html#eventshandler" class="tsd-kind-icon">events<wbr>Handler</a>
 				</li>
-				<li class=" tsd-kind-property tsd-parent-kind-interface">
-					<a href="sharding.shardingmachineoptions.html#shards" class="tsd-kind-icon">shards</a>
+				<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a href="sharding.ipcclient.html#hellointerval" class="tsd-kind-icon">hello<wbr>Interval</a>
 				</li>
-				<li class=" tsd-kind-property tsd-parent-kind-interface">
-					<a href="sharding.shardingmachineoptions.html#tls" class="tsd-kind-icon">tls</a>
+				<li class=" tsd-kind-property tsd-parent-kind-class">
+					<a href="sharding.ipcclient.html#id" class="tsd-kind-icon">id</a>
 				</li>
-				<li class=" tsd-kind-property tsd-parent-kind-interface">
-					<a href="sharding.shardingmachineoptions.html#udp" class="tsd-kind-icon">udp</a>
+				<li class=" tsd-kind-property tsd-parent-kind-class">
+					<a href="sharding.ipcclient.html#ipc" class="tsd-kind-icon">ipc</a>
+				</li>
+				<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a href="sharding.ipcclient.html#managerid" class="tsd-kind-icon">manager<wbr>Id</a>
+				</li>
+				<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a href="sharding.ipcclient.html#shardipcid" class="tsd-kind-icon">shard<wbr>Ipc<wbr>Id</a>
+				</li>
+				<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a href="sharding.ipcclient.html#shardsocket" class="tsd-kind-icon">shard<wbr>Socket</a>
+				</li>
+				<li class=" tsd-kind-property tsd-parent-kind-class">
+					<a href="sharding.ipcclient.html#shards" class="tsd-kind-icon">shards</a>
+				</li>
+				<li class=" tsd-kind-property tsd-parent-kind-class">
+					<a href="sharding.ipcclient.html#totalshards" class="tsd-kind-icon">total<wbr>Shards</a>
+				</li>
+				<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static tsd-is-external">
+					<a href="sharding.ipcclient.html#defaultmaxlisteners" class="tsd-kind-icon">default<wbr>Max<wbr>Listeners</a>
+				</li>
+				<li class=" tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited tsd-is-external">
+					<a href="sharding.ipcclient.html#addlistener" class="tsd-kind-icon">add<wbr>Listener</a>
+				</li>
+				<li class=" tsd-kind-method tsd-parent-kind-class">
+					<a href="sharding.ipcclient.html#connect" class="tsd-kind-icon">connect</a>
+				</li>
+				<li class=" tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited tsd-is-external">
+					<a href="sharding.ipcclient.html#emit" class="tsd-kind-icon">emit</a>
+				</li>
+				<li class=" tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited tsd-is-external">
+					<a href="sharding.ipcclient.html#eventnames" class="tsd-kind-icon">event<wbr>Names</a>
+				</li>
+				<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a href="sharding.ipcclient.html#generate" class="tsd-kind-icon">generate</a>
+				</li>
+				<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external">
+					<a href="sharding.ipcclient.html#getmaxlisteners" class="tsd-kind-icon">get<wbr>Max<wbr>Listeners</a>
+				</li>
+				<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a href="sharding.ipcclient.html#hello" class="tsd-kind-icon">hello</a>
+				</li>
+				<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external">
+					<a href="sharding.ipcclient.html#listenercount" class="tsd-kind-icon">listener<wbr>Count</a>
+				</li>
+				<li class=" tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited tsd-is-external">
+					<a href="sharding.ipcclient.html#listeners" class="tsd-kind-icon">listeners</a>
+				</li>
+				<li class=" tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited tsd-is-external">
+					<a href="sharding.ipcclient.html#off" class="tsd-kind-icon">off</a>
+				</li>
+				<li class=" tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited tsd-is-external">
+					<a href="sharding.ipcclient.html#on" class="tsd-kind-icon">on</a>
+				</li>
+				<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a href="sharding.ipcclient.html#onpacket" class="tsd-kind-icon">on<wbr>Packet</a>
+				</li>
+				<li class=" tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited tsd-is-external">
+					<a href="sharding.ipcclient.html#once" class="tsd-kind-icon">once</a>
+				</li>
+				<li class=" tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited tsd-is-external">
+					<a href="sharding.ipcclient.html#prependlistener" class="tsd-kind-icon">prepend<wbr>Listener</a>
+				</li>
+				<li class=" tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited tsd-is-external">
+					<a href="sharding.ipcclient.html#prependoncelistener" class="tsd-kind-icon">prepend<wbr>Once<wbr>Listener</a>
+				</li>
+				<li class=" tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited tsd-is-external">
+					<a href="sharding.ipcclient.html#rawlisteners" class="tsd-kind-icon">raw<wbr>Listeners</a>
+				</li>
+				<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external">
+					<a href="sharding.ipcclient.html#removealllisteners" class="tsd-kind-icon">remove<wbr>All<wbr>Listeners</a>
+				</li>
+				<li class=" tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited tsd-is-external">
+					<a href="sharding.ipcclient.html#removelistener" class="tsd-kind-icon">remove<wbr>Listener</a>
+				</li>
+				<li class=" tsd-kind-method tsd-parent-kind-class">
+					<a href="sharding.ipcclient.html#send" class="tsd-kind-icon">send</a>
+				</li>
+				<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a href="sharding.ipcclient.html#sendheartbeat" class="tsd-kind-icon">send<wbr>Heartbeat</a>
+				</li>
+				<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external">
+					<a href="sharding.ipcclient.html#setmaxlisteners" class="tsd-kind-icon">set<wbr>Max<wbr>Listeners</a>
 				</li>
 			</ul>
 		</li>
-		<li class=" tsd-kind-interface tsd-parent-kind-module">
-			<a href="sharding.shardingmanagerevents.html" class="tsd-kind-icon">Sharding<wbr>Manager<wbr>Events</a>
+		<li class=" tsd-kind-class tsd-parent-kind-module">
+			<a href="sharding.ipcserver.html" class="tsd-kind-icon">Ipc<wbr>Server</a>
+		</li>
+		<li class=" tsd-kind-class tsd-parent-kind-module">
+			<a href="sharding.shardingclient.html" class="tsd-kind-icon">Sharding<wbr>Client</a>
+		</li>
+		<li class=" tsd-kind-class tsd-parent-kind-module">
+			<a href="sharding.shardingmanager.html" class="tsd-kind-icon">Sharding<wbr>Manager</a>
 		</li>
 		<li class=" tsd-kind-interface tsd-parent-kind-module">
-			<a href="sharding.shardingmanageroptions.html" class="tsd-kind-icon">Sharding<wbr>Manager<wbr>Options</a>
+			<a href="../interfaces/sharding.clustersshardingoptions.html" class="tsd-kind-icon">Clusters<wbr>Sharding<wbr>Options</a>
 		</li>
 		<li class=" tsd-kind-interface tsd-parent-kind-module">
-			<a href="sharding.workersshardingoptions.html" class="tsd-kind-icon">Workers<wbr>Sharding<wbr>Options</a>
+			<a href="../interfaces/sharding.ipcpacket.html" class="tsd-kind-icon">Ipc<wbr>Packet</a>
+		</li>
+		<li class=" tsd-kind-interface tsd-parent-kind-module">
+			<a href="../interfaces/sharding.ipctlsoptions.html" class="tsd-kind-icon">Ipc<wbr>Tls<wbr>Options</a>
+		</li>
+		<li class=" tsd-kind-interface tsd-parent-kind-module">
+			<a href="../interfaces/sharding.machinesshardingoptions.html" class="tsd-kind-icon">Machines<wbr>Sharding<wbr>Options</a>
+		</li>
+		<li class=" tsd-kind-interface tsd-parent-kind-module">
+			<a href="../interfaces/sharding.processesshardingoptions.html" class="tsd-kind-icon">Processes<wbr>Sharding<wbr>Options</a>
+		</li>
+		<li class=" tsd-kind-interface tsd-parent-kind-module">
+			<a href="../interfaces/sharding.shardingmachineoptions.html" class="tsd-kind-icon">Sharding<wbr>Machine<wbr>Options</a>
+		</li>
+		<li class=" tsd-kind-interface tsd-parent-kind-module">
+			<a href="../interfaces/sharding.shardingmanagerevents.html" class="tsd-kind-icon">Sharding<wbr>Manager<wbr>Events</a>
+		</li>
+		<li class=" tsd-kind-interface tsd-parent-kind-module">
+			<a href="../interfaces/sharding.shardingmanageroptions.html" class="tsd-kind-icon">Sharding<wbr>Manager<wbr>Options</a>
+		</li>
+		<li class=" tsd-kind-interface tsd-parent-kind-module">
+			<a href="../interfaces/sharding.workersshardingoptions.html" class="tsd-kind-icon">Workers<wbr>Sharding<wbr>Options</a>
 		</li>
 	</ul>
 </nav>
@@ -2774,7 +2855,12 @@ img {
 			<h3>Hierarchy</h3>
 			<ul class="tsd-hierarchy">
 				<li>
-					<span class="target">ShardingMachineOptions</span>
+					<span class="tsd-signature-type">TypedEmitter</span>
+					<ul class="tsd-hierarchy">
+						<li>
+							<span class="target">IpcClient</span>
+						</li>
+					</ul>
 				</li>
 			</ul>
 		</section>
@@ -2783,86 +2869,772 @@ img {
 			<section class="tsd-panel tsd-index-panel">
 				<div class="tsd-index-content">
 					<section class="tsd-index-section ">
+						<h3>Constructors</h3>
+						<ul class="tsd-index-list">
+							<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite"><a href="sharding.ipcclient.html#constructor" class="tsd-kind-icon">constructor</a></li>
+						</ul>
+					</section>
+					<section class="tsd-index-section ">
 						<h3>Properties</h3>
 						<ul class="tsd-index-list">
-							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="sharding.shardingmachineoptions.html#childmanageroptions" class="tsd-kind-icon">child<wbr>Manager<wbr>Options</a></li>
-							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="sharding.shardingmachineoptions.html#host" class="tsd-kind-icon">host</a></li>
-							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="sharding.shardingmachineoptions.html#port" class="tsd-kind-icon">port</a></li>
-							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="sharding.shardingmachineoptions.html#shards" class="tsd-kind-icon">shards</a></li>
-							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="sharding.shardingmachineoptions.html#tls" class="tsd-kind-icon">tls</a></li>
-							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="sharding.shardingmachineoptions.html#udp" class="tsd-kind-icon">udp</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="sharding.ipcclient.html#bucket" class="tsd-kind-icon">bucket</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="sharding.ipcclient.html#eventshandler" class="tsd-kind-icon">events<wbr>Handler</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="sharding.ipcclient.html#hellointerval" class="tsd-kind-icon">hello<wbr>Interval</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-class"><a href="sharding.ipcclient.html#id" class="tsd-kind-icon">id</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-class"><a href="sharding.ipcclient.html#ipc" class="tsd-kind-icon">ipc</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="sharding.ipcclient.html#managerid" class="tsd-kind-icon">manager<wbr>Id</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="sharding.ipcclient.html#shardipcid" class="tsd-kind-icon">shard<wbr>Ipc<wbr>Id</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="sharding.ipcclient.html#shardsocket" class="tsd-kind-icon">shard<wbr>Socket</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-class"><a href="sharding.ipcclient.html#shards" class="tsd-kind-icon">shards</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-class"><a href="sharding.ipcclient.html#totalshards" class="tsd-kind-icon">total<wbr>Shards</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static tsd-is-external"><a href="sharding.ipcclient.html#defaultmaxlisteners" class="tsd-kind-icon">default<wbr>Max<wbr>Listeners</a></li>
+						</ul>
+					</section>
+					<section class="tsd-index-section ">
+						<h3>Methods</h3>
+						<ul class="tsd-index-list">
+							<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited tsd-is-external"><a href="sharding.ipcclient.html#addlistener" class="tsd-kind-icon">add<wbr>Listener</a></li>
+							<li class="tsd-kind-method tsd-parent-kind-class"><a href="sharding.ipcclient.html#connect" class="tsd-kind-icon">connect</a></li>
+							<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited tsd-is-external"><a href="sharding.ipcclient.html#emit" class="tsd-kind-icon">emit</a></li>
+							<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited tsd-is-external"><a href="sharding.ipcclient.html#eventnames" class="tsd-kind-icon">event<wbr>Names</a></li>
+							<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="sharding.ipcclient.html#generate" class="tsd-kind-icon">generate</a></li>
+							<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external"><a href="sharding.ipcclient.html#getmaxlisteners" class="tsd-kind-icon">get<wbr>Max<wbr>Listeners</a></li>
+							<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="sharding.ipcclient.html#hello" class="tsd-kind-icon">hello</a></li>
+							<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external"><a href="sharding.ipcclient.html#listenercount" class="tsd-kind-icon">listener<wbr>Count</a></li>
+							<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited tsd-is-external"><a href="sharding.ipcclient.html#listeners" class="tsd-kind-icon">listeners</a></li>
+							<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited tsd-is-external"><a href="sharding.ipcclient.html#off" class="tsd-kind-icon">off</a></li>
+							<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited tsd-is-external"><a href="sharding.ipcclient.html#on" class="tsd-kind-icon">on</a></li>
+							<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="sharding.ipcclient.html#onpacket" class="tsd-kind-icon">on<wbr>Packet</a></li>
+							<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited tsd-is-external"><a href="sharding.ipcclient.html#once" class="tsd-kind-icon">once</a></li>
+							<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited tsd-is-external"><a href="sharding.ipcclient.html#prependlistener" class="tsd-kind-icon">prepend<wbr>Listener</a></li>
+							<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited tsd-is-external"><a href="sharding.ipcclient.html#prependoncelistener" class="tsd-kind-icon">prepend<wbr>Once<wbr>Listener</a></li>
+							<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited tsd-is-external"><a href="sharding.ipcclient.html#rawlisteners" class="tsd-kind-icon">raw<wbr>Listeners</a></li>
+							<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external"><a href="sharding.ipcclient.html#removealllisteners" class="tsd-kind-icon">remove<wbr>All<wbr>Listeners</a></li>
+							<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited tsd-is-external"><a href="sharding.ipcclient.html#removelistener" class="tsd-kind-icon">remove<wbr>Listener</a></li>
+							<li class="tsd-kind-method tsd-parent-kind-class"><a href="sharding.ipcclient.html#send" class="tsd-kind-icon">send</a></li>
+							<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="sharding.ipcclient.html#sendheartbeat" class="tsd-kind-icon">send<wbr>Heartbeat</a></li>
+							<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external"><a href="sharding.ipcclient.html#setmaxlisteners" class="tsd-kind-icon">set<wbr>Max<wbr>Listeners</a></li>
 						</ul>
 					</section>
 				</div>
 			</section>
 		</section>
 		<section class="tsd-panel-group tsd-member-group ">
+			<h2>Constructors</h2>
+			<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
+				<a name="constructor" class="tsd-anchor"></a>
+				<h3>constructor</h3>
+				<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
+					<li class="tsd-signature tsd-kind-icon">new <wbr>Ipc<wbr>Client<span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">default</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="sharding.ipcclient.html" class="tsd-signature-type" data-tsd-kind="Class">IpcClient</a></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<p>Overrides TypedEmitter.constructor</p>
+							<ul>
+								<li>Defined in <a href="https://github.com/Discordoo/discordoo/blob/4a555e8/src/sharding/ipc/IpcClient.ts#L22">src/sharding/ipc/IpcClient.ts:22</a></li>
+							</ul>
+						</aside>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>options: <span class="tsd-signature-type">default</span></h5>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <a href="sharding.ipcclient.html" class="tsd-signature-type" data-tsd-kind="Class">IpcClient</a></h4>
+					</li>
+				</ul>
+			</section>
+		</section>
+		<section class="tsd-panel-group tsd-member-group ">
 			<h2>Properties</h2>
-			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-				<a name="childmanageroptions" class="tsd-anchor"></a>
-				<h3>child<wbr>Manager<wbr>Options</h3>
-				<div class="tsd-signature tsd-kind-icon">child<wbr>Manager<wbr>Options<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">default</span></div>
+			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+				<a name="bucket" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagPrivate">Private</span> bucket</h3>
+				<div class="tsd-signature tsd-kind-icon">bucket<span class="tsd-signature-symbol">:</span> <a href="collection.collection-1.html" class="tsd-signature-type" data-tsd-kind="Class">Collection</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = ...</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/Discordoo/discordoo/blob/4a555e8/src/sharding/interfaces/machine/ShardingMachineOptions.ts#L11">src/sharding/interfaces/machine/ShardingMachineOptions.ts:11</a></li>
+						<li>Defined in <a href="https://github.com/Discordoo/discordoo/blob/4a555e8/src/sharding/ipc/IpcClient.ts#L12">src/sharding/ipc/IpcClient.ts:12</a></li>
 					</ul>
 				</aside>
 			</section>
-			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-				<a name="host" class="tsd-anchor"></a>
-				<h3>host</h3>
-				<div class="tsd-signature tsd-kind-icon">host<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+				<a name="eventshandler" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagPrivate">Private</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> events<wbr>Handler</h3>
+				<div class="tsd-signature tsd-kind-icon">events<wbr>Handler<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/Discordoo/discordoo/blob/4a555e8/src/sharding/interfaces/machine/ShardingMachineOptions.ts#L7">src/sharding/interfaces/machine/ShardingMachineOptions.ts:7</a></li>
+						<li>Defined in <a href="https://github.com/Discordoo/discordoo/blob/4a555e8/src/sharding/ipc/IpcClient.ts#L15">src/sharding/ipc/IpcClient.ts:15</a></li>
 					</ul>
 				</aside>
 			</section>
-			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-				<a name="port" class="tsd-anchor"></a>
-				<h3><span class="tsd-flag ts-flagOptional">Optional</span> port</h3>
-				<div class="tsd-signature tsd-kind-icon">port<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+				<a name="hellointerval" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagPrivate">Private</span> <span class="tsd-flag ts-flagOptional">Optional</span> hello<wbr>Interval</h3>
+				<div class="tsd-signature tsd-kind-icon">hello<wbr>Interval<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Timeout</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/Discordoo/discordoo/blob/4a555e8/src/sharding/interfaces/machine/ShardingMachineOptions.ts#L6">src/sharding/interfaces/machine/ShardingMachineOptions.ts:6</a></li>
+						<li>Defined in <a href="https://github.com/Discordoo/discordoo/blob/4a555e8/src/sharding/ipc/IpcClient.ts#L17">src/sharding/ipc/IpcClient.ts:17</a></li>
 					</ul>
 				</aside>
 			</section>
-			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+				<a name="id" class="tsd-anchor"></a>
+				<h3>id</h3>
+				<div class="tsd-signature tsd-kind-icon">id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+				<aside class="tsd-sources">
+					<ul>
+						<li>Defined in <a href="https://github.com/Discordoo/discordoo/blob/4a555e8/src/sharding/ipc/IpcClient.ts#L21">src/sharding/ipc/IpcClient.ts:21</a></li>
+					</ul>
+				</aside>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+				<a name="ipc" class="tsd-anchor"></a>
+				<h3>ipc</h3>
+				<div class="tsd-signature tsd-kind-icon">ipc<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">IPC</span></div>
+				<aside class="tsd-sources">
+					<ul>
+						<li>Defined in <a href="https://github.com/Discordoo/discordoo/blob/4a555e8/src/sharding/ipc/IpcClient.ts#L19">src/sharding/ipc/IpcClient.ts:19</a></li>
+					</ul>
+				</aside>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+				<a name="managerid" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagPrivate">Private</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> manager<wbr>Id</h3>
+				<div class="tsd-signature tsd-kind-icon">manager<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+				<aside class="tsd-sources">
+					<ul>
+						<li>Defined in <a href="https://github.com/Discordoo/discordoo/blob/4a555e8/src/sharding/ipc/IpcClient.ts#L16">src/sharding/ipc/IpcClient.ts:16</a></li>
+					</ul>
+				</aside>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+				<a name="shardipcid" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagPrivate">Private</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> shard<wbr>Ipc<wbr>Id</h3>
+				<div class="tsd-signature tsd-kind-icon">shard<wbr>Ipc<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+				<aside class="tsd-sources">
+					<ul>
+						<li>Defined in <a href="https://github.com/Discordoo/discordoo/blob/4a555e8/src/sharding/ipc/IpcClient.ts#L14">src/sharding/ipc/IpcClient.ts:14</a></li>
+					</ul>
+				</aside>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+				<a name="shardsocket" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagPrivate">Private</span> shard<wbr>Socket</h3>
+				<div class="tsd-signature tsd-kind-icon">shard<wbr>Socket<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
+				<aside class="tsd-sources">
+					<ul>
+						<li>Defined in <a href="https://github.com/Discordoo/discordoo/blob/4a555e8/src/sharding/ipc/IpcClient.ts#L13">src/sharding/ipc/IpcClient.ts:13</a></li>
+					</ul>
+				</aside>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 				<a name="shards" class="tsd-anchor"></a>
 				<h3>shards</h3>
-				<div class="tsd-signature tsd-kind-icon">shards<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">ShardListResolvable</span></div>
+				<div class="tsd-signature tsd-kind-icon">shards<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/Discordoo/discordoo/blob/4a555e8/src/sharding/interfaces/machine/ShardingMachineOptions.ts#L9">src/sharding/interfaces/machine/ShardingMachineOptions.ts:9</a></li>
+						<li>Defined in <a href="https://github.com/Discordoo/discordoo/blob/4a555e8/src/sharding/ipc/IpcClient.ts#L20">src/sharding/ipc/IpcClient.ts:20</a></li>
 					</ul>
 				</aside>
 			</section>
-			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-				<a name="tls" class="tsd-anchor"></a>
-				<h3><span class="tsd-flag ts-flagOptional">Optional</span> tls</h3>
-				<div class="tsd-signature tsd-kind-icon">tls<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">IpcClientTlsOptions</span></div>
+			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+				<a name="totalshards" class="tsd-anchor"></a>
+				<h3>total<wbr>Shards</h3>
+				<div class="tsd-signature tsd-kind-icon">total<wbr>Shards<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/Discordoo/discordoo/blob/4a555e8/src/sharding/interfaces/machine/ShardingMachineOptions.ts#L10">src/sharding/interfaces/machine/ShardingMachineOptions.ts:10</a></li>
+						<li>Defined in <a href="https://github.com/Discordoo/discordoo/blob/4a555e8/src/sharding/ipc/IpcClient.ts#L22">src/sharding/ipc/IpcClient.ts:22</a></li>
 					</ul>
 				</aside>
 			</section>
-			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-				<a name="udp" class="tsd-anchor"></a>
-				<h3><span class="tsd-flag ts-flagOptional">Optional</span> udp</h3>
-				<div class="tsd-signature tsd-kind-icon">udp<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">&quot;udp4&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;udp6&quot;</span></div>
+			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static tsd-is-external">
+				<a name="defaultmaxlisteners" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagStatic">Static</span> default<wbr>Max<wbr>Listeners</h3>
+				<div class="tsd-signature tsd-kind-icon">default<wbr>Max<wbr>Listeners<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 				<aside class="tsd-sources">
+					<p>Inherited from TypedEmitter.defaultMaxListeners</p>
 					<ul>
-						<li>Defined in <a href="https://github.com/Discordoo/discordoo/blob/4a555e8/src/sharding/interfaces/machine/ShardingMachineOptions.ts#L8">src/sharding/interfaces/machine/ShardingMachineOptions.ts:8</a></li>
+						<li>Defined in node_modules/tiny-typed-emitter/lib/index.d.ts:10</li>
 					</ul>
 				</aside>
+			</section>
+		</section>
+		<section class="tsd-panel-group tsd-member-group ">
+			<h2>Methods</h2>
+			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited tsd-is-external">
+				<a name="addlistener" class="tsd-anchor"></a>
+				<h3>add<wbr>Listener</h3>
+				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited tsd-is-external">
+					<li class="tsd-signature tsd-kind-icon">add<wbr>Listener&lt;U&gt;<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">U</span>, listener<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">DefaultListener</span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">U</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="sharding.ipcclient.html" class="tsd-signature-type" data-tsd-kind="Class">IpcClient</a></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<p>Inherited from TypedEmitter.addListener</p>
+							<ul>
+								<li>Defined in node_modules/tiny-typed-emitter/lib/index.d.ts:11</li>
+							</ul>
+						</aside>
+						<h4 class="tsd-type-parameters-title">Type parameters</h4>
+						<ul class="tsd-type-parameters">
+							<li>
+								<h4>U<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></h4>
+							</li>
+						</ul>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>event: <span class="tsd-signature-type">U</span></h5>
+							</li>
+							<li>
+								<h5>listener: <span class="tsd-signature-type">DefaultListener</span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">U</span><span class="tsd-signature-symbol">]</span></h5>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <a href="sharding.ipcclient.html" class="tsd-signature-type" data-tsd-kind="Class">IpcClient</a></h4>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+				<a name="connect" class="tsd-anchor"></a>
+				<h3>connect</h3>
+				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+					<li class="tsd-signature tsd-kind-icon">connect<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">&gt;</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/Discordoo/discordoo/blob/4a555e8/src/sharding/ipc/IpcClient.ts#L41">src/sharding/ipc/IpcClient.ts:41</a></li>
+							</ul>
+						</aside>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">&gt;</span></h4>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited tsd-is-external">
+				<a name="emit" class="tsd-anchor"></a>
+				<h3>emit</h3>
+				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited tsd-is-external">
+					<li class="tsd-signature tsd-kind-icon">emit&lt;U&gt;<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">U</span>, <span class="tsd-signature-symbol">...</span>args<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Parameters</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">DefaultListener</span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">U</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<p>Inherited from TypedEmitter.emit</p>
+							<ul>
+								<li>Defined in node_modules/tiny-typed-emitter/lib/index.d.ts:19</li>
+							</ul>
+						</aside>
+						<h4 class="tsd-type-parameters-title">Type parameters</h4>
+						<ul class="tsd-type-parameters">
+							<li>
+								<h4>U<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></h4>
+							</li>
+						</ul>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>event: <span class="tsd-signature-type">U</span></h5>
+							</li>
+							<li>
+								<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>args: <span class="tsd-signature-type">Parameters</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">DefaultListener</span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">U</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">&gt;</span></h5>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited tsd-is-external">
+				<a name="eventnames" class="tsd-anchor"></a>
+				<h3>event<wbr>Names</h3>
+				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited tsd-is-external">
+					<li class="tsd-signature tsd-kind-icon">event<wbr>Names&lt;U&gt;<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">U</span><span class="tsd-signature-symbol">[]</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<p>Inherited from TypedEmitter.eventNames</p>
+							<ul>
+								<li>Defined in node_modules/tiny-typed-emitter/lib/index.d.ts:20</li>
+							</ul>
+						</aside>
+						<h4 class="tsd-type-parameters-title">Type parameters</h4>
+						<ul class="tsd-type-parameters">
+							<li>
+								<h4>U<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></h4>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">U</span><span class="tsd-signature-symbol">[]</span></h4>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+				<a name="generate" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagPrivate">Private</span> generate</h3>
+				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<li class="tsd-signature tsd-kind-icon">generate<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/Discordoo/discordoo/blob/4a555e8/src/sharding/ipc/IpcClient.ts#L141">src/sharding/ipc/IpcClient.ts:141</a></li>
+							</ul>
+						</aside>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external">
+				<a name="getmaxlisteners" class="tsd-anchor"></a>
+				<h3>get<wbr>Max<wbr>Listeners</h3>
+				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external">
+					<li class="tsd-signature tsd-kind-icon">get<wbr>Max<wbr>Listeners<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<p>Inherited from TypedEmitter.getMaxListeners</p>
+							<ul>
+								<li>Defined in node_modules/tiny-typed-emitter/lib/index.d.ts:24</li>
+							</ul>
+						</aside>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+				<a name="hello" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagPrivate">Private</span> hello</h3>
+				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<li class="tsd-signature tsd-kind-icon">hello<span class="tsd-signature-symbol">(</span>connection<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/Discordoo/discordoo/blob/4a555e8/src/sharding/ipc/IpcClient.ts#L92">src/sharding/ipc/IpcClient.ts:92</a></li>
+							</ul>
+						</aside>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>connection: <span class="tsd-signature-type">any</span></h5>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external">
+				<a name="listenercount" class="tsd-anchor"></a>
+				<h3>listener<wbr>Count</h3>
+				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external">
+					<li class="tsd-signature tsd-kind-icon">listener<wbr>Count<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<p>Inherited from TypedEmitter.listenerCount</p>
+							<ul>
+								<li>Defined in node_modules/tiny-typed-emitter/lib/index.d.ts:21</li>
+							</ul>
+						</aside>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>type: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></h5>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited tsd-is-external">
+				<a name="listeners" class="tsd-anchor"></a>
+				<h3>listeners</h3>
+				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited tsd-is-external">
+					<li class="tsd-signature tsd-kind-icon">listeners&lt;U&gt;<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">U</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">DefaultListener</span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">U</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">[]</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<p>Inherited from TypedEmitter.listeners</p>
+							<ul>
+								<li>Defined in node_modules/tiny-typed-emitter/lib/index.d.ts:22</li>
+							</ul>
+						</aside>
+						<h4 class="tsd-type-parameters-title">Type parameters</h4>
+						<ul class="tsd-type-parameters">
+							<li>
+								<h4>U<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></h4>
+							</li>
+						</ul>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>type: <span class="tsd-signature-type">U</span></h5>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">DefaultListener</span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">U</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">[]</span></h4>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited tsd-is-external">
+				<a name="off" class="tsd-anchor"></a>
+				<h3>off</h3>
+				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited tsd-is-external">
+					<li class="tsd-signature tsd-kind-icon">off&lt;U&gt;<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">U</span>, listener<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">DefaultListener</span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">U</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="sharding.ipcclient.html" class="tsd-signature-type" data-tsd-kind="Class">IpcClient</a></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<p>Inherited from TypedEmitter.off</p>
+							<ul>
+								<li>Defined in node_modules/tiny-typed-emitter/lib/index.d.ts:18</li>
+							</ul>
+						</aside>
+						<h4 class="tsd-type-parameters-title">Type parameters</h4>
+						<ul class="tsd-type-parameters">
+							<li>
+								<h4>U<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></h4>
+							</li>
+						</ul>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>event: <span class="tsd-signature-type">U</span></h5>
+							</li>
+							<li>
+								<h5>listener: <span class="tsd-signature-type">DefaultListener</span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">U</span><span class="tsd-signature-symbol">]</span></h5>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <a href="sharding.ipcclient.html" class="tsd-signature-type" data-tsd-kind="Class">IpcClient</a></h4>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited tsd-is-external">
+				<a name="on" class="tsd-anchor"></a>
+				<h3>on</h3>
+				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited tsd-is-external">
+					<li class="tsd-signature tsd-kind-icon">on&lt;U&gt;<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">U</span>, listener<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">DefaultListener</span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">U</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="sharding.ipcclient.html" class="tsd-signature-type" data-tsd-kind="Class">IpcClient</a></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<p>Inherited from TypedEmitter.on</p>
+							<ul>
+								<li>Defined in node_modules/tiny-typed-emitter/lib/index.d.ts:17</li>
+							</ul>
+						</aside>
+						<h4 class="tsd-type-parameters-title">Type parameters</h4>
+						<ul class="tsd-type-parameters">
+							<li>
+								<h4>U<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></h4>
+							</li>
+						</ul>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>event: <span class="tsd-signature-type">U</span></h5>
+							</li>
+							<li>
+								<h5>listener: <span class="tsd-signature-type">DefaultListener</span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">U</span><span class="tsd-signature-symbol">]</span></h5>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <a href="sharding.ipcclient.html" class="tsd-signature-type" data-tsd-kind="Class">IpcClient</a></h4>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+				<a name="onpacket" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagPrivate">Private</span> on<wbr>Packet</h3>
+				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<li class="tsd-signature tsd-kind-icon">on<wbr>Packet<span class="tsd-signature-symbol">(</span>packet<span class="tsd-signature-symbol">: </span><a href="../interfaces/sharding.ipcpacket.html" class="tsd-signature-type" data-tsd-kind="Interface">IpcPacket</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/Discordoo/discordoo/blob/4a555e8/src/sharding/ipc/IpcClient.ts#L74">src/sharding/ipc/IpcClient.ts:74</a></li>
+							</ul>
+						</aside>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>packet: <a href="../interfaces/sharding.ipcpacket.html" class="tsd-signature-type" data-tsd-kind="Interface">IpcPacket</a></h5>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited tsd-is-external">
+				<a name="once" class="tsd-anchor"></a>
+				<h3>once</h3>
+				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited tsd-is-external">
+					<li class="tsd-signature tsd-kind-icon">once&lt;U&gt;<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">U</span>, listener<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">DefaultListener</span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">U</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="sharding.ipcclient.html" class="tsd-signature-type" data-tsd-kind="Class">IpcClient</a></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<p>Inherited from TypedEmitter.once</p>
+							<ul>
+								<li>Defined in node_modules/tiny-typed-emitter/lib/index.d.ts:16</li>
+							</ul>
+						</aside>
+						<h4 class="tsd-type-parameters-title">Type parameters</h4>
+						<ul class="tsd-type-parameters">
+							<li>
+								<h4>U<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></h4>
+							</li>
+						</ul>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>event: <span class="tsd-signature-type">U</span></h5>
+							</li>
+							<li>
+								<h5>listener: <span class="tsd-signature-type">DefaultListener</span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">U</span><span class="tsd-signature-symbol">]</span></h5>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <a href="sharding.ipcclient.html" class="tsd-signature-type" data-tsd-kind="Class">IpcClient</a></h4>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited tsd-is-external">
+				<a name="prependlistener" class="tsd-anchor"></a>
+				<h3>prepend<wbr>Listener</h3>
+				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited tsd-is-external">
+					<li class="tsd-signature tsd-kind-icon">prepend<wbr>Listener&lt;U&gt;<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">U</span>, listener<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">DefaultListener</span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">U</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="sharding.ipcclient.html" class="tsd-signature-type" data-tsd-kind="Class">IpcClient</a></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<p>Inherited from TypedEmitter.prependListener</p>
+							<ul>
+								<li>Defined in node_modules/tiny-typed-emitter/lib/index.d.ts:12</li>
+							</ul>
+						</aside>
+						<h4 class="tsd-type-parameters-title">Type parameters</h4>
+						<ul class="tsd-type-parameters">
+							<li>
+								<h4>U<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></h4>
+							</li>
+						</ul>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>event: <span class="tsd-signature-type">U</span></h5>
+							</li>
+							<li>
+								<h5>listener: <span class="tsd-signature-type">DefaultListener</span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">U</span><span class="tsd-signature-symbol">]</span></h5>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <a href="sharding.ipcclient.html" class="tsd-signature-type" data-tsd-kind="Class">IpcClient</a></h4>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited tsd-is-external">
+				<a name="prependoncelistener" class="tsd-anchor"></a>
+				<h3>prepend<wbr>Once<wbr>Listener</h3>
+				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited tsd-is-external">
+					<li class="tsd-signature tsd-kind-icon">prepend<wbr>Once<wbr>Listener&lt;U&gt;<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">U</span>, listener<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">DefaultListener</span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">U</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="sharding.ipcclient.html" class="tsd-signature-type" data-tsd-kind="Class">IpcClient</a></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<p>Inherited from TypedEmitter.prependOnceListener</p>
+							<ul>
+								<li>Defined in node_modules/tiny-typed-emitter/lib/index.d.ts:13</li>
+							</ul>
+						</aside>
+						<h4 class="tsd-type-parameters-title">Type parameters</h4>
+						<ul class="tsd-type-parameters">
+							<li>
+								<h4>U<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></h4>
+							</li>
+						</ul>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>event: <span class="tsd-signature-type">U</span></h5>
+							</li>
+							<li>
+								<h5>listener: <span class="tsd-signature-type">DefaultListener</span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">U</span><span class="tsd-signature-symbol">]</span></h5>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <a href="sharding.ipcclient.html" class="tsd-signature-type" data-tsd-kind="Class">IpcClient</a></h4>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited tsd-is-external">
+				<a name="rawlisteners" class="tsd-anchor"></a>
+				<h3>raw<wbr>Listeners</h3>
+				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited tsd-is-external">
+					<li class="tsd-signature tsd-kind-icon">raw<wbr>Listeners&lt;U&gt;<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">U</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">DefaultListener</span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">U</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">[]</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<p>Inherited from TypedEmitter.rawListeners</p>
+							<ul>
+								<li>Defined in node_modules/tiny-typed-emitter/lib/index.d.ts:23</li>
+							</ul>
+						</aside>
+						<h4 class="tsd-type-parameters-title">Type parameters</h4>
+						<ul class="tsd-type-parameters">
+							<li>
+								<h4>U<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></h4>
+							</li>
+						</ul>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>type: <span class="tsd-signature-type">U</span></h5>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">DefaultListener</span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">U</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">[]</span></h4>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external">
+				<a name="removealllisteners" class="tsd-anchor"></a>
+				<h3>remove<wbr>All<wbr>Listeners</h3>
+				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external">
+					<li class="tsd-signature tsd-kind-icon">remove<wbr>All<wbr>Listeners<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="sharding.ipcclient.html" class="tsd-signature-type" data-tsd-kind="Class">IpcClient</a></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<p>Inherited from TypedEmitter.removeAllListeners</p>
+							<ul>
+								<li>Defined in node_modules/tiny-typed-emitter/lib/index.d.ts:15</li>
+							</ul>
+						</aside>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5><span class="tsd-flag ts-flagOptional">Optional</span> event: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></h5>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <a href="sharding.ipcclient.html" class="tsd-signature-type" data-tsd-kind="Class">IpcClient</a></h4>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited tsd-is-external">
+				<a name="removelistener" class="tsd-anchor"></a>
+				<h3>remove<wbr>Listener</h3>
+				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited tsd-is-external">
+					<li class="tsd-signature tsd-kind-icon">remove<wbr>Listener&lt;U&gt;<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">U</span>, listener<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">DefaultListener</span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">U</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="sharding.ipcclient.html" class="tsd-signature-type" data-tsd-kind="Class">IpcClient</a></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<p>Inherited from TypedEmitter.removeListener</p>
+							<ul>
+								<li>Defined in node_modules/tiny-typed-emitter/lib/index.d.ts:14</li>
+							</ul>
+						</aside>
+						<h4 class="tsd-type-parameters-title">Type parameters</h4>
+						<ul class="tsd-type-parameters">
+							<li>
+								<h4>U<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></h4>
+							</li>
+						</ul>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>event: <span class="tsd-signature-type">U</span></h5>
+							</li>
+							<li>
+								<h5>listener: <span class="tsd-signature-type">DefaultListener</span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">U</span><span class="tsd-signature-symbol">]</span></h5>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <a href="sharding.ipcclient.html" class="tsd-signature-type" data-tsd-kind="Class">IpcClient</a></h4>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+				<a name="send" class="tsd-anchor"></a>
+				<h3>send</h3>
+				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+					<li class="tsd-signature tsd-kind-icon">send<span class="tsd-signature-symbol">(</span>data<span class="tsd-signature-symbol">: </span><a href="../interfaces/sharding.ipcpacket.html" class="tsd-signature-type" data-tsd-kind="Interface">IpcPacket</a>, options<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">default</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">&gt;</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/Discordoo/discordoo/blob/4a555e8/src/sharding/ipc/IpcClient.ts#L119">src/sharding/ipc/IpcClient.ts:119</a></li>
+							</ul>
+						</aside>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>data: <a href="../interfaces/sharding.ipcpacket.html" class="tsd-signature-type" data-tsd-kind="Interface">IpcPacket</a></h5>
+							</li>
+							<li>
+								<h5>options: <span class="tsd-signature-type">default</span><span class="tsd-signature-symbol"> = {}</span></h5>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">&gt;</span></h4>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+				<a name="sendheartbeat" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagPrivate">Private</span> send<wbr>Heartbeat</h3>
+				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<li class="tsd-signature tsd-kind-icon">send<wbr>Heartbeat<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/Discordoo/discordoo/blob/4a555e8/src/sharding/ipc/IpcClient.ts#L107">src/sharding/ipc/IpcClient.ts:107</a></li>
+							</ul>
+						</aside>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external">
+				<a name="setmaxlisteners" class="tsd-anchor"></a>
+				<h3>set<wbr>Max<wbr>Listeners</h3>
+				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external">
+					<li class="tsd-signature tsd-kind-icon">set<wbr>Max<wbr>Listeners<span class="tsd-signature-symbol">(</span>n<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="sharding.ipcclient.html" class="tsd-signature-type" data-tsd-kind="Class">IpcClient</a></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<p>Inherited from TypedEmitter.setMaxListeners</p>
+							<ul>
+								<li>Defined in node_modules/tiny-typed-emitter/lib/index.d.ts:25</li>
+							</ul>
+						</aside>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>n: <span class="tsd-signature-type">number</span></h5>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <a href="sharding.ipcclient.html" class="tsd-signature-type" data-tsd-kind="Class">IpcClient</a></h4>
+					</li>
+				</ul>
 			</section>
 		</section>
 		<footer class="with-border-bottom">
 			<div class="container">
 				<h2>Legend</h2>
 				<div class="tsd-legend-group">
+					<ul class="tsd-legend">
+						<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
+						<li class="tsd-kind-class tsd-has-type-parameter"><span class="tsd-kind-icon">Class with type parameter</span></li>
+						<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
+						<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
+						<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+					</ul>
 					<ul class="tsd-legend">
 						<li class="tsd-kind-namespace"><span class="tsd-kind-icon">Namespace</span></li>
 						<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
@@ -2872,11 +3644,10 @@ img {
 					<ul class="tsd-legend">
 						<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
 						<li class="tsd-kind-interface tsd-has-type-parameter"><span class="tsd-kind-icon">Interface with type parameter</span></li>
-						<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
 					</ul>
 					<ul class="tsd-legend">
-						<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
-						<li class="tsd-kind-class tsd-has-type-parameter"><span class="tsd-kind-icon">Class with type parameter</span></li>
+						<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private property</span></li>
+						<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private method</span></li>
 					</ul>
 				</div>
 			</div>

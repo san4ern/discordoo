@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>ShardingMachineOptions | Discordoo</title>
+	<title>WebSocketEvents | Discordoo</title>
 	<meta name="description" content="Documentation for Discordoo">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<style type="text/css">:root {
@@ -2707,154 +2707,581 @@ img {
 </header>
 <nav class="tsd-navigation secondary">
 	<ul>
-		<li class=" tsd-kind-class tsd-parent-kind-module">
-			<a href="../classes/sharding.ipcclient.html" class="tsd-kind-icon">Ipc<wbr>Client</a>
+		<li class=" tsd-kind-enum tsd-parent-kind-namespace">
+			<a href="core.constants.discordooproviders.html" class="tsd-kind-icon">Discordoo<wbr>Providers</a>
 		</li>
-		<li class=" tsd-kind-class tsd-parent-kind-module">
-			<a href="../classes/sharding.ipcserver.html" class="tsd-kind-icon">Ipc<wbr>Server</a>
+		<li class=" tsd-kind-enum tsd-parent-kind-namespace">
+			<a href="core.constants.ipcevents.html" class="tsd-kind-icon">Ipc<wbr>Events</a>
 		</li>
-		<li class=" tsd-kind-class tsd-parent-kind-module">
-			<a href="../classes/sharding.shardingclient.html" class="tsd-kind-icon">Sharding<wbr>Client</a>
+		<li class=" tsd-kind-enum tsd-parent-kind-namespace">
+			<a href="core.constants.ipcopcodes.html" class="tsd-kind-icon">IpcOPCodes</a>
 		</li>
-		<li class=" tsd-kind-class tsd-parent-kind-module">
-			<a href="../classes/sharding.shardingmanager.html" class="tsd-kind-icon">Sharding<wbr>Manager</a>
+		<li class=" tsd-kind-enum tsd-parent-kind-namespace">
+			<a href="core.constants.partialshardingmodes.html" class="tsd-kind-icon">Partial<wbr>Sharding<wbr>Modes</a>
 		</li>
-		<li class=" tsd-kind-interface tsd-parent-kind-module">
-			<a href="sharding.clustersshardingoptions.html" class="tsd-kind-icon">Clusters<wbr>Sharding<wbr>Options</a>
+		<li class=" tsd-kind-enum tsd-parent-kind-namespace">
+			<a href="core.constants.shardingmanagertypes.html" class="tsd-kind-icon">Sharding<wbr>Manager<wbr>Types</a>
 		</li>
-		<li class=" tsd-kind-interface tsd-parent-kind-module">
-			<a href="sharding.ipcpacket.html" class="tsd-kind-icon">Ipc<wbr>Packet</a>
+		<li class=" tsd-kind-enum tsd-parent-kind-namespace">
+			<a href="core.constants.shardingmodes.html" class="tsd-kind-icon">Sharding<wbr>Modes</a>
 		</li>
-		<li class=" tsd-kind-interface tsd-parent-kind-module">
-			<a href="sharding.ipctlsoptions.html" class="tsd-kind-icon">Ipc<wbr>Tls<wbr>Options</a>
+		<li class=" tsd-kind-enum tsd-parent-kind-namespace">
+			<a href="core.constants.websocketclientevents.html" class="tsd-kind-icon">Web<wbr>Socket<wbr>Client<wbr>Events</a>
 		</li>
-		<li class=" tsd-kind-interface tsd-parent-kind-module">
-			<a href="sharding.machinesshardingoptions.html" class="tsd-kind-icon">Machines<wbr>Sharding<wbr>Options</a>
+		<li class=" tsd-kind-enum tsd-parent-kind-namespace">
+			<a href="core.constants.websocketclientstates.html" class="tsd-kind-icon">Web<wbr>Socket<wbr>Client<wbr>States</a>
 		</li>
-		<li class=" tsd-kind-interface tsd-parent-kind-module">
-			<a href="sharding.processesshardingoptions.html" class="tsd-kind-icon">Processes<wbr>Sharding<wbr>Options</a>
-		</li>
-		<li class="current tsd-kind-interface tsd-parent-kind-module">
-			<a href="sharding.shardingmachineoptions.html" class="tsd-kind-icon">Sharding<wbr>Machine<wbr>Options</a>
+		<li class="current tsd-kind-enum tsd-parent-kind-namespace">
+			<a href="core.constants.websocketevents.html" class="tsd-kind-icon">Web<wbr>Socket<wbr>Events</a>
 			<ul>
-				<li class=" tsd-kind-property tsd-parent-kind-interface">
-					<a href="sharding.shardingmachineoptions.html#childmanageroptions" class="tsd-kind-icon">child<wbr>Manager<wbr>Options</a>
+				<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
+					<a href="core.constants.websocketevents.html#channel_create" class="tsd-kind-icon">CHANNEL_<wbr>CREATE</a>
 				</li>
-				<li class=" tsd-kind-property tsd-parent-kind-interface">
-					<a href="sharding.shardingmachineoptions.html#host" class="tsd-kind-icon">host</a>
+				<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
+					<a href="core.constants.websocketevents.html#channel_delete" class="tsd-kind-icon">CHANNEL_<wbr>DELETE</a>
 				</li>
-				<li class=" tsd-kind-property tsd-parent-kind-interface">
-					<a href="sharding.shardingmachineoptions.html#port" class="tsd-kind-icon">port</a>
+				<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
+					<a href="core.constants.websocketevents.html#channel_pins_update" class="tsd-kind-icon">CHANNEL_<wbr>PINS_<wbr>UPDATE</a>
 				</li>
-				<li class=" tsd-kind-property tsd-parent-kind-interface">
-					<a href="sharding.shardingmachineoptions.html#shards" class="tsd-kind-icon">shards</a>
+				<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
+					<a href="core.constants.websocketevents.html#channel_update" class="tsd-kind-icon">CHANNEL_<wbr>UPDATE</a>
 				</li>
-				<li class=" tsd-kind-property tsd-parent-kind-interface">
-					<a href="sharding.shardingmachineoptions.html#tls" class="tsd-kind-icon">tls</a>
+				<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
+					<a href="core.constants.websocketevents.html#guild_ban_add" class="tsd-kind-icon">GUILD_<wbr>BAN_<wbr>ADD</a>
 				</li>
-				<li class=" tsd-kind-property tsd-parent-kind-interface">
-					<a href="sharding.shardingmachineoptions.html#udp" class="tsd-kind-icon">udp</a>
+				<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
+					<a href="core.constants.websocketevents.html#guild_ban_remove" class="tsd-kind-icon">GUILD_<wbr>BAN_<wbr>REMOVE</a>
+				</li>
+				<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
+					<a href="core.constants.websocketevents.html#guild_create" class="tsd-kind-icon">GUILD_<wbr>CREATE</a>
+				</li>
+				<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
+					<a href="core.constants.websocketevents.html#guild_delete" class="tsd-kind-icon">GUILD_<wbr>DELETE</a>
+				</li>
+				<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
+					<a href="core.constants.websocketevents.html#guild_emojis_update" class="tsd-kind-icon">GUILD_<wbr>EMOJIS_<wbr>UPDATE</a>
+				</li>
+				<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
+					<a href="core.constants.websocketevents.html#guild_integrations_update" class="tsd-kind-icon">GUILD_<wbr>INTEGRATIONS_<wbr>UPDATE</a>
+				</li>
+				<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
+					<a href="core.constants.websocketevents.html#guild_members_chunk" class="tsd-kind-icon">GUILD_<wbr>MEMBERS_<wbr>CHUNK</a>
+				</li>
+				<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
+					<a href="core.constants.websocketevents.html#guild_member_add" class="tsd-kind-icon">GUILD_<wbr>MEMBER_<wbr>ADD</a>
+				</li>
+				<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
+					<a href="core.constants.websocketevents.html#guild_member_remove" class="tsd-kind-icon">GUILD_<wbr>MEMBER_<wbr>REMOVE</a>
+				</li>
+				<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
+					<a href="core.constants.websocketevents.html#guild_member_update" class="tsd-kind-icon">GUILD_<wbr>MEMBER_<wbr>UPDATE</a>
+				</li>
+				<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
+					<a href="core.constants.websocketevents.html#guild_role_create" class="tsd-kind-icon">GUILD_<wbr>ROLE_<wbr>CREATE</a>
+				</li>
+				<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
+					<a href="core.constants.websocketevents.html#guild_role_delete" class="tsd-kind-icon">GUILD_<wbr>ROLE_<wbr>DELETE</a>
+				</li>
+				<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
+					<a href="core.constants.websocketevents.html#guild_role_update" class="tsd-kind-icon">GUILD_<wbr>ROLE_<wbr>UPDATE</a>
+				</li>
+				<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
+					<a href="core.constants.websocketevents.html#guild_update" class="tsd-kind-icon">GUILD_<wbr>UPDATE</a>
+				</li>
+				<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
+					<a href="core.constants.websocketevents.html#invite_create" class="tsd-kind-icon">INVITE_<wbr>CREATE</a>
+				</li>
+				<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
+					<a href="core.constants.websocketevents.html#invite_delete" class="tsd-kind-icon">INVITE_<wbr>DELETE</a>
+				</li>
+				<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
+					<a href="core.constants.websocketevents.html#message_create" class="tsd-kind-icon">MESSAGE_<wbr>CREATE</a>
+				</li>
+				<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
+					<a href="core.constants.websocketevents.html#message_delete" class="tsd-kind-icon">MESSAGE_<wbr>DELETE</a>
+				</li>
+				<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
+					<a href="core.constants.websocketevents.html#message_delete_bulk" class="tsd-kind-icon">MESSAGE_<wbr>DELETE_<wbr>BULK</a>
+				</li>
+				<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
+					<a href="core.constants.websocketevents.html#message_reaction_add" class="tsd-kind-icon">MESSAGE_<wbr>REACTION_<wbr>ADD</a>
+				</li>
+				<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
+					<a href="core.constants.websocketevents.html#message_reaction_remove" class="tsd-kind-icon">MESSAGE_<wbr>REACTION_<wbr>REMOVE</a>
+				</li>
+				<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
+					<a href="core.constants.websocketevents.html#message_reaction_remove_all" class="tsd-kind-icon">MESSAGE_<wbr>REACTION_<wbr>REMOVE_<wbr>ALL</a>
+				</li>
+				<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
+					<a href="core.constants.websocketevents.html#message_reaction_remove_emoji" class="tsd-kind-icon">MESSAGE_<wbr>REACTION_<wbr>REMOVE_<wbr>EMOJI</a>
+				</li>
+				<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
+					<a href="core.constants.websocketevents.html#message_update" class="tsd-kind-icon">MESSAGE_<wbr>UPDATE</a>
+				</li>
+				<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
+					<a href="core.constants.websocketevents.html#presence_update" class="tsd-kind-icon">PRESENCE_<wbr>UPDATE</a>
+				</li>
+				<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
+					<a href="core.constants.websocketevents.html#ready" class="tsd-kind-icon">READY</a>
+				</li>
+				<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
+					<a href="core.constants.websocketevents.html#resumed" class="tsd-kind-icon">RESUMED</a>
+				</li>
+				<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
+					<a href="core.constants.websocketevents.html#typing_start" class="tsd-kind-icon">TYPING_<wbr>START</a>
+				</li>
+				<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
+					<a href="core.constants.websocketevents.html#user_update" class="tsd-kind-icon">USER_<wbr>UPDATE</a>
+				</li>
+				<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
+					<a href="core.constants.websocketevents.html#voice_server_update" class="tsd-kind-icon">VOICE_<wbr>SERVER_<wbr>UPDATE</a>
+				</li>
+				<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
+					<a href="core.constants.websocketevents.html#voice_state_update" class="tsd-kind-icon">VOICE_<wbr>STATE_<wbr>UPDATE</a>
+				</li>
+				<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
+					<a href="core.constants.websocketevents.html#webhooks_update" class="tsd-kind-icon">WEBHOOKS_<wbr>UPDATE</a>
 				</li>
 			</ul>
 		</li>
-		<li class=" tsd-kind-interface tsd-parent-kind-module">
-			<a href="sharding.shardingmanagerevents.html" class="tsd-kind-icon">Sharding<wbr>Manager<wbr>Events</a>
+		<li class=" tsd-kind-enum tsd-parent-kind-namespace">
+			<a href="core.constants.websocketmanagerstates.html" class="tsd-kind-icon">Web<wbr>Socket<wbr>Manager<wbr>States</a>
 		</li>
-		<li class=" tsd-kind-interface tsd-parent-kind-module">
-			<a href="sharding.shardingmanageroptions.html" class="tsd-kind-icon">Sharding<wbr>Manager<wbr>Options</a>
+		<li class=" tsd-kind-enum tsd-parent-kind-namespace">
+			<a href="core.constants.websocketopcodes.html" class="tsd-kind-icon">Web<wbr>SocketOPCodes</a>
 		</li>
-		<li class=" tsd-kind-interface tsd-parent-kind-module">
-			<a href="sharding.workersshardingoptions.html" class="tsd-kind-icon">Workers<wbr>Sharding<wbr>Options</a>
+		<li class=" tsd-kind-enum tsd-parent-kind-namespace">
+			<a href="core.constants.websocketshardstatus.html" class="tsd-kind-icon">Web<wbr>Socket<wbr>Shard<wbr>Status</a>
+		</li>
+		<li class=" tsd-kind-enum tsd-parent-kind-namespace">
+			<a href="core.constants.websocketstates.html" class="tsd-kind-icon">Web<wbr>Socket<wbr>States</a>
+		</li>
+		<li class=" tsd-kind-variable tsd-parent-kind-namespace">
+			<a href="../modules/core.constants.html#api_endpoint" class="tsd-kind-icon">API_<wbr>ENDPOINT</a>
+		</li>
+		<li class=" tsd-kind-variable tsd-parent-kind-namespace">
+			<a href="../modules/core.constants.html#default_rest_options" class="tsd-kind-icon">DEFAULT_<wbr>REST_<wbr>OPTIONS</a>
+		</li>
+		<li class=" tsd-kind-variable tsd-parent-kind-namespace">
+			<a href="../modules/core.constants.html#default_ws_options" class="tsd-kind-icon">DEFAULT_<wbr>WS_<wbr>OPTIONS</a>
+		</li>
+		<li class=" tsd-kind-variable tsd-parent-kind-namespace">
+			<a href="../modules/core.constants.html#raw_ipc_event" class="tsd-kind-icon">RAW_<wbr>IPC_<wbr>EVENT</a>
+		</li>
+		<li class=" tsd-kind-variable tsd-parent-kind-namespace">
+			<a href="../modules/core.constants.html#ws_handshake_timeout" class="tsd-kind-icon">WS_<wbr>HANDSHAKE_<wbr>TIMEOUT</a>
 		</li>
 	</ul>
 </nav>
 <div class="container container-main">
 	<div class="content-wrap">
-		<section class="tsd-panel tsd-hierarchy">
-			<h3>Hierarchy</h3>
-			<ul class="tsd-hierarchy">
-				<li>
-					<span class="target">ShardingMachineOptions</span>
-				</li>
-			</ul>
-		</section>
 		<section class="tsd-panel-group tsd-index-group">
 			<h2>Index</h2>
 			<section class="tsd-panel tsd-index-panel">
 				<div class="tsd-index-content">
 					<section class="tsd-index-section ">
-						<h3>Properties</h3>
+						<h3>Enumeration members</h3>
 						<ul class="tsd-index-list">
-							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="sharding.shardingmachineoptions.html#childmanageroptions" class="tsd-kind-icon">child<wbr>Manager<wbr>Options</a></li>
-							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="sharding.shardingmachineoptions.html#host" class="tsd-kind-icon">host</a></li>
-							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="sharding.shardingmachineoptions.html#port" class="tsd-kind-icon">port</a></li>
-							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="sharding.shardingmachineoptions.html#shards" class="tsd-kind-icon">shards</a></li>
-							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="sharding.shardingmachineoptions.html#tls" class="tsd-kind-icon">tls</a></li>
-							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="sharding.shardingmachineoptions.html#udp" class="tsd-kind-icon">udp</a></li>
+							<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="core.constants.websocketevents.html#channel_create" class="tsd-kind-icon">CHANNEL_<wbr>CREATE</a></li>
+							<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="core.constants.websocketevents.html#channel_delete" class="tsd-kind-icon">CHANNEL_<wbr>DELETE</a></li>
+							<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="core.constants.websocketevents.html#channel_pins_update" class="tsd-kind-icon">CHANNEL_<wbr>PINS_<wbr>UPDATE</a></li>
+							<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="core.constants.websocketevents.html#channel_update" class="tsd-kind-icon">CHANNEL_<wbr>UPDATE</a></li>
+							<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="core.constants.websocketevents.html#guild_ban_add" class="tsd-kind-icon">GUILD_<wbr>BAN_<wbr>ADD</a></li>
+							<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="core.constants.websocketevents.html#guild_ban_remove" class="tsd-kind-icon">GUILD_<wbr>BAN_<wbr>REMOVE</a></li>
+							<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="core.constants.websocketevents.html#guild_create" class="tsd-kind-icon">GUILD_<wbr>CREATE</a></li>
+							<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="core.constants.websocketevents.html#guild_delete" class="tsd-kind-icon">GUILD_<wbr>DELETE</a></li>
+							<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="core.constants.websocketevents.html#guild_emojis_update" class="tsd-kind-icon">GUILD_<wbr>EMOJIS_<wbr>UPDATE</a></li>
+							<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="core.constants.websocketevents.html#guild_integrations_update" class="tsd-kind-icon">GUILD_<wbr>INTEGRATIONS_<wbr>UPDATE</a></li>
+							<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="core.constants.websocketevents.html#guild_members_chunk" class="tsd-kind-icon">GUILD_<wbr>MEMBERS_<wbr>CHUNK</a></li>
+							<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="core.constants.websocketevents.html#guild_member_add" class="tsd-kind-icon">GUILD_<wbr>MEMBER_<wbr>ADD</a></li>
+							<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="core.constants.websocketevents.html#guild_member_remove" class="tsd-kind-icon">GUILD_<wbr>MEMBER_<wbr>REMOVE</a></li>
+							<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="core.constants.websocketevents.html#guild_member_update" class="tsd-kind-icon">GUILD_<wbr>MEMBER_<wbr>UPDATE</a></li>
+							<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="core.constants.websocketevents.html#guild_role_create" class="tsd-kind-icon">GUILD_<wbr>ROLE_<wbr>CREATE</a></li>
+							<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="core.constants.websocketevents.html#guild_role_delete" class="tsd-kind-icon">GUILD_<wbr>ROLE_<wbr>DELETE</a></li>
+							<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="core.constants.websocketevents.html#guild_role_update" class="tsd-kind-icon">GUILD_<wbr>ROLE_<wbr>UPDATE</a></li>
+							<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="core.constants.websocketevents.html#guild_update" class="tsd-kind-icon">GUILD_<wbr>UPDATE</a></li>
+							<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="core.constants.websocketevents.html#invite_create" class="tsd-kind-icon">INVITE_<wbr>CREATE</a></li>
+							<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="core.constants.websocketevents.html#invite_delete" class="tsd-kind-icon">INVITE_<wbr>DELETE</a></li>
+							<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="core.constants.websocketevents.html#message_create" class="tsd-kind-icon">MESSAGE_<wbr>CREATE</a></li>
+							<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="core.constants.websocketevents.html#message_delete" class="tsd-kind-icon">MESSAGE_<wbr>DELETE</a></li>
+							<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="core.constants.websocketevents.html#message_delete_bulk" class="tsd-kind-icon">MESSAGE_<wbr>DELETE_<wbr>BULK</a></li>
+							<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="core.constants.websocketevents.html#message_reaction_add" class="tsd-kind-icon">MESSAGE_<wbr>REACTION_<wbr>ADD</a></li>
+							<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="core.constants.websocketevents.html#message_reaction_remove" class="tsd-kind-icon">MESSAGE_<wbr>REACTION_<wbr>REMOVE</a></li>
+							<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="core.constants.websocketevents.html#message_reaction_remove_all" class="tsd-kind-icon">MESSAGE_<wbr>REACTION_<wbr>REMOVE_<wbr>ALL</a></li>
+							<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="core.constants.websocketevents.html#message_reaction_remove_emoji" class="tsd-kind-icon">MESSAGE_<wbr>REACTION_<wbr>REMOVE_<wbr>EMOJI</a></li>
+							<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="core.constants.websocketevents.html#message_update" class="tsd-kind-icon">MESSAGE_<wbr>UPDATE</a></li>
+							<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="core.constants.websocketevents.html#presence_update" class="tsd-kind-icon">PRESENCE_<wbr>UPDATE</a></li>
+							<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="core.constants.websocketevents.html#ready" class="tsd-kind-icon">READY</a></li>
+							<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="core.constants.websocketevents.html#resumed" class="tsd-kind-icon">RESUMED</a></li>
+							<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="core.constants.websocketevents.html#typing_start" class="tsd-kind-icon">TYPING_<wbr>START</a></li>
+							<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="core.constants.websocketevents.html#user_update" class="tsd-kind-icon">USER_<wbr>UPDATE</a></li>
+							<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="core.constants.websocketevents.html#voice_server_update" class="tsd-kind-icon">VOICE_<wbr>SERVER_<wbr>UPDATE</a></li>
+							<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="core.constants.websocketevents.html#voice_state_update" class="tsd-kind-icon">VOICE_<wbr>STATE_<wbr>UPDATE</a></li>
+							<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="core.constants.websocketevents.html#webhooks_update" class="tsd-kind-icon">WEBHOOKS_<wbr>UPDATE</a></li>
 						</ul>
 					</section>
 				</div>
 			</section>
 		</section>
 		<section class="tsd-panel-group tsd-member-group ">
-			<h2>Properties</h2>
-			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-				<a name="childmanageroptions" class="tsd-anchor"></a>
-				<h3>child<wbr>Manager<wbr>Options</h3>
-				<div class="tsd-signature tsd-kind-icon">child<wbr>Manager<wbr>Options<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">default</span></div>
+			<h2>Enumeration members</h2>
+			<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
+				<a name="channel_create" class="tsd-anchor"></a>
+				<h3>CHANNEL_<wbr>CREATE</h3>
+				<div class="tsd-signature tsd-kind-icon">CHANNEL_<wbr>CREATE<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = &quot;CHANNEL_CREATE&quot;</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/Discordoo/discordoo/blob/4a555e8/src/sharding/interfaces/machine/ShardingMachineOptions.ts#L11">src/sharding/interfaces/machine/ShardingMachineOptions.ts:11</a></li>
+						<li>Defined in <a href="https://github.com/Discordoo/discordoo/blob/4a555e8/src/core/Constants.ts#L86">src/core/Constants.ts:86</a></li>
 					</ul>
 				</aside>
 			</section>
-			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-				<a name="host" class="tsd-anchor"></a>
-				<h3>host</h3>
-				<div class="tsd-signature tsd-kind-icon">host<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+			<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
+				<a name="channel_delete" class="tsd-anchor"></a>
+				<h3>CHANNEL_<wbr>DELETE</h3>
+				<div class="tsd-signature tsd-kind-icon">CHANNEL_<wbr>DELETE<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = &quot;CHANNEL_DELETE&quot;</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/Discordoo/discordoo/blob/4a555e8/src/sharding/interfaces/machine/ShardingMachineOptions.ts#L7">src/sharding/interfaces/machine/ShardingMachineOptions.ts:7</a></li>
+						<li>Defined in <a href="https://github.com/Discordoo/discordoo/blob/4a555e8/src/core/Constants.ts#L87">src/core/Constants.ts:87</a></li>
 					</ul>
 				</aside>
 			</section>
-			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-				<a name="port" class="tsd-anchor"></a>
-				<h3><span class="tsd-flag ts-flagOptional">Optional</span> port</h3>
-				<div class="tsd-signature tsd-kind-icon">port<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+			<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
+				<a name="channel_pins_update" class="tsd-anchor"></a>
+				<h3>CHANNEL_<wbr>PINS_<wbr>UPDATE</h3>
+				<div class="tsd-signature tsd-kind-icon">CHANNEL_<wbr>PINS_<wbr>UPDATE<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = &quot;CHANNEL_PINS_UPDATE&quot;</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/Discordoo/discordoo/blob/4a555e8/src/sharding/interfaces/machine/ShardingMachineOptions.ts#L6">src/sharding/interfaces/machine/ShardingMachineOptions.ts:6</a></li>
+						<li>Defined in <a href="https://github.com/Discordoo/discordoo/blob/4a555e8/src/core/Constants.ts#L89">src/core/Constants.ts:89</a></li>
 					</ul>
 				</aside>
 			</section>
-			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-				<a name="shards" class="tsd-anchor"></a>
-				<h3>shards</h3>
-				<div class="tsd-signature tsd-kind-icon">shards<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">ShardListResolvable</span></div>
+			<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
+				<a name="channel_update" class="tsd-anchor"></a>
+				<h3>CHANNEL_<wbr>UPDATE</h3>
+				<div class="tsd-signature tsd-kind-icon">CHANNEL_<wbr>UPDATE<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = &quot;CHANNEL_UPDATE&quot;</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/Discordoo/discordoo/blob/4a555e8/src/sharding/interfaces/machine/ShardingMachineOptions.ts#L9">src/sharding/interfaces/machine/ShardingMachineOptions.ts:9</a></li>
+						<li>Defined in <a href="https://github.com/Discordoo/discordoo/blob/4a555e8/src/core/Constants.ts#L88">src/core/Constants.ts:88</a></li>
 					</ul>
 				</aside>
 			</section>
-			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-				<a name="tls" class="tsd-anchor"></a>
-				<h3><span class="tsd-flag ts-flagOptional">Optional</span> tls</h3>
-				<div class="tsd-signature tsd-kind-icon">tls<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">IpcClientTlsOptions</span></div>
+			<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
+				<a name="guild_ban_add" class="tsd-anchor"></a>
+				<h3>GUILD_<wbr>BAN_<wbr>ADD</h3>
+				<div class="tsd-signature tsd-kind-icon">GUILD_<wbr>BAN_<wbr>ADD<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = &quot;GUILD_BAN_ADD&quot;</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/Discordoo/discordoo/blob/4a555e8/src/sharding/interfaces/machine/ShardingMachineOptions.ts#L10">src/sharding/interfaces/machine/ShardingMachineOptions.ts:10</a></li>
+						<li>Defined in <a href="https://github.com/Discordoo/discordoo/blob/4a555e8/src/core/Constants.ts#L83">src/core/Constants.ts:83</a></li>
 					</ul>
 				</aside>
 			</section>
-			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-				<a name="udp" class="tsd-anchor"></a>
-				<h3><span class="tsd-flag ts-flagOptional">Optional</span> udp</h3>
-				<div class="tsd-signature tsd-kind-icon">udp<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">&quot;udp4&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;udp6&quot;</span></div>
+			<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
+				<a name="guild_ban_remove" class="tsd-anchor"></a>
+				<h3>GUILD_<wbr>BAN_<wbr>REMOVE</h3>
+				<div class="tsd-signature tsd-kind-icon">GUILD_<wbr>BAN_<wbr>REMOVE<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = &quot;GUILD_BAN_REMOVE&quot;</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/Discordoo/discordoo/blob/4a555e8/src/sharding/interfaces/machine/ShardingMachineOptions.ts#L8">src/sharding/interfaces/machine/ShardingMachineOptions.ts:8</a></li>
+						<li>Defined in <a href="https://github.com/Discordoo/discordoo/blob/4a555e8/src/core/Constants.ts#L84">src/core/Constants.ts:84</a></li>
+					</ul>
+				</aside>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
+				<a name="guild_create" class="tsd-anchor"></a>
+				<h3>GUILD_<wbr>CREATE</h3>
+				<div class="tsd-signature tsd-kind-icon">GUILD_<wbr>CREATE<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = &quot;GUILD_CREATE&quot;</span></div>
+				<aside class="tsd-sources">
+					<ul>
+						<li>Defined in <a href="https://github.com/Discordoo/discordoo/blob/4a555e8/src/core/Constants.ts#L70">src/core/Constants.ts:70</a></li>
+					</ul>
+				</aside>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
+				<a name="guild_delete" class="tsd-anchor"></a>
+				<h3>GUILD_<wbr>DELETE</h3>
+				<div class="tsd-signature tsd-kind-icon">GUILD_<wbr>DELETE<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = &quot;GUILD_DELETE&quot;</span></div>
+				<aside class="tsd-sources">
+					<ul>
+						<li>Defined in <a href="https://github.com/Discordoo/discordoo/blob/4a555e8/src/core/Constants.ts#L71">src/core/Constants.ts:71</a></li>
+					</ul>
+				</aside>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
+				<a name="guild_emojis_update" class="tsd-anchor"></a>
+				<h3>GUILD_<wbr>EMOJIS_<wbr>UPDATE</h3>
+				<div class="tsd-signature tsd-kind-icon">GUILD_<wbr>EMOJIS_<wbr>UPDATE<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = &quot;GUILD_EMOJIS_UPDATE&quot;</span></div>
+				<aside class="tsd-sources">
+					<ul>
+						<li>Defined in <a href="https://github.com/Discordoo/discordoo/blob/4a555e8/src/core/Constants.ts#L85">src/core/Constants.ts:85</a></li>
+					</ul>
+				</aside>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
+				<a name="guild_integrations_update" class="tsd-anchor"></a>
+				<h3>GUILD_<wbr>INTEGRATIONS_<wbr>UPDATE</h3>
+				<div class="tsd-signature tsd-kind-icon">GUILD_<wbr>INTEGRATIONS_<wbr>UPDATE<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = &quot;GUILD_INTEGRATIONS_UPDATE&quot;</span></div>
+				<aside class="tsd-sources">
+					<ul>
+						<li>Defined in <a href="https://github.com/Discordoo/discordoo/blob/4a555e8/src/core/Constants.ts#L79">src/core/Constants.ts:79</a></li>
+					</ul>
+				</aside>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
+				<a name="guild_members_chunk" class="tsd-anchor"></a>
+				<h3>GUILD_<wbr>MEMBERS_<wbr>CHUNK</h3>
+				<div class="tsd-signature tsd-kind-icon">GUILD_<wbr>MEMBERS_<wbr>CHUNK<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = &quot;GUILD_MEMBERS_CHUNK&quot;</span></div>
+				<aside class="tsd-sources">
+					<ul>
+						<li>Defined in <a href="https://github.com/Discordoo/discordoo/blob/4a555e8/src/core/Constants.ts#L78">src/core/Constants.ts:78</a></li>
+					</ul>
+				</aside>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
+				<a name="guild_member_add" class="tsd-anchor"></a>
+				<h3>GUILD_<wbr>MEMBER_<wbr>ADD</h3>
+				<div class="tsd-signature tsd-kind-icon">GUILD_<wbr>MEMBER_<wbr>ADD<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = &quot;GUILD_MEMBER_ADD&quot;</span></div>
+				<aside class="tsd-sources">
+					<ul>
+						<li>Defined in <a href="https://github.com/Discordoo/discordoo/blob/4a555e8/src/core/Constants.ts#L75">src/core/Constants.ts:75</a></li>
+					</ul>
+				</aside>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
+				<a name="guild_member_remove" class="tsd-anchor"></a>
+				<h3>GUILD_<wbr>MEMBER_<wbr>REMOVE</h3>
+				<div class="tsd-signature tsd-kind-icon">GUILD_<wbr>MEMBER_<wbr>REMOVE<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = &quot;GUILD_MEMBER_REMOVE&quot;</span></div>
+				<aside class="tsd-sources">
+					<ul>
+						<li>Defined in <a href="https://github.com/Discordoo/discordoo/blob/4a555e8/src/core/Constants.ts#L76">src/core/Constants.ts:76</a></li>
+					</ul>
+				</aside>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
+				<a name="guild_member_update" class="tsd-anchor"></a>
+				<h3>GUILD_<wbr>MEMBER_<wbr>UPDATE</h3>
+				<div class="tsd-signature tsd-kind-icon">GUILD_<wbr>MEMBER_<wbr>UPDATE<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = &quot;GUILD_MEMBER_UPDATE&quot;</span></div>
+				<aside class="tsd-sources">
+					<ul>
+						<li>Defined in <a href="https://github.com/Discordoo/discordoo/blob/4a555e8/src/core/Constants.ts#L77">src/core/Constants.ts:77</a></li>
+					</ul>
+				</aside>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
+				<a name="guild_role_create" class="tsd-anchor"></a>
+				<h3>GUILD_<wbr>ROLE_<wbr>CREATE</h3>
+				<div class="tsd-signature tsd-kind-icon">GUILD_<wbr>ROLE_<wbr>CREATE<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = &quot;GUILD_ROLE_CREATE&quot;</span></div>
+				<aside class="tsd-sources">
+					<ul>
+						<li>Defined in <a href="https://github.com/Discordoo/discordoo/blob/4a555e8/src/core/Constants.ts#L80">src/core/Constants.ts:80</a></li>
+					</ul>
+				</aside>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
+				<a name="guild_role_delete" class="tsd-anchor"></a>
+				<h3>GUILD_<wbr>ROLE_<wbr>DELETE</h3>
+				<div class="tsd-signature tsd-kind-icon">GUILD_<wbr>ROLE_<wbr>DELETE<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = &quot;GUILD_ROLE_DELETE&quot;</span></div>
+				<aside class="tsd-sources">
+					<ul>
+						<li>Defined in <a href="https://github.com/Discordoo/discordoo/blob/4a555e8/src/core/Constants.ts#L81">src/core/Constants.ts:81</a></li>
+					</ul>
+				</aside>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
+				<a name="guild_role_update" class="tsd-anchor"></a>
+				<h3>GUILD_<wbr>ROLE_<wbr>UPDATE</h3>
+				<div class="tsd-signature tsd-kind-icon">GUILD_<wbr>ROLE_<wbr>UPDATE<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = &quot;GUILD_ROLE_UPDATE&quot;</span></div>
+				<aside class="tsd-sources">
+					<ul>
+						<li>Defined in <a href="https://github.com/Discordoo/discordoo/blob/4a555e8/src/core/Constants.ts#L82">src/core/Constants.ts:82</a></li>
+					</ul>
+				</aside>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
+				<a name="guild_update" class="tsd-anchor"></a>
+				<h3>GUILD_<wbr>UPDATE</h3>
+				<div class="tsd-signature tsd-kind-icon">GUILD_<wbr>UPDATE<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = &quot;GUILD_UPDATE&quot;</span></div>
+				<aside class="tsd-sources">
+					<ul>
+						<li>Defined in <a href="https://github.com/Discordoo/discordoo/blob/4a555e8/src/core/Constants.ts#L72">src/core/Constants.ts:72</a></li>
+					</ul>
+				</aside>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
+				<a name="invite_create" class="tsd-anchor"></a>
+				<h3>INVITE_<wbr>CREATE</h3>
+				<div class="tsd-signature tsd-kind-icon">INVITE_<wbr>CREATE<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = &quot;INVITE_CREATE&quot;</span></div>
+				<aside class="tsd-sources">
+					<ul>
+						<li>Defined in <a href="https://github.com/Discordoo/discordoo/blob/4a555e8/src/core/Constants.ts#L73">src/core/Constants.ts:73</a></li>
+					</ul>
+				</aside>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
+				<a name="invite_delete" class="tsd-anchor"></a>
+				<h3>INVITE_<wbr>DELETE</h3>
+				<div class="tsd-signature tsd-kind-icon">INVITE_<wbr>DELETE<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = &quot;INVITE_DELETE&quot;</span></div>
+				<aside class="tsd-sources">
+					<ul>
+						<li>Defined in <a href="https://github.com/Discordoo/discordoo/blob/4a555e8/src/core/Constants.ts#L74">src/core/Constants.ts:74</a></li>
+					</ul>
+				</aside>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
+				<a name="message_create" class="tsd-anchor"></a>
+				<h3>MESSAGE_<wbr>CREATE</h3>
+				<div class="tsd-signature tsd-kind-icon">MESSAGE_<wbr>CREATE<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = &quot;MESSAGE_CREATE&quot;</span></div>
+				<aside class="tsd-sources">
+					<ul>
+						<li>Defined in <a href="https://github.com/Discordoo/discordoo/blob/4a555e8/src/core/Constants.ts#L90">src/core/Constants.ts:90</a></li>
+					</ul>
+				</aside>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
+				<a name="message_delete" class="tsd-anchor"></a>
+				<h3>MESSAGE_<wbr>DELETE</h3>
+				<div class="tsd-signature tsd-kind-icon">MESSAGE_<wbr>DELETE<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = &quot;MESSAGE_DELETE&quot;</span></div>
+				<aside class="tsd-sources">
+					<ul>
+						<li>Defined in <a href="https://github.com/Discordoo/discordoo/blob/4a555e8/src/core/Constants.ts#L91">src/core/Constants.ts:91</a></li>
+					</ul>
+				</aside>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
+				<a name="message_delete_bulk" class="tsd-anchor"></a>
+				<h3>MESSAGE_<wbr>DELETE_<wbr>BULK</h3>
+				<div class="tsd-signature tsd-kind-icon">MESSAGE_<wbr>DELETE_<wbr>BULK<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = &quot;MESSAGE_DELETE_BULK&quot;</span></div>
+				<aside class="tsd-sources">
+					<ul>
+						<li>Defined in <a href="https://github.com/Discordoo/discordoo/blob/4a555e8/src/core/Constants.ts#L93">src/core/Constants.ts:93</a></li>
+					</ul>
+				</aside>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
+				<a name="message_reaction_add" class="tsd-anchor"></a>
+				<h3>MESSAGE_<wbr>REACTION_<wbr>ADD</h3>
+				<div class="tsd-signature tsd-kind-icon">MESSAGE_<wbr>REACTION_<wbr>ADD<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = &quot;MESSAGE_REACTION_ADD&quot;</span></div>
+				<aside class="tsd-sources">
+					<ul>
+						<li>Defined in <a href="https://github.com/Discordoo/discordoo/blob/4a555e8/src/core/Constants.ts#L94">src/core/Constants.ts:94</a></li>
+					</ul>
+				</aside>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
+				<a name="message_reaction_remove" class="tsd-anchor"></a>
+				<h3>MESSAGE_<wbr>REACTION_<wbr>REMOVE</h3>
+				<div class="tsd-signature tsd-kind-icon">MESSAGE_<wbr>REACTION_<wbr>REMOVE<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = &quot;MESSAGE_REACTION_REMOVE&quot;</span></div>
+				<aside class="tsd-sources">
+					<ul>
+						<li>Defined in <a href="https://github.com/Discordoo/discordoo/blob/4a555e8/src/core/Constants.ts#L95">src/core/Constants.ts:95</a></li>
+					</ul>
+				</aside>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
+				<a name="message_reaction_remove_all" class="tsd-anchor"></a>
+				<h3>MESSAGE_<wbr>REACTION_<wbr>REMOVE_<wbr>ALL</h3>
+				<div class="tsd-signature tsd-kind-icon">MESSAGE_<wbr>REACTION_<wbr>REMOVE_<wbr>ALL<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = &quot;MESSAGE_REACTION_REMOVE_ALL&quot;</span></div>
+				<aside class="tsd-sources">
+					<ul>
+						<li>Defined in <a href="https://github.com/Discordoo/discordoo/blob/4a555e8/src/core/Constants.ts#L96">src/core/Constants.ts:96</a></li>
+					</ul>
+				</aside>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
+				<a name="message_reaction_remove_emoji" class="tsd-anchor"></a>
+				<h3>MESSAGE_<wbr>REACTION_<wbr>REMOVE_<wbr>EMOJI</h3>
+				<div class="tsd-signature tsd-kind-icon">MESSAGE_<wbr>REACTION_<wbr>REMOVE_<wbr>EMOJI<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = &quot;MESSAGE_REACTION_REMOVE_EMOJI&quot;</span></div>
+				<aside class="tsd-sources">
+					<ul>
+						<li>Defined in <a href="https://github.com/Discordoo/discordoo/blob/4a555e8/src/core/Constants.ts#L97">src/core/Constants.ts:97</a></li>
+					</ul>
+				</aside>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
+				<a name="message_update" class="tsd-anchor"></a>
+				<h3>MESSAGE_<wbr>UPDATE</h3>
+				<div class="tsd-signature tsd-kind-icon">MESSAGE_<wbr>UPDATE<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = &quot;MESSAGE_UPDATE&quot;</span></div>
+				<aside class="tsd-sources">
+					<ul>
+						<li>Defined in <a href="https://github.com/Discordoo/discordoo/blob/4a555e8/src/core/Constants.ts#L92">src/core/Constants.ts:92</a></li>
+					</ul>
+				</aside>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
+				<a name="presence_update" class="tsd-anchor"></a>
+				<h3>PRESENCE_<wbr>UPDATE</h3>
+				<div class="tsd-signature tsd-kind-icon">PRESENCE_<wbr>UPDATE<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = &quot;PRESENCE_UPDATE&quot;</span></div>
+				<aside class="tsd-sources">
+					<ul>
+						<li>Defined in <a href="https://github.com/Discordoo/discordoo/blob/4a555e8/src/core/Constants.ts#L99">src/core/Constants.ts:99</a></li>
+					</ul>
+				</aside>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
+				<a name="ready" class="tsd-anchor"></a>
+				<h3>READY</h3>
+				<div class="tsd-signature tsd-kind-icon">READY<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = &quot;READY&quot;</span></div>
+				<aside class="tsd-sources">
+					<ul>
+						<li>Defined in <a href="https://github.com/Discordoo/discordoo/blob/4a555e8/src/core/Constants.ts#L68">src/core/Constants.ts:68</a></li>
+					</ul>
+				</aside>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
+				<a name="resumed" class="tsd-anchor"></a>
+				<h3>RESUMED</h3>
+				<div class="tsd-signature tsd-kind-icon">RESUMED<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = &quot;RESUMED&quot;</span></div>
+				<aside class="tsd-sources">
+					<ul>
+						<li>Defined in <a href="https://github.com/Discordoo/discordoo/blob/4a555e8/src/core/Constants.ts#L69">src/core/Constants.ts:69</a></li>
+					</ul>
+				</aside>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
+				<a name="typing_start" class="tsd-anchor"></a>
+				<h3>TYPING_<wbr>START</h3>
+				<div class="tsd-signature tsd-kind-icon">TYPING_<wbr>START<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = &quot;TYPING_START&quot;</span></div>
+				<aside class="tsd-sources">
+					<ul>
+						<li>Defined in <a href="https://github.com/Discordoo/discordoo/blob/4a555e8/src/core/Constants.ts#L100">src/core/Constants.ts:100</a></li>
+					</ul>
+				</aside>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
+				<a name="user_update" class="tsd-anchor"></a>
+				<h3>USER_<wbr>UPDATE</h3>
+				<div class="tsd-signature tsd-kind-icon">USER_<wbr>UPDATE<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = &quot;USER_UPDATE&quot;</span></div>
+				<aside class="tsd-sources">
+					<ul>
+						<li>Defined in <a href="https://github.com/Discordoo/discordoo/blob/4a555e8/src/core/Constants.ts#L98">src/core/Constants.ts:98</a></li>
+					</ul>
+				</aside>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
+				<a name="voice_server_update" class="tsd-anchor"></a>
+				<h3>VOICE_<wbr>SERVER_<wbr>UPDATE</h3>
+				<div class="tsd-signature tsd-kind-icon">VOICE_<wbr>SERVER_<wbr>UPDATE<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = &quot;VOICE_SERVER_UPDATE&quot;</span></div>
+				<aside class="tsd-sources">
+					<ul>
+						<li>Defined in <a href="https://github.com/Discordoo/discordoo/blob/4a555e8/src/core/Constants.ts#L102">src/core/Constants.ts:102</a></li>
+					</ul>
+				</aside>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
+				<a name="voice_state_update" class="tsd-anchor"></a>
+				<h3>VOICE_<wbr>STATE_<wbr>UPDATE</h3>
+				<div class="tsd-signature tsd-kind-icon">VOICE_<wbr>STATE_<wbr>UPDATE<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = &quot;VOICE_STATE_UPDATE&quot;</span></div>
+				<aside class="tsd-sources">
+					<ul>
+						<li>Defined in <a href="https://github.com/Discordoo/discordoo/blob/4a555e8/src/core/Constants.ts#L101">src/core/Constants.ts:101</a></li>
+					</ul>
+				</aside>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
+				<a name="webhooks_update" class="tsd-anchor"></a>
+				<h3>WEBHOOKS_<wbr>UPDATE</h3>
+				<div class="tsd-signature tsd-kind-icon">WEBHOOKS_<wbr>UPDATE<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = &quot;WEBHOOKS_UPDATE&quot;</span></div>
+				<aside class="tsd-sources">
+					<ul>
+						<li>Defined in <a href="https://github.com/Discordoo/discordoo/blob/4a555e8/src/core/Constants.ts#L103">src/core/Constants.ts:103</a></li>
 					</ul>
 				</aside>
 			</section>
@@ -2872,7 +3299,6 @@ img {
 					<ul class="tsd-legend">
 						<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
 						<li class="tsd-kind-interface tsd-has-type-parameter"><span class="tsd-kind-icon">Interface with type parameter</span></li>
-						<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
 					</ul>
 					<ul class="tsd-legend">
 						<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
