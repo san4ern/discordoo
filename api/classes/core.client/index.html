@@ -1,0 +1,4605 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="canonical" href="https://docs.discordoo.xyz/api/classes/core.client/">
+      
+      <link rel="icon" href="../../../assets/favicon.png">
+      <meta name="generator" content="mkdocs-1.2.1, mkdocs-material-7.1.9">
+    
+    
+      
+        <title>Client - Discordoo Guide</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.ca7ac06f.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.f1a3b89f.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+      
+    
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/colors.css">
+    
+    
+      
+
+
+    
+    
+<meta content="#f79494" name="theme-color">
+<meta content="Discordoo Guide" property="og:title">
+<meta
+    content="Discordoo Guide: docs for Discordoo, modular and powerful node.js library to interact with Discord API."
+    property="og:description"
+>
+<meta
+    content="https://media.discordapp.net/attachments/531549268033404928/857676196464951306/ddoo-github-v1.png"
+    property="twitter:image"
+>
+<meta content="Discordoo" property="og:site_name">
+
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="ddoo-light" data-md-color-primary="" data-md-color-accent="">
+  
+    
+    <script>function __prefix(e){return new URL("../../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    
+      <script>var palette=__get("__palette");if(null!==palette&&"object"==typeof palette.color)for(var key in palette.color)document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#class-clientclientstack" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="Discordoo Guide" class="md-header__button md-logo" aria-label="Discordoo Guide" data-md-component="logo">
+      
+  <img src="../../../assets/logo.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Discordoo Guide
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Client
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="ddoo-light" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M279.135 512c78.756 0 150.982-35.804 198.844-94.775 28.27-34.831-2.558-85.722-46.249-77.401-82.348 15.683-158.272-47.268-158.272-130.792 0-48.424 26.06-92.292 67.434-115.836 38.745-22.05 28.999-80.788-15.022-88.919A257.936 257.936 0 0 0 279.135 0c-141.36 0-256 114.575-256 256 0 141.36 114.576 256 256 256zm0-464c12.985 0 25.689 1.201 38.016 3.478-54.76 31.163-91.693 90.042-91.693 157.554 0 113.848 103.641 199.2 215.252 177.944C402.574 433.964 344.366 464 279.135 464c-114.875 0-208-93.125-208-208s93.125-208 208-208z"/></svg>
+            </label>
+          
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="ddoo-dark" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M279.135 512c78.756 0 150.982-35.804 198.844-94.775 28.27-34.831-2.558-85.722-46.249-77.401-82.348 15.683-158.272-47.268-158.272-130.792 0-48.424 26.06-92.292 67.434-115.836 38.745-22.05 28.999-80.788-15.022-88.919A257.936 257.936 0 0 0 279.135 0c-141.36 0-256 114.575-256 256 0 141.36 114.576 256 256 256zm0-464c12.985 0 25.689 1.201 38.016 3.478-54.76 31.163-91.693 90.042-91.693 157.554 0 113.848 103.641 199.2 215.252 177.944C402.574 433.964 344.366 464 279.135 464c-114.875 0-208-93.125-208-208s93.125-208 208-208z"/></svg>
+            </label>
+          
+        
+      </form>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../.." class="md-tabs__link">
+      Hello
+    </a>
+  </li>
+
+      
+        
+  
+  
+    
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../" class="md-tabs__link md-tabs__link--active">
+        Api
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../guide/" class="md-tabs__link">
+        Guide
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Discordoo Guide" class="md-nav__button md-logo" aria-label="Discordoo Guide" data-md-component="logo">
+      
+  <img src="../../../assets/logo.svg" alt="logo">
+
+    </a>
+    Discordoo Guide
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        Hello
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
+      
+      <label class="md-nav__link" for="__nav_2">
+        Api
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Api" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Api
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../" class="md-nav__link">
+        Index
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../modules/" class="md-nav__link">
+        Modules
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+    
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_3" type="checkbox" id="__nav_2_3" checked>
+      
+      <label class="md-nav__link" for="__nav_2_3">
+        Classes
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Classes" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_3">
+          <span class="md-nav__icon md-icon"></span>
+          Classes
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cache.cachemanager/" class="md-nav__link">
+        CacheManager
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cache.cacheproviderbuilder/" class="md-nav__link">
+        CacheProviderBuilder
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cache.collectioncachenamespace/" class="md-nav__link">
+        CollectionCacheNamespace
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../collection.collection-1/" class="md-nav__link">
+        Collection
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../core.base/" class="md-nav__link">
+        Base
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Client
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Client
+      </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#type-parameters" class="md-nav__link">
+    Type parameters
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hierarchy" class="md-nav__link">
+    Hierarchy
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#table-of-contents" class="md-nav__link">
+    Table of contents
+  </a>
+  
+    <nav class="md-nav" aria-label="Table of contents">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#constructors" class="md-nav__link">
+    Constructors
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#properties" class="md-nav__link">
+    Properties
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#methods" class="md-nav__link">
+    Methods
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#constructors_1" class="md-nav__link">
+    Constructors
+  </a>
+  
+    <nav class="md-nav" aria-label="Constructors">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#constructor" class="md-nav__link">
+    constructor
+  </a>
+  
+    <nav class="md-nav" aria-label="constructor">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-parameters_1" class="md-nav__link">
+    Type parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parameters" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#overrides" class="md-nav__link">
+    Overrides
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#properties_1" class="md-nav__link">
+    Properties
+  </a>
+  
+    <nav class="md-nav" aria-label="Properties">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#internals" class="md-nav__link">
+    internals
+  </a>
+  
+    <nav class="md-nav" aria-label="internals">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_1" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#modules" class="md-nav__link">
+    modules
+  </a>
+  
+    <nav class="md-nav" aria-label="modules">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_2" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#options" class="md-nav__link">
+    options
+  </a>
+  
+    <nav class="md-nav" aria-label="options">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_3" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#token" class="md-nav__link">
+    token
+  </a>
+  
+    <nav class="md-nav" aria-label="token">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_4" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defaultmaxlisteners" class="md-nav__link">
+    defaultMaxListeners
+  </a>
+  
+    <nav class="md-nav" aria-label="defaultMaxListeners">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_5" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#methods_1" class="md-nav__link">
+    Methods
+  </a>
+  
+    <nav class="md-nav" aria-label="Methods">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#addlistener" class="md-nav__link">
+    addListener
+  </a>
+  
+    <nav class="md-nav" aria-label="addListener">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-parameters_2" class="md-nav__link">
+    Type parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parameters_1" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_1" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_6" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#emit" class="md-nav__link">
+    emit
+  </a>
+  
+    <nav class="md-nav" aria-label="emit">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-parameters_3" class="md-nav__link">
+    Type parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parameters_2" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_1" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_2" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_7" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#eventnames" class="md-nav__link">
+    eventNames
+  </a>
+  
+    <nav class="md-nav" aria-label="eventNames">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-parameters_4" class="md-nav__link">
+    Type parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_2" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_3" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_8" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getmaxlisteners" class="md-nav__link">
+    getMaxListeners
+  </a>
+  
+    <nav class="md-nav" aria-label="getMaxListeners">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#returns_3" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_4" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_9" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#listenercount" class="md-nav__link">
+    listenerCount
+  </a>
+  
+    <nav class="md-nav" aria-label="listenerCount">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_3" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_4" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_5" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_10" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#listeners" class="md-nav__link">
+    listeners
+  </a>
+  
+    <nav class="md-nav" aria-label="listeners">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-parameters_5" class="md-nav__link">
+    Type parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parameters_4" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_5" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_6" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_11" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#m" class="md-nav__link">
+    m
+  </a>
+  
+    <nav class="md-nav" aria-label="m">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_5" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_6" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_12" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#module" class="md-nav__link">
+    module
+  </a>
+  
+    <nav class="md-nav" aria-label="module">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_6" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_7" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_13" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#off" class="md-nav__link">
+    off
+  </a>
+  
+    <nav class="md-nav" aria-label="off">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-parameters_6" class="md-nav__link">
+    Type parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parameters_7" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_8" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_7" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_14" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#on" class="md-nav__link">
+    on
+  </a>
+  
+    <nav class="md-nav" aria-label="on">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-parameters_7" class="md-nav__link">
+    Type parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parameters_8" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_9" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_8" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_15" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#once" class="md-nav__link">
+    once
+  </a>
+  
+    <nav class="md-nav" aria-label="once">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-parameters_8" class="md-nav__link">
+    Type parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parameters_9" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_10" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_9" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_16" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#prependlistener" class="md-nav__link">
+    prependListener
+  </a>
+  
+    <nav class="md-nav" aria-label="prependListener">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-parameters_9" class="md-nav__link">
+    Type parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parameters_10" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_11" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_10" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_17" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#prependoncelistener" class="md-nav__link">
+    prependOnceListener
+  </a>
+  
+    <nav class="md-nav" aria-label="prependOnceListener">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-parameters_10" class="md-nav__link">
+    Type parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parameters_11" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_12" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_11" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_18" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rawlisteners" class="md-nav__link">
+    rawListeners
+  </a>
+  
+    <nav class="md-nav" aria-label="rawListeners">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-parameters_11" class="md-nav__link">
+    Type parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parameters_12" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_13" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_12" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_19" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#removealllisteners" class="md-nav__link">
+    removeAllListeners
+  </a>
+  
+    <nav class="md-nav" aria-label="removeAllListeners">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_13" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_14" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_13" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_20" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#removelistener" class="md-nav__link">
+    removeListener
+  </a>
+  
+    <nav class="md-nav" aria-label="removeListener">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-parameters_12" class="md-nav__link">
+    Type parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parameters_14" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_15" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_14" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_21" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setmaxlisteners" class="md-nav__link">
+    setMaxListeners
+  </a>
+  
+    <nav class="md-nav" aria-label="setMaxListeners">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_15" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_16" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_15" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_22" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#start" class="md-nav__link">
+    start
+  </a>
+  
+    <nav class="md-nav" aria-label="start">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#returns_17" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_23" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#use" class="md-nav__link">
+    use
+  </a>
+  
+    <nav class="md-nav" aria-label="use">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_16" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_18" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_24" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#usecacheprovider" class="md-nav__link">
+    useCacheProvider
+  </a>
+  
+    <nav class="md-nav" aria-label="useCacheProvider">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_17" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_19" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_25" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#usegatewayprovider" class="md-nav__link">
+    useGatewayProvider
+  </a>
+  
+    <nav class="md-nav" aria-label="useGatewayProvider">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_18" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_20" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_26" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#userestprovider" class="md-nav__link">
+    useRESTProvider
+  </a>
+  
+    <nav class="md-nav" aria-label="useRESTProvider">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_19" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_21" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_27" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../core.modulemanager/" class="md-nav__link">
+        ModuleManager
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../gateway.websocketclient/" class="md-nav__link">
+        WebSocketClient
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../gateway.websocketmanager/" class="md-nav__link">
+        WebSocketManager
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../rest.restclient/" class="md-nav__link">
+        RESTClient
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../rest.restproviderbuilder/" class="md-nav__link">
+        RESTProviderBuilder
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../rest.restrequestbuilder/" class="md-nav__link">
+        RESTRequestBuilder
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sharding.ipcclient/" class="md-nav__link">
+        IpcClient
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sharding.ipcserver/" class="md-nav__link">
+        IpcServer
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sharding.shardingclient/" class="md-nav__link">
+        ShardingClient
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sharding.shardingmanager/" class="md-nav__link">
+        ShardingManager
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../utils.discordooerror/" class="md-nav__link">
+        DiscordooError
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../utils.discordoosnowflake/" class="md-nav__link">
+        DiscordooSnowflake
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../utils.websocketutils/" class="md-nav__link">
+        WebSocketUtils
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../wrapper.clientbuilder/" class="md-nav__link">
+        ClientBuilder
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../wrapper.modulehostmodule/" class="md-nav__link">
+        ModuleHostModule
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_4" data-md-state="indeterminate" type="checkbox" id="__nav_2_4" checked>
+      
+      <label class="md-nav__link" for="__nav_2_4">
+        Enums
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Enums" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_4">
+          <span class="md-nav__icon md-icon"></span>
+          Enums
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../enums/core.constants.discordooproviders/" class="md-nav__link">
+        DiscordooProviders
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../enums/core.constants.ipcevents/" class="md-nav__link">
+        IpcEvents
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../enums/core.constants.ipcopcodes/" class="md-nav__link">
+        IpcOPCodes
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../enums/core.constants.partialshardingmodes/" class="md-nav__link">
+        PartialShardingModes
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../enums/core.constants.shardingmanagertypes/" class="md-nav__link">
+        ShardingManagerTypes
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../enums/core.constants.shardingmodes/" class="md-nav__link">
+        ShardingModes
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../enums/core.constants.websocketclientevents/" class="md-nav__link">
+        WebSocketClientEvents
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../enums/core.constants.websocketclientstates/" class="md-nav__link">
+        WebSocketClientStates
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../enums/core.constants.websocketevents/" class="md-nav__link">
+        WebSocketEvents
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../enums/core.constants.websocketmanagerstates/" class="md-nav__link">
+        WebSocketManagerStates
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../enums/core.constants.websocketopcodes/" class="md-nav__link">
+        WebSocketOPCodes
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../enums/core.constants.websocketshardstatus/" class="md-nav__link">
+        WebSocketShardStatus
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../enums/core.constants.websocketstates/" class="md-nav__link">
+        WebSocketStates
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_5" data-md-state="indeterminate" type="checkbox" id="__nav_2_5" checked>
+      
+      <label class="md-nav__link" for="__nav_2_5">
+        Interfaces
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Interfaces" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_5">
+          <span class="md-nav__icon md-icon"></span>
+          Interfaces
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../interfaces/collection.collectionequaloptions/" class="md-nav__link">
+        CollectionEqualOptions
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../interfaces/collection.collectionfilteroptions/" class="md-nav__link">
+        CollectionFilterOptions
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../interfaces/collection.collectionrandomoptions/" class="md-nav__link">
+        CollectionRandomOptions
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../interfaces/core.cachenamespace/" class="md-nav__link">
+        CacheNamespace
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../interfaces/core.clienteventshandlers/" class="md-nav__link">
+        ClientEventsHandlers
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../interfaces/core.defaultclientstack/" class="md-nav__link">
+        DefaultClientStack
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../interfaces/core.gatewayproviderapi/" class="md-nav__link">
+        GatewayProviderAPI
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../interfaces/core.gatewayproviderevents/" class="md-nav__link">
+        GatewayProviderEvents
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../interfaces/core.module/" class="md-nav__link">
+        Module
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../interfaces/core.requestbuilder/" class="md-nav__link">
+        RequestBuilder
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../interfaces/core.requestoptions/" class="md-nav__link">
+        RequestOptions
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../interfaces/core.restresponse/" class="md-nav__link">
+        RESTResponse
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../interfaces/gateway.gatewayoptions/" class="md-nav__link">
+        GatewayOptions
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../interfaces/gateway.websocketclientdestroyoptions/" class="md-nav__link">
+        WebSocketClientDestroyOptions
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../interfaces/gateway.websocketclientevents/" class="md-nav__link">
+        WebSocketClientEvents
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../interfaces/gateway.websocketmanagerevents/" class="md-nav__link">
+        WebSocketManagerEvents
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../interfaces/rest.restoptions/" class="md-nav__link">
+        RESTOptions
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../interfaces/sharding.clustersshardingoptions/" class="md-nav__link">
+        ClustersShardingOptions
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../interfaces/sharding.ipcpacket/" class="md-nav__link">
+        IpcPacket
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../interfaces/sharding.ipctlsoptions/" class="md-nav__link">
+        IpcTlsOptions
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../interfaces/sharding.machinesshardingoptions/" class="md-nav__link">
+        MachinesShardingOptions
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../interfaces/sharding.processesshardingoptions/" class="md-nav__link">
+        ProcessesShardingOptions
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../interfaces/sharding.shardingmachineoptions/" class="md-nav__link">
+        ShardingMachineOptions
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../interfaces/sharding.shardingmanagerevents/" class="md-nav__link">
+        ShardingManagerEvents
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../interfaces/sharding.shardingmanageroptions/" class="md-nav__link">
+        ShardingManagerOptions
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../interfaces/sharding.workersshardingoptions/" class="md-nav__link">
+        WorkersShardingOptions
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_6" data-md-state="indeterminate" type="checkbox" id="__nav_2_6" checked>
+      
+      <label class="md-nav__link" for="__nav_2_6">
+        Modules
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Modules" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_6">
+          <span class="md-nav__icon md-icon"></span>
+          Modules
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../modules/cache/" class="md-nav__link">
+        Cache
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../modules/collection/" class="md-nav__link">
+        Collection
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../modules/core.constants/" class="md-nav__link">
+        Constants
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../modules/core/" class="md-nav__link">
+        Core
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../modules/gateway/" class="md-nav__link">
+        Gateway
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../modules/rest/" class="md-nav__link">
+        Rest
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../modules/sharding/" class="md-nav__link">
+        Sharding
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../modules/utils/" class="md-nav__link">
+        Utils
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../modules/wrapper/" class="md-nav__link">
+        Wrapper
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" data-md-state="indeterminate" type="checkbox" id="__nav_3" checked>
+      
+      <label class="md-nav__link" for="__nav_3">
+        Guide
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Guide" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Guide
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../guide/" class="md-nav__link">
+        The Discordoo guide
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../guide/installing/" class="md-nav__link">
+        Step 1 - Installing Discordoo
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../guide/starting/" class="md-nav__link">
+        Step 2 - Starting your bot
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#type-parameters" class="md-nav__link">
+    Type parameters
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hierarchy" class="md-nav__link">
+    Hierarchy
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#table-of-contents" class="md-nav__link">
+    Table of contents
+  </a>
+  
+    <nav class="md-nav" aria-label="Table of contents">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#constructors" class="md-nav__link">
+    Constructors
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#properties" class="md-nav__link">
+    Properties
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#methods" class="md-nav__link">
+    Methods
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#constructors_1" class="md-nav__link">
+    Constructors
+  </a>
+  
+    <nav class="md-nav" aria-label="Constructors">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#constructor" class="md-nav__link">
+    constructor
+  </a>
+  
+    <nav class="md-nav" aria-label="constructor">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-parameters_1" class="md-nav__link">
+    Type parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parameters" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#overrides" class="md-nav__link">
+    Overrides
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#properties_1" class="md-nav__link">
+    Properties
+  </a>
+  
+    <nav class="md-nav" aria-label="Properties">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#internals" class="md-nav__link">
+    internals
+  </a>
+  
+    <nav class="md-nav" aria-label="internals">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_1" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#modules" class="md-nav__link">
+    modules
+  </a>
+  
+    <nav class="md-nav" aria-label="modules">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_2" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#options" class="md-nav__link">
+    options
+  </a>
+  
+    <nav class="md-nav" aria-label="options">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_3" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#token" class="md-nav__link">
+    token
+  </a>
+  
+    <nav class="md-nav" aria-label="token">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_4" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defaultmaxlisteners" class="md-nav__link">
+    defaultMaxListeners
+  </a>
+  
+    <nav class="md-nav" aria-label="defaultMaxListeners">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_5" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#methods_1" class="md-nav__link">
+    Methods
+  </a>
+  
+    <nav class="md-nav" aria-label="Methods">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#addlistener" class="md-nav__link">
+    addListener
+  </a>
+  
+    <nav class="md-nav" aria-label="addListener">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-parameters_2" class="md-nav__link">
+    Type parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parameters_1" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_1" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_6" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#emit" class="md-nav__link">
+    emit
+  </a>
+  
+    <nav class="md-nav" aria-label="emit">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-parameters_3" class="md-nav__link">
+    Type parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parameters_2" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_1" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_2" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_7" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#eventnames" class="md-nav__link">
+    eventNames
+  </a>
+  
+    <nav class="md-nav" aria-label="eventNames">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-parameters_4" class="md-nav__link">
+    Type parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_2" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_3" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_8" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getmaxlisteners" class="md-nav__link">
+    getMaxListeners
+  </a>
+  
+    <nav class="md-nav" aria-label="getMaxListeners">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#returns_3" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_4" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_9" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#listenercount" class="md-nav__link">
+    listenerCount
+  </a>
+  
+    <nav class="md-nav" aria-label="listenerCount">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_3" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_4" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_5" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_10" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#listeners" class="md-nav__link">
+    listeners
+  </a>
+  
+    <nav class="md-nav" aria-label="listeners">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-parameters_5" class="md-nav__link">
+    Type parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parameters_4" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_5" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_6" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_11" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#m" class="md-nav__link">
+    m
+  </a>
+  
+    <nav class="md-nav" aria-label="m">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_5" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_6" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_12" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#module" class="md-nav__link">
+    module
+  </a>
+  
+    <nav class="md-nav" aria-label="module">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_6" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_7" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_13" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#off" class="md-nav__link">
+    off
+  </a>
+  
+    <nav class="md-nav" aria-label="off">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-parameters_6" class="md-nav__link">
+    Type parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parameters_7" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_8" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_7" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_14" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#on" class="md-nav__link">
+    on
+  </a>
+  
+    <nav class="md-nav" aria-label="on">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-parameters_7" class="md-nav__link">
+    Type parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parameters_8" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_9" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_8" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_15" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#once" class="md-nav__link">
+    once
+  </a>
+  
+    <nav class="md-nav" aria-label="once">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-parameters_8" class="md-nav__link">
+    Type parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parameters_9" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_10" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_9" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_16" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#prependlistener" class="md-nav__link">
+    prependListener
+  </a>
+  
+    <nav class="md-nav" aria-label="prependListener">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-parameters_9" class="md-nav__link">
+    Type parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parameters_10" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_11" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_10" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_17" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#prependoncelistener" class="md-nav__link">
+    prependOnceListener
+  </a>
+  
+    <nav class="md-nav" aria-label="prependOnceListener">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-parameters_10" class="md-nav__link">
+    Type parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parameters_11" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_12" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_11" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_18" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rawlisteners" class="md-nav__link">
+    rawListeners
+  </a>
+  
+    <nav class="md-nav" aria-label="rawListeners">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-parameters_11" class="md-nav__link">
+    Type parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parameters_12" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_13" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_12" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_19" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#removealllisteners" class="md-nav__link">
+    removeAllListeners
+  </a>
+  
+    <nav class="md-nav" aria-label="removeAllListeners">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_13" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_14" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_13" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_20" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#removelistener" class="md-nav__link">
+    removeListener
+  </a>
+  
+    <nav class="md-nav" aria-label="removeListener">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-parameters_12" class="md-nav__link">
+    Type parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parameters_14" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_15" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_14" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_21" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setmaxlisteners" class="md-nav__link">
+    setMaxListeners
+  </a>
+  
+    <nav class="md-nav" aria-label="setMaxListeners">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_15" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_16" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_15" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_22" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#start" class="md-nav__link">
+    start
+  </a>
+  
+    <nav class="md-nav" aria-label="start">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#returns_17" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_23" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#use" class="md-nav__link">
+    use
+  </a>
+  
+    <nav class="md-nav" aria-label="use">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_16" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_18" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_24" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#usecacheprovider" class="md-nav__link">
+    useCacheProvider
+  </a>
+  
+    <nav class="md-nav" aria-label="useCacheProvider">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_17" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_19" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_25" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#usegatewayprovider" class="md-nav__link">
+    useGatewayProvider
+  </a>
+  
+    <nav class="md-nav" aria-label="useGatewayProvider">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_18" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_20" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_26" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#userestprovider" class="md-nav__link">
+    useRESTProvider
+  </a>
+  
+    <nav class="md-nav" aria-label="useRESTProvider">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_19" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_21" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_27" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <p><a href="../../">Discordoo</a> / <a href="../../modules/">Modules</a> / <a href="../../modules/core/">core</a> / Client</p>
+<h1 id="class-clientclientstack">Class: Client&lt;ClientStack><a class="headerlink" href="#class-clientclientstack" title="Permanent link">#</a></h1>
+<p><a href="../../modules/core/">core</a>.Client</p>
+<p>Entry point for all of Discordoo. Manages modules and events</p>
+<h2 id="type-parameters">Type parameters<a class="headerlink" href="#type-parameters" title="Permanent link">#</a></h2>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>ClientStack</code></td>
+<td align="left">extends <a href="../../interfaces/core.defaultclientstack/"><code>DefaultClientStack</code></a><a href="../../interfaces/core.defaultclientstack/"><code>DefaultClientStack</code></a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="hierarchy">Hierarchy<a class="headerlink" href="#hierarchy" title="Permanent link">#</a></h2>
+<ul>
+<li><code>TypedEmitter</code>&lt;<code>ListenerSignature</code>&lt;<code>ClientStack</code>[<code>"events"</code>]>></li>
+</ul>
+<p>↳ <strong><code>Client</code></strong></p>
+<h2 id="table-of-contents">Table of contents<a class="headerlink" href="#table-of-contents" title="Permanent link">#</a></h2>
+<h3 id="constructors">Constructors<a class="headerlink" href="#constructors" title="Permanent link">#</a></h3>
+<ul>
+<li><a href="./#constructor">constructor</a></li>
+</ul>
+<h3 id="properties">Properties<a class="headerlink" href="#properties" title="Permanent link">#</a></h3>
+<ul>
+<li><a href="./#internals">internals</a></li>
+<li><a href="./#modules">modules</a></li>
+<li><a href="./#options">options</a></li>
+<li><a href="./#token">token</a></li>
+<li><a href="./#defaultmaxlisteners">defaultMaxListeners</a></li>
+</ul>
+<h3 id="methods">Methods<a class="headerlink" href="#methods" title="Permanent link">#</a></h3>
+<ul>
+<li><a href="./#addlistener">addListener</a></li>
+<li><a href="./#emit">emit</a></li>
+<li><a href="./#eventnames">eventNames</a></li>
+<li><a href="./#getmaxlisteners">getMaxListeners</a></li>
+<li><a href="./#listenercount">listenerCount</a></li>
+<li><a href="./#listeners">listeners</a></li>
+<li><a href="./#m">m</a></li>
+<li><a href="./#module">module</a></li>
+<li><a href="./#off">off</a></li>
+<li><a href="./#on">on</a></li>
+<li><a href="./#once">once</a></li>
+<li><a href="./#prependlistener">prependListener</a></li>
+<li><a href="./#prependoncelistener">prependOnceListener</a></li>
+<li><a href="./#rawlisteners">rawListeners</a></li>
+<li><a href="./#removealllisteners">removeAllListeners</a></li>
+<li><a href="./#removelistener">removeListener</a></li>
+<li><a href="./#setmaxlisteners">setMaxListeners</a></li>
+<li><a href="./#start">start</a></li>
+<li><a href="./#use">use</a></li>
+<li><a href="./#usecacheprovider">useCacheProvider</a></li>
+<li><a href="./#usegatewayprovider">useGatewayProvider</a></li>
+<li><a href="./#userestprovider">useRESTProvider</a></li>
+</ul>
+<h2 id="constructors_1">Constructors<a class="headerlink" href="#constructors_1" title="Permanent link">#</a></h2>
+<h3 id="constructor">constructor<a class="headerlink" href="#constructor" title="Permanent link">#</a></h3>
+<p>• <strong>new Client</strong>&lt;<code>ClientStack</code>>(<code>token</code>, <code>options?</code>)</p>
+<h4 id="type-parameters_1">Type parameters<a class="headerlink" href="#type-parameters_1" title="Permanent link">#</a></h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>ClientStack</code></td>
+<td align="left">extends <a href="../../interfaces/core.defaultclientstack/"><code>DefaultClientStack</code></a><a href="../../interfaces/core.defaultclientstack/"><code>DefaultClientStack</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4 id="parameters">Parameters<a class="headerlink" href="#parameters" title="Permanent link">#</a></h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>token</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>options</code></td>
+<td align="left"><code>default</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="overrides">Overrides<a class="headerlink" href="#overrides" title="Permanent link">#</a></h4>
+<p>TypedEmitter&lt;ListenerSignature&lt;ClientStack[&#x27;events&#x27;]\&gt;\&gt;.constructor</p>
+<h4 id="defined-in">Defined in<a class="headerlink" href="#defined-in" title="Permanent link">#</a></h4>
+<p><a href="https://github.com/Discordoo/discordoo/blob/1ee3341/src/core/Client.ts#L32">src/core/Client.ts:32</a></p>
+<h2 id="properties_1">Properties<a class="headerlink" href="#properties_1" title="Permanent link">#</a></h2>
+<h3 id="internals">internals<a class="headerlink" href="#internals" title="Permanent link">#</a></h3>
+<p>• <strong>internals</strong>: <code>default</code>&lt;<code>ClientStack</code>></p>
+<p>Internal things used by this client</p>
+<h4 id="defined-in_1">Defined in<a class="headerlink" href="#defined-in_1" title="Permanent link">#</a></h4>
+<p><a href="https://github.com/Discordoo/discordoo/blob/1ee3341/src/core/Client.ts#L29">src/core/Client.ts:29</a></p>
+<hr />
+<h3 id="modules">modules<a class="headerlink" href="#modules" title="Permanent link">#</a></h3>
+<p>• <strong>modules</strong>: <a href="../core.modulemanager/"><code>ModuleManager</code></a></p>
+<p>Module manager of this client</p>
+<h4 id="defined-in_2">Defined in<a class="headerlink" href="#defined-in_2" title="Permanent link">#</a></h4>
+<p><a href="https://github.com/Discordoo/discordoo/blob/1ee3341/src/core/Client.ts#L26">src/core/Client.ts:26</a></p>
+<hr />
+<h3 id="options">options<a class="headerlink" href="#options" title="Permanent link">#</a></h3>
+<p>• <strong>options</strong>: <code>default</code></p>
+<p>Options passed to this client</p>
+<h4 id="defined-in_3">Defined in<a class="headerlink" href="#defined-in_3" title="Permanent link">#</a></h4>
+<p><a href="https://github.com/Discordoo/discordoo/blob/1ee3341/src/core/Client.ts#L32">src/core/Client.ts:32</a></p>
+<hr />
+<h3 id="token">token<a class="headerlink" href="#token" title="Permanent link">#</a></h3>
+<p>• <strong>token</strong>: <code>string</code></p>
+<p>Token used by this client</p>
+<h4 id="defined-in_4">Defined in<a class="headerlink" href="#defined-in_4" title="Permanent link">#</a></h4>
+<p><a href="https://github.com/Discordoo/discordoo/blob/1ee3341/src/core/Client.ts#L23">src/core/Client.ts:23</a></p>
+<hr />
+<h3 id="defaultmaxlisteners">defaultMaxListeners<a class="headerlink" href="#defaultmaxlisteners" title="Permanent link">#</a></h3>
+<p>▪ <code>Static</code> <strong>defaultMaxListeners</strong>: <code>number</code></p>
+<h4 id="inherited-from">Inherited from<a class="headerlink" href="#inherited-from" title="Permanent link">#</a></h4>
+<p>TypedEmitter.defaultMaxListeners</p>
+<h4 id="defined-in_5">Defined in<a class="headerlink" href="#defined-in_5" title="Permanent link">#</a></h4>
+<p>node_modules/tiny-typed-emitter/lib/index.d.ts:10</p>
+<h2 id="methods_1">Methods<a class="headerlink" href="#methods_1" title="Permanent link">#</a></h2>
+<h3 id="addlistener">addListener<a class="headerlink" href="#addlistener" title="Permanent link">#</a></h3>
+<p>▸ <strong>addListener</strong>&lt;<code>U</code>>(<code>event</code>, <code>listener</code>): <a href="./"><code>Client</code></a>&lt;<code>ClientStack</code>></p>
+<h4 id="type-parameters_2">Type parameters<a class="headerlink" href="#type-parameters_2" title="Permanent link">#</a></h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>U</code></td>
+<td align="left">extends <code>string</code> | <code>number</code> | <code>symbol</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="parameters_1">Parameters<a class="headerlink" href="#parameters_1" title="Permanent link">#</a></h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>event</code></td>
+<td align="left"><code>U</code></td>
+</tr>
+<tr>
+<td align="left"><code>listener</code></td>
+<td align="left"><code>ListenerSignature</code>&lt;<code>ClientStack</code>[<code>"events"</code>]>[<code>U</code>]</td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns">Returns<a class="headerlink" href="#returns" title="Permanent link">#</a></h4>
+<p><a href="./"><code>Client</code></a>&lt;<code>ClientStack</code>></p>
+<h4 id="inherited-from_1">Inherited from<a class="headerlink" href="#inherited-from_1" title="Permanent link">#</a></h4>
+<p>TypedEmitter.addListener</p>
+<h4 id="defined-in_6">Defined in<a class="headerlink" href="#defined-in_6" title="Permanent link">#</a></h4>
+<p>node_modules/tiny-typed-emitter/lib/index.d.ts:11</p>
+<hr />
+<h3 id="emit">emit<a class="headerlink" href="#emit" title="Permanent link">#</a></h3>
+<p>▸ <strong>emit</strong>&lt;<code>U</code>>(<code>event</code>, ...<code>args</code>): <code>boolean</code></p>
+<h4 id="type-parameters_3">Type parameters<a class="headerlink" href="#type-parameters_3" title="Permanent link">#</a></h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>U</code></td>
+<td align="left">extends <code>string</code> | <code>number</code> | <code>symbol</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="parameters_2">Parameters<a class="headerlink" href="#parameters_2" title="Permanent link">#</a></h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>event</code></td>
+<td align="left"><code>U</code></td>
+</tr>
+<tr>
+<td align="left"><code>...args</code></td>
+<td align="left"><code>Parameters</code>&lt;<code>ListenerSignature</code>&lt;<code>ClientStack</code>[<code>"events"</code>]>[<code>U</code>]></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_1">Returns<a class="headerlink" href="#returns_1" title="Permanent link">#</a></h4>
+<p><code>boolean</code></p>
+<h4 id="inherited-from_2">Inherited from<a class="headerlink" href="#inherited-from_2" title="Permanent link">#</a></h4>
+<p>TypedEmitter.emit</p>
+<h4 id="defined-in_7">Defined in<a class="headerlink" href="#defined-in_7" title="Permanent link">#</a></h4>
+<p>node_modules/tiny-typed-emitter/lib/index.d.ts:19</p>
+<hr />
+<h3 id="eventnames">eventNames<a class="headerlink" href="#eventnames" title="Permanent link">#</a></h3>
+<p>▸ <strong>eventNames</strong>&lt;<code>U</code>>(): <code>U</code>[]</p>
+<h4 id="type-parameters_4">Type parameters<a class="headerlink" href="#type-parameters_4" title="Permanent link">#</a></h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>U</code></td>
+<td align="left">extends <code>string</code> | <code>number</code> | <code>symbol</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_2">Returns<a class="headerlink" href="#returns_2" title="Permanent link">#</a></h4>
+<p><code>U</code>[]</p>
+<h4 id="inherited-from_3">Inherited from<a class="headerlink" href="#inherited-from_3" title="Permanent link">#</a></h4>
+<p>TypedEmitter.eventNames</p>
+<h4 id="defined-in_8">Defined in<a class="headerlink" href="#defined-in_8" title="Permanent link">#</a></h4>
+<p>node_modules/tiny-typed-emitter/lib/index.d.ts:20</p>
+<hr />
+<h3 id="getmaxlisteners">getMaxListeners<a class="headerlink" href="#getmaxlisteners" title="Permanent link">#</a></h3>
+<p>▸ <strong>getMaxListeners</strong>(): <code>number</code></p>
+<h4 id="returns_3">Returns<a class="headerlink" href="#returns_3" title="Permanent link">#</a></h4>
+<p><code>number</code></p>
+<h4 id="inherited-from_4">Inherited from<a class="headerlink" href="#inherited-from_4" title="Permanent link">#</a></h4>
+<p>TypedEmitter.getMaxListeners</p>
+<h4 id="defined-in_9">Defined in<a class="headerlink" href="#defined-in_9" title="Permanent link">#</a></h4>
+<p>node_modules/tiny-typed-emitter/lib/index.d.ts:24</p>
+<hr />
+<h3 id="listenercount">listenerCount<a class="headerlink" href="#listenercount" title="Permanent link">#</a></h3>
+<p>▸ <strong>listenerCount</strong>(<code>type</code>): <code>number</code></p>
+<h4 id="parameters_3">Parameters<a class="headerlink" href="#parameters_3" title="Permanent link">#</a></h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>type</code></td>
+<td align="left">keyof <code>ClientStack</code>[<code>"events"</code>]</td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_4">Returns<a class="headerlink" href="#returns_4" title="Permanent link">#</a></h4>
+<p><code>number</code></p>
+<h4 id="inherited-from_5">Inherited from<a class="headerlink" href="#inherited-from_5" title="Permanent link">#</a></h4>
+<p>TypedEmitter.listenerCount</p>
+<h4 id="defined-in_10">Defined in<a class="headerlink" href="#defined-in_10" title="Permanent link">#</a></h4>
+<p>node_modules/tiny-typed-emitter/lib/index.d.ts:21</p>
+<hr />
+<h3 id="listeners">listeners<a class="headerlink" href="#listeners" title="Permanent link">#</a></h3>
+<p>▸ <strong>listeners</strong>&lt;<code>U</code>>(<code>type</code>): <code>ListenerSignature</code>&lt;<code>ClientStack</code>[<code>"events"</code>]>[<code>U</code>][]</p>
+<h4 id="type-parameters_5">Type parameters<a class="headerlink" href="#type-parameters_5" title="Permanent link">#</a></h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>U</code></td>
+<td align="left">extends <code>string</code> | <code>number</code> | <code>symbol</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="parameters_4">Parameters<a class="headerlink" href="#parameters_4" title="Permanent link">#</a></h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>type</code></td>
+<td align="left"><code>U</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_5">Returns<a class="headerlink" href="#returns_5" title="Permanent link">#</a></h4>
+<p><code>ListenerSignature</code>&lt;<code>ClientStack</code>[<code>"events"</code>]>[<code>U</code>][]</p>
+<h4 id="inherited-from_6">Inherited from<a class="headerlink" href="#inherited-from_6" title="Permanent link">#</a></h4>
+<p>TypedEmitter.listeners</p>
+<h4 id="defined-in_11">Defined in<a class="headerlink" href="#defined-in_11" title="Permanent link">#</a></h4>
+<p>node_modules/tiny-typed-emitter/lib/index.d.ts:22</p>
+<hr />
+<h3 id="m">m<a class="headerlink" href="#m" title="Permanent link">#</a></h3>
+<p>▸ <strong>m</strong>(<code>id</code>): <code>null</code> | <a href="../../interfaces/core.module/"><code>Module</code></a></p>
+<p>Get a module. Alias for module(id).</p>
+<h4 id="parameters_5">Parameters<a class="headerlink" href="#parameters_5" title="Permanent link">#</a></h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>id</code></td>
+<td align="left"><code>string</code> | <code>symbol</code></td>
+<td align="left">module id</td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_6">Returns<a class="headerlink" href="#returns_6" title="Permanent link">#</a></h4>
+<p><code>null</code> | <a href="../../interfaces/core.module/"><code>Module</code></a></p>
+<h4 id="defined-in_12">Defined in<a class="headerlink" href="#defined-in_12" title="Permanent link">#</a></h4>
+<p><a href="https://github.com/Discordoo/discordoo/blob/1ee3341/src/core/Client.ts#L95">src/core/Client.ts:95</a></p>
+<hr />
+<h3 id="module">module<a class="headerlink" href="#module" title="Permanent link">#</a></h3>
+<p>▸ <strong>module</strong>(<code>id</code>): <code>null</code> | <a href="../../interfaces/core.module/"><code>Module</code></a></p>
+<p>Get a module</p>
+<h4 id="parameters_6">Parameters<a class="headerlink" href="#parameters_6" title="Permanent link">#</a></h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>id</code></td>
+<td align="left"><code>string</code> | <code>symbol</code></td>
+<td align="left">module id</td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_7">Returns<a class="headerlink" href="#returns_7" title="Permanent link">#</a></h4>
+<p><code>null</code> | <a href="../../interfaces/core.module/"><code>Module</code></a></p>
+<h4 id="defined-in_13">Defined in<a class="headerlink" href="#defined-in_13" title="Permanent link">#</a></h4>
+<p><a href="https://github.com/Discordoo/discordoo/blob/1ee3341/src/core/Client.ts#L103">src/core/Client.ts:103</a></p>
+<hr />
+<h3 id="off">off<a class="headerlink" href="#off" title="Permanent link">#</a></h3>
+<p>▸ <strong>off</strong>&lt;<code>U</code>>(<code>event</code>, <code>listener</code>): <a href="./"><code>Client</code></a>&lt;<code>ClientStack</code>></p>
+<h4 id="type-parameters_6">Type parameters<a class="headerlink" href="#type-parameters_6" title="Permanent link">#</a></h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>U</code></td>
+<td align="left">extends <code>string</code> | <code>number</code> | <code>symbol</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="parameters_7">Parameters<a class="headerlink" href="#parameters_7" title="Permanent link">#</a></h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>event</code></td>
+<td align="left"><code>U</code></td>
+</tr>
+<tr>
+<td align="left"><code>listener</code></td>
+<td align="left"><code>ListenerSignature</code>&lt;<code>ClientStack</code>[<code>"events"</code>]>[<code>U</code>]</td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_8">Returns<a class="headerlink" href="#returns_8" title="Permanent link">#</a></h4>
+<p><a href="./"><code>Client</code></a>&lt;<code>ClientStack</code>></p>
+<h4 id="inherited-from_7">Inherited from<a class="headerlink" href="#inherited-from_7" title="Permanent link">#</a></h4>
+<p>TypedEmitter.off</p>
+<h4 id="defined-in_14">Defined in<a class="headerlink" href="#defined-in_14" title="Permanent link">#</a></h4>
+<p>node_modules/tiny-typed-emitter/lib/index.d.ts:18</p>
+<hr />
+<h3 id="on">on<a class="headerlink" href="#on" title="Permanent link">#</a></h3>
+<p>▸ <strong>on</strong>&lt;<code>U</code>>(<code>event</code>, <code>listener</code>): <a href="./"><code>Client</code></a>&lt;<code>ClientStack</code>></p>
+<h4 id="type-parameters_7">Type parameters<a class="headerlink" href="#type-parameters_7" title="Permanent link">#</a></h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>U</code></td>
+<td align="left">extends <code>string</code> | <code>number</code> | <code>symbol</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="parameters_8">Parameters<a class="headerlink" href="#parameters_8" title="Permanent link">#</a></h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>event</code></td>
+<td align="left"><code>U</code></td>
+</tr>
+<tr>
+<td align="left"><code>listener</code></td>
+<td align="left"><code>ListenerSignature</code>&lt;<code>ClientStack</code>[<code>"events"</code>]>[<code>U</code>]</td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_9">Returns<a class="headerlink" href="#returns_9" title="Permanent link">#</a></h4>
+<p><a href="./"><code>Client</code></a>&lt;<code>ClientStack</code>></p>
+<h4 id="inherited-from_8">Inherited from<a class="headerlink" href="#inherited-from_8" title="Permanent link">#</a></h4>
+<p>TypedEmitter.on</p>
+<h4 id="defined-in_15">Defined in<a class="headerlink" href="#defined-in_15" title="Permanent link">#</a></h4>
+<p>node_modules/tiny-typed-emitter/lib/index.d.ts:17</p>
+<hr />
+<h3 id="once">once<a class="headerlink" href="#once" title="Permanent link">#</a></h3>
+<p>▸ <strong>once</strong>&lt;<code>U</code>>(<code>event</code>, <code>listener</code>): <a href="./"><code>Client</code></a>&lt;<code>ClientStack</code>></p>
+<h4 id="type-parameters_8">Type parameters<a class="headerlink" href="#type-parameters_8" title="Permanent link">#</a></h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>U</code></td>
+<td align="left">extends <code>string</code> | <code>number</code> | <code>symbol</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="parameters_9">Parameters<a class="headerlink" href="#parameters_9" title="Permanent link">#</a></h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>event</code></td>
+<td align="left"><code>U</code></td>
+</tr>
+<tr>
+<td align="left"><code>listener</code></td>
+<td align="left"><code>ListenerSignature</code>&lt;<code>ClientStack</code>[<code>"events"</code>]>[<code>U</code>]</td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_10">Returns<a class="headerlink" href="#returns_10" title="Permanent link">#</a></h4>
+<p><a href="./"><code>Client</code></a>&lt;<code>ClientStack</code>></p>
+<h4 id="inherited-from_9">Inherited from<a class="headerlink" href="#inherited-from_9" title="Permanent link">#</a></h4>
+<p>TypedEmitter.once</p>
+<h4 id="defined-in_16">Defined in<a class="headerlink" href="#defined-in_16" title="Permanent link">#</a></h4>
+<p>node_modules/tiny-typed-emitter/lib/index.d.ts:16</p>
+<hr />
+<h3 id="prependlistener">prependListener<a class="headerlink" href="#prependlistener" title="Permanent link">#</a></h3>
+<p>▸ <strong>prependListener</strong>&lt;<code>U</code>>(<code>event</code>, <code>listener</code>): <a href="./"><code>Client</code></a>&lt;<code>ClientStack</code>></p>
+<h4 id="type-parameters_9">Type parameters<a class="headerlink" href="#type-parameters_9" title="Permanent link">#</a></h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>U</code></td>
+<td align="left">extends <code>string</code> | <code>number</code> | <code>symbol</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="parameters_10">Parameters<a class="headerlink" href="#parameters_10" title="Permanent link">#</a></h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>event</code></td>
+<td align="left"><code>U</code></td>
+</tr>
+<tr>
+<td align="left"><code>listener</code></td>
+<td align="left"><code>ListenerSignature</code>&lt;<code>ClientStack</code>[<code>"events"</code>]>[<code>U</code>]</td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_11">Returns<a class="headerlink" href="#returns_11" title="Permanent link">#</a></h4>
+<p><a href="./"><code>Client</code></a>&lt;<code>ClientStack</code>></p>
+<h4 id="inherited-from_10">Inherited from<a class="headerlink" href="#inherited-from_10" title="Permanent link">#</a></h4>
+<p>TypedEmitter.prependListener</p>
+<h4 id="defined-in_17">Defined in<a class="headerlink" href="#defined-in_17" title="Permanent link">#</a></h4>
+<p>node_modules/tiny-typed-emitter/lib/index.d.ts:12</p>
+<hr />
+<h3 id="prependoncelistener">prependOnceListener<a class="headerlink" href="#prependoncelistener" title="Permanent link">#</a></h3>
+<p>▸ <strong>prependOnceListener</strong>&lt;<code>U</code>>(<code>event</code>, <code>listener</code>): <a href="./"><code>Client</code></a>&lt;<code>ClientStack</code>></p>
+<h4 id="type-parameters_10">Type parameters<a class="headerlink" href="#type-parameters_10" title="Permanent link">#</a></h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>U</code></td>
+<td align="left">extends <code>string</code> | <code>number</code> | <code>symbol</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="parameters_11">Parameters<a class="headerlink" href="#parameters_11" title="Permanent link">#</a></h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>event</code></td>
+<td align="left"><code>U</code></td>
+</tr>
+<tr>
+<td align="left"><code>listener</code></td>
+<td align="left"><code>ListenerSignature</code>&lt;<code>ClientStack</code>[<code>"events"</code>]>[<code>U</code>]</td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_12">Returns<a class="headerlink" href="#returns_12" title="Permanent link">#</a></h4>
+<p><a href="./"><code>Client</code></a>&lt;<code>ClientStack</code>></p>
+<h4 id="inherited-from_11">Inherited from<a class="headerlink" href="#inherited-from_11" title="Permanent link">#</a></h4>
+<p>TypedEmitter.prependOnceListener</p>
+<h4 id="defined-in_18">Defined in<a class="headerlink" href="#defined-in_18" title="Permanent link">#</a></h4>
+<p>node_modules/tiny-typed-emitter/lib/index.d.ts:13</p>
+<hr />
+<h3 id="rawlisteners">rawListeners<a class="headerlink" href="#rawlisteners" title="Permanent link">#</a></h3>
+<p>▸ <strong>rawListeners</strong>&lt;<code>U</code>>(<code>type</code>): <code>ListenerSignature</code>&lt;<code>ClientStack</code>[<code>"events"</code>]>[<code>U</code>][]</p>
+<h4 id="type-parameters_11">Type parameters<a class="headerlink" href="#type-parameters_11" title="Permanent link">#</a></h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>U</code></td>
+<td align="left">extends <code>string</code> | <code>number</code> | <code>symbol</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="parameters_12">Parameters<a class="headerlink" href="#parameters_12" title="Permanent link">#</a></h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>type</code></td>
+<td align="left"><code>U</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_13">Returns<a class="headerlink" href="#returns_13" title="Permanent link">#</a></h4>
+<p><code>ListenerSignature</code>&lt;<code>ClientStack</code>[<code>"events"</code>]>[<code>U</code>][]</p>
+<h4 id="inherited-from_12">Inherited from<a class="headerlink" href="#inherited-from_12" title="Permanent link">#</a></h4>
+<p>TypedEmitter.rawListeners</p>
+<h4 id="defined-in_19">Defined in<a class="headerlink" href="#defined-in_19" title="Permanent link">#</a></h4>
+<p>node_modules/tiny-typed-emitter/lib/index.d.ts:23</p>
+<hr />
+<h3 id="removealllisteners">removeAllListeners<a class="headerlink" href="#removealllisteners" title="Permanent link">#</a></h3>
+<p>▸ <strong>removeAllListeners</strong>(<code>event?</code>): <a href="./"><code>Client</code></a>&lt;<code>ClientStack</code>></p>
+<h4 id="parameters_13">Parameters<a class="headerlink" href="#parameters_13" title="Permanent link">#</a></h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>event?</code></td>
+<td align="left">keyof <code>ClientStack</code>[<code>"events"</code>]</td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_14">Returns<a class="headerlink" href="#returns_14" title="Permanent link">#</a></h4>
+<p><a href="./"><code>Client</code></a>&lt;<code>ClientStack</code>></p>
+<h4 id="inherited-from_13">Inherited from<a class="headerlink" href="#inherited-from_13" title="Permanent link">#</a></h4>
+<p>TypedEmitter.removeAllListeners</p>
+<h4 id="defined-in_20">Defined in<a class="headerlink" href="#defined-in_20" title="Permanent link">#</a></h4>
+<p>node_modules/tiny-typed-emitter/lib/index.d.ts:15</p>
+<hr />
+<h3 id="removelistener">removeListener<a class="headerlink" href="#removelistener" title="Permanent link">#</a></h3>
+<p>▸ <strong>removeListener</strong>&lt;<code>U</code>>(<code>event</code>, <code>listener</code>): <a href="./"><code>Client</code></a>&lt;<code>ClientStack</code>></p>
+<h4 id="type-parameters_12">Type parameters<a class="headerlink" href="#type-parameters_12" title="Permanent link">#</a></h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>U</code></td>
+<td align="left">extends <code>string</code> | <code>number</code> | <code>symbol</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="parameters_14">Parameters<a class="headerlink" href="#parameters_14" title="Permanent link">#</a></h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>event</code></td>
+<td align="left"><code>U</code></td>
+</tr>
+<tr>
+<td align="left"><code>listener</code></td>
+<td align="left"><code>ListenerSignature</code>&lt;<code>ClientStack</code>[<code>"events"</code>]>[<code>U</code>]</td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_15">Returns<a class="headerlink" href="#returns_15" title="Permanent link">#</a></h4>
+<p><a href="./"><code>Client</code></a>&lt;<code>ClientStack</code>></p>
+<h4 id="inherited-from_14">Inherited from<a class="headerlink" href="#inherited-from_14" title="Permanent link">#</a></h4>
+<p>TypedEmitter.removeListener</p>
+<h4 id="defined-in_21">Defined in<a class="headerlink" href="#defined-in_21" title="Permanent link">#</a></h4>
+<p>node_modules/tiny-typed-emitter/lib/index.d.ts:14</p>
+<hr />
+<h3 id="setmaxlisteners">setMaxListeners<a class="headerlink" href="#setmaxlisteners" title="Permanent link">#</a></h3>
+<p>▸ <strong>setMaxListeners</strong>(<code>n</code>): <a href="./"><code>Client</code></a>&lt;<code>ClientStack</code>></p>
+<h4 id="parameters_15">Parameters<a class="headerlink" href="#parameters_15" title="Permanent link">#</a></h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>n</code></td>
+<td align="left"><code>number</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_16">Returns<a class="headerlink" href="#returns_16" title="Permanent link">#</a></h4>
+<p><a href="./"><code>Client</code></a>&lt;<code>ClientStack</code>></p>
+<h4 id="inherited-from_15">Inherited from<a class="headerlink" href="#inherited-from_15" title="Permanent link">#</a></h4>
+<p>TypedEmitter.setMaxListeners</p>
+<h4 id="defined-in_22">Defined in<a class="headerlink" href="#defined-in_22" title="Permanent link">#</a></h4>
+<p>node_modules/tiny-typed-emitter/lib/index.d.ts:25</p>
+<hr />
+<h3 id="start">start<a class="headerlink" href="#start" title="Permanent link">#</a></h3>
+<p>▸ <strong>start</strong>(): <code>Promise</code>&lt;<code>void</code>></p>
+<h4 id="returns_17">Returns<a class="headerlink" href="#returns_17" title="Permanent link">#</a></h4>
+<p><code>Promise</code>&lt;<code>void</code>></p>
+<h4 id="defined-in_23">Defined in<a class="headerlink" href="#defined-in_23" title="Permanent link">#</a></h4>
+<p><a href="https://github.com/Discordoo/discordoo/blob/1ee3341/src/core/Client.ts#L142">src/core/Client.ts:142</a></p>
+<hr />
+<h3 id="use">use<a class="headerlink" href="#use" title="Permanent link">#</a></h3>
+<p>▸ <strong>use</strong>(...<code>modules</code>): <code>void</code></p>
+<p>Create a new module load group</p>
+<h4 id="parameters_16">Parameters<a class="headerlink" href="#parameters_16" title="Permanent link">#</a></h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>...modules</code></td>
+<td align="left"><a href="../../interfaces/core.module/"><code>Module</code></a>[]</td>
+<td align="left">modules in the group</td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_18">Returns<a class="headerlink" href="#returns_18" title="Permanent link">#</a></h4>
+<p><code>void</code></p>
+<h4 id="defined-in_24">Defined in<a class="headerlink" href="#defined-in_24" title="Permanent link">#</a></h4>
+<p><a href="https://github.com/Discordoo/discordoo/blob/1ee3341/src/core/Client.ts#L111">src/core/Client.ts:111</a></p>
+<hr />
+<h3 id="usecacheprovider">useCacheProvider<a class="headerlink" href="#usecacheprovider" title="Permanent link">#</a></h3>
+<p>▸ <strong>useCacheProvider</strong>(<code>provider</code>): <code>void</code></p>
+<p>Set the <a href="../../modules/core/#cacheprovider">CacheProvider</a> to be used by this client
+Bounds it's context to <a href="./">Client</a></p>
+<h4 id="parameters_17">Parameters<a class="headerlink" href="#parameters_17" title="Permanent link">#</a></h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>provider</code></td>
+<td align="left">(<code>client</code>: <a href="./"><code>Client</code></a>&lt;<a href="../../interfaces/core.defaultclientstack/"><code>DefaultClientStack</code></a>>) =&gt; <a href="../../modules/core/#cacheprovider"><code>CacheProvider</code></a>&lt;<code>ClientStack</code>[<code>"cache"</code>]></td>
+<td align="left">function, that returns desired CacheProvider</td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_19">Returns<a class="headerlink" href="#returns_19" title="Permanent link">#</a></h4>
+<p><code>void</code></p>
+<h4 id="defined-in_25">Defined in<a class="headerlink" href="#defined-in_25" title="Permanent link">#</a></h4>
+<p><a href="https://github.com/Discordoo/discordoo/blob/1ee3341/src/core/Client.ts#L129">src/core/Client.ts:129</a></p>
+<hr />
+<h3 id="usegatewayprovider">useGatewayProvider<a class="headerlink" href="#usegatewayprovider" title="Permanent link">#</a></h3>
+<p>▸ <strong>useGatewayProvider</strong>(<code>provider</code>): <code>void</code></p>
+<p>Set the <a href="../../modules/core/#cacheprovider">CacheProvider</a> to be used by this client
+Bounds it's context to <a href="./">Client</a></p>
+<h4 id="parameters_18">Parameters<a class="headerlink" href="#parameters_18" title="Permanent link">#</a></h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>provider</code></td>
+<td align="left">(<code>client</code>: <a href="./"><code>Client</code></a>&lt;<a href="../../interfaces/core.defaultclientstack/"><code>DefaultClientStack</code></a>>) =&gt; <a href="../../modules/core/#gatewayprovider"><code>GatewayProvider</code></a>&lt;<code>ClientStack</code>[<code>"gateway"</code>]></td>
+<td align="left">function, that returns desired CacheProvider</td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_20">Returns<a class="headerlink" href="#returns_20" title="Permanent link">#</a></h4>
+<p><code>void</code></p>
+<h4 id="defined-in_26">Defined in<a class="headerlink" href="#defined-in_26" title="Permanent link">#</a></h4>
+<p><a href="https://github.com/Discordoo/discordoo/blob/1ee3341/src/core/Client.ts#L138">src/core/Client.ts:138</a></p>
+<hr />
+<h3 id="userestprovider">useRESTProvider<a class="headerlink" href="#userestprovider" title="Permanent link">#</a></h3>
+<p>▸ <strong>useRESTProvider</strong>(<code>provider</code>): <code>void</code></p>
+<p>Set the <a href="../../modules/core/#restprovider">RESTProvider</a> to be used by this client
+Bounds it's context to <a href="./">Client</a></p>
+<h4 id="parameters_19">Parameters<a class="headerlink" href="#parameters_19" title="Permanent link">#</a></h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>provider</code></td>
+<td align="left">(<code>client</code>: <a href="./"><code>Client</code></a>&lt;<a href="../../interfaces/core.defaultclientstack/"><code>DefaultClientStack</code></a>>) =&gt; <a href="../../modules/core/#restprovider"><code>RESTProvider</code></a>&lt;<code>ClientStack</code>[<code>"rest"</code>]></td>
+<td align="left">function, that returns desired RESTProvider</td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_21">Returns<a class="headerlink" href="#returns_21" title="Permanent link">#</a></h4>
+<p><code>void</code></p>
+<h4 id="defined-in_27">Defined in<a class="headerlink" href="#defined-in_27" title="Permanent link">#</a></h4>
+<p><a href="https://github.com/Discordoo/discordoo/blob/1ee3341/src/core/Client.ts#L120">src/core/Client.ts:120</a></p>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        
+        <a href="../core.base/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Base" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Base
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../core.modulemanager/" class="md-footer__link md-footer__link--next" aria-label="Next: ModuleManager" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              ModuleManager
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+        
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.sections", "navigation.tabs", "navigation.sections", "navigation.instant", "navigation.sections", "navigation.expand"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../../assets/javascripts/workers/search.477d984a.min.js", "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.82b56eb2.min.js"></script>
+      
+    
+  </body>
+</html>
