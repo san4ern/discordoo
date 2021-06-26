@@ -41,11 +41,6 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://docs.discordoo.xyz/api/classes/core.modulemanager/</loc>
-         <lastmod>2021-06-26</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://docs.discordoo.xyz/api/classes/gateway.websocketclient/</loc>
          <lastmod>2021-06-26</lastmod>
          <changefreq>daily</changefreq>
@@ -107,11 +102,6 @@
     </url>
     <url>
          <loc>https://docs.discordoo.xyz/api/classes/wrapper.clientbuilder/</loc>
-         <lastmod>2021-06-26</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://docs.discordoo.xyz/api/classes/wrapper.modulehostmodule/</loc>
          <lastmod>2021-06-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -217,11 +207,6 @@
     </url>
     <url>
          <loc>https://docs.discordoo.xyz/api/interfaces/core.gatewayproviderevents/</loc>
-         <lastmod>2021-06-26</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://docs.discordoo.xyz/api/interfaces/core.module/</loc>
          <lastmod>2021-06-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
