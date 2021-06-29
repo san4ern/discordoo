@@ -132,10 +132,10 @@
         
           
           
-          <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="ddoo-dark" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="ddoo-dark" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
           
             <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M279.135 512c78.756 0 150.982-35.804 198.844-94.775 28.27-34.831-2.558-85.722-46.249-77.401-82.348 15.683-158.272-47.268-158.272-130.792 0-48.424 26.06-92.292 67.434-115.836 38.745-22.05 28.999-80.788-15.022-88.919A257.936 257.936 0 0 0 279.135 0c-141.36 0-256 114.575-256 256 0 141.36 114.576 256 256 256zm0-464c12.985 0 25.689 1.201 38.016 3.478-54.76 31.163-91.693 90.042-91.693 157.554 0 113.848 103.641 199.2 215.252 177.944C402.574 433.964 344.366 464 279.135 464c-114.875 0-208-93.125-208-208s93.125-208 208-208z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 2.38 1.19 4.47 3 5.74V17a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-2.26c1.81-1.27 3-3.36 3-5.74a7 7 0 0 0-7-7M9 21a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1v-1H9v1z"/></svg>
             </label>
           
         
@@ -1336,16 +1336,38 @@
                 
                 
                 <h1 id="step-2-starting-your-bot">Step 2 - Starting your bot<a class="headerlink" href="#step-2-starting-your-bot" title="Permanent link">#</a></h1>
-<p>Once you have created your project, you will have something like this in your
-<code>index</code> file -</p>
+<p>You can use built-in createApp function to create a client, setup providers and client options:</p>
 <div class="tabbed-set" data-tabs="1:1"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><label for="__tabbed_1_1">TS</label><div class="tabbed-content"></div>
 </div>
 <div class="highlight"><pre><span></span><code><span class="k">import</span> <span class="p">{</span> <span class="nx">createApp</span> <span class="p">}</span> <span class="k">from</span> <span class="s1">&#39;discordoo/wrapper&#39;</span>
 
-<span class="kd">const</span> <span class="nx">client</span> <span class="o">=</span> <span class="nx">createApp</span><span class="p">(</span><span class="s1">&#39;some-discord-bot-token&#39;</span><span class="p">).</span><span class="nx">build</span><span class="p">()</span>
+<span class="kd">const</span> <span class="nx">client</span> <span class="o">=</span> <span class="nx">createApp</span><span class="p">(</span><span class="s1">&#39;some-discord-bot-token&#39;</span><span class="p">)</span>
+  <span class="p">.</span><span class="nx">cacheProvider</span><span class="p">(</span><span class="cm">/* some cache provider */</span><span class="p">)</span>
+  <span class="p">.</span><span class="nx">gateway</span><span class="p">(</span><span class="cm">/* some gateway options */</span><span class="p">)</span>
+  <span class="p">.</span><span class="nx">build</span><span class="p">()</span>
 
 <span class="nx">client</span><span class="p">.</span><span class="nx">start</span><span class="p">()</span>
-    <span class="p">.</span><span class="nx">then</span><span class="p">(()</span> <span class="o">=&gt;</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;loggined in!&#39;</span><span class="p">))</span>
+    <span class="p">.</span><span class="nx">then</span><span class="p">(()</span> <span class="o">=&gt;</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;online!&#39;</span><span class="p">))</span>
+</code></pre></div>
+<p>or, if you want to extend from the client:</p>
+<div class="tabbed-set" data-tabs="2:1"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><label for="__tabbed_2_1">TS</label><div class="tabbed-content"></div>
+</div>
+<div class="highlight"><pre><span></span><code><span class="k">import</span> <span class="p">{</span> <span class="nx">Client</span> <span class="kr">as</span> <span class="nx">DiscordooClient</span> <span class="p">}</span> <span class="k">from</span> <span class="s1">&#39;discordoo/core&#39;</span>
+
+<span class="kd">class</span> <span class="nx">Client</span> <span class="k">extends</span> <span class="nx">DiscordooClient</span> <span class="p">{</span>
+  <span class="kr">constructor</span><span class="p">(...</span><span class="nx">props</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">super</span><span class="p">(...</span><span class="nx">props</span><span class="p">)</span>
+
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;hello from client constructor&#39;</span><span class="p">)</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kd">const</span> <span class="nx">client</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Client</span><span class="p">(</span><span class="cm">/* some client options */</span><span class="p">)</span>
+
+<span class="nx">client</span><span class="p">.</span><span class="nx">useCacheProvider</span><span class="p">(</span><span class="cm">/* some cache provider */</span><span class="p">)</span>
+
+<span class="nx">client</span><span class="p">.</span><span class="nx">start</span><span class="p">()</span>
+  <span class="p">.</span><span class="nx">then</span><span class="p">(()</span> <span class="o">=&gt;</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;online!&#39;</span><span class="p">))</span>
 </code></pre></div>
                 
               
