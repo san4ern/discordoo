@@ -528,42 +528,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../../classes/cache.cachemanager/" class="md-nav__link">
-        CacheManager
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../classes/cache.cacheproviderbuilder/" class="md-nav__link">
-        CacheProviderBuilder
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../classes/cache.collectioncachenamespace/" class="md-nav__link">
-        CollectionCacheNamespace
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../../classes/collection.collection-1/" class="md-nav__link">
         Collection
       </a>
@@ -994,8 +958,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../../interfaces/core.cachenamespace/" class="md-nav__link">
-        CacheNamespace
+      <a href="../../interfaces/core.cacheprovider/" class="md-nav__link">
+        CacheProvider
       </a>
     </li>
   
@@ -1289,18 +1253,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../cache/" class="md-nav__link">
-        Cache
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../collection/" class="md-nav__link">
         Collection
       </a>
@@ -1405,13 +1357,6 @@
   
     <nav class="md-nav" aria-label="Type aliases">
       <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#cacheprovider" class="md-nav__link">
-    CacheProvider
-  </a>
-  
-</li>
         
           <li class="md-nav__item">
   <a href="#gatewayprovider" class="md-nav__link">
@@ -1653,13 +1598,6 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#cacheprovider" class="md-nav__link">
-    CacheProvider
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#gatewayprovider" class="md-nav__link">
     GatewayProvider
   </a>
@@ -1704,7 +1642,7 @@
 </ul>
 <h3 id="interfaces">Interfaces<a class="headerlink" href="#interfaces" title="Permanent link">#</a></h3>
 <ul>
-<li><a href="../../interfaces/core.cachenamespace/">CacheNamespace</a></li>
+<li><a href="../../interfaces/core.cacheprovider/">CacheProvider</a></li>
 <li><a href="../../interfaces/core.clienteventshandlers/">ClientEventsHandlers</a></li>
 <li><a href="../../interfaces/core.defaultclientstack/">DefaultClientStack</a></li>
 <li><a href="../../interfaces/core.gatewayproviderapi/">GatewayProviderAPI</a></li>
@@ -1715,54 +1653,13 @@
 </ul>
 <h3 id="type-aliases">Type aliases<a class="headerlink" href="#type-aliases" title="Permanent link">#</a></h3>
 <ul>
-<li><a href="./#cacheprovider">CacheProvider</a></li>
 <li><a href="./#gatewayprovider">GatewayProvider</a></li>
 <li><a href="./#restprovider">RESTProvider</a></li>
 </ul>
 <h2 id="type-aliases_1">Type aliases<a class="headerlink" href="#type-aliases_1" title="Permanent link">#</a></h2>
-<h3 id="cacheprovider">CacheProvider<a class="headerlink" href="#cacheprovider" title="Permanent link">#</a></h3>
-<p>Ƭ <strong>CacheProvider</strong>&lt;<code>T</code>>: (<code>namespace</code>: <code>string</code>) =&gt; <code>T</code></p>
-<h4 id="type-parameters">Type parameters<a class="headerlink" href="#type-parameters" title="Permanent link">#</a></h4>
-<table>
-<thead>
-<tr>
-<th align="left">Name</th>
-<th align="left">Type</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left"><code>T</code></td>
-<td align="left">extends <a href="../../interfaces/core.cachenamespace/"><code>CacheNamespace</code></a><a href="../../interfaces/core.cachenamespace/"><code>CacheNamespace</code></a></td>
-</tr>
-</tbody>
-</table>
-<h4 id="type-declaration">Type declaration<a class="headerlink" href="#type-declaration" title="Permanent link">#</a></h4>
-<p>▸ (<code>namespace</code>): <code>T</code></p>
-<p>Represents a CacheProvider. Bound to Client context</p>
-<h5 id="parameters">Parameters<a class="headerlink" href="#parameters" title="Permanent link">#</a></h5>
-<table>
-<thead>
-<tr>
-<th align="left">Name</th>
-<th align="left">Type</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left"><code>namespace</code></td>
-<td align="left"><code>string</code></td>
-</tr>
-</tbody>
-</table>
-<h5 id="returns">Returns<a class="headerlink" href="#returns" title="Permanent link">#</a></h5>
-<p><code>T</code></p>
-<h4 id="defined-in">Defined in<a class="headerlink" href="#defined-in" title="Permanent link">#</a></h4>
-<p><a href="https://github.com/Discordoo/discordoo/blob/6b8b1ac/src/core/providers/cache/CacheProvider.ts#L4">src/core/providers/cache/CacheProvider.ts:4</a></p>
-<hr />
 <h3 id="gatewayprovider">GatewayProvider<a class="headerlink" href="#gatewayprovider" title="Permanent link">#</a></h3>
 <p>Ƭ <strong>GatewayProvider</strong>&lt;<code>T</code>>: () =&gt; <code>T</code></p>
-<h4 id="type-parameters_1">Type parameters<a class="headerlink" href="#type-parameters_1" title="Permanent link">#</a></h4>
+<h4 id="type-parameters">Type parameters<a class="headerlink" href="#type-parameters" title="Permanent link">#</a></h4>
 <table>
 <thead>
 <tr>
@@ -1777,16 +1674,16 @@
 </tr>
 </tbody>
 </table>
-<h4 id="type-declaration_1">Type declaration<a class="headerlink" href="#type-declaration_1" title="Permanent link">#</a></h4>
+<h4 id="type-declaration">Type declaration<a class="headerlink" href="#type-declaration" title="Permanent link">#</a></h4>
 <p>▸ (): <code>T</code></p>
-<h5 id="returns_1">Returns<a class="headerlink" href="#returns_1" title="Permanent link">#</a></h5>
+<h5 id="returns">Returns<a class="headerlink" href="#returns" title="Permanent link">#</a></h5>
 <p><code>T</code></p>
-<h4 id="defined-in_1">Defined in<a class="headerlink" href="#defined-in_1" title="Permanent link">#</a></h4>
-<p><a href="https://github.com/Discordoo/discordoo/blob/6b8b1ac/src/core/providers/gateway/GatewayProvider.ts#L3">src/core/providers/gateway/GatewayProvider.ts:3</a></p>
+<h4 id="defined-in">Defined in<a class="headerlink" href="#defined-in" title="Permanent link">#</a></h4>
+<p><a href="https://github.com/Discordoo/discordoo/blob/8903a42/src/core/providers/gateway/GatewayProvider.ts#L3">src/core/providers/gateway/GatewayProvider.ts:3</a></p>
 <hr />
 <h3 id="restprovider">RESTProvider<a class="headerlink" href="#restprovider" title="Permanent link">#</a></h3>
 <p>Ƭ <strong>RESTProvider</strong>&lt;<code>T</code>>: () =&gt; <code>T</code></p>
-<h4 id="type-parameters_2">Type parameters<a class="headerlink" href="#type-parameters_2" title="Permanent link">#</a></h4>
+<h4 id="type-parameters_1">Type parameters<a class="headerlink" href="#type-parameters_1" title="Permanent link">#</a></h4>
 <table>
 <thead>
 <tr>
@@ -1801,13 +1698,13 @@
 </tr>
 </tbody>
 </table>
-<h4 id="type-declaration_2">Type declaration<a class="headerlink" href="#type-declaration_2" title="Permanent link">#</a></h4>
+<h4 id="type-declaration_1">Type declaration<a class="headerlink" href="#type-declaration_1" title="Permanent link">#</a></h4>
 <p>▸ (): <code>T</code></p>
 <p>Represents a RESTProvider. Bound to Client context</p>
-<h5 id="returns_2">Returns<a class="headerlink" href="#returns_2" title="Permanent link">#</a></h5>
+<h5 id="returns_1">Returns<a class="headerlink" href="#returns_1" title="Permanent link">#</a></h5>
 <p><code>T</code></p>
-<h4 id="defined-in_2">Defined in<a class="headerlink" href="#defined-in_2" title="Permanent link">#</a></h4>
-<p><a href="https://github.com/Discordoo/discordoo/blob/6b8b1ac/src/core/providers/rest/RESTProvider.ts#L4">src/core/providers/rest/RESTProvider.ts:4</a></p>
+<h4 id="defined-in_1">Defined in<a class="headerlink" href="#defined-in_1" title="Permanent link">#</a></h4>
+<p><a href="https://github.com/Discordoo/discordoo/blob/8903a42/src/core/providers/rest/RESTProvider.ts#L4">src/core/providers/rest/RESTProvider.ts:4</a></p>
                 
                   
                 

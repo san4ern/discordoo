@@ -41,21 +41,6 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://docs.discordoo.xyz/api/classes/cache.cachemanager/</loc>
-         <lastmod>2021-07-01</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://docs.discordoo.xyz/api/classes/cache.cacheproviderbuilder/</loc>
-         <lastmod>2021-07-01</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://docs.discordoo.xyz/api/classes/cache.collectioncachenamespace/</loc>
-         <lastmod>2021-07-01</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://docs.discordoo.xyz/api/classes/collection.collection-1/</loc>
          <lastmod>2021-07-01</lastmod>
          <changefreq>daily</changefreq>
@@ -211,7 +196,7 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://docs.discordoo.xyz/api/interfaces/core.cachenamespace/</loc>
+         <loc>https://docs.discordoo.xyz/api/interfaces/core.cacheprovider/</loc>
          <lastmod>2021-07-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -317,11 +302,6 @@
     </url>
     <url>
          <loc>https://docs.discordoo.xyz/api/interfaces/sharding.workersshardingoptions/</loc>
-         <lastmod>2021-07-01</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://docs.discordoo.xyz/api/modules/cache/</loc>
          <lastmod>2021-07-01</lastmod>
          <changefreq>daily</changefreq>
     </url>

@@ -9,14 +9,14 @@
       
       
       
-        <link rel="canonical" href="https://docs.discordoo.xyz/api/classes/cache.collectioncachenamespace/">
+        <link rel="canonical" href="https://docs.discordoo.xyz/api/interfaces/core.cacheprovider/">
       
       <link rel="icon" href="../../../assets/favicon.png">
       <meta name="generator" content="mkdocs-1.2.1, mkdocs-material-7.1.9">
     
     
       
-        <title>CollectionCacheNamespace - Discordoo Guide</title>
+        <title>CacheProvider - Discordoo Guide</title>
       
     
     
@@ -83,7 +83,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#class-collectioncachenamespacek-v" class="md-skip">
+        <a href="#interface-cacheproviderk-v" class="md-skip">
           Skip to content
         </a>
       
@@ -112,7 +112,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              CollectionCacheNamespace
+              CacheProvider
             
           </span>
         </div>
@@ -503,16 +503,14 @@
             
   
   
-    
-  
   
     
       
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_3" type="checkbox" id="__nav_3_3" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_3" data-md-state="indeterminate" type="checkbox" id="__nav_3_3" checked>
       
       <label class="md-nav__link" for="__nav_3_3">
         Classes
@@ -530,240 +528,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../cache.cachemanager/" class="md-nav__link">
-        CacheManager
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../cache.cacheproviderbuilder/" class="md-nav__link">
-        CacheProviderBuilder
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-    
-  
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          CollectionCacheNamespace
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
-        CollectionCacheNamespace
-      </a>
-      
-        
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#type-parameters" class="md-nav__link">
-    Type parameters
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#implements" class="md-nav__link">
-    Implements
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#table-of-contents" class="md-nav__link">
-    Table of contents
-  </a>
-  
-    <nav class="md-nav" aria-label="Table of contents">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#constructors" class="md-nav__link">
-    Constructors
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#properties" class="md-nav__link">
-    Properties
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#methods" class="md-nav__link">
-    Methods
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#constructors_1" class="md-nav__link">
-    Constructors
-  </a>
-  
-    <nav class="md-nav" aria-label="Constructors">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#constructor" class="md-nav__link">
-    constructor
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#properties_1" class="md-nav__link">
-    Properties
-  </a>
-  
-    <nav class="md-nav" aria-label="Properties">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#data" class="md-nav__link">
-    #data
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#local" class="md-nav__link">
-    local
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#methods_1" class="md-nav__link">
-    Methods
-  </a>
-  
-    <nav class="md-nav" aria-label="Methods">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#delete" class="md-nav__link">
-    delete
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#filter" class="md-nav__link">
-    filter
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#foreach" class="md-nav__link">
-    forEach
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#get" class="md-nav__link">
-    get
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#has" class="md-nav__link">
-    has
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#random" class="md-nav__link">
-    random
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#set" class="md-nav__link">
-    set
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#size" class="md-nav__link">
-    size
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../collection.collection-1/" class="md-nav__link">
+      <a href="../../classes/collection.collection-1/" class="md-nav__link">
         Collection
       </a>
     </li>
@@ -775,7 +540,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../core.client/" class="md-nav__link">
+      <a href="../../classes/core.client/" class="md-nav__link">
         Client
       </a>
     </li>
@@ -787,7 +552,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../gateway.websocketclient/" class="md-nav__link">
+      <a href="../../classes/gateway.websocketclient/" class="md-nav__link">
         WebSocketClient
       </a>
     </li>
@@ -799,7 +564,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../gateway.websocketmanager/" class="md-nav__link">
+      <a href="../../classes/gateway.websocketmanager/" class="md-nav__link">
         WebSocketManager
       </a>
     </li>
@@ -811,7 +576,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../rest.restclient/" class="md-nav__link">
+      <a href="../../classes/rest.restclient/" class="md-nav__link">
         RESTClient
       </a>
     </li>
@@ -823,7 +588,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../rest.restproviderbuilder/" class="md-nav__link">
+      <a href="../../classes/rest.restproviderbuilder/" class="md-nav__link">
         RESTProviderBuilder
       </a>
     </li>
@@ -835,7 +600,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../rest.restrequestbuilder/" class="md-nav__link">
+      <a href="../../classes/rest.restrequestbuilder/" class="md-nav__link">
         RESTRequestBuilder
       </a>
     </li>
@@ -847,7 +612,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../sharding.ipcclient/" class="md-nav__link">
+      <a href="../../classes/sharding.ipcclient/" class="md-nav__link">
         IpcClient
       </a>
     </li>
@@ -859,7 +624,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../sharding.ipcserver/" class="md-nav__link">
+      <a href="../../classes/sharding.ipcserver/" class="md-nav__link">
         IpcServer
       </a>
     </li>
@@ -871,7 +636,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../sharding.shardingclient/" class="md-nav__link">
+      <a href="../../classes/sharding.shardingclient/" class="md-nav__link">
         ShardingClient
       </a>
     </li>
@@ -883,7 +648,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../sharding.shardingmanager/" class="md-nav__link">
+      <a href="../../classes/sharding.shardingmanager/" class="md-nav__link">
         ShardingManager
       </a>
     </li>
@@ -895,7 +660,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../utils.discordooerror/" class="md-nav__link">
+      <a href="../../classes/utils.discordooerror/" class="md-nav__link">
         DiscordooError
       </a>
     </li>
@@ -907,7 +672,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../utils.discordoosnowflake/" class="md-nav__link">
+      <a href="../../classes/utils.discordoosnowflake/" class="md-nav__link">
         DiscordooSnowflake
       </a>
     </li>
@@ -919,7 +684,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../utils.websocketutils/" class="md-nav__link">
+      <a href="../../classes/utils.websocketutils/" class="md-nav__link">
         WebSocketUtils
       </a>
     </li>
@@ -931,7 +696,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../wrapper.clientbuilder/" class="md-nav__link">
+      <a href="../../classes/wrapper.clientbuilder/" class="md-nav__link">
         ClientBuilder
       </a>
     </li>
@@ -1132,14 +897,16 @@
             
   
   
+    
+  
   
     
       
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_5" data-md-state="indeterminate" type="checkbox" id="__nav_3_5" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_5" type="checkbox" id="__nav_3_5" checked>
       
       <label class="md-nav__link" for="__nav_3_5">
         Interfaces
@@ -1157,7 +924,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../interfaces/collection.collectionequaloptions/" class="md-nav__link">
+      <a href="../collection.collectionequaloptions/" class="md-nav__link">
         CollectionEqualOptions
       </a>
     </li>
@@ -1169,7 +936,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../interfaces/collection.collectionfilteroptions/" class="md-nav__link">
+      <a href="../collection.collectionfilteroptions/" class="md-nav__link">
         CollectionFilterOptions
       </a>
     </li>
@@ -1181,7 +948,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../interfaces/collection.collectionrandomoptions/" class="md-nav__link">
+      <a href="../collection.collectionrandomoptions/" class="md-nav__link">
         CollectionRandomOptions
       </a>
     </li>
@@ -1191,11 +958,119 @@
             
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../interfaces/core.cachenamespace/" class="md-nav__link">
-        CacheNamespace
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          CacheProvider
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        CacheProvider
       </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#type-parameters" class="md-nav__link">
+    Type parameters
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#table-of-contents" class="md-nav__link">
+    Table of contents
+  </a>
+  
+    <nav class="md-nav" aria-label="Table of contents">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#methods" class="md-nav__link">
+    Methods
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#methods_1" class="md-nav__link">
+    Methods
+  </a>
+  
+    <nav class="md-nav" aria-label="Methods">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#delete" class="md-nav__link">
+    delete
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get" class="md-nav__link">
+    get
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#has" class="md-nav__link">
+    has
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#set" class="md-nav__link">
+    set
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#size" class="md-nav__link">
+    size
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1205,7 +1080,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../interfaces/core.clienteventshandlers/" class="md-nav__link">
+      <a href="../core.clienteventshandlers/" class="md-nav__link">
         ClientEventsHandlers
       </a>
     </li>
@@ -1217,7 +1092,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../interfaces/core.defaultclientstack/" class="md-nav__link">
+      <a href="../core.defaultclientstack/" class="md-nav__link">
         DefaultClientStack
       </a>
     </li>
@@ -1229,7 +1104,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../interfaces/core.gatewayproviderapi/" class="md-nav__link">
+      <a href="../core.gatewayproviderapi/" class="md-nav__link">
         GatewayProviderAPI
       </a>
     </li>
@@ -1241,7 +1116,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../interfaces/core.gatewayproviderevents/" class="md-nav__link">
+      <a href="../core.gatewayproviderevents/" class="md-nav__link">
         GatewayProviderEvents
       </a>
     </li>
@@ -1253,7 +1128,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../interfaces/core.requestbuilder/" class="md-nav__link">
+      <a href="../core.requestbuilder/" class="md-nav__link">
         RequestBuilder
       </a>
     </li>
@@ -1265,7 +1140,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../interfaces/core.requestoptions/" class="md-nav__link">
+      <a href="../core.requestoptions/" class="md-nav__link">
         RequestOptions
       </a>
     </li>
@@ -1277,7 +1152,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../interfaces/core.restresponse/" class="md-nav__link">
+      <a href="../core.restresponse/" class="md-nav__link">
         RESTResponse
       </a>
     </li>
@@ -1289,7 +1164,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../interfaces/gateway.gatewayoptions/" class="md-nav__link">
+      <a href="../gateway.gatewayoptions/" class="md-nav__link">
         GatewayOptions
       </a>
     </li>
@@ -1301,7 +1176,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../interfaces/gateway.websocketclientdestroyoptions/" class="md-nav__link">
+      <a href="../gateway.websocketclientdestroyoptions/" class="md-nav__link">
         WebSocketClientDestroyOptions
       </a>
     </li>
@@ -1313,7 +1188,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../interfaces/gateway.websocketclientevents/" class="md-nav__link">
+      <a href="../gateway.websocketclientevents/" class="md-nav__link">
         WebSocketClientEvents
       </a>
     </li>
@@ -1325,7 +1200,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../interfaces/gateway.websocketmanagerevents/" class="md-nav__link">
+      <a href="../gateway.websocketmanagerevents/" class="md-nav__link">
         WebSocketManagerEvents
       </a>
     </li>
@@ -1337,7 +1212,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../interfaces/rest.restoptions/" class="md-nav__link">
+      <a href="../rest.restoptions/" class="md-nav__link">
         RESTOptions
       </a>
     </li>
@@ -1349,7 +1224,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../interfaces/sharding.clustersshardingoptions/" class="md-nav__link">
+      <a href="../sharding.clustersshardingoptions/" class="md-nav__link">
         ClustersShardingOptions
       </a>
     </li>
@@ -1361,7 +1236,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../interfaces/sharding.ipcpacket/" class="md-nav__link">
+      <a href="../sharding.ipcpacket/" class="md-nav__link">
         IpcPacket
       </a>
     </li>
@@ -1373,7 +1248,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../interfaces/sharding.ipctlsoptions/" class="md-nav__link">
+      <a href="../sharding.ipctlsoptions/" class="md-nav__link">
         IpcTlsOptions
       </a>
     </li>
@@ -1385,7 +1260,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../interfaces/sharding.machinesshardingoptions/" class="md-nav__link">
+      <a href="../sharding.machinesshardingoptions/" class="md-nav__link">
         MachinesShardingOptions
       </a>
     </li>
@@ -1397,7 +1272,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../interfaces/sharding.processesshardingoptions/" class="md-nav__link">
+      <a href="../sharding.processesshardingoptions/" class="md-nav__link">
         ProcessesShardingOptions
       </a>
     </li>
@@ -1409,7 +1284,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../interfaces/sharding.shardingmachineoptions/" class="md-nav__link">
+      <a href="../sharding.shardingmachineoptions/" class="md-nav__link">
         ShardingMachineOptions
       </a>
     </li>
@@ -1421,7 +1296,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../interfaces/sharding.shardingmanagerevents/" class="md-nav__link">
+      <a href="../sharding.shardingmanagerevents/" class="md-nav__link">
         ShardingManagerEvents
       </a>
     </li>
@@ -1433,7 +1308,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../interfaces/sharding.shardingmanageroptions/" class="md-nav__link">
+      <a href="../sharding.shardingmanageroptions/" class="md-nav__link">
         ShardingManagerOptions
       </a>
     </li>
@@ -1445,7 +1320,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../interfaces/sharding.workersshardingoptions/" class="md-nav__link">
+      <a href="../sharding.workersshardingoptions/" class="md-nav__link">
         WorkersShardingOptions
       </a>
     </li>
@@ -1480,18 +1355,6 @@
           Modules
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../modules/cache/" class="md-nav__link">
-        Cache
-      </a>
-    </li>
-  
-
           
             
   
@@ -1700,13 +1563,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#implements" class="md-nav__link">
-    Implements
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#table-of-contents" class="md-nav__link">
     Table of contents
   </a>
@@ -1715,69 +1571,8 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#constructors" class="md-nav__link">
-    Constructors
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#properties" class="md-nav__link">
-    Properties
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#methods" class="md-nav__link">
     Methods
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#constructors_1" class="md-nav__link">
-    Constructors
-  </a>
-  
-    <nav class="md-nav" aria-label="Constructors">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#constructor" class="md-nav__link">
-    constructor
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#properties_1" class="md-nav__link">
-    Properties
-  </a>
-  
-    <nav class="md-nav" aria-label="Properties">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#data" class="md-nav__link">
-    #data
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#local" class="md-nav__link">
-    local
   </a>
   
 </li>
@@ -1803,20 +1598,6 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#filter" class="md-nav__link">
-    filter
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#foreach" class="md-nav__link">
-    forEach
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#get" class="md-nav__link">
     get
   </a>
@@ -1826,13 +1607,6 @@
           <li class="md-nav__item">
   <a href="#has" class="md-nav__link">
     has
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#random" class="md-nav__link">
-    random
   </a>
   
 </li>
@@ -1869,10 +1643,11 @@
               
                 
                 
-                <p><a href="../../">Discordoo</a> / <a href="../../modules/">Modules</a> / <a href="../../modules/cache/">cache</a> / CollectionCacheNamespace</p>
-<h1 id="class-collectioncachenamespacek-v">Class: CollectionCacheNamespace&lt;K, V><a class="headerlink" href="#class-collectioncachenamespacek-v" title="Permanent link">#</a></h1>
-<p><a href="../../modules/cache/">cache</a>.CollectionCacheNamespace</p>
-<p>Represents a cache namespace</p>
+                <p><a href="../../">Discordoo</a> / <a href="../../modules/">Modules</a> / <a href="../../modules/core/">core</a> / CacheProvider</p>
+<h1 id="interface-cacheproviderk-v">Interface: CacheProvider&lt;K, V><a class="headerlink" href="#interface-cacheproviderk-v" title="Permanent link">#</a></h1>
+<p><a href="../../modules/core/">core</a>.CacheProvider</p>
+<p>Represents a cache provider. Custom caching modules must implement it</p>
+<p><strong><code>note</code></strong> Some implementations may use remote cache, e.g. Redis, so all the methods are async</p>
 <h2 id="type-parameters">Type parameters<a class="headerlink" href="#type-parameters" title="Permanent link">#</a></h2>
 <table>
 <thead>
@@ -1892,88 +1667,54 @@
 </tr>
 </tbody>
 </table>
-<h2 id="implements">Implements<a class="headerlink" href="#implements" title="Permanent link">#</a></h2>
-<ul>
-<li><a href="../../interfaces/core.cachenamespace/"><code>CacheNamespace</code></a>&lt;<code>K</code>, <code>V</code>></li>
-</ul>
 <h2 id="table-of-contents">Table of contents<a class="headerlink" href="#table-of-contents" title="Permanent link">#</a></h2>
-<h3 id="constructors">Constructors<a class="headerlink" href="#constructors" title="Permanent link">#</a></h3>
-<ul>
-<li><a href="./#constructor">constructor</a></li>
-</ul>
-<h3 id="properties">Properties<a class="headerlink" href="#properties" title="Permanent link">#</a></h3>
-<ul>
-<li><a href="./##data">#data</a></li>
-<li><a href="./#local">local</a></li>
-</ul>
 <h3 id="methods">Methods<a class="headerlink" href="#methods" title="Permanent link">#</a></h3>
 <ul>
 <li><a href="./#delete">delete</a></li>
-<li><a href="./#filter">filter</a></li>
-<li><a href="./#foreach">forEach</a></li>
 <li><a href="./#get">get</a></li>
 <li><a href="./#has">has</a></li>
-<li><a href="./#random">random</a></li>
 <li><a href="./#set">set</a></li>
 <li><a href="./#size">size</a></li>
 </ul>
-<h2 id="constructors_1">Constructors<a class="headerlink" href="#constructors_1" title="Permanent link">#</a></h2>
-<h3 id="constructor">constructor<a class="headerlink" href="#constructor" title="Permanent link">#</a></h3>
-<p>• <strong>new CollectionCacheNamespace</strong>&lt;<code>K</code>, <code>V</code>>(<code>local?</code>)</p>
-<h4 id="type-parameters_1">Type parameters<a class="headerlink" href="#type-parameters_1" title="Permanent link">#</a></h4>
-<table>
-<thead>
-<tr>
-<th align="left">Name</th>
-<th align="left">Type</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left"><code>K</code></td>
-<td align="left"><code>unknown</code></td>
-</tr>
-<tr>
-<td align="left"><code>V</code></td>
-<td align="left"><code>unknown</code></td>
-</tr>
-</tbody>
-</table>
+<h2 id="methods_1">Methods<a class="headerlink" href="#methods_1" title="Permanent link">#</a></h2>
+<h3 id="delete">delete<a class="headerlink" href="#delete" title="Permanent link">#</a></h3>
+<p>▸ <strong>delete</strong>(<code>keyspace</code>, <code>key</code>, <code>options?</code>): <code>Promise</code>&lt;<code>boolean</code>></p>
+<p>Delete a key from cache</p>
 <h4 id="parameters">Parameters<a class="headerlink" href="#parameters" title="Permanent link">#</a></h4>
 <table>
 <thead>
 <tr>
 <th align="left">Name</th>
 <th align="left">Type</th>
-<th align="left">Default value</th>
+<th align="left">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="left"><code>local</code></td>
-<td align="left"><code>boolean</code></td>
-<td align="left"><code>false</code></td>
+<td align="left"><code>keyspace</code></td>
+<td align="left"><code>string</code></td>
+<td align="left">keyspace in which to delete</td>
+</tr>
+<tr>
+<td align="left"><code>key</code></td>
+<td align="left"><code>K</code></td>
+<td align="left">cache to delete</td>
+</tr>
+<tr>
+<td align="left"><code>options?</code></td>
+<td align="left"><code>CacheProviderDeleteOptions</code></td>
+<td align="left">deleting options</td>
 </tr>
 </tbody>
 </table>
+<h4 id="returns">Returns<a class="headerlink" href="#returns" title="Permanent link">#</a></h4>
+<p><code>Promise</code>&lt;<code>boolean</code>></p>
 <h4 id="defined-in">Defined in<a class="headerlink" href="#defined-in" title="Permanent link">#</a></h4>
-<p><a href="https://github.com/Discordoo/discordoo/blob/6b8b1ac/src/cache/CollectionCacheNamespace.ts#L10">src/cache/CollectionCacheNamespace.ts:10</a></p>
-<h2 id="properties_1">Properties<a class="headerlink" href="#properties_1" title="Permanent link">#</a></h2>
-<h3 id="data">#data<a class="headerlink" href="#data" title="Permanent link">#</a></h3>
-<p>• <code>Private</code> <strong>#data</strong>: <a href="../collection.collection-1/"><code>Collection</code></a>&lt;<code>K</code>, <code>V</code>></p>
-<p>Collection used by this cache namespace</p>
-<h4 id="defined-in_1">Defined in<a class="headerlink" href="#defined-in_1" title="Permanent link">#</a></h4>
-<p><a href="https://github.com/Discordoo/discordoo/blob/6b8b1ac/src/cache/CollectionCacheNamespace.ts#L7">src/cache/CollectionCacheNamespace.ts:7</a></p>
+<p><a href="https://github.com/Discordoo/discordoo/blob/8903a42/src/core/providers/cache/CacheProvider.ts#L36">src/core/providers/cache/CacheProvider.ts:36</a></p>
 <hr />
-<h3 id="local">local<a class="headerlink" href="#local" title="Permanent link">#</a></h3>
-<p>• <strong>local</strong>: <code>boolean</code> = <code>false</code></p>
-<p>Whether the namespace will use IPC</p>
-<h4 id="defined-in_2">Defined in<a class="headerlink" href="#defined-in_2" title="Permanent link">#</a></h4>
-<p><a href="https://github.com/Discordoo/discordoo/blob/6b8b1ac/src/cache/CollectionCacheNamespace.ts#L10">src/cache/CollectionCacheNamespace.ts:10</a></p>
-<h2 id="methods_1">Methods<a class="headerlink" href="#methods_1" title="Permanent link">#</a></h2>
-<h3 id="delete">delete<a class="headerlink" href="#delete" title="Permanent link">#</a></h3>
-<p>▸ <strong>delete</strong>(<code>key</code>): <code>Promise</code>&lt;<code>boolean</code>></p>
-<p>Delete a key from collection</p>
+<h3 id="get">get<a class="headerlink" href="#get" title="Permanent link">#</a></h3>
+<p>▸ <strong>get</strong>(<code>keyspace</code>, <code>key</code>, <code>options?</code>): <code>Promise</code>&lt;<code>null</code> | <code>V</code>></p>
+<p>Get value from key</p>
 <h4 id="parameters_1">Parameters<a class="headerlink" href="#parameters_1" title="Permanent link">#</a></h4>
 <table>
 <thead>
@@ -1985,68 +1726,105 @@
 </thead>
 <tbody>
 <tr>
+<td align="left"><code>keyspace</code></td>
+<td align="left"><code>string</code></td>
+<td align="left">keyspace in which to search</td>
+</tr>
+<tr>
 <td align="left"><code>key</code></td>
 <td align="left"><code>K</code></td>
-<td align="left">key to delete</td>
+<td align="left">key to get value</td>
+</tr>
+<tr>
+<td align="left"><code>options?</code></td>
+<td align="left"><code>CacheProviderGetOptions</code></td>
+<td align="left">getting options</td>
 </tr>
 </tbody>
 </table>
-<h4 id="returns">Returns<a class="headerlink" href="#returns" title="Permanent link">#</a></h4>
-<p><code>Promise</code>&lt;<code>boolean</code>></p>
-<h4 id="implementation-of">Implementation of<a class="headerlink" href="#implementation-of" title="Permanent link">#</a></h4>
-<p><a href="../../interfaces/core.cachenamespace/">CacheNamespace</a>.<a href="../../interfaces/core.cachenamespace/#delete">delete</a></p>
-<h4 id="defined-in_3">Defined in<a class="headerlink" href="#defined-in_3" title="Permanent link">#</a></h4>
-<p><a href="https://github.com/Discordoo/discordoo/blob/6b8b1ac/src/cache/CollectionCacheNamespace.ts#L20">src/cache/CollectionCacheNamespace.ts:20</a></p>
+<h4 id="returns_1">Returns<a class="headerlink" href="#returns_1" title="Permanent link">#</a></h4>
+<p><code>Promise</code>&lt;<code>null</code> | <code>V</code>></p>
+<h4 id="defined-in_1">Defined in<a class="headerlink" href="#defined-in_1" title="Permanent link">#</a></h4>
+<p><a href="https://github.com/Discordoo/discordoo/blob/8903a42/src/core/providers/cache/CacheProvider.ts#L19">src/core/providers/cache/CacheProvider.ts:19</a></p>
 <hr />
-<h3 id="filter">filter<a class="headerlink" href="#filter" title="Permanent link">#</a></h3>
-<p>▸ <strong>filter</strong>(<code>predicate</code>): <code>Promise</code>&lt;<a href="../collection.collection-1/"><code>Collection</code></a>&lt;<code>K</code>, <code>V</code>>></p>
-<p>The same as {@link Collection#filter}</p>
+<h3 id="has">has<a class="headerlink" href="#has" title="Permanent link">#</a></h3>
+<p>▸ <strong>has</strong>(<code>keyspace</code>, <code>key</code>, <code>options?</code>): <code>Promise</code>&lt;<code>boolean</code>></p>
+<p>Check if key exists in cache</p>
 <h4 id="parameters_2">Parameters<a class="headerlink" href="#parameters_2" title="Permanent link">#</a></h4>
 <table>
 <thead>
 <tr>
 <th align="left">Name</th>
 <th align="left">Type</th>
+<th align="left">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="left"><code>predicate</code></td>
-<td align="left">(<code>value</code>: <code>V</code>, <code>key</code>: <code>K</code>, <code>collection</code>: <a href="../collection.collection-1/"><code>Collection</code></a>&lt;<code>K</code>, <code>V</code>>) =&gt; <code>boolean</code></td>
+<td align="left"><code>keyspace</code></td>
+<td align="left"><code>string</code></td>
+<td align="left">keyspace in which to search</td>
+</tr>
+<tr>
+<td align="left"><code>key</code></td>
+<td align="left"><code>K</code></td>
+<td align="left">key to check</td>
+</tr>
+<tr>
+<td align="left"><code>options?</code></td>
+<td align="left"><code>CacheProviderHasOptions</code></td>
+<td align="left">checking options</td>
 </tr>
 </tbody>
 </table>
-<h4 id="returns_1">Returns<a class="headerlink" href="#returns_1" title="Permanent link">#</a></h4>
-<p><code>Promise</code>&lt;<a href="../collection.collection-1/"><code>Collection</code></a>&lt;<code>K</code>, <code>V</code>>></p>
-<h4 id="defined-in_4">Defined in<a class="headerlink" href="#defined-in_4" title="Permanent link">#</a></h4>
-<p><a href="https://github.com/Discordoo/discordoo/blob/6b8b1ac/src/cache/CollectionCacheNamespace.ts#L56">src/cache/CollectionCacheNamespace.ts:56</a></p>
+<h4 id="returns_2">Returns<a class="headerlink" href="#returns_2" title="Permanent link">#</a></h4>
+<p><code>Promise</code>&lt;<code>boolean</code>></p>
+<h4 id="defined-in_2">Defined in<a class="headerlink" href="#defined-in_2" title="Permanent link">#</a></h4>
+<p><a href="https://github.com/Discordoo/discordoo/blob/8903a42/src/core/providers/cache/CacheProvider.ts#L44">src/core/providers/cache/CacheProvider.ts:44</a></p>
 <hr />
-<h3 id="foreach">forEach<a class="headerlink" href="#foreach" title="Permanent link">#</a></h3>
-<p>▸ <strong>forEach</strong>(<code>predicate</code>): <code>Promise</code>&lt;<code>void</code>></p>
-<p>The same as {@link Collection#forEach}</p>
+<h3 id="set">set<a class="headerlink" href="#set" title="Permanent link">#</a></h3>
+<p>▸ <strong>set</strong>(<code>keyspace</code>, <code>key</code>, <code>value</code>, <code>options?</code>): <code>Promise</code>&lt;<a href="./"><code>CacheProvider</code></a>&lt;<code>K</code>, <code>V</code>>></p>
+<p>Set a key to given value</p>
 <h4 id="parameters_3">Parameters<a class="headerlink" href="#parameters_3" title="Permanent link">#</a></h4>
 <table>
 <thead>
 <tr>
 <th align="left">Name</th>
 <th align="left">Type</th>
+<th align="left">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="left"><code>predicate</code></td>
-<td align="left">(<code>value</code>: <code>V</code>, <code>key</code>: <code>K</code>, <code>collection</code>: <a href="../collection.collection-1/"><code>Collection</code></a>&lt;<code>K</code>, <code>V</code>>) =&gt; <code>boolean</code></td>
+<td align="left"><code>keyspace</code></td>
+<td align="left"><code>string</code></td>
+<td align="left">keyspace in which to set</td>
+</tr>
+<tr>
+<td align="left"><code>key</code></td>
+<td align="left"><code>K</code></td>
+<td align="left">key to use</td>
+</tr>
+<tr>
+<td align="left"><code>value</code></td>
+<td align="left"><code>V</code></td>
+<td align="left">value to set</td>
+</tr>
+<tr>
+<td align="left"><code>options?</code></td>
+<td align="left"><code>CacheProviderSetOptions</code></td>
+<td align="left">setting options</td>
 </tr>
 </tbody>
 </table>
-<h4 id="returns_2">Returns<a class="headerlink" href="#returns_2" title="Permanent link">#</a></h4>
-<p><code>Promise</code>&lt;<code>void</code>></p>
-<h4 id="defined-in_5">Defined in<a class="headerlink" href="#defined-in_5" title="Permanent link">#</a></h4>
-<p><a href="https://github.com/Discordoo/discordoo/blob/6b8b1ac/src/cache/CollectionCacheNamespace.ts#L66">src/cache/CollectionCacheNamespace.ts:66</a></p>
+<h4 id="returns_3">Returns<a class="headerlink" href="#returns_3" title="Permanent link">#</a></h4>
+<p><code>Promise</code>&lt;<a href="./"><code>CacheProvider</code></a>&lt;<code>K</code>, <code>V</code>>></p>
+<h4 id="defined-in_3">Defined in<a class="headerlink" href="#defined-in_3" title="Permanent link">#</a></h4>
+<p><a href="https://github.com/Discordoo/discordoo/blob/8903a42/src/core/providers/cache/CacheProvider.ts#L28">src/core/providers/cache/CacheProvider.ts:28</a></p>
 <hr />
-<h3 id="get">get<a class="headerlink" href="#get" title="Permanent link">#</a></h3>
-<p>▸ <strong>get</strong>(<code>key</code>): <code>Promise</code>&lt;<code>null</code> | <code>V</code>></p>
-<p>Get a key from collection</p>
+<h3 id="size">size<a class="headerlink" href="#size" title="Permanent link">#</a></h3>
+<p>▸ <strong>size</strong>(<code>keyspace?</code>, <code>options?</code>): <code>Promise</code>&lt;<code>number</code>></p>
+<p>Get size of cache in keyspace or in all cache</p>
 <h4 id="parameters_4">Parameters<a class="headerlink" href="#parameters_4" title="Permanent link">#</a></h4>
 <table>
 <thead>
@@ -2058,110 +1836,21 @@
 </thead>
 <tbody>
 <tr>
-<td align="left"><code>key</code></td>
-<td align="left"><code>K</code></td>
-<td align="left">key to get</td>
+<td align="left"><code>keyspace?</code></td>
+<td align="left"><code>string</code></td>
+<td align="left">keyspace in which to search</td>
 </tr>
-</tbody>
-</table>
-<h4 id="returns_3">Returns<a class="headerlink" href="#returns_3" title="Permanent link">#</a></h4>
-<p><code>Promise</code>&lt;<code>null</code> | <code>V</code>></p>
-<h4 id="implementation-of_1">Implementation of<a class="headerlink" href="#implementation-of_1" title="Permanent link">#</a></h4>
-<p><a href="../../interfaces/core.cachenamespace/">CacheNamespace</a>.<a href="../../interfaces/core.cachenamespace/#get">get</a></p>
-<h4 id="defined-in_6">Defined in<a class="headerlink" href="#defined-in_6" title="Permanent link">#</a></h4>
-<p><a href="https://github.com/Discordoo/discordoo/blob/6b8b1ac/src/cache/CollectionCacheNamespace.ts#L28">src/cache/CollectionCacheNamespace.ts:28</a></p>
-<hr />
-<h3 id="has">has<a class="headerlink" href="#has" title="Permanent link">#</a></h3>
-<p>▸ <strong>has</strong>(<code>key</code>): <code>Promise</code>&lt;<code>boolean</code>></p>
-<p>Check if collection has a key</p>
-<h4 id="parameters_5">Parameters<a class="headerlink" href="#parameters_5" title="Permanent link">#</a></h4>
-<table>
-<thead>
 <tr>
-<th align="left">Name</th>
-<th align="left">Type</th>
-<th align="left">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left"><code>key</code></td>
-<td align="left"><code>K</code></td>
-<td align="left">ket to check</td>
+<td align="left"><code>options?</code></td>
+<td align="left"><code>CacheProviderSizeOptions</code></td>
+<td align="left">calculating options</td>
 </tr>
 </tbody>
 </table>
 <h4 id="returns_4">Returns<a class="headerlink" href="#returns_4" title="Permanent link">#</a></h4>
-<p><code>Promise</code>&lt;<code>boolean</code>></p>
-<h4 id="implementation-of_2">Implementation of<a class="headerlink" href="#implementation-of_2" title="Permanent link">#</a></h4>
-<p><a href="../../interfaces/core.cachenamespace/">CacheNamespace</a>.<a href="../../interfaces/core.cachenamespace/#has">has</a></p>
-<h4 id="defined-in_7">Defined in<a class="headerlink" href="#defined-in_7" title="Permanent link">#</a></h4>
-<p><a href="https://github.com/Discordoo/discordoo/blob/6b8b1ac/src/cache/CollectionCacheNamespace.ts#L36">src/cache/CollectionCacheNamespace.ts:36</a></p>
-<hr />
-<h3 id="random">random<a class="headerlink" href="#random" title="Permanent link">#</a></h3>
-<p>▸ <strong>random</strong>(<code>amount?</code>): <code>Promise</code>&lt;<code>V</code> | <code>V</code>[]></p>
-<p>The same as {@link Collection#random}</p>
-<h4 id="parameters_6">Parameters<a class="headerlink" href="#parameters_6" title="Permanent link">#</a></h4>
-<table>
-<thead>
-<tr>
-<th align="left">Name</th>
-<th align="left">Type</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left"><code>amount?</code></td>
-<td align="left"><code>number</code></td>
-</tr>
-</tbody>
-</table>
-<h4 id="returns_5">Returns<a class="headerlink" href="#returns_5" title="Permanent link">#</a></h4>
-<p><code>Promise</code>&lt;<code>V</code> | <code>V</code>[]></p>
-<h4 id="defined-in_8">Defined in<a class="headerlink" href="#defined-in_8" title="Permanent link">#</a></h4>
-<p><a href="https://github.com/Discordoo/discordoo/blob/6b8b1ac/src/cache/CollectionCacheNamespace.ts#L61">src/cache/CollectionCacheNamespace.ts:61</a></p>
-<hr />
-<h3 id="set">set<a class="headerlink" href="#set" title="Permanent link">#</a></h3>
-<p>▸ <strong>set</strong>(<code>key</code>, <code>value</code>): <code>Promise</code>&lt;<code>boolean</code>></p>
-<p>Change key's value</p>
-<h4 id="parameters_7">Parameters<a class="headerlink" href="#parameters_7" title="Permanent link">#</a></h4>
-<table>
-<thead>
-<tr>
-<th align="left">Name</th>
-<th align="left">Type</th>
-<th align="left">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left"><code>key</code></td>
-<td align="left"><code>K</code></td>
-<td align="left">key to set</td>
-</tr>
-<tr>
-<td align="left"><code>value</code></td>
-<td align="left"><code>V</code></td>
-<td align="left">value to set</td>
-</tr>
-</tbody>
-</table>
-<h4 id="returns_6">Returns<a class="headerlink" href="#returns_6" title="Permanent link">#</a></h4>
-<p><code>Promise</code>&lt;<code>boolean</code>></p>
-<h4 id="implementation-of_3">Implementation of<a class="headerlink" href="#implementation-of_3" title="Permanent link">#</a></h4>
-<p><a href="../../interfaces/core.cachenamespace/">CacheNamespace</a>.<a href="../../interfaces/core.cachenamespace/#set">set</a></p>
-<h4 id="defined-in_9">Defined in<a class="headerlink" href="#defined-in_9" title="Permanent link">#</a></h4>
-<p><a href="https://github.com/Discordoo/discordoo/blob/6b8b1ac/src/cache/CollectionCacheNamespace.ts#L45">src/cache/CollectionCacheNamespace.ts:45</a></p>
-<hr />
-<h3 id="size">size<a class="headerlink" href="#size" title="Permanent link">#</a></h3>
-<p>▸ <strong>size</strong>(): <code>Promise</code>&lt;<code>number</code>></p>
-<p>Get total elements in the collection</p>
-<h4 id="returns_7">Returns<a class="headerlink" href="#returns_7" title="Permanent link">#</a></h4>
 <p><code>Promise</code>&lt;<code>number</code>></p>
-<h4 id="implementation-of_4">Implementation of<a class="headerlink" href="#implementation-of_4" title="Permanent link">#</a></h4>
-<p><a href="../../interfaces/core.cachenamespace/">CacheNamespace</a>.<a href="../../interfaces/core.cachenamespace/#size">size</a></p>
-<h4 id="defined-in_10">Defined in<a class="headerlink" href="#defined-in_10" title="Permanent link">#</a></h4>
-<p><a href="https://github.com/Discordoo/discordoo/blob/6b8b1ac/src/cache/CollectionCacheNamespace.ts#L51">src/cache/CollectionCacheNamespace.ts:51</a></p>
+<h4 id="defined-in_4">Defined in<a class="headerlink" href="#defined-in_4" title="Permanent link">#</a></h4>
+<p><a href="https://github.com/Discordoo/discordoo/blob/8903a42/src/core/providers/cache/CacheProvider.ts#L51">src/core/providers/cache/CacheProvider.ts:51</a></p>
                 
                   
                 
@@ -2183,7 +1872,7 @@
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href="../cache.cacheproviderbuilder/" class="md-footer__link md-footer__link--prev" aria-label="Previous: CacheProviderBuilder" rel="prev">
+        <a href="../collection.collectionrandomoptions/" class="md-footer__link md-footer__link--prev" aria-label="Previous: CollectionRandomOptions" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -2192,20 +1881,20 @@
               <span class="md-footer__direction">
                 Previous
               </span>
-              CacheProviderBuilder
+              CollectionRandomOptions
             </div>
           </div>
         </a>
       
       
         
-        <a href="../collection.collection-1/" class="md-footer__link md-footer__link--next" aria-label="Next: Collection" rel="next">
+        <a href="../core.clienteventshandlers/" class="md-footer__link md-footer__link--next" aria-label="Next: ClientEventsHandlers" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Collection
+              ClientEventsHandlers
             </div>
           </div>
           <div class="md-footer__button md-icon">
