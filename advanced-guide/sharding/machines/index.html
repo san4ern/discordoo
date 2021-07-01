@@ -1594,79 +1594,79 @@ Therefore, Discordoo has a mechanism for distributing sharding instances between
 <p>On each server, you must install Discordoo and create a ShardingManager in standby mode:</p>
 <div class="tabbed-set" data-tabs="1:1"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><label for="__tabbed_1_1">TS</label><div class="tabbed-content"></div>
 </div>
-<p><div class="highlight"><pre><span></span><code><span class="k">import</span> <span class="p">{</span> <span class="nx">ShardingManager</span> <span class="p">}</span> <span class="k">from</span> <span class="s1">&#39;discordoo/sharding&#39;</span>
-<span class="k">import</span> <span class="p">{</span> <span class="nx">ShardingManagerModes</span> <span class="p">}</span> <span class="k">from</span> <span class="s1">&#39;discordoo/core&#39;</span>
+<pre><code class="language-ts">import { ShardingManager } from 'discordoo/sharding'
+import { ShardingManagerModes } from 'discordoo/core'
 
-<span class="kd">const</span> <span class="nx">manager</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">ShardingManager</span><span class="p">({</span>
-  <span class="nx">file</span><span class="o">:</span> <span class="s1">&#39;C:/path/to/your/client/file.js&#39;</span><span class="p">,</span>
-  <span class="nx">mode</span>: <span class="kt">ShardingManagerModes.MACHINES</span><span class="p">,</span>
-  <span class="nx">machines</span><span class="o">:</span> <span class="p">{</span>
-    <span class="nx">me</span><span class="o">:</span> <span class="s1">&#39;child&#39;</span><span class="p">,</span>
-    <span class="nx">ipc</span><span class="o">:</span> <span class="p">{</span>
-      <span class="nx">networkHost</span><span class="o">:</span> <span class="s1">&#39;your server IP&#39;</span><span class="p">,</span>
-    <span class="c1">//networkPort: 9999, // override default port if you want</span>
-    <span class="p">},</span>
-    <span class="cm">/*tls: {</span>
-<span class="cm">      // (this cert used in the array of trusted connections on the main ShardingManager server)</span>
-<span class="cm">      public: string // path to server tls cert</span>
-<span class="cm">      private: string // path to server tls private key</span>
-<span class="cm">      dhparam?: string // path to server dhparam</span>
-<span class="cm">      requestCert?: boolean // whether main sharding manager should pass tls cert to this child </span>
-<span class="cm">      rejectUnauthorized?: boolean // reject unauthorized connections </span>
-<span class="cm">      trustedConnections?: string[] // array of paths to trusted client certificates </span>
-<span class="cm">    },*/</span>
-  <span class="p">},</span>
-<span class="p">})</span>
+const manager = new ShardingManager({
+  file: 'C:/path/to/your/client/file.js',
+  mode: ShardingManagerModes.MACHINES,
+  machines: {
+    me: 'child',
+    ipc: {
+      networkHost: 'your server IP',
+    //networkPort: 9999, // override default port if you want
+    },
+    /*tls: {
+      // (this cert used in the array of trusted connections on the main ShardingManager server)
+      public: string // path to server tls cert
+      private: string // path to server tls private key
+      dhparam?: string // path to server dhparam
+      requestCert?: boolean // whether main sharding manager should pass tls cert to this child 
+      rejectUnauthorized?: boolean // reject unauthorized connections 
+      trustedConnections?: string[] // array of paths to trusted client certificates 
+    },*/
+  },
+})
 
-<span class="nx">manager</span><span class="p">.</span><span class="nx">start</span><span class="p">()</span>
-</code></pre></div>
-On the main server you should create main ShardingManager and specify machines:</p>
+manager.start()
+</code></pre>
+<p>On the main server you should create main ShardingManager and specify machines:</p>
 <div class="tabbed-set" data-tabs="2:1"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><label for="__tabbed_2_1">TS</label><div class="tabbed-content"></div>
 </div>
-<p><div class="highlight"><pre><span></span><code><span class="k">import</span> <span class="p">{</span> <span class="nx">ShardingManager</span> <span class="p">}</span> <span class="k">from</span> <span class="s1">&#39;discordoo/sharding&#39;</span>
-<span class="k">import</span> <span class="p">{</span> <span class="nx">ShardingManagerModes</span><span class="p">,</span> <span class="nx">ChildShardingModes</span> <span class="p">}</span> <span class="k">from</span> <span class="s1">&#39;discordoo/core&#39;</span>
+<pre><code class="language-ts">import { ShardingManager } from 'discordoo/sharding'
+import { ShardingManagerModes, ChildShardingModes } from 'discordoo/core'
 
-<span class="kd">const</span> <span class="nx">manager</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">ShardingManager</span><span class="p">({</span>
-  <span class="nx">mode</span>: <span class="kt">ShardingManagerModes.MACHINES</span><span class="p">,</span>
-  <span class="nx">machines</span><span class="o">:</span> <span class="p">{</span>
-    <span class="nx">me</span><span class="o">:</span> <span class="s1">&#39;parent&#39;</span><span class="p">,</span>
-    <span class="nx">points</span><span class="o">:</span> <span class="p">[</span> <span class="c1">// array of contact points to your servers</span>
-      <span class="p">{</span>
-        <span class="nx">port</span>: <span class="kt">8379</span><span class="p">,</span> <span class="c1">// optional override port </span>
-        <span class="nx">host</span><span class="o">:</span> <span class="s1">&#39;10.0.18.1&#39;</span><span class="p">,</span> <span class="c1">// your server ip (required!)</span>
-        <span class="nx">udp</span><span class="o">:</span> <span class="s1">&#39;udp4&#39;</span><span class="p">,</span> <span class="c1">// optional UDP instead TCP</span>
-        <span class="nx">childManagerOptions</span><span class="o">:</span> <span class="p">{</span> <span class="c1">// options of the sharding manager that will be sent to the remote machine</span>
-          <span class="nx">mode</span>: <span class="kt">ChildShardingModes.PROCESSES</span><span class="p">,</span>
-          <span class="nx">shards</span><span class="o">:</span> <span class="p">{</span> <span class="k">from</span><span class="o">:</span> <span class="mf">0</span><span class="p">,</span> <span class="nx">to</span>: <span class="kt">127</span> <span class="p">},</span>
-        <span class="p">},</span>
-        <span class="nx">tls</span><span class="o">:</span> <span class="p">{</span>
-          <span class="c1">// (this cert used in array of trusted connections on the child sharding manager server)</span>
-          <span class="k">public</span><span class="o">:</span> <span class="s1">&#39;../tls/client.pub&#39;</span><span class="p">,</span> <span class="c1">// main ShardingManager tls cert</span>
-          <span class="k">private</span><span class="o">:</span> <span class="s1">&#39;../tls/client.key&#39;</span><span class="p">,</span> <span class="c1">// main ShardingMangaer tls private key</span>
-          <span class="nx">rejectUnauthorized</span>: <span class="kt">true</span><span class="p">,</span>
-          <span class="nx">trustedConnections</span><span class="o">:</span> <span class="p">[</span> <span class="s1">&#39;../tls/10-0-18-1.pub&#39;</span><span class="p">,</span> <span class="s1">&#39;../tls/FE80::0202:B3FF:FE1E:8329.pub&#39;</span> <span class="p">]</span> <span class="c1">// trusted servers tls certs</span>
-        <span class="p">},</span>
-      <span class="p">},</span>
-      <span class="p">{</span>
-        <span class="nx">host</span><span class="o">:</span> <span class="s1">&#39;FE80::0202:B3FF:FE1E:8329&#39;</span><span class="p">,</span> <span class="c1">// ipv6 also supported</span>
-        <span class="nx">childManagerOptions</span><span class="o">:</span> <span class="p">{</span>
-          <span class="nx">mode</span>: <span class="kt">ChildShardingModes.WORKERS</span><span class="p">,</span>
-          <span class="nx">shards</span><span class="o">:</span> <span class="p">{</span> <span class="k">from</span><span class="o">:</span> <span class="mf">128</span><span class="p">,</span> <span class="nx">to</span>: <span class="kt">255</span> <span class="p">},</span>
-        <span class="p">},</span>
-        <span class="nx">tls</span><span class="o">:</span> <span class="p">{</span>
-          <span class="k">public</span><span class="o">:</span> <span class="s1">&#39;../tls/server.pub&#39;</span><span class="p">,</span>
-          <span class="k">private</span><span class="o">:</span> <span class="s1">&#39;../tls/server.key&#39;</span><span class="p">,</span>
-          <span class="nx">rejectUnauthorized</span>: <span class="kt">true</span><span class="p">,</span>
-          <span class="nx">trustedConnections</span><span class="o">:</span> <span class="p">[</span> <span class="s1">&#39;../tls/10-0-18-1.pub&#39;</span><span class="p">,</span> <span class="s1">&#39;../tls/FE80::0202:B3FF:FE1E:8329.pub&#39;</span> <span class="p">]</span>
-        <span class="p">},</span>
-      <span class="p">}</span>
-    <span class="p">]</span>
-  <span class="p">}</span>
-<span class="p">})</span>
+const manager = new ShardingManager({
+  mode: ShardingManagerModes.MACHINES,
+  machines: {
+    me: 'parent',
+    points: [ // array of contact points to your servers
+      {
+        port: 8379, // optional override port 
+        host: '10.0.18.1', // your server ip (required!)
+        udp: 'udp4', // optional UDP instead TCP
+        childManagerOptions: { // options of the sharding manager that will be sent to the remote machine
+          mode: ChildShardingModes.PROCESSES,
+          shards: { from: 0, to: 127 },
+        },
+        tls: {
+          // (this cert used in array of trusted connections on the child sharding manager server)
+          public: '../tls/client.pub', // main ShardingManager tls cert
+          private: '../tls/client.key', // main ShardingMangaer tls private key
+          rejectUnauthorized: true,
+          trustedConnections: [ '../tls/10-0-18-1.pub', '../tls/FE80::0202:B3FF:FE1E:8329.pub' ] // trusted servers tls certs
+        },
+      },
+      {
+        host: 'FE80::0202:B3FF:FE1E:8329', // ipv6 also supported
+        childManagerOptions: {
+          mode: ChildShardingModes.WORKERS,
+          shards: { from: 128, to: 255 },
+        },
+        tls: {
+          public: '../tls/server.pub',
+          private: '../tls/server.key',
+          rejectUnauthorized: true,
+          trustedConnections: [ '../tls/10-0-18-1.pub', '../tls/FE80::0202:B3FF:FE1E:8329.pub' ]
+        },
+      }
+    ]
+  }
+})
 
-<span class="nx">manager</span><span class="p">.</span><span class="nx">start</span><span class="p">()</span>
-</code></pre></div>
-That's all!</p>
+manager.start()
+</code></pre>
+<p>That's all!</p>
                 
               
               
@@ -1741,6 +1741,10 @@ That's all!</p>
     
     
       <script src="../../../assets/javascripts/bundle.82b56eb2.min.js"></script>
+      
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.0.1/highlight.min.js"></script>
+      
+        <script src="../../../javascripts/highlight.js"></script>
       
     
   </body>

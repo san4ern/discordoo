@@ -1580,25 +1580,25 @@ That's why each message is assigned a unique identifier in the form of Discordoo
 With this unique identifier, we can understand that the response was exactly for us.</p>
 <p><img alt="sharding-snowflakes" src="../../../assets/sharding-snowflakes.png" /></p>
 <h2 id="analyzing-snowflake">Analyzing Snowflake<a class="headerlink" href="#analyzing-snowflake" title="Permanent link">#</a></h2>
-<p>If we have a snowflake <code>1128425170719486862453931925225603077</code> we can represent it as binary:
-<div class="highlight"><pre><span></span><code>128                                        86                               54                               22
+<p>If we have a snowflake <code>1128425170719486862453931925225603077</code> we can represent it as binary:</p>
+<pre><code>128                                        86                               54                               22
 000000001101100101010011101010000000011011 00000000000000000000000000001011 00000000000000000000000001100011 0000000000000000000101
    number of ms since Discordoo epoch                  worker id                       shard id                    increment
-</code></pre></div>
-After converting to binary, we can allocate individual blocks to find out the information that we used to generate this snowflake.</p>
-<p>We can get timestamp (generation time) from snowflake
-<div class="highlight"><pre><span></span><code><span class="kd">const</span> <span class="nx">EPOCH</span> <span class="o">=</span> <span class="mf">1609459200000</span> <span class="c1">// 2021-01-01T00:00:00.000Z</span>
-<span class="kd">const</span> <span class="nx">timestamp</span> <span class="o">=</span> <span class="p">(</span><span class="nb">BigInt</span><span class="p">(</span><span class="nx">snowflake</span><span class="p">)</span> <span class="o">&gt;&gt;</span> <span class="mi">86n</span><span class="p">)</span> <span class="o">+</span> <span class="nb">BigInt</span><span class="p">(</span><span class="nx">EPOCH</span><span class="p">)</span> <span class="c1">// 1624043753498n</span>
-</code></pre></div></p>
-<p>Or internal worker id (usually, this is the ID of the process that created the snowflake)
-<div class="highlight"><pre><span></span><code><span class="kd">const</span> <span class="nx">workerID</span> <span class="o">=</span> <span class="p">(</span><span class="nb">BigInt</span><span class="p">(</span><span class="nx">snowflake</span><span class="p">)</span> <span class="o">&amp;</span> <span class="mh">0x3FFFFFFFC0000000000000n</span><span class="p">)</span> <span class="o">&gt;&gt;</span> <span class="mi">54n</span> <span class="c1">// 11n</span>
-</code></pre></div></p>
-<p>Or shard id (process, worker or cluster ID, not WebSocketClient (discord shard) id)
-<div class="highlight"><pre><span></span><code><span class="kd">const</span> <span class="nx">shardID</span> <span class="o">=</span> <span class="p">(</span><span class="nb">BigInt</span><span class="p">(</span><span class="nx">snowflake</span><span class="p">)</span> <span class="o">&amp;</span> <span class="mh">0x3FFFFFFFC00000n</span><span class="p">)</span> <span class="o">&gt;&gt;</span> <span class="mi">22n</span> <span class="c1">// 99n</span>
-</code></pre></div></p>
-<p>And the last, we can get the snowflake increment (number that increases by 1 for each generation of snowflake on the same process)
-<div class="highlight"><pre><span></span><code><span class="kd">const</span> <span class="nx">increment</span> <span class="o">=</span> <span class="nb">BigInt</span><span class="p">(</span><span class="nx">snowflake</span><span class="p">)</span> <span class="o">&amp;</span> <span class="mh">0x3FFFFFn</span> <span class="c1">// 5n</span>
-</code></pre></div></p>
+</code></pre>
+<p>After converting to binary, we can allocate individual blocks to find out the information that we used to generate this snowflake.</p>
+<p>We can get timestamp (generation time) from snowflake</p>
+<pre><code class="language-ts">const EPOCH = 1609459200000 // 2021-01-01T00:00:00.000Z
+const timestamp = (BigInt(snowflake) &gt;&gt; 86n) + BigInt(EPOCH) // 1624043753498n
+</code></pre>
+<p>Or internal worker id (usually, this is the ID of the process that created the snowflake)</p>
+<pre><code class="language-ts">const workerID = (BigInt(snowflake) &amp; 0x3FFFFFFFC0000000000000n) &gt;&gt; 54n // 11n
+</code></pre>
+<p>Or shard id (process, worker or cluster ID, not WebSocketClient (discord shard) id)</p>
+<pre><code class="language-ts">const shardID = (BigInt(snowflake) &amp; 0x3FFFFFFFC00000n) &gt;&gt; 22n // 99n
+</code></pre>
+<p>And the last, we can get the snowflake increment (number that increases by 1 for each generation of snowflake on the same process)</p>
+<pre><code class="language-ts">const increment = BigInt(snowflake) &amp; 0x3FFFFFn // 5n
+</code></pre>
                 
               
               
@@ -1673,6 +1673,10 @@ After converting to binary, we can allocate individual blocks to find out the in
     
     
       <script src="../../../assets/javascripts/bundle.82b56eb2.min.js"></script>
+      
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.0.1/highlight.min.js"></script>
+      
+        <script src="../../../javascripts/highlight.js"></script>
       
     
   </body>

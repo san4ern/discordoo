@@ -1567,20 +1567,20 @@ So we have to create it.</p>
 </ol>
 <div class="tabbed-set" data-tabs="1:1"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><label for="__tabbed_1_1">TS</label><div class="tabbed-content"></div>
 </div>
-<div class="highlight"><pre><span></span><code><span class="k">import</span> <span class="p">{</span> <span class="nx">ShardingManager</span> <span class="p">}</span> <span class="k">from</span> <span class="s1">&#39;discordoo/sharding&#39;</span>
+<pre><code class="language-ts">import { ShardingManager } from 'discordoo/sharding'
 
-<span class="kd">const</span> <span class="nx">manager</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">ShardingManager</span><span class="p">({</span>
-  <span class="nx">file</span><span class="o">:</span> <span class="s1">&#39;C:/path/to/your/old/starting/file.js&#39;</span><span class="p">,</span>
-  <span class="nx">shards</span>: <span class="kt">2</span><span class="p">,</span>
-  <span class="nx">mode</span><span class="o">:</span> <span class="s1">&#39;processes&#39;</span><span class="p">,</span> <span class="c1">// you can find other modes in our api documentation</span>
-  <span class="nx">processes</span><span class="o">:</span> <span class="p">{</span> <span class="c1">// every mode has its own options</span>
-    <span class="nx">shardsPerProcess</span>: <span class="kt">1</span> <span class="c1">// how many discord&#39;s shards to run in each sharding instance</span>
-  <span class="p">}</span>
-<span class="p">})</span>
+const manager = new ShardingManager({
+  file: 'C:/path/to/your/old/starting/file.js',
+  shards: 2,
+  mode: 'processes', // you can find other modes in our api documentation
+  processes: { // every mode has its own options
+    shardsPerProcess: 1 // how many discord's shards to run in each sharding instance
+  }
+})
 
-<span class="nx">manager</span><span class="p">.</span><span class="nx">start</span><span class="p">()</span>
-  <span class="p">.</span><span class="nx">then</span><span class="p">(()</span> <span class="o">=&gt;</span> <span class="s1">&#39;spawned!&#39;</span><span class="p">)</span>
-</code></pre></div>
+manager.start()
+  .then(() =&gt; 'spawned!')
+</code></pre>
                 
               
               
@@ -1655,6 +1655,10 @@ So we have to create it.</p>
     
     
       <script src="../../assets/javascripts/bundle.82b56eb2.min.js"></script>
+      
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.0.1/highlight.min.js"></script>
+      
+        <script src="../../javascripts/highlight.js"></script>
       
     
   </body>

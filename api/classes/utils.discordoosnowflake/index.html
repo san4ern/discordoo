@@ -1838,8 +1838,8 @@
 <hr />
 <h3 id="generate">generate<a class="headerlink" href="#generate" title="Permanent link">#</a></h3>
 <p>▸ <code>Static</code> <strong>generate</strong>(<code>shardID</code>, <code>workerID?</code>, <code>timestamp?</code>): <code>string</code></p>
-<p>Custom twitter snowflake: DiscordooSnowflake.
-<div class="highlight"><pre><span></span><code>If we have a snowflake &#39;1128425170719486862453931925225603077&#39; we can represent it as binary:
+<p>Custom twitter snowflake: DiscordooSnowflake.</p>
+<pre><code>If we have a snowflake '1128425170719486862453931925225603077' we can represent it as binary:
 
  128                                        86                               54                               22
  000000001101100101010011101010000000011011 00000000000000000000000000001011 00000000000000000000000001100011 0000000000000000000101
@@ -1856,8 +1856,8 @@ getting a shard id:
 
 getting a increment:
  BigInt(snowflake) &amp; 0x3FFFFFn === 5n
-</code></pre></div>
-Why?
+</code></pre>
+<p>Why?
 Discordoo uses DiscordooSnowflake to identify ipc connections and messages.
 So, if your bot has more than 2,147,483,647 shards, you will unfortunately not be able to use Discordoo.</p>
 <h4 id="parameters_2">Parameters<a class="headerlink" href="#parameters_2" title="Permanent link">#</a></h4>
@@ -1967,6 +1967,10 @@ So, if your bot has more than 2,147,483,647 shards, you will unfortunately not b
     
     
       <script src="../../../assets/javascripts/bundle.82b56eb2.min.js"></script>
+      
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.0.1/highlight.min.js"></script>
+      
+        <script src="../../../javascripts/highlight.js"></script>
       
     
   </body>

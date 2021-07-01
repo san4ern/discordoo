@@ -1512,36 +1512,36 @@
 <p>You can use built-in createApp function to create a client, setup providers and client options:</p>
 <div class="tabbed-set" data-tabs="1:1"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><label for="__tabbed_1_1">TS</label><div class="tabbed-content"></div>
 </div>
-<div class="highlight"><pre><span></span><code><span class="k">import</span> <span class="p">{</span> <span class="nx">createApp</span> <span class="p">}</span> <span class="k">from</span> <span class="s1">&#39;discordoo/wrapper&#39;</span>
+<pre><code class="language-ts">import { createApp } from 'discordoo/wrapper'
 
-<span class="kd">const</span> <span class="nx">client</span> <span class="o">=</span> <span class="nx">createApp</span><span class="p">(</span><span class="s1">&#39;some-discord-bot-token&#39;</span><span class="p">)</span>
-  <span class="p">.</span><span class="nx">cacheProvider</span><span class="p">(</span><span class="cm">/* some cache provider */</span><span class="p">)</span>
-  <span class="p">.</span><span class="nx">gateway</span><span class="p">(</span><span class="cm">/* some gateway options */</span><span class="p">)</span>
-  <span class="p">.</span><span class="nx">build</span><span class="p">()</span>
+const client = createApp('some-discord-bot-token')
+  .cacheProvider(/* some cache provider */)
+  .gateway(/* some gateway options */)
+  .build()
 
-<span class="nx">client</span><span class="p">.</span><span class="nx">start</span><span class="p">()</span>
-    <span class="p">.</span><span class="nx">then</span><span class="p">(()</span> <span class="o">=&gt;</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;online!&#39;</span><span class="p">))</span>
-</code></pre></div>
+client.start()
+    .then(() =&gt; console.log('online!'))
+</code></pre>
 <p>or, if you want to extend from the client:</p>
 <div class="tabbed-set" data-tabs="2:1"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><label for="__tabbed_2_1">TS</label><div class="tabbed-content"></div>
 </div>
-<div class="highlight"><pre><span></span><code><span class="k">import</span> <span class="p">{</span> <span class="nx">Client</span> <span class="kr">as</span> <span class="nx">DiscordooClient</span> <span class="p">}</span> <span class="k">from</span> <span class="s1">&#39;discordoo/core&#39;</span>
+<pre><code class="language-ts">import { Client as DiscordooClient } from 'discordoo/core'
 
-<span class="kd">class</span> <span class="nx">Client</span> <span class="k">extends</span> <span class="nx">DiscordooClient</span> <span class="p">{</span>
-  <span class="kr">constructor</span><span class="p">(...</span><span class="nx">props</span><span class="p">)</span> <span class="p">{</span>
-    <span class="k">super</span><span class="p">(...</span><span class="nx">props</span><span class="p">)</span>
+class Client extends DiscordooClient {
+  constructor(...props) {
+    super(...props)
 
-    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;hello from client constructor&#39;</span><span class="p">)</span>
-  <span class="p">}</span>
-<span class="p">}</span>
+    console.log('hello from client constructor')
+  }
+}
 
-<span class="kd">const</span> <span class="nx">client</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Client</span><span class="p">(</span><span class="cm">/* some client options */</span><span class="p">)</span>
+const client = new Client(/* some client options */)
 
-<span class="nx">client</span><span class="p">.</span><span class="nx">useCacheProvider</span><span class="p">(</span><span class="cm">/* some cache provider */</span><span class="p">)</span>
+client.useCacheProvider(/* some cache provider */)
 
-<span class="nx">client</span><span class="p">.</span><span class="nx">start</span><span class="p">()</span>
-  <span class="p">.</span><span class="nx">then</span><span class="p">(()</span> <span class="o">=&gt;</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;online!&#39;</span><span class="p">))</span>
-</code></pre></div>
+client.start()
+  .then(() =&gt; console.log('online!'))
+</code></pre>
                 
               
               
@@ -1601,6 +1601,10 @@
     
     
       <script src="../../assets/javascripts/bundle.82b56eb2.min.js"></script>
+      
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.0.1/highlight.min.js"></script>
+      
+        <script src="../../javascripts/highlight.js"></script>
       
     
   </body>
