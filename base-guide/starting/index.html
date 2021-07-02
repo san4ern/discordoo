@@ -1717,22 +1717,36 @@ client.start()
 <p>or, if you want to extend from the client:</p>
 <div class="tabbed-set" data-tabs="2:1"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><label for="__tabbed_2_1">TS</label><div class="tabbed-content"></div>
 </div>
-<pre><code class="language-ts">import { Client as DiscordooClient } from 'discordoo/core'
+<pre><code class="language-ts">import { Client as DiscordooClient, ClientOptions } from 'discordoo/core'
+import { createApp } from 'discordoo/wrapper'
+
+interface YourCustomOptions {
+  owner?: string
+}
 
 class Client extends DiscordooClient {
-  constructor(...props) {
-    super(...props)
+  constructor(token, options?: ClientOptions&lt;YourCustomOptions&gt;) {
+    super(token, options)
 
-    console.log('hello from client constructor')
+    console.log(
+      'hello from client constructor!',
+      'provided custom options:',
+      options?.custom // YourCustomOptions interface used here
+    )
+  }
+
+  customMethod(): string {
+    return 'hello world'
   }
 }
 
-const client = new Client(/* some client options */)
-
-client.useCacheProvider(/* some cache provider */)
+const client = createApp('some-discord-bot-token', { useClient: Client })
+  .gateway(/* some gateway options */)
+  .custom&lt;YourCustomOptions&gt;({ owner: 'very-cool-developer' })
+  .build&lt;Client&gt;()
 
 client.start()
-  .then(() =&gt; console.log('online!'))
+  .then(() =&gt; console.log(client.customMethod())) // hello world
 </code></pre>
                 
               
