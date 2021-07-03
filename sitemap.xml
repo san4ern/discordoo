@@ -111,7 +111,27 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://docs.discordoo.xyz/api/enums/core.constants.channelscachingpolicy/</loc>
+         <lastmod>2021-07-03</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://docs.discordoo.xyz/api/enums/core.constants.discordooproviders/</loc>
+         <lastmod>2021-07-03</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.discordoo.xyz/api/enums/core.constants.emojiscachingpolicy/</loc>
+         <lastmod>2021-07-03</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.discordoo.xyz/api/enums/core.constants.globalcachingpolicy/</loc>
+         <lastmod>2021-07-03</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.discordoo.xyz/api/enums/core.constants.guildscachingpolicy/</loc>
          <lastmod>2021-07-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -126,7 +146,27 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://docs.discordoo.xyz/api/enums/core.constants.memberscachingpolicy/</loc>
+         <lastmod>2021-07-03</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.discordoo.xyz/api/enums/core.constants.messagescachingpolicy/</loc>
+         <lastmod>2021-07-03</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://docs.discordoo.xyz/api/enums/core.constants.partialshardingmodes/</loc>
+         <lastmod>2021-07-03</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.discordoo.xyz/api/enums/core.constants.presencescachingpolicy/</loc>
+         <lastmod>2021-07-03</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.discordoo.xyz/api/enums/core.constants.rolescachingpolicy/</loc>
          <lastmod>2021-07-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
